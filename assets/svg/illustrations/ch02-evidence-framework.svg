@@ -1,0 +1,118 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    基于证据的决策框架
+  </text>
+  
+  <!-- 中心决策核心 -->
+  <circle cx="400" cy="300" r="60" fill="#E8D5C4" stroke="#D4A574" stroke-width="3"/>
+  <text x="400" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8B4513">
+    基于证据
+  </text>
+  <text x="400" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8B4513">
+    的决策
+  </text>
+  
+  <!-- 五个要素围绕中心 -->
+  <!-- 证据层级性 -->
+  <ellipse cx="200" cy="150" rx="90" ry="50" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="2"/>
+  <text x="200" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0277BD">
+    证据层级性
+  </text>
+  <text x="200" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277BD">
+    系统综述→随机对照→队列研究→病例对照→横断面→病例报告→专家意见→个人经验
+  </text>
+  
+  <!-- 证据评估标准 -->
+  <ellipse cx="600" cy="150" rx="90" ry="50" fill="#FFCDD2" stroke="#E57373" stroke-width="2"/>
+  <text x="600" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C62828">
+    证据评估标准
+  </text>
+  <text x="600" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#C62828">
+    内部效度•外部效度•统计显著性•临床意义•方法学质量
+  </text>
+  
+  <!-- 证据综合应用 -->
+  <ellipse cx="150" cy="400" rx="90" ry="50" fill="#C8E6C9" stroke="#81C784" stroke-width="2"/>
+  <text x="150" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+    证据综合应用
+  </text>
+  <text x="150" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    一致性•差异性•适用性•批判性思维
+  </text>
+  
+  <!-- 证据动态更新 -->
+  <ellipse cx="650" cy="400" rx="90" ry="50" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2"/>
+  <text x="650" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E65100">
+    证据动态更新
+  </text>
+  <text x="650" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    定期评估•新证据接受•认知调整•开放心态
+  </text>
+  
+  <!-- 证据传播应用 -->
+  <ellipse cx="400" cy="480" rx="90" ry="40" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2"/>
+  <text x="400" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A">
+    证据传播应用
+  </text>
+  <text x="400" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    目标受众•传播方式•情境适应•反馈机制
+  </text>
+  
+  <!-- 连接线 -->
+  <line x1="270" y1="180" x2="350" y2="260" stroke="#D4A574" stroke-width="2"/>
+  <line x1="530" y1="180" x2="450" y2="260" stroke="#D4A574" stroke-width="2"/>
+  <line x1="220" y1="360" x2="350" y2="330" stroke="#D4A574" stroke-width="2"/>
+  <line x1="580" y1="360" x2="450" y2="330" stroke="#D4A574" stroke-width="2"/>
+  <line x1="400" y1="360" x2="400" y2="440" stroke="#D4A574" stroke-width="2"/>
+  
+  <!-- 应用对象说明 -->
+  <rect x="50" y="250" width="100" height="80" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="100" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    应用对象
+  </text>
+  <text x="100" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    消费者
+  </text>
+  <text x="100" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    医生
+  </text>
+  <text x="100" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    销售人员
+  </text>
+  
+  <!-- 决策原则 -->
+  <rect x="650" y="250" width="100" height="80" fill="#FFF8E1" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="700" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">
+    决策原则
+  </text>
+  <text x="700" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    科学性
+  </text>
+  <text x="700" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    客观性
+  </text>
+  <text x="700" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    实用性
+  </text>
+  
+  <!-- 决策流程 -->
+  <rect x="250" y="80" width="300" height="40" fill="#E8F5E8" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+    证据收集 → 评估 → 综合 → 应用 → 更新
+  </text>
+  
+  <!-- 价值体现 -->
+  <rect x="200" y="540" width="400" height="30" fill="#FFEBEE" stroke="#F44336" stroke-width="1" rx="5"/>
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C62828">
+    价值：科学化决策 • 风险控制 • 质量提升 • 信任建立 • 可持续发展
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图2.3：基于证据的决策框架五要素及在医美领域的应用
+  </text>
+</svg>

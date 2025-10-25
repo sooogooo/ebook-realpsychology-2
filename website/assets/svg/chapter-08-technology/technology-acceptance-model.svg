@@ -1,0 +1,202 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 技术接受度模型 -->
+  <defs>
+    <!-- 感知有用性渐变 -->
+    <linearGradient id="usefulness-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 感知易用性渐变 -->
+    <linearGradient id="ease-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 使用态度渐变 -->
+    <linearGradient id="attitude-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 使用意向渐变 -->
+    <linearGradient id="intention-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    技术接受度模型
+  </text>
+  
+  <!-- TAM模型结构 -->
+  <g transform="translate(400, 150)">
+    <text x="0" y="-40" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">TAM模型结构</text>
+    
+    <!-- 外部变量 -->
+    <g transform="translate(0, -80)">
+      <rect x="-60" y="-20" width="120" height="40" rx="20" fill="#f39c12" filter="url(#shadow)" data-interactive="true" data-tooltip="外部变量：影响接受度的外部因素" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">外部变量</text>
+    </g>
+    
+    <!-- 感知有用性 -->
+    <g transform="translate(-120, 0)">
+      <rect x="-50" y="-25" width="100" height="50" rx="25" fill="url(#usefulness-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="感知有用性：认为技术有用的程度" data-onclick="details"/>
+      <text y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">感知有用性</text>
+      <text y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">Perceived Usefulness</text>
+    </g>
+    
+    <!-- 感知易用性 -->
+    <g transform="translate(120, 0)">
+      <rect x="-50" y="-25" width="100" height="50" rx="25" fill="url(#ease-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="感知易用性：认为技术易用的程度" data-onclick="details"/>
+      <text y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">感知易用性</text>
+      <text y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">Perceived Ease of Use</text>
+    </g>
+    
+    <!-- 使用态度 -->
+    <g transform="translate(0, 80)">
+      <rect x="-50" y="-25" width="100" height="50" rx="25" fill="url(#attitude-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="使用态度：对使用技术的态度" data-onclick="details"/>
+      <text y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">使用态度</text>
+      <text y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">Attitude</text>
+    </g>
+    
+    <!-- 使用意向 -->
+    <g transform="translate(0, 160)">
+      <rect x="-50" y="-25" width="100" height="50" rx="25" fill="url(#intention-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="使用意向：使用技术的意向" data-onclick="details"/>
+      <text y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">使用意向</text>
+      <text y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">Intention</text>
+    </g>
+    
+    <!-- 连接线和箭头 -->
+    <path d="M 0 -60 L -120 -25" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 0 -60 L 120 -25" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -120 25 L -25 55" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 120 25 L 25 55" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 0 105 L 0 135" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -70 0 L 70 0" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- 影响因素 -->
+  <g transform="translate(100, 380)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">影响因素：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">个人特征：年龄、教育、经验</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">技术特性：复杂性、兼容性</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">社会影响：同伴、专家意见</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">便利条件：技术、支持条件</text>
+    </g>
+  </g>
+  
+  <!-- 测量指标 -->
+  <g transform="translate(400, 380)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">测量指标：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">有用性感知：提高效率、效果</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">易用性感知：学习容易、操作简单</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">态度评价：喜欢程度、价值认同</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">行为意向：使用意愿、推荐意向</text>
+    </g>
+  </g>
+  
+  <!-- 接受度评分 -->
+  <g transform="translate(650, 200)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">接受度评分：</text>
+    
+    <g transform="translate(0, 20)">
+      <text font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">有用性</text>
+      <rect x="0" y="10" width="60" height="8" rx="4" fill="#ecf0f1"/>
+      <rect x="0" y="10" width="48" height="8" rx="4" fill="#3498db"/>
+      <text x="70" y="18" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">80%</text>
+    </g>
+    
+    <g transform="translate(0, 40)">
+      <text font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">易用性</text>
+      <rect x="0" y="10" width="60" height="8" rx="4" fill="#ecf0f1"/>
+      <rect x="0" y="10" width="42" height="8" rx="4" fill="#2ecc71"/>
+      <text x="70" y="18" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">70%</text>
+    </g>
+    
+    <g transform="translate(0, 60)">
+      <text font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">态度</text>
+      <rect x="0" y="10" width="60" height="8" rx="4" fill="#ecf0f1"/>
+      <rect x="0" y="10" width="45" height="8" rx="4" fill="#9b59b6"/>
+      <text x="70" y="18" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">75%</text>
+    </g>
+    
+    <g transform="translate(0, 80)">
+      <text font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">意向</text>
+      <rect x="0" y="10" width="60" height="8" rx="4" fill="#ecf0f1"/>
+      <rect x="0" y="10" width="36" height="8" rx="4" fill="#e74c3c"/>
+      <text x="70" y="18" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">60%</text>
+    </g>
+  </g>
+  
+  <!-- 应用领域 -->
+  <g transform="translate(100, 520)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">应用领域：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 医美技术选择和接受</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 智能设备使用意愿</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 新技术推广策略</text>
+  </g>
+  
+  <!-- 实践意义 -->
+  <g transform="translate(400, 520)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">实践意义：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 提高技术接受度</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 优化产品设计</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 制定推广策略</text>
+  </g>
+  
+  <!-- 模型动画 -->
+  <circle cx="400" cy="150" r="120" fill="none" stroke="#667eea" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="120;140;120" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各要素查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

@@ -1,0 +1,260 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    医美决策偏差检查清单
+  </text>
+  
+  <!-- 工具说明 -->
+  <rect x="100" y="80" width="600" height="60" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    实用工具4.2
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    帮助消费者识别和纠正医美决策中的常见认知偏差，提高决策的理性和质量
+  </text>
+  
+  <!-- 五种偏差检查 -->
+  <rect x="50" y="160" width="700" height="320" fill="#F3E5F5" stroke="#CE93D8" stroke-width="2" rx="10"/>
+  <text x="400" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6A1B9A">
+    偏差检查清单
+  </text>
+  
+  <!-- 确认偏见检查 -->
+  <rect x="80" y="200" width="120" height="90" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="140" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    确认偏见
+  </text>
+  <text x="140" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 只关注支持信息
+  </text>
+  <text x="140" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 决定后找支持
+  </text>
+  <text x="140" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 抵触反对意见
+  </text>
+  <text x="140" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 要求支持建议
+  </text>
+  <text x="140" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    发生率: 70%
+  </text>
+  
+  <!-- 锚定效应检查 -->
+  <rect x="220" y="200" width="120" height="90" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="280" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    锚定效应
+  </text>
+  <text x="280" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 依赖首信息
+  </text>
+  <text x="280" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 价格影响判断
+  </text>
+  <text x="280" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 效果期望锚定
+  </text>
+  <text x="280" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 难调初始印象
+  </text>
+  <text x="280" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    发生率: 60%
+  </text>
+  
+  <!-- 从众心理检查 -->
+  <rect x="360" y="200" width="120" height="90" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="420" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    从众心理
+  </text>
+  <text x="420" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 他人都在做
+  </text>
+  <text x="420" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 担心被评判
+  </text>
+  <text x="420" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 社交媒体影响
+  </text>
+  <text x="420" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 跟随非需求
+  </text>
+  <text x="420" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    发生率: 55%
+  </text>
+  
+  <!-- 沉没成本效应检查 -->
+  <rect x="500" y="200" width="120" height="90" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="560" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    沉没成本效应
+  </text>
+  <text x="560" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 已投入继续
+  </text>
+  <text x="560" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 不能放弃心理
+  </text>
+  <text x="560" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 忽略机会成本
+  </text>
+  <text x="560" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 过去限制现在
+  </text>
+  <text x="560" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    发生率: 45%
+  </text>
+  
+  <!-- 乐观偏见检查 -->
+  <rect x="640" y="200" width="120" height="90" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="700" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    乐观偏见
+  </text>
+  <text x="700" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 低估风险概率
+  </text>
+  <text x="700" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 高估效果实现
+  </text>
+  <text x="700" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 不会发生在我身上
+  </text>
+  <text x="700" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 准备不足
+  </text>
+  <text x="700" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    发生率: 75%
+  </text>
+  
+  <!-- 纠正策略 -->
+  <rect x="80" y="310" width="640" height="120" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    纠正策略要点
+  </text>
+  
+  <!-- 策略1-3 -->
+  <rect x="110" y="350" width="120" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="170" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    确认偏见纠正
+  </text>
+  <text x="170" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    主动寻找反对意见
+  </text>
+  <text x="170" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    魔鬼代言人
+  </text>
+  <text x="170" y="402" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    客观权衡利弊
+  </text>
+  
+  <rect x="250" y="350" width="120" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="310" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    锚定效应纠正
+  </text>
+  <text x="310" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    多来源比较
+  </text>
+  <text x="310" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    设定参考范围
+  </text>
+  <text x="310" y="402" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    延迟决策
+  </text>
+  
+  <rect x="390" y="350" width="120" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="450" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    从众心理纠正
+  </text>
+  <text x="450" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    明确真实需求
+  </text>
+  <text x="450" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    减少社交媒体
+  </text>
+  <text x="450" y="402" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    符合自己价值观
+  </text>
+  
+  <!-- 策略4-5 -->
+  <rect x="530" y="350" width="120" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="590" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    沉没成本纠正
+  </text>
+  <text x="590" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    关注未来收益
+  </text>
+  <text x="590" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    重新开始思考
+  </text>
+  <text x="590" y="402" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    设定止损点
+  </text>
+  
+  <!-- 决策质量自评 -->
+  <rect x="100" y="450" width="640" height="100" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="2" rx="10"/>
+  <text x="400" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0277BD">
+    决策质量自评指标
+  </text>
+  
+  <!-- 评估指标 -->
+  <rect x="130" y="485" width="100" height="55" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="180" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0277BD">
+    信息收集
+  </text>
+  <text x="180" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    全面性评分
+  </text>
+  <text x="180" y="528" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    1-5分
+  </text>
+  
+  <rect x="250" y="485" width="100" height="55" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="300" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0277BD">
+    风险评估
+  </text>
+  <text x="300" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    充分性评分
+  </text>
+  <text x="300" y="528" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    1-5分
+  </text>
+  
+  <rect x="370" y="485" width="100" height="55" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="420" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0277BD">
+    期望管理
+  </text>
+  <text x="420" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    合理性评分
+  </text>
+  <text x="420" y="528" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    1-5分
+  </text>
+  
+  <rect x="490" y="485" width="100" height="55" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="540" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0277BD">
+    决策过程
+  </text>
+  <text x="540" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    系统性评分
+  </text>
+  <text x="540" y="528" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    1-5分
+  </text>
+  
+  <rect x="610" y="485" width="100" height="55" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="660" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0277BD">
+    外部意见
+  </text>
+  <text x="660" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    考虑度评分
+  </text>
+  <text x="660" y="528" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    1-5分
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图4.6：医美决策偏差检查清单结构、纠正策略及决策质量评估框架
+  </text>
+</svg>

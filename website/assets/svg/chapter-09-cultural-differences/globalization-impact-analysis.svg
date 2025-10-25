@@ -1,0 +1,194 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 全球化影响分析 -->
+  <defs>
+    <!-- 经济影响渐变 -->
+    <linearGradient id="economic-impact-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 文化影响渐变 -->
+    <linearGradient id="cultural-impact-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 社会影响渐变 -->
+    <linearGradient id="social-impact-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 技术影响渐变 -->
+    <linearGradient id="technological-impact-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    全球化影响分析
+  </text>
+  
+  <!-- 影响分析中心 -->
+  <g transform="translate(400, 150)">
+    <text x="0" y="-50" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">全球化影响维度</text>
+    
+    <!-- 经济影响 -->
+    <g transform="translate(-150, 0)">
+      <circle cx="0" cy="0" r="35" fill="url(#economic-impact-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="经济影响：经济全球化效应" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">经济</text>
+      <text y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">影响</text>
+    </g>
+    
+    <!-- 文化影响 -->
+    <g transform="translate(-50, 0)">
+      <circle cx="0" cy="0" r="35" fill="url(#cultural-impact-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="文化影响：文化交流与融合" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">文化</text>
+      <text y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">影响</text>
+    </g>
+    
+    <!-- 社会影响 -->
+    <g transform="translate(50, 0)">
+      <circle cx="0" cy="0" r="35" fill="url(#social-impact-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="社会影响：社会结构变化" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">社会</text>
+      <text y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">影响</text>
+    </g>
+    
+    <!-- 技术影响 -->
+    <g transform="translate(150, 0)">
+      <circle cx="0" cy="0" r="35" fill="url(#technological-impact-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="技术影响：技术传播与创新" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">技术</text>
+      <text y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">影响</text>
+    </g>
+    
+    <!-- 连接线 -->
+    <path d="M -115 0 L -85 0" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M -15 0 L 15 0" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M 85 0 L 115 0" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- 积极影响 -->
+  <g transform="translate(100, 280)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">积极影响：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">经济发展：促进经济增长和贸易</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">文化多样性：丰富文化交流和理解</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">技术进步：加速技术传播和创新</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">国际合作：促进国际合作与和平</text>
+    </g>
+  </g>
+  
+  <!-- 消极影响 -->
+  <g transform="translate(400, 280)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">消极影响：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">文化同质化：削弱文化多样性</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">经济不平等：加剧贫富差距</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">社会问题：引发社会矛盾和冲突</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">环境压力：增加环境负担</text>
+    </g>
+  </g>
+  
+  <!-- 应对策略 -->
+  <g transform="translate(100, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">应对策略：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">文化保护：保护和传承本土文化</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">政策调控：制定合理的全球化政策</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">教育提升：提高全球化适应能力</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">国际合作：加强国际合作协调</text>
+    </g>
+  </g>
+  
+  <!-- 未来展望 -->
+  <g transform="translate(400, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">未来展望：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 更加包容和可持续的全球化</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 文化多样性与全球化并存</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 技术驱动的新型全球化模式</text>
+  </g>
+  
+  <!-- 影响程度评估 -->
+  <g transform="translate(650, 200)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">影响程度：</text>
+    
+    <!-- 影响程度指示器 -->
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="15" height="80" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="8" width="15" height="72" rx="7" fill="#2ecc71"/>
+      <text x="25" y="50" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">90%</text>
+    </g>
+    
+    <!-- 评估说明 -->
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">轻微：0-40%</text>
+    <text x="0" y="135" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">中等：41-70%</text>
+    <text x="0" y="150" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">深远：71-100%</text>
+  </g>
+  
+  <!-- 全球化动画 -->
+  <circle cx="400" cy="150" r="120" fill="none" stroke="#667eea" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="120;150;120" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各维度查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

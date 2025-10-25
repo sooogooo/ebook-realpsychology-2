@@ -1,0 +1,110 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 研究方法谱系图 -->
+  <defs>
+    <linearGradient id="quant-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="qual-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mixed-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="action-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    研究方法谱系图
+  </text>
+  
+  <!-- 主轴 -->
+  <line x1="100" y1="300" x2="700" y2="300" stroke="#34495e" stroke-width="3"/>
+  
+  <!-- 定量研究 -->
+  <g transform="translate(200, 300)">
+    <circle r="60" fill="url(#quant-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="定量研究：数据驱动、统计分析、客观测量" data-onclick="details"/>
+    <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">定量研究</text>
+    <text y="-80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">问卷调查</text>
+    <text y="-65" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">统计分析</text>
+    <text y="-50" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">实验设计</text>
+  </g>
+  
+  <!-- 定性研究 -->
+  <g transform="translate(350, 300)">
+    <circle r="60" fill="url(#qual-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="定性研究：深度理解、质性分析、主观体验" data-onclick="details"/>
+    <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">定性研究</text>
+    <text y="-80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">深度访谈</text>
+    <text y="-65" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">焦点小组</text>
+    <text y="-50" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">案例分析</text>
+  </g>
+  
+  <!-- 混合研究 -->
+  <g transform="translate(500, 300)">
+    <circle r="60" fill="url(#mixed-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="混合研究：方法整合、数据互补、综合分析" data-onclick="details"/>
+    <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">混合研究</text>
+    <text y="-80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">序列设计</text>
+    <text y="-65" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">并行设计</text>
+    <text y="-50" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">转换设计</text>
+  </g>
+  
+  <!-- 行动研究 -->
+  <g transform="translate(650, 300)">
+    <circle r="60" fill="url(#action-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="行动研究：实践导向、循环改进、参与式" data-onclick="details"/>
+    <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">行动研究</text>
+    <text y="-80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">计划-行动</text>
+    <text y="-65" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">观察-反思</text>
+    <text y="-50" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">循环改进</text>
+  </g>
+  
+  <!-- 连接线 -->
+  <path d="M 260 300 Q 305 280 350 300" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 410 300 Q 455 280 500 300" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 560 300 Q 605 280 650 300" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 特征说明 -->
+  <g transform="translate(50, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">方法特征：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 客观性 → 主观性</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 数量化 → 质性化</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 普遍性 → 特殊性</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 理论验证 → 理论构建</text>
+  </g>
+  
+  <!-- 应用领域 -->
+  <g transform="translate(450, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">医美应用：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 消费者行为调查</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 决策过程分析</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 满意度研究</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 服务优化改进</text>
+  </g>
+  
+  <!-- 连接波动效果 -->
+  <path d="M 200 240 Q 275 220 350 240 Q 425 260 500 240 Q 575 220 650 240" stroke="#667eea" stroke-width="2" fill="none" stroke-dasharray="5,5" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" values="0;10" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各方法查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

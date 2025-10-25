@@ -1,0 +1,167 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    伦理销售与不当销售对比案例
+  </text>
+  
+  <!-- 案例背景 -->
+  <rect x="100" y="80" width="600" height="60" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    案例分析7.1
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    李女士，35岁，企业中层管理者，考虑面部填充项目，体验两种截然不同的销售方式
+  </text>
+  
+  <!-- 对比分析框架 -->
+  <rect x="50" y="160" width="700" height="400" fill="#F3E5F5" stroke="#CE93D8" stroke-width="3" rx="15"/>
+  <text x="400" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#6A1B9A">
+    伦理销售与不当销售对比分析
+  </text>
+  
+  <!-- A机构：不当销售 -->
+  <rect x="80" y="210" width="280" height="330" fill="#FFEBEE" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="220" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    A机构：不当销售体验
+  </text>
+  
+  <!-- 初次接触 -->
+  <rect x="100" y="250" width="240" height="60" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="220" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    初次接触问题
+  </text>
+  <text x="220" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 夸张宣传："独家技术，立竿见影，无风险"
+  </text>
+  <text x="220" y="296" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 紧迫感营造："本周特别优惠，名额有限"
+  </text>
+  <text x="220" y="309" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 焦虑激活："35岁是关键时期"
+  </text>
+  
+  <!-- 咨询过程问题 -->
+  <rect x="100" y="320" width="240" height="80" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="220" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    咨询过程问题
+  </text>
+  <text x="220" y="353" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 信息操控：只强调效果，淡化风险
+  </text>
+  <text x="220" y="366" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 压力销售："优惠最后一天，下月涨价"
+  </text>
+  <text x="220" y="379" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 利益冲突：极力推荐高佣金产品
+  </text>
+  <text x="220" y="392" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 虚假承诺："效果维持2年以上"
+  </text>
+  
+  <!-- 决策干扰 -->
+  <rect x="100" y="410" width="240" height="65" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="220" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    决策干扰
+  </text>
+  <text x="220" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 情绪化营销：激活年龄焦虑
+  </text>
+  <text x="220" y="456" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 信息遮蔽：专业术语混淆
+  </text>
+  <text x="220" y="469" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 阻碍独立思考："回家就被劝阻"
+  </text>
+  
+  <!-- 结果 -->
+  <rect x="100" y="485" width="240" height="45" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="220" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    结果与影响
+  </text>
+  <text x="220" y="518" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 损失定金，但对机构产生严重怀疑
+  </text>
+  <text x="220" y="531" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 对医美行业产生负面印象
+  </text>
+  
+  <!-- B机构：伦理销售 -->
+  <rect x="380" y="210" width="280" height="330" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="520" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    B机构：伦理销售体验
+  </text>
+  
+  <!-- 初次接触差异 -->
+  <rect x="400" y="250" width="240" height="60" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="520" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    初次接触差异
+  </text>
+  <text x="520" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 信息透明：网站信息真实完整
+  </text>
+  <text x="520" y="296" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 专业安排：提前发送咨询指南
+  </text>
+  <text x="520" y="309" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 耐心询问：了解基本情况和需求
+  </text>
+  
+  <!-- 专业咨询过程 -->
+  <rect x="400" y="320" width="240" height="80" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="520" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    专业咨询过程
+  </text>
+  <text x="520" y="353" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 专业评估：医生亲自评估健康状况
+  </text>
+  <text x="520" y="366" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 信息完整：详细解释效果、风险、费用
+  </text>
+  <text x="520" y="379" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 多种选择：提供不同价位方案
+  </text>
+  <text x="520" y="392" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 期望管理：真实案例展示，合理期望
+  </text>
+  
+  <!-- 决策支持 -->
+  <rect x="400" y="410" width="240" height="65" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="520" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    决策支持
+  </text>
+  <text x="520" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 充分时间：无压力决策环境
+  </text>
+  <text x="520" y="456" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 书面材料：详细资料供研究
+  </text>
+  <text x="520" y="469" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 鼓励第二意见：推荐其他专业医生
+  </text>
+  
+  <!-- 结果 -->
+  <rect x="400" y="485" width="240" height="45" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="520" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    结果与影响
+  </text>
+  <text x="520" y="518" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 理性决策，选择B机构服务
+  </text>
+  <text x="520" y="531" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 术后效果符合预期，满意度高
+  </text>
+  
+  <!-- 关键启示 -->
+  <rect x="100" y="560" width="600" height="25" fill="#FFF3E0" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="400" y="577" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#E65100">
+    关键启示：伦理销售建立长期信任 | 信息透明是基础 | 专业评估保障质量 | 无压力环境促进理性决策 | 消费者权益保护重于短期利益
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图7.9：伦理销售与不当销售对比案例及关键启示
+  </text>
+</svg>

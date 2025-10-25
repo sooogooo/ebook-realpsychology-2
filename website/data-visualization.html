@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="医美消费心理学数据可视化 - 交互式统计图表展示">
+    <meta name="keywords" content="医美消费心理学,数据可视化,统计分析,交互图表">
+    <meta name="author" content="重庆联合丽格科技有限公司">
+    <title>数据可视化 - 医美消费心理学</title>
+    <link rel="icon" type="image/png" href="https://docs.bccsw.cn/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/data-visualization.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="https://docs.bccsw.cn/logo.png" alt="Logo">
+                <h1>医美消费心理学</h1>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#overview">概述</a></li>
+                <li><a href="index.html#chapters">章节</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html">首页</a>
+                <span class="separator">›</span>
+                <span>数据可视化</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="chart-header">
+                <h1>数据可视化展示</h1>
+                <p>基于医美消费心理学研究的交互式统计图表</p>
+                
+                <!-- 数据操作面板 -->
+                <div class="data-operations">
+                    <div class="operation-group">
+                        <button class="operation-btn" id="exportDataBtn">
+                            <span class="material-symbols-outlined">download</span>
+                            导出数据
+                        </button>
+                        <button class="operation-btn" id="importDataBtn">
+                            <span class="material-symbols-outlined">upload</span>
+                            导入数据
+                        </button>
+                        <button class="operation-btn" id="refreshDataBtn">
+                            <span class="material-symbols-outlined">refresh</span>
+                            刷新数据
+                        </button>
+                    </div>
+                    
+                    <div class="operation-group">
+                        <select class="format-select" id="exportFormat">
+                            <option value="json">JSON 格式</option>
+                            <option value="csv">CSV 格式</option>
+                            <option value="xlsx">Excel 格式</option>
+                        </select>
+                        
+                        <input type="file" id="fileInput" accept=".json,.csv,.xlsx" style="display: none;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-content">
+                <!-- 心理状态雷达图 -->
+                <section class="chart-section">
+                    <h2>心理状态雷达图</h2>
+                    <p>多维度展示医美消费者的心理状态评估</p>
+                    
+                    <div class="chart-controls">
+                        <button class="control-button active" data-demographic="all">全部人群</button>
+                        <button class="control-button" data-demographic="young">年轻群体</button>
+                        <button class="control-button" data-demographic="middle">中年群体</button>
+                        <button class="control-button" data-demographic="senior">资深群体</button>
+                    </div>
+                    
+                    <div class="chart-container" id="radar-chart">
+                        <div class="chart-loading">
+                            <div class="loading-spinner"></div>
+                            <p>加载中...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-insights">
+                        <h3>关键发现</h3>
+                        <ul>
+                            <li>年轻群体在外貌焦虑维度得分较高，但在风险感知维度得分较低</li>
+                            <li>中年群体在自我认同维度表现最稳定</li>
+                            <li>资深群体在社会压力维度得分最高，但整体满意度也最高</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 决策流程桑基图 -->
+                <section class="chart-section">
+                    <h2>决策流程桑基图</h2>
+                    <p>展示消费者从信息搜索到最终决策的完整流程</p>
+                    
+                    <div class="chart-container large" id="sankey-chart">
+                        <div class="chart-loading">
+                            <div class="loading-spinner"></div>
+                            <p>加载中...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-filter">
+                        <label class="filter-label">筛选条件：</label>
+                        <select class="filter-select" id="decision-filter">
+                            <option value="all">全部决策路径</option>
+                            <option value="successful">成功决策</option>
+                            <option value="delayed">延迟决策</option>
+                            <option value="abandoned">放弃决策</option>
+                        </select>
+                    </div>
+                </section>
+
+                <!-- 情感变化时间序列 -->
+                <section class="chart-section">
+                    <h2>情感变化时间序列</h2>
+                    <p>追踪消费者术前术后的情感变化轨迹</p>
+                    
+                    <div class="chart-container" id="time-series-chart">
+                        <div class="chart-loading">
+                            <div class="loading-spinner"></div>
+                            <p>加载中...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-controls">
+                        <button class="control-button active" data-emotion="anxiety">焦虑指数</button>
+                        <button class="control-button" data-emotion="confidence">自信指数</button>
+                        <button class="control-button" data-emotion="satisfaction">满意度</button>
+                    </div>
+                </section>
+
+                <!-- 风险评估热力图 -->
+                <section class="chart-section">
+                    <h2>风险评估热力图</h2>
+                    <p>不同医美项目的风险程度评估矩阵</p>
+                    
+                    <div class="chart-container" id="heatmap-chart">
+                        <div class="chart-loading">
+                            <div class="loading-spinner"></div>
+                            <p>加载中...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #f7fbff;"></div>
+                            <span>低风险</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #6baed6;"></div>
+                            <span>中等风险</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #08519c;"></div>
+                            <span>高风险</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 社会影响网络图 -->
+                <section class="chart-section">
+                    <h2>社会影响网络图</h2>
+                    <p>展示医美消费决策中的社会关系网络</p>
+                    
+                    <div class="chart-container large" id="network-chart">
+                        <div class="chart-loading">
+                            <div class="loading-spinner"></div>
+                            <p>加载中...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-insights">
+                        <h3>网络分析</h3>
+                        <ul>
+                            <li>意见领袖在决策网络中占据核心位置</li>
+                            <li>家庭关系对决策的影响力最大</li>
+                            <li>社交媒体连接密度最高，但影响力相对较弱</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <!-- 数据状态面板 -->
+        <div class="data-status-panel">
+            <div class="status-header">
+                <h3>数据状态</h3>
+                <div class="status-indicator" id="dataStatusIndicator">
+                    <span class="status-dot active"></span>
+                    <span class="status-text">数据已加载</span>
+                </div>
+            </div>
+            
+            <div class="status-content">
+                <div class="status-item">
+                    <span class="status-label">数据集数量:</span>
+                    <span class="status-value" id="datasetCount">4</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">总数据点:</span>
+                    <span class="status-value" id="totalDataPoints">1,247</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">最后更新:</span>
+                    <span class="status-value" id="lastUpdate">2024-12-19 14:30</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">数据版本:</span>
+                    <span class="status-value" id="dataVersion">v1.2.0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 通知系统 -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>地址：重庆市渝中区临江支路28号</p>
+                    <p>电话：<a href="tel:023-68726872">023-68726872</a></p>
+                    <p>邮箱：<a href="mailto:bccsw@cqlhlg.work">bccsw@cqlhlg.work</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>关于我们</h4>
+                    <p>重庆联合丽格科技有限公司致力于医美行业的专业研究和咨询服务，推动行业健康发展。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <p><a href="index.html">首页</a></p>
+                    <p><a href="index.html#chapters">章节内容</a></p>
+                    <p><a href="index.html#perspectives">专业视角</a></p>
+                    <p><a href="index.html#contact">联系我们</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 重庆联合丽格科技有限公司 | <a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2024023473号</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/data-visualization.js"></script>
+    <script src="../js/data-export-import.js"></script>
+    <script>
+        // 模拟数据
+        const radarData = {
+            categories: ['外貌焦虑', '风险感知', '自我认同', '社会压力', '期望管理', '满意度'],
+            series: [
+                {
+                    category: '全部人群',
+                    values: [75, 65, 80, 70, 60, 85]
+                },
+                {
+                    category: '年轻群体',
+                    values: [85, 55, 70, 75, 50, 80]
+                },
+                {
+                    category: '中年群体',
+                    values: [70, 70, 85, 65, 70, 90]
+                },
+                {
+                    category: '资深群体',
+                    values: [60, 80, 90, 80, 85, 95]
+                }
+            ]
+        };
+
+        const timeSeriesData = [
+            { date: '2024-01-01', value: 75 },
+            { date: '2024-01-15', value: 80 },
+            { date: '2024-02-01', value: 70 },
+            { date: '2024-02-15', value: 65 },
+            { date: '2024-03-01', value: 60 },
+            { date: '2024-03-15', value: 55 },
+            { date: '2024-04-01', value: 50 },
+            { date: '2024-04-15', value: 45 },
+            { date: '2024-05-01', value: 40 },
+            { date: '2024-05-15', value: 35 },
+            { date: '2024-06-01', value: 30 },
+            { date: '2024-06-15', value: 25 }
+        ];
+
+        const heatMapData = [
+            { category: '微整形', period: '术前1周', value: 3 },
+            { category: '微整形', period: '术前1天', value: 5 },
+            { category: '微整形', period: '术后1天', value: 6 },
+            { category: '微整形', period: '术后1周', value: 4 },
+            { category: '微整形', period: '术后1月', value: 2 },
+            { category: '手术整形', period: '术前1周', value: 7 },
+            { category: '手术整形', period: '术前1天', value: 9 },
+            { category: '手术整形', period: '术后1天', value: 10 },
+            { category: '手术整形', period: '术后1周', value: 8 },
+            { category: '手术整形', period: '术后1月', value: 6 },
+            { category: '激光治疗', period: '术前1周', value: 2 },
+            { category: '激光治疗', period: '术前1天', value: 3 },
+            { category: '激光治疗', period: '术后1天', value: 4 },
+            { category: '激光治疗', period: '术后1周', value: 3 },
+            { category: '激光治疗', period: '术后1月', value: 1 }
+        ];
+
+        const networkData = {
+            nodes: [
+                { id: 1, name: '消费者', size: 20, degree: 3 },
+                { id: 2, name: '家人', size: 15, degree: 4 },
+                { id: 3, name: '朋友', size: 15, degree: 5 },
+                { id: 4, name: '医生', size: 18, degree: 6 },
+                { id: 5, name: '销售人员', size: 12, degree: 3 },
+                { id: 6, name: '意见领袖', size: 16, degree: 7 },
+                { id: 7, name: '社交媒体', size: 14, degree: 8 }
+            ],
+            links: [
+                { source: 1, target: 2, value: 8 },
+                { source: 1, target: 3, value: 7 },
+                { source: 1, target: 4, value: 9 },
+                { source: 1, target: 5, value: 6 },
+                { source: 1, target: 6, value: 5 },
+                { source: 1, target: 7, value: 8 },
+                { source: 2, target: 4, value: 4 },
+                { source: 3, target: 6, value: 6 },
+                { source: 3, target: 7, value: 7 },
+                { source: 4, target: 5, value: 5 },
+                { source: 6, target: 7, value: 9 }
+            ]
+        };
+
+        // 初始化图表
+        document.addEventListener('DOMContentLoaded', function() {
+            // 雷达图
+            const radarChart = new RadarChart('radar-chart', {
+                width: 600,
+                height: 400,
+                responsive: true
+            });
+            
+            // 时间序列图
+            const timeSeriesChart = new TimeSeriesChart('time-series-chart', {
+                width: 600,
+                height: 400,
+                responsive: true
+            });
+            
+            // 热力图
+            const heatMapChart = new HeatMapChart('heatmap-chart', {
+                width: 600,
+                height: 400,
+                responsive: true
+            });
+            
+            // 网络图
+            const networkChart = new NetworkChart('network-chart', {
+                width: 800,
+                height: 500,
+                responsive: true
+            });
+
+            // 设置数据
+            setTimeout(() => {
+                radarChart.setData(radarData);
+                timeSeriesChart.setData(timeSeriesData);
+                heatMapChart.setData(heatMapData);
+                networkChart.setData(networkData);
+            }, 1000);
+
+            // 交互控制
+            document.querySelectorAll('.control-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    const parent = this.parentElement;
+                    parent.querySelectorAll('.control-button').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // 这里可以添加图表更新逻辑
+                    const demographic = this.dataset.demographic;
+                    console.log('切换到:', demographic);
+                });
+            });
+
+            // 筛选器
+            document.getElementById('decision-filter').addEventListener('change', function() {
+                console.log('筛选条件:', this.value);
+                // 这里可以添加筛选逻辑
+            });
+
+            // 初始化数据导出导入系统
+            const dataManager = new DataManager();
+            
+            // 设置当前数据
+            dataManager.setCurrentData({
+                radarData,
+                timeSeriesData,
+                heatMapData,
+                networkData
+            });
+
+            // 绑定数据操作事件
+            document.getElementById('exportDataBtn').addEventListener('click', function() {
+                const format = document.getElementById('exportFormat').value;
+                dataManager.exportData(format);
+            });
+
+            document.getElementById('importDataBtn').addEventListener('click', function() {
+                document.getElementById('fileInput').click();
+            });
+
+            document.getElementById('refreshDataBtn').addEventListener('click', function() {
+                dataManager.refreshData();
+            });
+
+            document.getElementById('fileInput').addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    dataManager.importData(file);
+                }
+            });
+
+            // 更新数据状态
+            dataManager.updateDataStatus();
+        });
+    </script>
+</body>
+</html>

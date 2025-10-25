@@ -1,0 +1,192 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    医美信息质量评估表
+  </text>
+  
+  <!-- 工具说明 -->
+  <rect x="100" y="80" width="600" height="60" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    实用工具4.1
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    帮助消费者评估医美信息质量和可靠性，识别潜在信息偏见，提高信息筛选能力
+  </text>
+  
+  <!-- 三个评估维度 -->
+  <rect x="50" y="160" width="700" height="300" fill="#F3E5F5" stroke="#CE93D8" stroke-width="2" rx="10"/>
+  <text x="400" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6A1B9A">
+    评估维度与项目
+  </text>
+  
+  <!-- 信息来源评估 -->
+  <rect x="80" y="200" width="180" height="120" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="170" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    信息来源评估
+  </text>
+  <text x="170" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    1. 来源权威性 (1-5分)
+  </text>
+  <text x="170" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    2. 利益冲突披露 (1-5分)
+  </text>
+  <text x="170" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    3. 信息更新性 (1-5分)
+  </text>
+  <text x="170" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    小计: ___ 分
+  </text>
+  <text x="170" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    专业资质、透明度、时效性
+  </text>
+  
+  <!-- 内容质量评估 -->
+  <rect x="310" y="200" width="180" height="120" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="400" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    内容质量评估
+  </text>
+  <text x="400" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    4. 内容完整性 (1-5分)
+  </text>
+  <text x="400" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    5. 科学依据 (1-5分)
+  </text>
+  <text x="400" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    6. 风险披露 (1-5分)
+  </text>
+  <text x="400" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    小计: ___ 分
+  </text>
+  <text x="400" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    全面性、科学性、客观性
+  </text>
+  
+  <!-- 呈现方式评估 -->
+  <rect x="540" y="200" width="180" height="120" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="630" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    呈现方式评估
+  </text>
+  <text x="630" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    7. 语言准确性 (1-5分)
+  </text>
+  <text x="630" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    8. 客观性 (1-5分)
+  </text>
+  <text x="630" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    9. 视觉呈现 (1-5分)
+  </text>
+  <text x="630" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    小计: ___ 分
+  </text>
+  <text x="630" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    专业性、中立性、真实性
+  </text>
+  
+  <!-- 综合评估 -->
+  <rect x="100" y="340" width="600" height="100" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    综合评估结果
+  </text>
+  
+  <!-- 评分汇总 -->
+  <rect x="130" y="375" width="100" height="55" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="180" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    总分计算
+  </text>
+  <text x="180" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    九项得分相加
+  </text>
+  <text x="180" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    总分: ___ 分
+  </text>
+  
+  <!-- 质量等级 -->
+  <rect x="250" y="375" width="100" height="55" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="300" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    质量等级
+  </text>
+  <text x="300" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    优秀: 36-45分
+  </text>
+  <text x="300" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    良好: 27-35分
+  </text>
+  
+  <rect x="370" y="375" width="100" height="55" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="420" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    质量等级
+  </text>
+  <text x="420" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    一般: 18-26分
+  </text>
+  <text x="420" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    较差: 9-17分
+  </text>
+  
+  <!-- 警示信号 -->
+  <rect x="490" y="375" width="180" height="55" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="580" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    特别警示信号
+  </text>
+  <text x="580" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 来源不明/匿名
+  </text>
+  <text x="580" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 过度宣传/淡化风险
+  </text>
+  
+  <!-- 使用建议 -->
+  <rect x="100" y="460" width="600" height="80" fill="#C8E6C9" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    使用建议
+  </text>
+  
+  <!-- 建议要点 -->
+  <rect x="130" y="495" width="100" height="35" fill="#E8F5E8" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="180" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2E7D32">
+    系统评估
+  </text>
+  <text x="180" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    接触信息即使用
+  </text>
+  
+  <rect x="250" y="495" width="100" height="35" fill="#E8F5E8" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="300" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2E7D32">
+    关注风险
+  </text>
+  <text x="300" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    重视披露情况
+  </text>
+  
+  <rect x="370" y="495" width="100" height="35" fill="#E8F5E8" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="420" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2E7D32">
+    多源验证
+  </text>
+  <text x="420" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    交叉验证信息
+  </text>
+  
+  <rect x="490" y="495" width="100" height="35" fill="#E8F5E8" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="540" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2E7D32">
+    保持警惕
+  </text>
+  <text x="540" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    低分信息需谨慎
+  </text>
+  
+  <rect x="610" y="495" width="100" height="35" fill="#E8F5E8" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="660" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2E7D32">
+    定期更新
+  </text>
+  <text x="660" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    适应环境变化
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图4.5：医美信息质量评估表结构及使用指南
+  </text>
+</svg>

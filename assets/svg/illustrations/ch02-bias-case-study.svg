@@ -1,0 +1,153 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    案例分析：偏见识别与纠正流程
+  </text>
+  
+  <!-- 案例背景 -->
+  <rect x="50" y="80" width="700" height="80" fill="#FFEBEE" stroke="#F44336" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    案例背景
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#C62828">
+    某知名医美机构发布研究报告声称新抗衰老项目95%客户满意度，被广泛引用作为营销依据
+  </text>
+  <text x="400" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#C62828">
+    报告表面：500名参与者，95%满意，92%愿意推荐，配有多位客户前后对比照片和感谢信
+  </text>
+  
+  <!-- 偏见识别阶段 -->
+  <rect x="50" y="180" width="300" height="140" fill="#FFCDD2" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="200" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    偏见识别
+  </text>
+  
+  <!-- 研究设计缺陷 -->
+  <rect x="70" y="220" width="260" height="30" fill="#FFEBEE" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="200" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    研究设计缺陷：横断面调查，缺乏长期跟踪，无对照组，12分/25分
+  </text>
+  
+  <!-- 确认偏见 -->
+  <rect x="70" y="255" width="260" height="30" fill="#FFEBEE" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="200" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    确认偏见：只选择有明显改善效果的客户，排除效果不明显者
+  </text>
+  
+  <!-- 商业利益影响 -->
+  <rect x="70" y="290" width="260" height="30" fill="#FFEBEE" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="200" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    商业利益影响：研究资金完全来自机构，未披露利益关系
+  </text>
+  
+  <!-- 纠正措施阶段 -->
+  <rect x="450" y="180" width="300" height="140" fill="#C8E6C9" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="600" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    纠正措施
+  </text>
+  
+  <!-- 重新设计研究 -->
+  <rect x="470" y="220" width="260" height="30" fill="#E8F5E8" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="600" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    重新设计：随机对照组，长期跟踪，客观指标，多样本
+  </text>
+  
+  <!-- 补充研究证据 -->
+  <rect x="470" y="255" width="260" height="30" fill="#E8F5E8" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="600" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    补充证据：随机对照试验，长期效果，独立第三方评估
+  </text>
+  
+  <!-- 修正传播策略 -->
+  <rect x="470" y="290" width="260" height="30" fill="#E8F5E8" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="600" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    修正策略：准确报告局限性，避免过度宣传，提供完整风险信息
+  </text>
+  
+  <!-- 流程箭头 -->
+  <path d="M 350 250 L 450 250" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 纠正结果 -->
+  <rect x="150" y="340" width="500" height="80" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    纠正结果
+  </text>
+  <text x="400" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#E65100">
+    真实满意度：78%（原95%），15%客户出现并发症需要额外医疗处理
+  </text>
+  <text x="400" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#E65100">
+    短期业绩受影响，但长期声誉和客户信任得到提升
+  </text>
+  
+  <!-- 案例启示 -->
+  <rect x="50" y="440" width="700" height="100" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="400" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6A1B9A">
+    案例启示
+  </text>
+  
+  <!-- 启示要点 -->
+  <rect x="80" y="480" width="140" height="45" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="150" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    警惕商业利益影响
+  </text>
+  <text x="150" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    商业资助研究存在利益冲突
+  </text>
+  <text x="150" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    需要谨慎评估
+  </text>
+  
+  <rect x="240" y="480" width="140" height="45" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="310" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    重视研究方法学
+  </text>
+  <text x="310" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    研究设计比结果更重要
+  </text>
+  <text x="310" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    方法缺陷导致不可靠
+  </text>
+  
+  <rect x="400" y="480" width="140" height="45" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="470" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    关注长期效果
+  </text>
+  <text x="470" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    医美效果需长期跟踪
+  </text>
+  <text x="470" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    短期结果可能误导
+  </text>
+  
+  <rect x="560" y="480" width="140" height="45" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="630" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    平衡商业与伦理
+  </text>
+  <text x="630" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    长期成功建立在
+  </text>
+  <text x="630" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    科学和伦理基础上
+  </text>
+  
+  <!-- 核心结论 -->
+  <rect x="200" y="560" width="400" height="30" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="2" rx="10"/>
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0277BD">
+    科学诚信是医美行业健康发展的基石
+  </text>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图2.6：偏见识别与纠正案例分析流程及启示
+  </text>
+</svg>

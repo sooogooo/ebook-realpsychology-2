@@ -1,0 +1,1235 @@
+/**
+ * 情绪状态流程图样式
+ * Emotional State Flow Diagram Styles
+ */
+
+/* 情绪流程容器 */
+.emotional-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+/* 流程类型选择器 */
+.flow-selector {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.selector-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.selector-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.selector-header p {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.flow-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.flow-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 2px solid #e9ecef;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.flow-card:hover {
+    border-color: #98d8c8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.flow-card.active {
+    border-color: #98d8c8;
+    background: rgba(152, 216, 200, 0.1);
+}
+
+.flow-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #98d8c8 0%, #b8a9c9 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.flow-icon .material-symbols-outlined {
+    font-size: 30px;
+    color: white;
+}
+
+.flow-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.flow-card p {
+    color: #6c757d;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* 流程可视化 */
+.flow-visualization {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+}
+
+.viz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.viz-title h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.viz-title p {
+    color: #6c757d;
+    font-size: 0.875rem;
+    margin: 0.25rem 0 0 0;
+}
+
+.viz-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.view-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    background: white;
+    color: #6c757d;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.view-button:hover {
+    border-color: #98d8c8;
+    color: #98d8c8;
+}
+
+.view-button.active {
+    background: #98d8c8;
+    border-color: #98d8c8;
+    color: white;
+}
+
+.action-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.control-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    background: white;
+    color: #6c757d;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.control-button:hover {
+    border-color: #98d8c8;
+    color: #98d8c8;
+}
+
+.control-button .material-symbols-outlined {
+    font-size: 16px;
+}
+
+/* 流程控制 */
+.flow-controls {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e9ecef;
+}
+
+.play-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.play-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #98d8c8;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.play-button:hover {
+    background: #7fc7b8;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 6px;
+    background: #e9ecef;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #98d8c8;
+    border-radius: 3px;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.speed-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.speed-control label {
+    font-size: 0.75rem;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* 情绪流程图表 */
+.emotional-flow-chart {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* 流程节点样式 */
+.flow-node,
+.network-node,
+.time-point {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.flow-node circle,
+.network-node circle,
+.time-point circle {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    transition: all 0.3s ease;
+}
+
+.flow-node:hover circle,
+.network-node:hover circle,
+.time-point:hover circle {
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+    transform: scale(1.1);
+}
+
+.flow-node text,
+.network-node text {
+    pointer-events: none;
+    user-select: none;
+}
+
+/* 连接线样式 */
+.flow-link,
+.network-link {
+    fill: none;
+    stroke: #e9ecef;
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+.flow-link:hover,
+.network-link:hover {
+    stroke: #98d8c8;
+    stroke-width: 3;
+}
+
+/* 情绪类型颜色 */
+.emotion-positive {
+    fill: #98d8c8;
+}
+
+.emotion-neutral {
+    fill: #b8a9c9;
+}
+
+.emotion-negative {
+    fill: #ff9a8b;
+}
+
+.emotion-anxiety {
+    fill: #f4a261;
+}
+
+.emotion-excitement {
+    fill: #4ecdc4;
+}
+
+.emotion-satisfaction {
+    fill: #a8dadc;
+}
+
+.emotion-fear {
+    fill: #e76f51;
+}
+
+.emotion-confidence {
+    fill: #457b9d;
+}
+
+/* 情绪状态面板 */
+.emotional-states {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+}
+
+.states-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.states-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.states-header p {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.state-details {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    min-height: 200px;
+}
+
+.state-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #6c757d;
+    text-align: center;
+}
+
+.state-placeholder .material-symbols-outlined {
+    font-size: 48px;
+    margin-bottom: 1rem;
+    color: #b8a9c9;
+}
+
+.state-details-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.state-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.state-header h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.state-type {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+}
+
+.state-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.info-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #2c3e50;
+    min-width: 80px;
+}
+
+.info-value {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #98d8c8;
+}
+
+.info-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.state-characteristics,
+.state-recommendations {
+    background: white;
+    border-radius: 6px;
+    padding: 1rem;
+    border: 1px solid #e9ecef;
+}
+
+.state-characteristics h5,
+.state-recommendations h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+}
+
+.characteristics-list,
+.recommendations-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.characteristics-list li,
+.recommendations-list li {
+    font-size: 0.875rem;
+    color: #6c757d;
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.4;
+}
+
+.characteristics-list li:before,
+.recommendations-list li:before {
+    content: '•';
+    position: absolute;
+    left: 0.5rem;
+    color: #98d8c8;
+    font-weight: bold;
+}
+
+/* 情绪转换分析 */
+.emotional-transitions {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+}
+
+.transitions-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.transitions-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.transitions-header p {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.transitions-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.transitions-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stat-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #e9ecef;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #98d8c8;
+}
+
+.transitions-insights {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.transitions-insights h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.insight-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.insight-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.insight-icon {
+    width: 40px;
+    height: 40px;
+    background: #98d8c8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.insight-icon .material-symbols-outlined {
+    font-size: 20px;
+    color: white;
+}
+
+.insight-content h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+.insight-content p {
+    font-size: 0.875rem;
+    color: #6c757d;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* 风险因素 */
+.risk-factors {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+}
+
+.risk-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.risk-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.risk-header p {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.risk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.risk-card {
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 2px solid;
+}
+
+.risk-card.high-risk {
+    background: rgba(231, 111, 81, 0.1);
+    border-color: #e76f51;
+}
+
+.risk-card.medium-risk {
+    background: rgba(244, 162, 97, 0.1);
+    border-color: #f4a261;
+}
+
+.risk-card.low-risk {
+    background: rgba(152, 216, 200, 0.1);
+    border-color: #98d8c8;
+}
+
+.risk-header-card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.risk-header-card .material-symbols-outlined {
+    font-size: 24px;
+}
+
+.risk-card.high-risk .risk-header-card .material-symbols-outlined {
+    color: #e76f51;
+}
+
+.risk-card.medium-risk .risk-header-card .material-symbols-outlined {
+    color: #f4a261;
+}
+
+.risk-card.low-risk .risk-header-card .material-symbols-outlined {
+    color: #98d8c8;
+}
+
+.risk-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.risk-card.high-risk h4 {
+    color: #e76f51;
+}
+
+.risk-card.medium-risk h4 {
+    color: #f4a261;
+}
+
+.risk-card.low-risk h4 {
+    color: #98d8c8;
+}
+
+.risk-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.risk-list li {
+    font-size: 0.875rem;
+    color: #6c757d;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.risk-list li:last-child {
+    border-bottom: none;
+}
+
+.risk-list li:before {
+    content: '•';
+    color: #98d8c8;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* 干预策略 */
+.intervention-strategies {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+}
+
+.strategies-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.strategies-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.strategies-header p {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.strategies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.strategy-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.strategy-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.strategy-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #98d8c8 0%, #b8a9c9 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.strategy-icon .material-symbols-outlined {
+    font-size: 24px;
+    color: white;
+}
+
+.strategy-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+}
+
+.strategy-card p {
+    font-size: 0.875rem;
+    color: #6c757d;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.strategy-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.25rem 0.5rem;
+    background: #98d8c8;
+    color: white;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* 工具提示 */
+.flow-tooltip {
+    position: absolute;
+    padding: 0.75rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    pointer-events: none;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    max-width: 250px;
+}
+
+.flow-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+/* 情绪曲线 */
+.emotion-curve {
+    stroke: #98d8c8;
+    stroke-width: 3;
+    fill: none;
+    opacity: 0.8;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .emotional-container {
+        padding: 1rem;
+    }
+    
+    .flow-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .viz-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .transitions-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .risk-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .strategies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .emotional-flow-chart {
+        height: 400px;
+    }
+    
+    .flow-controls {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .play-controls {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .progress-bar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .emotional-container {
+        padding: 0.75rem;
+    }
+    
+    .selector-header h2,
+    .viz-title h3,
+    .states-header h3,
+    .transitions-header h3,
+    .risk-header h3,
+    .strategies-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .flow-card {
+        padding: 1rem;
+    }
+    
+    .view-button,
+    .control-button {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .emotional-flow-chart {
+        height: 300px;
+    }
+    
+    .flow-tooltip {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+        max-width: 200px;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .flow-selector,
+    .flow-controls,
+    .viz-controls,
+    .emotional-states,
+    .emotional-transitions,
+    .risk-factors,
+    .intervention-strategies {
+        display: none;
+    }
+    
+    .emotional-container,
+    .flow-visualization {
+        box-shadow: none;
+        border: 1px solid #e9ecef;
+    }
+    
+    .emotional-flow-chart {
+        height: 500px;
+    }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.slide-in {
+    animation: slideIn 0.6s ease-out;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* 可访问性增强 */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* 高对比度模式 */
+@media (prefers-contrast: high) {
+    .flow-card,
+    .view-button,
+    .control-button,
+    .emotional-container,
+    .flow-visualization,
+    .emotional-states,
+    .emotional-transitions,
+    .risk-factors,
+    .intervention-strategies {
+        border: 2px solid #000;
+    }
+    
+    .flow-node circle,
+    .network-node circle,
+    .time-point circle {
+        stroke: #000;
+        stroke-width: 2;
+    }
+    
+    .flow-link,
+    .network-link {
+        stroke: #000;
+        stroke-width: 2;
+    }
+}
+
+/* 减少动画模式 */
+@media (prefers-reduced-motion: reduce) {
+    .flow-card,
+    .view-button,
+    .control-button,
+    .flow-node,
+    .network-node,
+    .time-point,
+    .flow-link,
+    .network-link,
+    .progress-fill {
+        transition: none;
+    }
+    
+    .fade-in,
+    .slide-in,
+    .pulse {
+        animation: none;
+    }
+}
+
+/* 暗色主题支持 */
+@media (prefers-color-scheme: dark) {
+    .emotional-container,
+    .flow-visualization,
+    .emotional-states,
+    .emotional-transitions,
+    .risk-factors,
+    .intervention-strategies {
+        background: #2c3e50;
+        color: #ecf0f1;
+        border-color: #7f8c8d;
+    }
+    
+    .flow-selector,
+    .flow-card,
+    .state-details,
+    .transitions-stats,
+    .transitions-insights,
+    .strategy-card {
+        background: #34495e;
+        color: #ecf0f1;
+        border-color: #7f8c8d;
+    }
+    
+    .selector-header h2,
+    .viz-title h3,
+    .states-header h3,
+    .transitions-header h3,
+    .risk-header h3,
+    .strategies-header h3,
+    .state-header h4,
+    .transitions-insights h4,
+    .insight-content h5,
+    .strategy-card h4 {
+        color: #ecf0f1;
+    }
+    
+    .selector-header p,
+    .viz-title p,
+    .states-header p,
+    .transitions-header p,
+    .risk-header p,
+    .strategies-header p,
+    .flow-card p,
+    .insight-content p,
+    .strategy-card p,
+    .risk-list li,
+    .characteristics-list li,
+    .recommendations-list li {
+        color: #bdc3c7;
+    }
+    
+    .view-button,
+    .control-button {
+        background: #34495e;
+        color: #ecf0f1;
+        border-color: #7f8c8d;
+    }
+    
+    .view-button:hover,
+    .control-button:hover {
+        border-color: #98d8c8;
+        color: #98d8c8;
+    }
+    
+    .view-button.active,
+    .control-button.active {
+        background: #98d8c8;
+        color: #2c3e50;
+        border-color: #98d8c8;
+    }
+    
+    .flow-link,
+    .network-link {
+        stroke: #7f8c8d;
+    }
+    
+    .emotional-flow-chart {
+        background: #34495e;
+    }
+    
+    .progress-bar {
+        background: #7f8c8d;
+    }
+}
+
+/* 焦点样式 */
+.flow-card:focus,
+.view-button:focus,
+.control-button:focus,
+.flow-node:focus,
+.network-node:focus,
+.time-point:focus,
+.strategy-card:focus {
+    outline: 2px solid #98d8c8;
+    outline-offset: 2px;
+}
+
+/* 键盘导航 */
+.flow-card.keyboard-focus,
+.view-button.keyboard-focus,
+.control-button.keyboard-focus,
+.strategy-card.keyboard-focus {
+    outline: 2px solid #98d8c8;
+    outline-offset: 2px;
+}
+
+/* 特殊效果 */
+.node-selected {
+    stroke: #ff6b6b !important;
+    stroke-width: 3 !important;
+    filter: drop-shadow(0 0 8px rgba(255, 107, 107, 0.5)) !important;
+}
+
+.node-highlighted {
+    stroke: #98d8c8 !important;
+    stroke-width: 3 !important;
+    filter: drop-shadow(0 0 8px rgba(152, 216, 200, 0.5)) !important;
+}
+
+/* 交互反馈 */
+.flow-card:hover,
+.strategy-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 数据可视化增强 */
+.flow-stats {
+    display: flex;
+    justify-content: space-around;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.flow-legend {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

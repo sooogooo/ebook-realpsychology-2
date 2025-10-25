@@ -1,0 +1,153 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 研究过程流程图 -->
+  <defs>
+    <linearGradient id="process-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="process-grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="process-grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="process-grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="process-grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    研究过程流程图
+  </text>
+  
+  <!-- 研究流程节点 -->
+  <g transform="translate(400, 320)">
+    <!-- 1. 问题定义 -->
+    <g transform="translate(-300, -150)">
+      <ellipse rx="70" ry="35" fill="url(#process-grad1)" filter="url(#shadow)" data-interactive="true" data-tooltip="问题定义：明确研究问题和目标" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">问题定义</text>
+    </g>
+    
+    <!-- 2. 文献综述 -->
+    <g transform="translate(-150, -50)">
+      <ellipse rx="70" ry="35" fill="url(#process-grad2)" filter="url(#shadow)" data-interactive="true" data-tooltip="文献综述：梳理现有研究和理论" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">文献综述</text>
+    </g>
+    
+    <!-- 3. 研究设计 -->
+    <g transform="translate(0, -150)">
+      <ellipse rx="70" ry="35" fill="url(#process-grad3)" filter="url(#shadow)" data-interactive="true" data-tooltip="研究设计：制定研究方案和方法" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">研究设计</text>
+    </g>
+    
+    <!-- 4. 数据收集 -->
+    <g transform="translate(150, -50)">
+      <ellipse rx="70" ry="35" fill="url(#process-grad4)" filter="url(#shadow)" data-interactive="true" data-tooltip="数据收集：实施研究并收集数据" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">数据收集</text>
+    </g>
+    
+    <!-- 5. 数据分析 -->
+    <g transform="translate(300, -150)">
+      <ellipse rx="70" ry="35" fill="url(#process-grad5)" filter="url(#shadow)" data-interactive="true" data-tooltip="数据分析：处理和分析研究数据" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">数据分析</text>
+    </g>
+    
+    <!-- 6. 结果解释 -->
+    <g transform="translate(300, 50)">
+      <ellipse rx="70" ry="35" fill="url(#process-grad1)" filter="url(#shadow)" data-interactive="true" data-tooltip="结果解释：解释研究发现和意义" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">结果解释</text>
+    </g>
+    
+    <!-- 7. 结论建议 -->
+    <g transform="translate(150, 150)">
+      <ellipse rx="70" ry="35" fill="url(#process-grad2)" filter="url(#shadow)" data-interactive="true" data-tooltip="结论建议：形成结论和实践建议" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">结论建议</text>
+    </g>
+    
+    <!-- 8. 报告撰写 -->
+    <g transform="translate(0, 50)">
+      <ellipse rx="70" ry="35" fill="url(#process-grad3)" filter="url(#shadow)" data-interactive="true" data-tooltip="报告撰写：撰写研究报告和论文" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">报告撰写</text>
+    </g>
+    
+    <!-- 9. 同行评议 -->
+    <g transform="translate(-150, 150)">
+      <ellipse rx="70" ry="35" fill="url(#process-grad4)" filter="url(#shadow)" data-interactive="true" data-tooltip="同行评议：接受同行评审和反馈" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">同行评议</text>
+    </g>
+    
+    <!-- 10. 发表应用 -->
+    <g transform="translate(-300, 50)">
+      <ellipse rx="70" ry="35" fill="url(#process-grad5)" filter="url(#shadow)" data-interactive="true" data-tooltip="发表应用：发表成果并实践应用" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">发表应用</text>
+    </g>
+    
+    <!-- 连接线 -->
+    <path d="M -230 -150 Q -190 -100 -150 -50" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -80 -50 Q -40 -100 0 -150" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 70 -150 Q 110 -100 150 -50" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 220 -50 Q 260 -100 300 -150" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 300 -115 L 300 15" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 230 50 Q 190 100 150 150" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 80 150 Q 40 100 0 50" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -70 50 Q -110 100 -150 150" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -220 150 Q -260 100 -300 50" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- 反馈循环 -->
+    <path d="M -300 15 Q -350 -70 -300 -115" stroke="#e74c3c" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+    <text x="-380" y="-50" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">反馈循环</text>
+  </g>
+  
+  <!-- 阶段说明 -->
+  <g transform="translate(50, 480)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">研究阶段特征：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 准备阶段：问题、文献、设计</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 实施阶段：数据收集与分析</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 总结阶段：解释、结论、报告</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 应用阶段：评议、发表、实践</text>
+  </g>
+  
+  <!-- 质量控制 -->
+  <g transform="translate(450, 480)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">质量控制要点：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 科学性：方法规范、逻辑严谨</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 客观性：数据真实、分析客观</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 实用性：结果有用、应用价值</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 伦理性：符合伦理、保护隐私</text>
+  </g>
+  
+  <!-- 流程动画效果 -->
+  <circle r="5" fill="#667eea">
+    <animateMotion dur="8s" repeatCount="indefinite">
+      <mpath href="#process-flow"/>
+    </animateMotion>
+  </circle>
+  
+  <!-- 定义流程路径 -->
+  <path id="process-flow" d="M 100 170 Q 250 270 400 170 Q 550 270 700 170 Q 700 370 550 470 Q 400 370 250 470 Q 100 370 100 170" fill="none"/>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各阶段查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

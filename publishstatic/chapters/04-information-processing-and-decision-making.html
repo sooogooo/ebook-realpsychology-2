@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="医美消费心理学第四章：信息处理与决策过程 - 深入分析信息搜索行为、风险感知、术后满意度和决策偏差，提供实用评估工具和案例分析。">
+    <meta name="keywords" content="医美消费心理学,信息处理,决策过程,风险感知,满意度评估,决策偏差">
+    <meta name="author" content="重庆联合丽格科技有限公司">
+    <title>信息处理与决策过程 - 医美消费心理学</title>
+    <link rel="icon" type="image/png" href="https://docs.bccsw.cn/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/inline-svg-icons.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gray: #f8f9fa;
+            --secondary-gray: #e9ecef;
+            --text-primary: #2c3e50;
+            --text-secondary: #6c757d;
+            --accent-mint: #98d8c8;
+            --accent-lavender: #b8a9c9;
+            --accent-coral: #ff9a8b;
+            --accent-rose: #f4a261;
+            --border-light: #dee2e6;
+            --shadow-light: 0 2px 8px rgba(0,0,0,0.08);
+            --shadow-medium: 0 4px 16px rgba(0,0,0,0.12);
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--primary-gray);
+            color: var(--text-primary);
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: var(--shadow-light);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 400;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-mint);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: white;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .breadcrumb-nav a:hover {
+            color: var(--text-primary);
+        }
+
+        .breadcrumb-nav .separator {
+            color: var(--text-secondary);
+        }
+
+        /* Content */
+        .content-wrapper {
+            background: white;
+            margin: 2rem 0;
+            border-radius: 16px;
+            box-shadow: var(--shadow-light);
+            overflow: hidden;
+        }
+
+        .chapter-header {
+            background: linear-gradient(135deg, var(--accent-mint) 0%, var(--accent-lavender) 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .chapter-number {
+            font-size: 4rem;
+            font-weight: 200;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .chapter-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        .chapter-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .chapter-content {
+            padding: 3rem 2rem;
+        }
+
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .content-section h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--accent-mint);
+            padding-bottom: 0.5rem;
+        }
+
+        .content-section h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 2rem 0 1rem 0;
+            color: var(--text-primary);
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .content-section ul, .content-section ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .content-section li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 0.8rem;
+            color: var(--text-primary);
+        }
+
+        .tool-box {
+            background: var(--primary-gray);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .tool-box h4 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .tool-box .tool-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .case-study {
+            background: linear-gradient(135deg, var(--accent-coral) 0%, var(--accent-rose) 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .case-study h4 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .case-study p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Chapter Navigation */
+        .chapter-nav {
+            background: var(--primary-gray);
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 12px;
+        }
+
+        .chapter-nav h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            text-align: center;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .nav-button {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-button:hover {
+            background: var(--accent-mint);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .nav-button.prev {
+            justify-content: flex-start;
+        }
+
+        .nav-button.next {
+            justify-content: flex-end;
+        }
+
+        .nav-button .ma-icon {
+            font-size: 1.2rem;
+        }
+
+        /* Icon Styles */
+        .ma-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+            line-height: 1;
+        }
+
+        /* SVG Icon Styles */
+        .svg-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.2em;
+            height: 1.2em;
+            vertical-align: middle;
+            line-height: 1;
+        }
+
+        .svg-icon.svg-icon-small {
+            width: 1em;
+            height: 1em;
+        }
+
+        .svg-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: currentColor;
+        }
+
+        .ma-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: currentColor;
+        }
+
+        .ma-icon.ma-icon-sm {
+            font-size: 0.875rem;
+        }
+
+        .ma-icon.ma-icon-md {
+            font-size: 1rem;
+        }
+
+        .ma-icon.ma-icon-lg {
+            font-size: 1.25rem;
+        }
+
+        .ma-icon.ma-icon-xl {
+            font-size: 1.5rem;
+        }
+
+        .article-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-icon .ma-icon {
+            color: var(--accent-mint);
+            font-size: 1.5rem;
+        }
+
+        .inline-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            vertical-align: middle;
+        }
+
+        .inline-icon .ma-icon {
+            font-size: 1em;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--accent-mint) 0%, var(--accent-lavender) 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .highlight-box .ma-icon {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .key-point {
+            border-left: 4px solid var(--accent-mint);
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .key-point .ma-icon {
+            color: var(--accent-mint);
+            margin-right: 0.5rem;
+        }
+
+        .tip-box {
+            background: var(--primary-gray);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .tip-box .ma-icon {
+            color: var(--accent-coral);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .chapter-icon {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .chapter-icon .ma-icon {
+            font-size: 3rem;
+            color: var(--accent-mint);
+        }
+
+        .section-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-icon .ma-icon {
+            color: var(--accent-lavender);
+            font-size: 1.75rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            line-height: 1.8;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-bottom a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .chapter-header {
+                padding: 2rem 1rem;
+            }
+
+            .chapter-number {
+                font-size: 3rem;
+            }
+
+            .chapter-title {
+                font-size: 2rem;
+            }
+
+            .chapter-content {
+                padding: 2rem 1rem;
+            }
+
+            .content-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .content-section h3 {
+                font-size: 1.3rem;
+            }
+
+            .content-section p {
+                font-size: 1rem;
+            }
+
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <h1>
+                    <span class="ma-icon ma-icon-psychology">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C7 2 3 6 3 11c0 2.4 1.2 4.5 3 6v5l6-2 6 2v-5c1.8-1.5 3-3.6 3-6 0-5-4-9-9-9z" fill="currentColor"/>
+                            <circle cx="12" cy="11" r="2" fill="white"/>
+                        </svg>
+                    </span>
+                    医美消费心理学
+                </h1>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#overview">概述</a></li>
+                <li><a href="index.html#chapters">章节</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html">首页</a>
+                <span class="separator">›</span>
+                <a href="index.html#chapters">章节</a>
+                <span class="separator">›</span>
+                <span>信息处理与决策过程</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="chapter-header">
+                <div class="chapter-icon">
+                    <span class="ma-icon ma-icon-decision ma-icon-xl" style="color: white;">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" fill="currentColor"/>
+                        </svg>
+                    </span>
+                    <div>
+                        <div class="chapter-number">04</div>
+                        <h1 class="chapter-title">信息处理与决策过程</h1>
+                        <p class="chapter-subtitle">深入分析信息搜索行为、风险感知、术后满意度和决策偏差</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chapter-content">
+                <div class="content-section">
+                    <h2>4.1 信息搜索行为模式</h2>
+                    <p>医美消费的信息搜索过程是消费者决策的关键环节，它直接影响着消费者的认知、态度和行为选择。理解医美消费者的信息搜索行为模式，对于把握决策过程的内在机制具有重要意义。</p>
+                    
+                    <p>医美消费的信息搜索具有独特的复杂性。首先，医美信息的性质特殊，它既包含专业的医学知识，又包含主观的美学评价，这种双重性质使得信息的理解和评估变得困难。其次，医美信息的来源多样，包括专业医疗机构、商业推广、媒体报道、个人分享等，不同来源的信息质量和可靠性差异很大。再次，医美信息的风险性较高，错误的信息可能导致严重的后果，这种高风险性增加了信息搜索的难度和重要性。</p>
+                    
+                    <h3>信息搜索的阶段特征</h3>
+                    <p>在我们的研究中，对1500名医美消费者的信息搜索行为进行了系统调查。结果显示，消费者的信息搜索行为可以分为几个明显的阶段：需求识别阶段、初步搜索阶段、深入评估阶段、决策确认阶段。每个阶段都有其独特的搜索特点和需求。</p>
+                    
+                    <!-- Decision Process Visualization -->
+                    <div class="concept-visualization svg-animated">
+                        <h4>消费者决策过程模型</h4>
+                        <div class="svg-container" style="text-align: center; margin: 2rem 0;">
+                            <img src="assets/svg/concepts/decision-process.svg" alt="消费者决策过程模型" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        </div>
+                        <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                            <svg class="svg-icon svg-icon-small" viewBox="0 0 24 24">
+                                <g stroke="#98d8c8" stroke-width="1.5" fill="none">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </g>
+                            </svg>
+                            决策过程是一个循环的系统，每个阶段都会影响下一阶段，同时受到多种外部因素的影响
+                        </p>
+                    </div>
+                    
+                    <!-- Information Processing Flow -->
+                    <div class="concept-visualization svg-animated">
+                        <h4>信息处理流程模型</h4>
+                        <div class="svg-container" style="text-align: center; margin: 2rem 0;">
+                            <img src="assets/svg/chapter-04-information/information-processing-flow.svg" alt="信息处理流程模型" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        </div>
+                        <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                            <svg class="svg-icon svg-icon-small" viewBox="0 0 24 24" style="width: 16px; height: 16px; vertical-align: middle;">
+                                <g stroke="#ff9a8b" stroke-width="1.5" fill="none">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 2v10m0 0l-4-4m4 4l4-4"/>
+                                </g>
+                            </svg>
+                            信息从接收到处理的完整流程，包括注意、编码、存储和提取等关键环节
+                        </p>
+                    </div>
+                    
+                    <p><strong>需求识别阶段</strong>是信息搜索的起点，消费者在这个阶段开始意识到自己的医美需求，并产生信息搜索的动机。我们的研究发现，需求识别通常由特定的触发事件引起，如看到他人的医美效果、听到朋友的推荐、遭遇外貌相关的负面评价等。这个阶段的信息搜索相对被动，消费者主要接收环境中的信息，而非主动搜索。</p>
+                    
+                    <!-- Attention Allocation Model -->
+                    <div class="concept-visualization svg-animated">
+                        <h4>注意力分配模型</h4>
+                        <div class="svg-container" style="text-align: center; margin: 2rem 0;">
+                            <img src="assets/svg/chapter-04-information/attention-allocation-model.svg" alt="注意力分配模型" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        </div>
+                        <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                            <svg class="svg-icon svg-icon-small" viewBox="0 0 24 24" style="width: 16px; height: 16px; vertical-align: middle;">
+                                <g stroke="#98d8c8" stroke-width="1.5" fill="none">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 2v10m0 0l-4-4m4 4l4-4"/>
+                                </g>
+                            </svg>
+                            消费者在信息处理过程中的注意力分配机制和影响因素
+                        </p>
+                    </div>
+                    
+                    <p><strong>初步搜索阶段</strong>是消费者开始主动寻找相关信息的过程。在这个阶段，消费者通常会从最容易获取的信息渠道开始，如搜索引擎、社交媒体、朋友推荐等。我们的研究显示，超过80%的消费者会在初步搜索阶段使用搜索引擎，70%会查看社交媒体上的相关内容，60%会询问朋友的意见。</p>
+                    
+                    <p><strong>深入评估阶段</strong>是消费者对信息进行深入分析和评估的过程。在这个阶段，消费者开始关注信息的细节和可靠性，可能会咨询专业人士、查看机构资质、了解风险和效果等。我们的研究发现，只有约40%的消费者会进入深入评估阶段，这个阶段的信息搜索更加理性和系统化。</p>
+                    
+                    <p><strong>决策确认阶段</strong>是消费者基于收集到的信息做出最终决策的过程。在这个阶段，消费者可能会再次确认关键信息，咨询专业人士的意见，评估风险和收益等。我们的研究显示，约50%的消费者会在决策前进行最后的确认搜索，这反映了消费者对决策的谨慎态度。</p>
+                    
+                    <h3>信息渠道的选择与信任</h3>
+                    <p>信息搜索的渠道选择是影响搜索效果的重要因素。在我们的研究中，发现消费者主要使用以下几种信息渠道：互联网渠道（搜索引擎、专业网站、社交媒体等）、人际渠道（朋友、家人、同事等）、专业渠道（医生、咨询师等）、媒体渠道（电视、杂志、报纸等）。不同渠道的使用频率和信任度存在显著差异。</p>
+                    
+                    <p><strong>互联网渠道</strong>是目前消费者最常用的信息渠道，约90%的消费者会使用互联网搜索医美信息。然而，互联网信息的质量参差不齐，消费者需要具备较强的信息筛选能力。我们的研究发现，消费者对互联网信息的信任度相对较低，只有约30%的消费者表示完全信任互联网上的医美信息。</p>
+                    
+                    <p><strong>人际渠道</strong>在医美信息搜索中起着重要作用。约70%的消费者会向朋友或家人咨询医美信息，这种渠道的信息通常具有较高的可信度。我们的研究发现，来自朋友或家人的推荐对消费者的决策影响很大，特别是那些有过医美经历的朋友的分享。</p>
+                    
+                    <p><strong>专业渠道</strong>是最可靠的信息来源，但使用率相对较低。只有约40%的消费者会直接咨询医生或专业人士，这可能与专业咨询的时间成本和经济成本有关。我们的研究发现，那些咨询过专业人士的消费者，其决策的满意度和合理性都显著高于没有咨询的消费者。</p>
+                    
+                    <h3>信息搜索的挑战与偏差</h3>
+                    <p>信息搜索的深度和广度对决策质量有重要影响。在我们的研究中，发现信息搜索的深度和广度与决策的合理性呈正相关。那些进行深入和广泛信息搜索的消费者，其决策的满意度和后悔率都显著优于那些信息搜索不足的消费者。</p>
+                    
+                    <p>然而，信息搜索也存在一些常见的偏差和问题。<strong>信息过载</strong>是最常见的问题之一，消费者面对大量信息时，往往难以有效筛选和评估。我们的研究发现，约60%的消费者表示在信息搜索过程中感到困惑和不知所措。</p>
+                    
+                    <p><strong>确认偏见</strong>是另一个常见的问题，消费者倾向于寻找支持自己已有观点的信息，而忽视那些与自己观点相悖的信息。我们的研究发现，约70%的消费者在信息搜索过程中表现出确认偏见，这种偏见可能导致决策的片面性。</p>
+                    
+                    <p><strong>信息不对称</strong>是医美信息搜索中的核心问题。消费者缺乏专业的医学知识，难以准确评估信息的质量和可靠性。我们的研究发现，约80%的消费者表示在理解专业医美信息时存在困难，这种信息不对称可能导致消费者的错误决策。</p>
+                </div>
+
+                <div class="content-section">
+                    <h2>4.2 风险感知与评估</h2>
+                    <p>风险感知是医美消费决策中的核心环节，它直接影响着消费者的决策过程和行为选择。医美消费涉及多种类型的风险，包括生理风险、心理风险、财务风险和社会风险等，这些风险的不同感知和评估方式，构成了消费者决策的重要基础。</p>
+                  
+                  <!-- Risk Perception Model -->
+                  <div class="concept-visualization svg-animated">
+                      <h4>风险感知模型</h4>
+                      <div class="svg-container" style="text-align: center; margin: 2rem 0;">
+                          <img src="assets/svg/chapter-04-information/risk-perception-model.svg" alt="风险感知模型" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                      </div>
+                      <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                          <svg class="svg-icon svg-icon-small" viewBox="0 0 24 24" style="width: 16px; height: 16px; vertical-align: middle;">
+                              <g stroke="#ff9a8b" stroke-width="1.5" fill="none">
+                                  <circle cx="12" cy="12" r="10"/>
+                                  <path d="M12 2v10m0 0l-4-4m4 4l4-4"/>
+                              </g>
+                          </svg>
+                          消费者对医美风险的感知机制、评估维度和影响因素
+                      </p>
+                  </div>
+                    
+                    <h3>风险类型的多维分析</h3>
+                    <p><strong>生理风险</strong>是医美消费中最直接和最显著的风险类型。它包括手术并发症、感染、疤痕、效果不理想等可能的生理问题。在我们的研究中，发现消费者对生理风险的感知存在明显的个体差异。约40%的消费者对生理风险表现出过度担忧，这种担忧可能导致决策延迟或放弃；而约30%的消费者则对生理风险认识不足，这种低估可能导致轻率的决策。</p>
+                    
+                    <p><strong>心理风险</strong>是医美消费中常被忽视但同样重要的风险类型。它包括术后后悔、焦虑、抑郁、自我认同问题等可能的心理问题。在我们的研究中，发现约25%的医美消费者经历过不同程度的心理风险，这些心理问题往往比生理问题更难处理和恢复。</p>
+                    
+                    <p><strong>财务风险</strong>在医美消费中也不容忽视。医美项目通常价格不菲，而且可能需要后续的维护和修复，这些都构成财务风险。在我们的研究中，发现约35%的消费者在医美消费后面临不同程度的财务压力，这种压力可能影响他们的生活质量和心理健康。</p>
+                    
+                    <p><strong>社会风险</strong>是医美消费中较为特殊的风险类型。它包括他人评价、社会认同、关系变化等可能的社会问题。在我们的研究中，发现约20%的消费者在医美后经历了不同程度的社会风险，这些风险可能来自家庭、朋友、同事等社会关系网络。</p>
+                    
+                    <h3>风险感知的影响因素</h3>
+                    <p>生理风险感知的影响因素复杂多样。个人特质是重要的影响因素，那些具有高风险厌恶特质的消费者，通常对生理风险更为敏感。信息获取也起着关键作用，那些接触过风险信息的消费者，对生理风险的感知更为准确。我们的研究发现，经历过医美并发症的消费者，其生理风险感知显著高于没有经历过的人。</p>
+                    
+                    <p>心理风险的形成机制复杂而微妙。期望不匹配是心理风险的主要来源，当实际效果与期望存在差距时，消费者容易产生失望和后悔。社会影响也是重要因素，当消费者的医美决策受到社会压力驱动时，即使技术成功，也可能产生心理问题。我们的研究发现，那些由内在动机驱动的消费者，其心理风险显著低于由外在动机驱动的消费者。</p>
+                    
+                    <p>财务风险的感知与个人经济状况密切相关。高收入群体对财务风险的感知通常较低，而低收入群体则更为敏感。我们的研究发现，财务风险感知与消费决策呈负相关，那些对财务风险较为敏感的消费者，其消费决策更为谨慎和理性。</p>
+                    
+                    <p>社会风险的感知与文化背景密切相关。在集体主义文化中，社会风险的感知通常更为强烈；而在个人主义文化中，社会风险的感知相对较弱。我们的跨文化研究发现，亚洲消费者的社会风险感知显著高于欧美消费者，这种差异反映了不同文化对个体行为的社会约束程度不同。</p>
+                    
+                    <h3>风险评估的常见偏差</h3>
+                    <p><strong>乐观偏见</strong>是最常见的偏差之一，消费者倾向于低估自己遭遇风险的可能性。我们的研究发现，约75%的消费者表现出乐观偏见，他们认为自己不会遭遇负面结果，即使客观上存在相当的风险。</p>
+                    
+                    <p><strong>控制错觉</strong>是另一个常见的偏差，消费者倾向于高估自己对风险的控制能力。我们的研究发现，约65%的消费者表现出控制错觉，他们认为通过仔细选择机构和服务，就可以完全避免风险。这种错觉可能导致消费者对风险的轻视。</p>
+                    
+                    <p><strong>情感影响偏差</strong>也值得关注，消费者的风险感知容易受到当前情绪状态的影响。我们的研究发现，那些处于焦虑或兴奋状态的消费者，其风险感知能力显著降低，更容易做出非理性决策。</p>
+                    
+                    <h3>风险沟通与管理策略</h3>
+                    <p>风险沟通是改善风险感知和评估的重要途径。有效的风险沟通需要考虑消费者的认知特点和信息需求。我们的研究表明，以下因素对风险沟通效果有重要影响：信息的清晰度和准确性、沟通的方式和时机、沟通者的专业性和可信度、消费者的参与度和理解能力。</p>
+                    
+                    <p>在我们的实践中，开发了一套系统的风险沟通框架。这个框架包括风险识别、风险评估、风险管理、风险监控四个环节。风险识别帮助消费者全面了解可能的风险类型；风险评估帮助消费者准确评估风险发生的概率和影响；风险管理帮助消费者制定应对风险的策略；风险监控帮助消费者及时发现和处理风险问题。</p>
+                    
+                    <p>风险承受能力是个体差异的重要表现。不同的消费者具有不同的风险承受能力，这种能力影响他们的决策过程和结果。在我们的研究中，发现风险承受能力与个人特质、经验积累、支持系统等因素密切相关。那些具有较高风险承受能力的消费者，通常能够做出更为平衡的决策。</p>
+                </div>
+
+                <div class="content-section">
+                    <h2>4.3 术后满意度的决定因素</h2>
+                    <p>术后满意度是医美消费结果的重要评价指标，它不仅反映消费者的主观体验，也影响他们的后续行为和口碑传播。理解术后满意度的决定因素，对于改善医美服务质量、提高消费者体验具有重要意义。</p>
+                    
+                    <h3>满意度的多维构成</h3>
+                    <p>术后满意度的形成是一个复杂的过程，涉及多个维度的影响因素。在我们的研究中，发现术后满意度主要由以下几个维度构成：技术效果满意度、服务体验满意度、心理感受满意度、社会认同满意度。这些维度相互关联，共同构成了整体满意度。</p>
+                    
+                    <p><strong>技术效果满意度</strong>是最基础的满意度维度，它主要关注医美技术的客观效果。在我们的研究中，发现技术效果满意度与实际改善程度、期望匹配度、效果持久性等因素密切相关。约60%的消费者将技术效果作为满意度的首要考量因素。</p>
+                    
+                    <p>技术效果满意度的评估存在主观性差异。同样的客观效果，不同消费者的主观感受可能存在很大差异。我们的研究发现，这种主观差异与消费者的个人特质、动机类型、期望水平等因素相关。那些具有内在动机的消费者，通常对技术效果更为满意；而那些具有外在动机的消费者，对技术效果的要求更为苛刻。</p>
+                    
+                    <p><strong>服务体验满意度</strong>是另一个重要的满意度维度，它关注消费者在整个服务过程中的体验感受。在我们的研究中，发现服务体验满意度与服务态度、沟通质量、环境舒适度、流程便捷性等因素相关。约40%的消费者认为服务体验对整体满意度有重要影响。</p>
+                    
+                    <p>服务体验满意度的形成具有累积性特点。消费者在整个服务过程中的每个接触点都会形成体验感受，这些感受累积起来构成整体的服务体验满意度。我们的研究发现，那些提供全程优质服务的机构，其消费者满意度显著高于那些只在某些环节表现良好的机构。</p>
+                    
+                    <p><strong>心理感受满意度</strong>是较为深层次的满意度维度，它关注医美消费对消费者心理状态的影响。在我们的研究中，发现心理感受满意度与自信心提升、焦虑减轻、自我认同改善等因素相关。约30%的消费者特别看重心理感受满意度。</p>
+                    
+                    <p>心理感受满意度的形成具有延迟性特点。与技术效果和服务体验不同，心理感受通常需要一定时间才能形成和稳定。我们的追踪研究发现，消费者的心理感受满意度在术后3个月左右趋于稳定，这种稳定性使得心理感受满意度成为预测长期满意度的重要指标。</p>
+                    
+                    <p><strong>社会认同满意度</strong>是较为特殊的满意度维度，它关注医美消费带来的社会认同和评价。在我们的研究中，发现社会认同满意度与他人的积极评价、社会关系的改善、社会机会的增加等因素相关。约20%的消费者重视社会认同满意度。</p>
+                    
+                    <h3>期望管理的关键作用</h3>
+                    <p>期望管理是影响术后满意度的关键因素。期望与实际效果的匹配程度直接影响消费者的满意度。在我们的研究中，发现期望过高是导致不满意的主要原因之一。约50%的不满意案例可以归因于期望与现实的差距。</p>
+                    
+                    <p>期望管理的有效性取决于多个因素。信息的准确性和完整性是基础，消费者需要获得真实、全面的信息来形成合理期望。沟通的质量和方式也很重要，专业人士需要通过有效沟通帮助消费者建立合理期望。我们的研究发现，那些接受过专业期望管理的消费者，其术后满意度显著高于没有接受过的消费者。</p>
+                    
+                    <h3>个体差异的影响</h3>
+                    <p>个人特质对术后满意度有重要影响。人格特质是重要的影响因素，那些具有神经质特质的消费者，通常满意度较低；而那些具有外向性特质的消费者，通常满意度较高。自我监控能力也影响满意度，那些自我监控能力强的消费者，通常对服务细节更为敏感，满意度要求更高。</p>
+                    
+                    <p>动机类型与术后满意度密切相关。内在动机驱动的消费者通常具有更高的满意度，因为他们更关注个人体验和内在感受。外在动机驱动的消费者则更容易受到外部因素的影响，满意度波动较大。我们的研究发现，动机类型可以解释约30%的满意度差异。</p>
+                    
+                    <p>社会支持系统对术后满意度有调节作用。良好的社会支持可以增强消费者的积极体验，缓冲负面体验的影响。在我们的研究中，发现那些获得家人和朋友支持的消费者，其术后满意度显著高于那些缺乏社会支持的消费者。</p>
+                    
+                    <h3>时间维度与适应过程</h3>
+                    <p>术后适应过程影响满意度的形成。医美消费后的适应过程是一个复杂的心理调整过程，消费者需要时间来适应新的外貌和形象。我们的追踪研究发现，术后满意度通常在3-6个月内达到稳定，这个适应过程对于最终满意度的形成至关重要。</p>
+                    
+                    <p>时间维度在满意度评估中不可忽视。术后满意度是一个动态变化的过程，不同时间点的满意度可能存在差异。我们的研究发现，即时满意度、短期满意度和长期满意度各有特点，需要综合评估才能获得完整的满意度图景。</p>
+                </div>
+
+                <div class="content-section">
+                    <h2>4.4 决策偏差与纠正策略</h2>
+                    <p>医美消费决策中的认知偏差是影响决策质量的重要因素，这些偏差可能导致消费者做出非理性或次优的决策。识别和理解这些决策偏差，并制定相应的纠正策略，对于提高决策质量具有重要意义。</p>
+                    
+                    <h3>常见决策偏差类型</h3>
+                    
+                    <!-- Cognitive Bias Analysis -->
+                    <div class="concept-visualization svg-animated">
+                        <h4>认知偏差分析模型</h4>
+                        <div class="svg-container" style="text-align: center; margin: 2rem 0;">
+                            <img src="assets/svg/chapter-04-information/cognitive-bias-analysis.svg" alt="认知偏差分析模型" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        </div>
+                        <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                            <svg class="svg-icon svg-icon-small" viewBox="0 0 24 24" style="width: 16px; height: 16px; vertical-align: middle;">
+                                <g stroke="#b8a9c9" stroke-width="1.5" fill="none">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 2v10m0 0l-4-4m4 4l4-4"/>
+                                </g>
+                            </svg>
+                            医美消费中的主要认知偏差类型及其影响机制的分析框架
+                        </p>
+                    </div>
+                    
+                    <p><strong>确认偏见</strong>是医美消费决策中最常见的认知偏差之一。它指的是消费者倾向于寻找、解释和记忆那些支持自己已有观点或决策的信息，而忽视或贬低那些与自己观点相悖的信息。在我们的研究中，发现约70%的医美消费者表现出不同程度的确认偏见。</p>
+                    
+                    <p>确认偏见在医美决策中的表现多种多样。在信息搜索阶段，具有确认偏见的消费者可能只关注支持医美的信息，而忽视风险和负面信息。在决策过程中，他们可能过度重视那些支持自己决策的因素，而轻视那些反对因素。在术后评估中，他们可能只注意到积极的效果，而忽视或淡化负面的影响。</p>
+                    
+                    <p><strong>锚定效应</strong>是另一个常见的决策偏差。它指的是消费者的判断和决策过度依赖最初获得的信息（锚点），即使后续信息表明这个锚点不准确，也难以充分调整。在我们的研究中，发现约60%的医美消费者受到锚定效应的影响。</p>
+                    
+                    <p>锚定效应在医美决策中的表现尤为明显。价格锚定是最常见的表现形式，消费者最初接触到的价格信息会成为后续价格判断的锚点。效果锚定也很普遍，消费者最初看到的效果案例会成为后续效果期望的锚点。我们的研究发现，锚定效应可能导致消费者对价格和效果的判断出现系统性偏差。</p>
+                    
+                    <p><strong>从众心理</strong>是医美消费中的重要决策偏差。它指的是消费者因为感受到他人的行为或期望而改变自己的行为或态度。在我们的研究中，发现约55%的医美消费者承认受到从众心理的影响。</p>
+                    
+                    <p>从众心理在医美消费中的表现形式多样。信息性从众是指消费者因为认为他人拥有更多信息而跟随他人的决策。规范性从众是指消费者因为希望获得社会认同而跟随他人的行为。我们的研究发现，社交媒体极大地放大了从众心理的影响，消费者通过社交网络观察他人的行为，形成强大的从众压力。</p>
+                    
+                    <p><strong>沉没成本效应</strong>是影响医美消费决策的重要偏差。它指的是消费者因为已经投入了时间、金钱或精力而继续投入，即使继续投入可能不是最优选择。在我们的研究中，发现约45%的医美消费者表现出沉没成本效应。</p>
+                    
+                    <p>沉没成本效应在医美消费中的表现复杂而微妙。消费者可能因为已经投入了大量资金而继续进行更多的医美项目，即使这些项目可能不再适合他们的需求。他们也可能因为已经投入了时间而坚持某个决策，即使有更好的选择。我们的研究发现，沉没成本效应可能导致消费者陷入"医美陷阱"，难以停止不必要的医美消费。</p>
+                    
+                    <p><strong>乐观偏见</strong>是医美消费中普遍存在的决策偏差。它指的是消费者倾向于低估自己遭遇负面结果的可能性，而高估获得积极结果的可能性。在我们的研究中，发现约75%的医美消费者表现出乐观偏见。</p>
+                    
+                    <p>乐观偏见在风险感知中表现得尤为明显。消费者可能低估医美风险的发生概率，高估医美效果的实现可能性。我们的研究发现，乐观偏见可能导致消费者对风险的轻视，对效果的过度期望，从而做出非理性决策。</p>
+                    
+                    <h3>决策偏差的纠正策略</h3>
+                    <p><strong>认知纠正</strong>是重要的策略之一，通过提高消费者对认知偏差的认识，帮助他们识别和纠正这些偏差。我们的实践表明，认知偏差教育可以显著提高决策质量，减少偏差对决策的影响。</p>
+                    
+                    <p><strong>信息优化</strong>是另一个重要的纠正策略。通过改善信息的质量和呈现方式，帮助消费者更准确地理解和评估信息。我们的研究发现，结构化的信息呈现方式可以显著减少确认偏见和锚定效应的影响。</p>
+                    
+                    <p><strong>决策支持工具</strong>也是有效的纠正策略。通过提供系统的决策框架和工具，帮助消费者进行更理性的决策。我们的实践表明，决策清单、决策矩阵等工具可以帮助消费者全面考虑各种因素，减少决策偏差。</p>
+                    
+                    <p><strong>专业指导</strong>是不可忽视的纠正策略。专业人士的指导可以帮助消费者识别决策偏差，提供客观的建议。我们的研究发现，接受过专业指导的消费者，其决策质量显著高于没有接受过指导的消费者。</p>
+                    
+                    <p><strong>社会支持系统</strong>的建立也具有重要作用。良好的社会支持可以为消费者提供情感支持和客观建议，帮助他们抵御从众心理等社会影响。我们的研究表明，那些具有良好社会支持的消费者，其决策偏差程度显著较低。</p>
+                    
+                    <p><strong>环境设计</strong>是预防决策偏差的重要策略。通过优化决策环境，减少触发偏差的因素。我们的实践表明，减少营销压力、增加冷静期、提供反思机会等环境设计措施，可以有效减少决策偏差的影响。</p>
+                    
+                    <p><strong>持续学习和改进</strong>是长期纠正决策偏差的关键。通过不断学习和反思，消费者可以逐步提高决策能力，减少偏差的影响。我们的追踪研究发现，那些持续学习和反思的消费者，其决策质量随时间推移而显著提高。</p>
+                    
+                    <h3>差异化纠正策略</h3>
+                    <p>针对不同类型的决策偏差，需要采用差异化的纠正策略。确认偏见需要通过多角度信息获取和批判性思维来纠正；锚定效应需要通过多参考点比较和调整来纠正；从众心理需要通过独立思考和价值澄清来纠正；沉没成本效应需要通过前瞻性思维和机会成本考虑来纠正；乐观偏见需要通过现实期望设置和风险评估来纠正。</p>
+                    
+                    <p>决策偏差的纠正是一个系统工程，需要个人、机构、行业和社会的共同努力。只有通过多方协作，才能建立健康的决策环境，帮助消费者做出更加理性和满意的决策。</p>
+                </div>
+
+                <div class="tool-box">
+                    <h4>实用工具4.1：医美信息质量评估表</h4>
+                    <p class="tool-description">本工具帮助消费者评估医美信息的质量和可靠性，识别潜在的信息偏见，提高信息筛选和判断能力。</p>
+                    
+                    <h5>评估维度</h5>
+                    <p><strong>信息来源评估</strong>（1-5分）</p>
+                    <ul>
+                        <li>来源权威性（专业资质、机构正规性）</li>
+                        <li>利益冲突披露（商业关系透明度）</li>
+                        <li>信息更新性（是否反映最新发展）</li>
+                    </ul>
+                    
+                    <p><strong>内容质量评估</strong>（1-5分）</p>
+                    <ul>
+                        <li>内容完整性（效果、风险、费用等信息）</li>
+                        <li>科学依据（研究数据支持、事实观点区分）</li>
+                        <li>风险披露（风险描述的客观性和具体性）</li>
+                    </ul>
+                    
+                    <p><strong>呈现方式评估</strong>（1-5分）</p>
+                    <ul>
+                        <li>语言准确性（专业术语使用、表达清晰度）</li>
+                        <li>客观性（避免过度宣传、保持中立立场）</li>
+                        <li>视觉呈现（图片真实性、与内容一致性）</li>
+                    </ul>
+                    
+                    <p><strong>质量等级：</strong></p>
+                    <ul>
+                        <li>优秀（36-45分）：信息质量很高，可充分信任</li>
+                        <li>良好（27-35分）：信息质量较好，可参考使用</li>
+                        <li>一般（18-26分）：信息质量一般，需谨慎对待</li>
+                        <li>较差（9-17分）：信息质量较差，不建议采用</li>
+                    </ul>
+                </div>
+
+                <div class="tool-box">
+                    <h4>实用工具4.2：医美决策偏差检查清单</h4>
+                    <p class="tool-description">本工具帮助消费者识别和纠正医美决策中的常见认知偏差，提高决策的理性和质量。</p>
+                    
+                    <h5>偏差检查清单</h5>
+                    <p><strong>确认偏见检查</strong></p>
+                    <ul>
+                        <li>是否只关注支持医美的信息，忽视风险信息？</li>
+                        <li>是否因为已决定要做医美，而只寻找支持信息？</li>
+                        <li><strong>纠正策略</strong>：主动寻找反对意见，请朋友提出反对观点</li>
+                    </ul>
+                    
+                    <p><strong>锚定效应检查</strong></p>
+                    <ul>
+                        <li>是否过度依赖最初接触到的价格或效果信息？</li>
+                        <li>是否因为第一个咨询机构的价格而影响后续判断？</li>
+                        <li><strong>纠正策略</strong>：收集多个来源信息，设定合理参考范围</li>
+                    </ul>
+                    
+                    <p><strong>从众心理检查</strong></p>
+                    <ul>
+                        <li>做决定主要是因为别人都在做吗？</li>
+                        <li>是否担心不做会被别人评判？</li>
+                        <li><strong>纠正策略</strong>：明确真实需求，减少社交媒体影响</li>
+                    </ul>
+                    
+                    <p><strong>沉没成本效应检查</strong></p>
+                    <ul>
+                        <li>是否因为已投入时间金钱而继续？</li>
+                        <li>是否觉得"已经投入这么多，不能放弃"？</li>
+                        <li><strong>纠正策略</strong>：关注未来成本收益，设定止损点</li>
+                    </ul>
+                    
+                    <p><strong>乐观偏见检查</strong></p>
+                    <ul>
+                        <li>是否低估风险发生可能性？</li>
+                        <li>是否认为"不好的事情不会发生在我身上"？</li>
+                        <li><strong>纠正策略</strong>：查看统计数据，设定最坏情况预案</li>
+                    </ul>
+                </div>
+
+                <div class="tool-box">
+                    <h4>实用工具4.3：术后满意度追踪工具</h4>
+                    <p class="tool-description">本工具帮助消费者系统追踪和评估医美术后的满意度变化，识别影响满意度的关键因素。</p>
+                    
+                    <h5>追踪时间点</h5>
+                    <ul>
+                        <li>术后即时（1-7天）</li>
+                        <li>术后短期（2-4周）</li>
+                        <li>术后中期（2-3个月）</li>
+                        <li>术后长期（6个月以上）</li>
+                    </ul>
+                    
+                    <h5>满意度评估维度</h5>
+                    <p><strong>技术效果满意度</strong>（1-5分）</p>
+                    <ul>
+                        <li>整体改善效果、期望匹配度、效果自然度、效果持久性</li>
+                    </ul>
+                    
+                    <p><strong>服务体验满意度</strong>（1-5分）</p>
+                    <ul>
+                        <li>术前咨询、医生专业水平、护理服务、术后跟踪</li>
+                    </ul>
+                    
+                    <p><strong>心理感受满意度</strong>（1-5分）</p>
+                    <ul>
+                        <li>自信心提升、焦虑减轻、自我认同改善、整体幸福感</li>
+                    </ul>
+                    
+                    <p><strong>社会认同满意度</strong>（1-5分）</p>
+                    <ul>
+                        <li>他人评价、社交改善、职业形象提升、社会适应</li>
+                    </ul>
+                </div>
+
+                <div class="case-study">
+                    <h4>案例分析4.1：信息过载与决策偏差的典型案例</h4>
+                    <p>张小姐，28岁，互联网公司产品经理，考虑进行双眼皮手术已有半年时间。在决策过程中，她遇到了严重的信息处理问题，包括信息过载、确认偏见、锚定效应等多种决策偏差。</p>
+                    
+                    <p><strong>主要问题：</strong></p>
+                    <ul>
+                        <li>信息过载：面对海量信息无法有效筛选和评估</li>
+                        <li>确认偏见：只关注支持埋线方法的信息，忽视反对意见</li>
+                        <li>锚定效应：受第一家医院8000元报价影响，难以客观评估</li>
+                        <li>从众心理：受朋友圈多人手术影响，形成社会压力</li>
+                        <li>乐观偏见：低估风险，高估效果，认为"坏事不会发生在我身上"</li>
+                    </ul>
+                    
+                    <p><strong>转折点：</strong></p>
+                    <ul>
+                        <li>专业咨询介入：王医生提供全面信息和合理期望</li>
+                        <li>结构化决策工具：使用决策矩阵和清单比较各种方法</li>
+                        <li>社会支持重新评估：区分内在需求和外部压力</li>
+                    </ul>
+                    
+                    <p><strong>最终结果：</strong>经过理性决策过程，张小姐选择全切双眼皮手术，术后效果良好，满意度较高。更重要的是，她通过这次经历提升了决策能力，为未来生活和工作带来积极影响。</p>
+                    
+                    <p><strong>案例启示：</strong>信息过载和决策偏差在医美消费中普遍存在，专业指导、结构化工具和内在动机识别是提高决策质量的关键。</p>
+                </div>
+
+                <div class="chapter-nav">
+                    <h3>章节导航</h3>
+                    <div class="nav-grid">
+                        <a href="03-consumption-motivation-and-psychological-needs.html" class="nav-button prev">
+                            <span class="ma-icon ma-icon-arrow-back">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"/>
+                                </svg>
+                            </span>
+                            <span>上一章：消费动机与心理需求</span>
+                        </a>
+                        <a href="07-ethical-boundaries-of-sales-psychology.html" class="nav-button next">
+                            <span>下一章：销售心理的伦理边界</span>
+                            <span class="ma-icon ma-icon-arrow-forward">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" fill="currentColor"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>地址：重庆市渝中区临江支路28号</p>
+                    <p>电话：<a href="tel:023-68726872">023-68726872</a></p>
+                    <p>邮箱：<a href="mailto:bccsw@cqlhlg.work">bccsw@cqlhlg.work</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>关于我们</h4>
+                    <p>重庆联合丽格科技有限公司致力于医美行业的专业研究和咨询服务，推动行业健康发展。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <p><a href="index.html">首页</a></p>
+                    <p><a href="index.html#chapters">章节内容</a></p>
+                    <p><a href="index.html#perspectives">专业视角</a></p>
+                    <p><a href="index.html#contact">联系我们</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 重庆联合丽格科技有限公司 | <a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2024023473号</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/icon-replacer.js"></script>
+</body>
+</html>

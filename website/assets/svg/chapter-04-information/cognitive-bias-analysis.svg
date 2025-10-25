@@ -1,0 +1,197 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 认知偏差分析 -->
+  <defs>
+    <!-- 确认偏差渐变 -->
+    <linearGradient id="confirmation-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 锚定效应渐变 -->
+    <linearGradient id="anchoring-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 可得性偏差渐变 -->
+    <linearGradient id="availability-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 框架效应渐变 -->
+    <linearGradient id="framing-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 从众效应渐变 -->
+    <linearGradient id="conformity-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    认知偏差分析
+  </text>
+  
+  <!-- 中心认知系统 -->
+  <g transform="translate(400, 300)">
+    <circle cx="0" cy="0" r="60" fill="white" stroke="#667eea" stroke-width="3" filter="url(#shadow)"/>
+    <text x="0" y="-5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#667eea">认知</text>
+    <text x="0" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#667eea">系统</text>
+  </g>
+  
+  <!-- 认知偏差分布 -->
+  <g transform="translate(400, 300)">
+    <!-- 确认偏差 -->
+    <g transform="translate(-150, -120)">
+      <ellipse cx="0" cy="0" rx="65" ry="35" fill="url(#confirmation-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="确认偏差：倾向于寻找支持自己观点的信息" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">确认偏差</text>
+      <text y="-12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">选择性接受</text>
+    </g>
+    
+    <!-- 锚定效应 -->
+    <g transform="translate(150, -120)">
+      <ellipse cx="0" cy="0" rx="65" ry="35" fill="url(#anchoring-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="锚定效应：过度依赖首先获得的信息" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">锚定效应</text>
+      <text y="-12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">初始信息依赖</text>
+    </g>
+    
+    <!-- 可得性偏差 -->
+    <g transform="translate(-200, 0)">
+      <ellipse cx="0" cy="0" rx="65" ry="35" fill="url(#availability-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="可得性偏差：依赖容易获得的信息" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">可得性偏差</text>
+      <text y="-12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">易得性偏好</text>
+    </g>
+    
+    <!-- 框架效应 -->
+    <g transform="translate(200, 0)">
+      <ellipse cx="0" cy="0" rx="65" ry="35" fill="url(#framing-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="框架效应：受信息表达方式影响" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">框架效应</text>
+      <text y="-12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">表达方式影响</text>
+    </g>
+    
+    <!-- 从众效应 -->
+    <g transform="translate(0, 120)">
+      <ellipse cx="0" cy="0" rx="65" ry="35" fill="url(#conformity-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="从众效应：跟随大多数人的选择" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">从众效应</text>
+      <text y="-12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">群体压力</text>
+    </g>
+    
+    <!-- 连接线 -->
+    <path d="M -85 -85 L -45 -45" stroke="#667eea" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M 85 -85 L 45 -45" stroke="#667eea" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M -135 0 L -60 0" stroke="#667eea" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M 135 0 L 60 0" stroke="#667eea" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M 0 60 L 0 85" stroke="#667eea" stroke-width="1" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- 偏差强度指示器 -->
+  <g transform="translate(50, 200)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">偏差强度：</text>
+    
+    <g transform="translate(0, 25)">
+      <rect x="0" y="0" width="100" height="12" rx="6" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="80" height="12" rx="6" fill="#e74c3c"/>
+      <text x="110" y="10" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">确认偏差 80%</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <rect x="0" y="0" width="100" height="12" rx="6" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="70" height="12" rx="6" fill="#3498db"/>
+      <text x="110" y="10" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">锚定效应 70%</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <rect x="0" y="0" width="100" height="12" rx="6" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="75" height="12" rx="6" fill="#f39c12"/>
+      <text x="110" y="10" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">可得性偏差 75%</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <rect x="0" y="0" width="100" height="12" rx="6" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="65" height="12" rx="6" fill="#2ecc71"/>
+      <text x="110" y="10" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">框架效应 65%</text>
+    </g>
+    
+    <g transform="translate(0, 105)">
+      <rect x="0" y="0" width="100" height="12" rx="6" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="85" height="12" rx="6" fill="#9b59b6"/>
+      <text x="110" y="10" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">从众效应 85%</text>
+    </g>
+  </g>
+  
+  <!-- 医美消费中的认知偏差 -->
+  <g transform="translate(550, 200)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">医美消费中的应用：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="4" fill="#e74c3c"/>
+      <text x="12" y="4" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">只关注成功案例，忽视风险</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="4" fill="#3498db"/>
+      <text x="12" y="4" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">受首诊价格影响判断</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="4" fill="#f39c12"/>
+      <text x="12" y="4" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">依赖网红推荐信息</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="4" fill="#2ecc71"/>
+      <text x="12" y="4" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">受营销语言框架影响</text>
+    </g>
+    
+    <g transform="translate(0, 105)">
+      <circle r="4" fill="#9b59b6"/>
+      <text x="12" y="4" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">跟随朋友的选择</text>
+    </g>
+  </g>
+  
+  <!-- 偏差纠正策略 -->
+  <g transform="translate(100, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">偏差纠正策略：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 提供全面客观的信息</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 鼓励多角度思考</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 延迟决策时间</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 寻求专业咨询</text>
+  </g>
+  
+  <!-- 风险提示 -->
+  <g transform="translate(450, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">风险提示：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 认知偏差可能导致错误决策</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 影响对风险的正确评估</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 造成非理性消费行为</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 降低决策满意度</text>
+  </g>
+  
+  <!-- 动态效果 -->
+  <circle cx="400" cy="300" r="80" fill="none" stroke="#667eea" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="80;100;80" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各偏差类型查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

@@ -1,0 +1,195 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 记忆与学习机制 -->
+  <defs>
+    <!-- 感觉记忆渐变 -->
+    <linearGradient id="sensory-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 短时记忆渐变 -->
+    <linearGradient id="short-term-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 长时记忆渐变 -->
+    <linearGradient id="long-term-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 工作记忆渐变 -->
+    <linearGradient id="working-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    记忆与学习机制
+  </text>
+  
+  <!-- 记忆系统结构 -->
+  <g transform="translate(400, 300)">
+    <!-- 感觉记忆 -->
+    <g transform="translate(0, -120)">
+      <rect x="-80" y="-30" width="160" height="60" rx="30" fill="url(#sensory-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="感觉记忆：短暂存储感官信息" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">感觉记忆</text>
+      <text y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">0.5-3秒</text>
+    </g>
+    
+    <!-- 短时记忆 -->
+    <g transform="translate(-150, 0)">
+      <rect x="-70" y="-25" width="140" height="50" rx="25" fill="url(#short-term-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="短时记忆：临时信息存储" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">短时记忆</text>
+      <text y="-12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">15-30秒</text>
+    </g>
+    
+    <!-- 工作记忆 -->
+    <g transform="translate(0, 0)">
+      <rect x="-70" y="-25" width="140" height="50" rx="25" fill="url(#working-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="工作记忆：信息处理中心" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">工作记忆</text>
+      <text y="-12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">主动处理</text>
+    </g>
+    
+    <!-- 长时记忆 -->
+    <g transform="translate(150, 0)">
+      <rect x="-70" y="-25" width="140" height="50" rx="25" fill="url(#long-term-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="长时记忆：永久信息存储" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">长时记忆</text>
+      <text y="-12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">永久存储</text>
+    </g>
+    
+    <!-- 连接箭头 -->
+    <path d="M 0 -90 L 0 -65" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -20 -90 L -130 -25" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 20 -90 L 130 -25" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -80 0 L -70 0" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 70 0 L 80 0" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- 反馈循环 -->
+    <path d="M 150 25 Q 200 50 150 80 Q 0 80 -150 80 Q -200 80 -150 25" 
+          stroke="#9b59b6" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+    <text x="0" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9b59b6">记忆提取与应用</text>
+  </g>
+  
+  <!-- 记忆容量指示器 -->
+  <g transform="translate(50, 180)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">记忆容量：</text>
+    
+    <g transform="translate(0, 25)">
+      <rect x="0" y="0" width="100" height="12" rx="6" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="100" height="12" rx="6" fill="#e74c3c"/>
+      <text x="110" y="10" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">感觉记忆 大量</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <rect x="0" y="0" width="100" height="12" rx="6" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="25" height="12" rx="6" fill="#f39c12"/>
+      <text x="110" y="10" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">短时记忆 7±2项</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <rect x="0" y="0" width="100" height="12" rx="6" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="30" height="12" rx="6" fill="#3498db"/>
+      <text x="110" y="10" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">工作记忆 4-7项</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <rect x="0" y="0" width="100" height="12" rx="6" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="95" height="12" rx="6" fill="#2ecc71"/>
+      <text x="110" y="10" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">长时记忆 无限</text>
+    </g>
+  </g>
+  
+  <!-- 学习机制 -->
+  <g transform="translate(550, 180)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">学习机制：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">编码：信息转换为记忆</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">存储：信息保持与巩固</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">提取：信息回忆与应用</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">遗忘：信息自然流失</text>
+    </g>
+  </g>
+  
+  <!-- 医美知识记忆 -->
+  <g transform="translate(100, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">医美知识记忆：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 项目类型和效果特点</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 风险和并发症信息</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 价格和性价比判断</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 机构和医生选择标准</text>
+  </g>
+  
+  <!-- 记忆增强策略 -->
+  <g transform="translate(450, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">记忆增强策略：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 多感官学习：视觉、听觉</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 重复复习：间隔重复</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 联想记忆：建立联系</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 情境学习：真实场景</text>
+  </g>
+  
+  <!-- 遗忘曲线 -->
+  <g transform="translate(50, 320)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">遗忘曲线：</text>
+    <g transform="translate(0, 20)">
+      <path d="M 0 0 Q 20 -10 40 -15 T 80 -20 T 120 -22" stroke="#e74c3c" stroke-width="2" fill="none"/>
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">学习后</text>
+      <text x="120" y="15" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">1天后</text>
+    </g>
+  </g>
+  
+  <!-- 记忆巩固 -->
+  <g transform="translate(700, 320)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">记忆巩固：</text>
+    <g transform="translate(0, 20)">
+      <path d="M 0 20 Q 20 10 40 5 T 80 0 T 120 -2" stroke="#2ecc71" stroke-width="2" fill="none"/>
+      <text x="0" y="35" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">复习后</text>
+      <text x="120" y="35" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">长期保持</text>
+    </g>
+  </g>
+  
+  <!-- 动态记忆流动 -->
+  <circle r="3" fill="#667eea">
+    <animateMotion dur="5s" repeatCount="indefinite">
+      <mpath href="#memory-path"/>
+    </animateMotion>
+  </circle>
+  
+  <!-- 定义记忆路径 -->
+  <path id="memory-path" d="M 400 180 L 400 220 L 250 300 L 400 380 L 550 300 L 400 220" fill="none"/>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各系统查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

@@ -1,0 +1,110 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    医美消费的多维视角
+  </text>
+  
+  <!-- 中心圆 -->
+  <circle cx="400" cy="300" r="80" fill="#E8D5C4" stroke="#D4A574" stroke-width="3"/>
+  <text x="400" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#8B4513">
+    医美消费
+  </text>
+  
+  <!-- 四个主要维度 -->
+  <!-- 消费者维度 -->
+  <circle cx="200" cy="150" r="60" fill="#B8D4E3" stroke="#7FB3D5" stroke-width="2"/>
+  <text x="200" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C5F8B">
+    消费者
+  </text>
+  <text x="200" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2C5F8B">
+    需求表达者
+  </text>
+  <text x="200" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2C5F8B">
+    风险承担者
+  </text>
+  
+  <!-- 医生维度 -->
+  <circle cx="600" cy="150" r="60" fill="#C8E6C9" stroke="#81C784" stroke-width="2"/>
+  <text x="600" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+    医生
+  </text>
+  <text x="600" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    专业顾问
+  </text>
+  <text x="600" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    伦理守护者
+  </text>
+  
+  <!-- 销售人员维度 -->
+  <circle cx="200" cy="450" r="60" fill="#FFCDD2" stroke="#E57373" stroke-width="2"/>
+  <text x="200" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C62828">
+    销售人员
+  </text>
+  <text x="200" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#C62828">
+    需求理解者
+  </text>
+  <text x="200" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#C62828">
+    关系维护者
+  </text>
+  
+  <!-- 投资者维度 -->
+  <circle cx="600" cy="450" r="60" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2"/>
+  <text x="600" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A">
+    投资者
+  </text>
+  <text x="600" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6A1B9A">
+    资金提供者
+  </text>
+  <text x="600" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6A1B9A">
+    战略规划者
+  </text>
+  
+  <!-- 连接线 -->
+  <line x1="320" y1="250" x2="250" y2="190" stroke="#D4A574" stroke-width="2"/>
+  <line x1="480" y1="250" x2="550" y2="190" stroke="#D4A574" stroke-width="2"/>
+  <line x1="320" y1="350" x2="250" y2="410" stroke="#D4A574" stroke-width="2"/>
+  <line x1="480" y1="350" x2="550" y2="410" stroke="#D4A574" stroke-width="2"/>
+  
+  <!-- 本质特征标注 -->
+  <rect x="50" y="320" width="120" height="80" fill="#FFF8E1" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="110" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">
+    本质特征
+  </text>
+  <text x="110" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    双重性
+  </text>
+  <text x="110" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    高风险性
+  </text>
+  <text x="110" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    社会影响
+  </text>
+  <text x="110" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    情感驱动
+  </text>
+  
+  <rect x="630" y="320" width="120" height="80" fill="#FFF8E1" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="690" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">
+    生态系统
+  </text>
+  <text x="690" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    透明信息
+  </text>
+  <text x="690" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    合理分配
+  </text>
+  <text x="690" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    质量监管
+  </text>
+  <text x="690" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    持续创新
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图1.1：医美消费的四大利益相关者及其关系
+  </text>
+</svg>

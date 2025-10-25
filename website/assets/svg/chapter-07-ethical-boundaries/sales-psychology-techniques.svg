@@ -1,0 +1,162 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 医美销售中的心理技巧分析 -->
+  <defs>
+    <!-- 积极技巧渐变 -->
+    <linearGradient id="positive-technique-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 中性技巧渐变 -->
+    <linearGradient id="neutral-technique-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 负面技巧渐变 -->
+    <linearGradient id="negative-technique-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 伦理边界渐变 -->
+    <linearGradient id="ethical-boundary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    医美销售中的心理技巧分析
+  </text>
+  
+  <!-- 心理技巧分类 -->
+  <g transform="translate(400, 200)">
+    <!-- 积极技巧 -->
+    <g transform="translate(-200, -50)">
+      <rect x="-60" y="-30" width="120" height="60" rx="10" fill="url(#positive-technique-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="积极技巧：建立信任和关系" data-onclick="details"/>
+      <text y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">积极技巧</text>
+      <text y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">建立信任</text>
+      <text y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">关系导向</text>
+    </g>
+    
+    <!-- 中性技巧 -->
+    <g transform="translate(0, -50)">
+      <rect x="-60" y="-30" width="120" height="60" rx="10" fill="url(#neutral-technique-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="中性技巧：信息传递和教育" data-onclick="details"/>
+      <text y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">中性技巧</text>
+      <text y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">信息传递</text>
+      <text y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">教育导向</text>
+    </g>
+    
+    <!-- 负面技巧 -->
+    <g transform="translate(200, -50)">
+      <rect x="-60" y="-30" width="120" height="60" rx="10" fill="url(#negative-technique-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="负面技巧：操控和压力" data-onclick="details"/>
+      <text y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">负面技巧</text>
+      <text y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">操控性</text>
+      <text y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">压力导向</text>
+    </g>
+    
+    <!-- 伦理边界线 -->
+    <line x1="-300" y1="50" x2="300" y2="50" stroke="url(#ethical-boundary-grad)" stroke-width="3" stroke-dasharray="10,5"/>
+    <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#9b59b6">伦理边界</text>
+  </g>
+  
+  <!-- 具体技巧示例 -->
+  <g transform="translate(100, 350)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">积极技巧示例：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="4" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">倾听理解：真正关注客户需求</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="4" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">专业建议：提供专业意见</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="4" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">真诚沟通：建立信任关系</text>
+    </g>
+  </g>
+  
+  <g transform="translate(400, 350)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">中性技巧示例：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="4" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">产品介绍：详细说明特点</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="4" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">案例分享：展示成功经验</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="4" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">对比分析：客观比较优缺点</text>
+    </g>
+  </g>
+  
+  <g transform="translate(100, 500)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">负面技巧示例：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="4" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">恐惧营销：夸大风险制造焦虑</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="4" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">虚假承诺：过度保证效果</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="4" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">高压销售：制造紧迫感逼迫决策</text>
+    </g>
+  </g>
+  
+  <!-- 技巧效果影响 -->
+  <g transform="translate(500, 500)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">效果影响：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 积极：建立长期信任关系</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 中性：提供信息辅助决策</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 负面：损害信任引发纠纷</text>
+  </g>
+  
+  <!-- 伦理边界指示器 -->
+  <g transform="translate(650, 200)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">伦理程度：</text>
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="15" height="100" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="20" width="15" height="80" rx="7" fill="#9b59b6"/>
+      <text x="25" y="65" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">边界线</text>
+    </g>
+  </g>
+  
+  <!-- 动态边界效果 -->
+  <line x1="100" y1="250" x2="700" y2="250" stroke="#9b59b6" stroke-width="1" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各技巧类型查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

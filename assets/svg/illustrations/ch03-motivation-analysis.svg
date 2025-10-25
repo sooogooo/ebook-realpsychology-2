@@ -1,0 +1,237 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    医美消费动机分析表
+  </text>
+  
+  <!-- 工具说明 -->
+  <rect x="100" y="80" width="600" height="60" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    实用工具3.2
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    帮助消费者分析医美消费动机，识别主要驱动因素，为理性决策提供依据
+  </text>
+  
+  <!-- 内在动机评估 -->
+  <rect x="50" y="160" width="320" height="180" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="2" rx="10"/>
+  <text x="210" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0277BD">
+    内在动机评估
+  </text>
+  
+  <!-- 自我提升动机 -->
+  <rect x="70" y="200" width="90" height="60" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="115" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0277BD">
+    自我提升
+  </text>
+  <text x="115" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 提升形象
+  </text>
+  <text x="115" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 增强自信
+  </text>
+  <text x="115" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 自我表达
+  </text>
+  <text x="115" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0277BD">
+    总分：___
+  </text>
+  
+  <!-- 健康考虑动机 -->
+  <rect x="170" y="200" width="90" height="60" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="215" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0277BD">
+    健康考虑
+  </text>
+  <text x="215" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 改善功能
+  </text>
+  <text x="215" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 修复缺陷
+  </text>
+  <text x="215" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 预防问题
+  </text>
+  <text x="215" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0277BD">
+    总分：___
+  </text>
+  
+  <!-- 功能改善动机 -->
+  <rect x="270" y="200" width="90" height="60" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="315" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0277BD">
+    功能改善
+  </text>
+  <text x="315" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 日常功能
+  </text>
+  <text x="315" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 工作效率
+  </text>
+  <text x="315" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 护理便利
+  </text>
+  <text x="315" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0277BD">
+    总分：___
+  </text>
+  
+  <!-- 内在动机总分 -->
+  <rect x="70" y="270" width="280" height="35" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="210" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0277BD">
+    内在动机总分：___ (评分1-5分)
+  </text>
+  
+  <!-- 外在动机评估 -->
+  <rect x="430" y="160" width="320" height="180" fill="#FFCDD2" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="590" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    外在动机评估
+  </text>
+  
+  <!-- 社会压力动机 -->
+  <rect x="450" y="200" width="90" height="60" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="495" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#C62828">
+    社会压力
+  </text>
+  <text x="495" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 家庭期望
+  </text>
+  <text x="495" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 朋友影响
+  </text>
+  <text x="495" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 审美标准
+  </text>
+  <text x="495" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#C62828">
+    总分：___
+  </text>
+  
+  <!-- 职业需求动机 -->
+  <rect x="550" y="200" width="90" height="60" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="595" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#C62828">
+    职业需求
+  </text>
+  <text x="595" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 形象要求
+  </text>
+  <text x="595" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 职场竞争
+  </text>
+  <text x="595" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 职业机会
+  </text>
+  <text x="595" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#C62828">
+    总分：___
+  </text>
+  
+  <!-- 媒体影响动机 -->
+  <rect x="650" y="200" width="90" height="60" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="695" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#C62828">
+    媒体影响
+  </text>
+  <text x="695" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 社交媒体
+  </text>
+  <text x="695" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 明星网红
+  </text>
+  <text x="695" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 广告宣传
+  </text>
+  <text x="695" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#C62828">
+    总分：___
+  </text>
+  
+  <!-- 外在动机总分 -->
+  <rect x="450" y="270" width="280" height="35" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="590" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    外在动机总分：___ (评分1-5分)
+  </text>
+  
+  <!-- 动机冲突分析 -->
+  <rect x="100" y="360" width="600" height="100" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    动机冲突分析
+  </text>
+  
+  <!-- 冲突类型 -->
+  <rect x="130" y="395" width="100" height="50" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="180" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    个人vs他人
+  </text>
+  <text x="180" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    评分1-5
+  </text>
+  <text x="180" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    评分：___
+  </text>
+  
+  <rect x="250" y="395" width="100" height="50" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="300" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    短期vs长期
+  </text>
+  <text x="300" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    评分1-5
+  </text>
+  <text x="300" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    评分：___
+  </text>
+  
+  <rect x="370" y="395" width="100" height="50" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="420" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    成本vs收益
+  </text>
+  <text x="420" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    评分1-5
+  </text>
+  <text x="420" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    评分：___
+  </text>
+  
+  <rect x="490" y="395" width="100" height="50" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="540" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    理想vs现实
+  </text>
+  <text x="540" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    评分1-5
+  </text>
+  <text x="540" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    评分：___
+  </text>
+  
+  <!-- 分析结果 -->
+  <rect x="150" y="480" width="500" height="80" fill="#F3E5F5" stroke="#CE93D8" stroke-width="2" rx="10"/>
+  <text x="400" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6A1B9A">
+    分析结果
+  </text>
+  
+  <!-- 结果类型 -->
+  <rect x="180" y="515" width="120" height="35" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="240" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    主要动机类型
+  </text>
+  <text x="240" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    内在/外在/平衡
+  </text>
+  
+  <rect x="320" y="515" width="120" height="35" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="380" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    动机健康度
+  </text>
+  <text x="380" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    健康/中等/需关注
+  </text>
+  
+  <rect x="460" y="515" width="120" height="35" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="520" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    决策建议
+  </text>
+  <text x="520" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    基于动机特点
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图3.6：医美消费动机分析表结构及评估框架
+  </text>
+</svg>

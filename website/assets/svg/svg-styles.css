@@ -1,0 +1,219 @@
+/* SVG Styling and Animations */
+
+/* SVG Container */
+.svg-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.svg-container svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: white;
+}
+
+/* SVG Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes drawLine {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Animated SVG Elements */
+.svg-animated svg {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.svg-animated svg path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLine 2s ease-out forwards;
+}
+
+.svg-animated svg circle {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.svg-animated svg rect {
+  animation: fadeIn 1s ease-out 0.3s both;
+}
+
+/* Interactive SVG */
+.svg-interactive svg:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.svg-interactive svg path:hover,
+.svg-interactive svg circle:hover,
+.svg-interactive svg rect:hover {
+  stroke-width: 3;
+  transition: stroke-width 0.3s ease;
+}
+
+/* Chapter Headers */
+.chapter-header-illustration {
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(152, 216, 200, 0.1) 0%, rgba(184, 169, 201, 0.1) 100%);
+  padding: 1rem;
+}
+
+/* Concept Visualizations */
+.concept-visualization {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 4px solid var(--accent-mint);
+}
+
+.concept-visualization h4 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Icon System */
+.svg-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.svg-icon-large {
+  width: 48px;
+  height: 48px;
+}
+
+.svg-icon-small {
+  width: 16px;
+  height: 16px;
+}
+
+/* Mermaid Diagrams */
+.mermaid-container {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.mermaid-container h4 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Responsive SVG */
+@media (max-width: 768px) {
+  .svg-container {
+    margin: 1rem 0;
+  }
+  
+  .concept-visualization {
+    padding: 1rem;
+  }
+  
+  .mermaid-container {
+    padding: 1rem;
+  }
+}
+
+/* Loading Animation */
+.svg-loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(152, 216, 200, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--accent-mint);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Tool Tips */
+.svg-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.svg-tooltip .tooltip-text {
+  visibility: hidden;
+  width: 200px;
+  background-color: var(--text-primary);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0.5rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.9rem;
+}
+
+.svg-tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* SVG Filters */
+.svg-filter-shadow {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.svg-filter-glow {
+  filter: drop-shadow(0 0 8px rgba(152, 216, 200, 0.3));
+}
+
+/* Accessibility */
+.svg-container svg:focus {
+  outline: 2px solid var(--accent-mint);
+  outline-offset: 2px;
+}
+
+.svg-container svg:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .svg-animated svg,
+  .svg-animated svg path,
+  .svg-animated svg circle,
+  .svg-animated svg rect {
+    animation: none;
+  }
+}

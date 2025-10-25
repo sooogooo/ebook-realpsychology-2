@@ -1,0 +1,11 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <g transform="translate(400,300)">
+    <circle cx="0" cy="0" r="80" fill="#9b59b6" opacity="0.8"/>
+    <circle cx="-100" cy="-100" r="40" fill="#3498db" opacity="0.8"/>
+    <circle cx="100" cy="-100" r="40" fill="#e74c3c" opacity="0.8"/>
+    <circle cx="-100" cy="100" r="40" fill="#27ae60" opacity="0.8"/>
+    <circle cx="100" cy="100" r="40" fill="#f39c12" opacity="0.8"/>
+  </g>
+  <text x="400" y="300" text-anchor="middle" font-size="20" fill="white">多维度分析</text>
+</svg>

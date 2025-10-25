@@ -1,0 +1,40 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  <text x="200" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    消费者决策过程模型
+  </text>
+  <!-- 决策阶段 -->
+  <rect x="50" y="60" width="80" height="40" rx="5" fill="#98d8c8"/>
+  <text x="90" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">需求识别</text>
+  
+  <rect x="160" y="60" width="80" height="40" rx="5" fill="#b8a9c9"/>
+  <text x="200" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">信息搜索</text>
+  
+  <rect x="270" y="60" width="80" height="40" rx="5" fill="#ff9a8b"/>
+  <text x="310" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">方案评估</text>
+  
+  <rect x="160" y="130" width="80" height="40" rx="5" fill="#f4a261"/>
+  <text x="200" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">购买决策</text>
+  
+  <rect x="50" y="200" width="80" height="40" rx="5" fill="#4ecdc4"/>
+  <text x="90" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">消费体验</text>
+  
+  <rect x="270" y="200" width="80" height="40" rx="5" fill="#45b7d1"/>
+  <text x="310" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">购后评价</text>
+  
+  <!-- 连接箭头 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6c757d"/>
+    </marker>
+  </defs>
+  
+  <!-- 箭头连线 -->
+  <path d="M 130 80 L 160 80" stroke="#6c757d" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 240 80 L 270 80" stroke="#6c757d" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 310 100 L 310 120 L 240 120 L 240 130" stroke="#6c757d" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 160 150 L 130 150 L 130 200" stroke="#6c757d" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 240 150 L 270 150 L 270 200" stroke="#6c757d" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 130 220 L 90 220 L 90 260 L 200 260 L 200 170" stroke="#6c757d" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 310 240 L 310 260 L 200 260" stroke="#6c757d" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

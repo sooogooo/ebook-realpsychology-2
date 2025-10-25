@@ -1,0 +1,126 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 消费者心理需求层次 -->
+  <defs>
+    <linearGradient id="pyramid-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ee5a52;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pyramid-grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#44a08d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pyramid-grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#45b7d1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pyramid-grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f9ca24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0932b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pyramid-grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c5ce7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5f3dc4;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    消费者心理需求层次
+  </text>
+  
+  <!-- 金字塔 -->
+  <g transform="translate(400, 350)">
+    <!-- 第五层：自我实现 -->
+    <polygon points="-80,-200 80,-200 60,-120 -60,-120" fill="url(#pyramid-grad5)" filter="url(#shadow)" data-interactive="true" data-tooltip="自我实现：个人成长、自我认同、价值实现" data-onclick="zoom"/>
+    <text x="0" y="-155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      自我实现
+    </text>
+    <text x="0" y="-140" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">
+      个人成长、自我认同
+    </text>
+    
+    <!-- 第四层：尊重需求 -->
+    <polygon points="-100,-120 100,-120 80,-40 -80,-40" fill="url(#pyramid-grad4)" filter="url(#shadow)" data-interactive="true" data-tooltip="尊重需求：社会认同、自尊、成就感" data-onclick="zoom"/>
+    <text x="0" y="-75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      尊重需求
+    </text>
+    <text x="0" y="-60" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">
+      社会认同、自尊
+    </text>
+    
+    <!-- 第三层：社交需求 -->
+    <polygon points="-120,-40 120,-40 100,40 -100,40" fill="url(#pyramid-grad3)" filter="url(#shadow)" data-interactive="true" data-tooltip="社交需求：归属感、社交认同、人际关系" data-onclick="zoom"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      社交需求
+    </text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">
+      归属感、社交认同
+    </text>
+    
+    <!-- 第二层：安全需求 -->
+    <polygon points="-140,40 140,40 120,120 -120,120" fill="url(#pyramid-grad2)" filter="url(#shadow)" data-interactive="true" data-tooltip="安全需求：健康安全、心理安全、风险控制" data-onclick="zoom"/>
+    <text x="0" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      安全需求
+    </text>
+    <text x="0" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">
+      健康安全、风险控制
+    </text>
+    
+    <!-- 第一层：生理需求 -->
+    <polygon points="-160,120 160,120 140,200 -140,200" fill="url(#pyramid-grad1)" filter="url(#shadow)" data-interactive="true" data-tooltip="生理需求：外貌改善、身体健康、基本满足" data-onclick="zoom"/>
+    <text x="0" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      生理需求
+    </text>
+    <text x="0" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">
+      外貌改善、身体健康
+    </text>
+  </g>
+  
+  <!-- 侧边说明 -->
+  <g transform="translate(50, 150)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">医美消费特点：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 需求层次相互交织</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 外在需求与内在需求并存</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 社会认同驱动强烈</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 长期心理满足重于短期效果</text>
+  </g>
+  
+  <!-- 右侧示例 -->
+  <g transform="translate(600, 150)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">典型消费行为：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 基础护理：生理需求</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 安全治疗：安全需求</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 社交美容：社交需求</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 品牌消费：尊重需求</text>
+    <text y="100" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 个性化定制：自我实现</text>
+  </g>
+  
+  <!-- 箭头指示需求流动 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 需求流动路径 -->
+  <path d="M 250 500 Q 400 480 550 500" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;10" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <text x="400" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#667eea">
+    需求层次递进与相互影响
+  </text>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各层次查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

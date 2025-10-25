@@ -1,0 +1,120 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    医美消费的心理过程模型
+  </text>
+  
+  <!-- 心理过程阶段 -->
+  <rect x="100" y="80" width="600" height="450" fill="#F8F8F8" stroke="#D4A574" stroke-width="2" rx="15"/>
+  
+  <!-- 需求识别阶段 -->
+  <ellipse cx="200" cy="140" rx="80" ry="40" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="2"/>
+  <text x="200" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0277BD">
+    需求识别
+  </text>
+  <text x="200" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0277BD">
+    外貌焦虑触发
+  </text>
+  
+  <!-- 信息搜索阶段 -->
+  <ellipse cx="400" cy="140" rx="80" ry="40" fill="#C8E6C9" stroke="#81C784" stroke-width="2"/>
+  <text x="400" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+    信息搜索
+  </text>
+  <text x="400" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    多渠道收集
+  </text>
+  
+  <!-- 方案评估阶段 -->
+  <ellipse cx="600" cy="140" rx="80" ry="40" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2"/>
+  <text x="600" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E65100">
+    方案评估
+  </text>
+  <text x="600" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E65100">
+    风险收益分析
+  </text>
+  
+  <!-- 决策制定阶段 -->
+  <ellipse cx="300" cy="260" rx="80" ry="40" fill="#FFCDD2" stroke="#E57373" stroke-width="2"/>
+  <text x="300" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C62828">
+    决策制定
+  </text>
+  <text x="300" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    最终选择
+  </text>
+  
+  <!-- 消费执行阶段 -->
+  <ellipse cx="500" cy="260" rx="80" ry="40" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2"/>
+  <text x="500" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A">
+    消费执行
+  </text>
+  <text x="500" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6A1B9A">
+    服务接受
+  </text>
+  
+  <!-- 效果评估阶段 -->
+  <ellipse cx="200" cy="380" rx="80" ry="40" fill="#F3E5F5" stroke="#CE93D8" stroke-width="2"/>
+  <text x="200" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A">
+    效果评估
+  </text>
+  <text x="200" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6A1B9A">
+    满意度判断
+  </text>
+  
+  <!-- 后续行为阶段 -->
+  <ellipse cx="400" cy="380" rx="80" ry="40" fill="#FFE0B2" stroke="#FFB74D" stroke-width="2"/>
+  <text x="400" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E65100">
+    后续行为
+  </text>
+  <text x="400" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E65100">
+    口碑传播/重购
+  </text>
+  
+  <!-- 循环反馈 -->
+  <ellipse cx="600" cy="380" rx="80" ry="40" fill="#C8E6C9" stroke="#81C784" stroke-width="2"/>
+  <text x="600" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+    循环反馈
+  </text>
+  <text x="600" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    经验积累
+  </text>
+  
+  <!-- 流程箭头 -->
+  <path d="M 280 140 L 320 140" stroke="#D4A574" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 480 140 L 520 140" stroke="#D4A574" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 600 180 L 600 200 Q 600 220 580 220 L 340 220 Q 320 220 320 240 L 320 220" stroke="#D4A574" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 380 260 L 420 260" stroke="#D4A574" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 500 300 L 500 320 Q 500 340 480 340 L 240 340 Q 220 340 220 360 L 220 340" stroke="#D4A574" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 280 380 L 320 380" stroke="#D4A574" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 480 380 L 520 380" stroke="#D4A574" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 反馈循环 -->
+  <path d="M 600 340 L 600 320 Q 600 300 620 300 L 680 300 Q 700 300 700 280 L 700 100 Q 700 80 680 80 L 120 80 Q 100 80 100 100 L 100 120 Q 100 140 120 140 L 120 140" stroke="#4CAF50" stroke-width="2" fill="none" marker-end="url(#arrowhead-green)" stroke-dasharray="5,5"/>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#D4A574"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50"/>
+    </marker>
+  </defs>
+  
+  <!-- 心理活动标注 -->
+  <rect x="250" y="460" width="300" height="50" fill="#FFF8E1" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="400" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E65100">
+    关键心理活动
+  </text>
+  <text x="400" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#E65100">
+    情感驱动 • 认知评估 • 社会影响 • 风险感知 • 期望管理
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图1.9：医美消费的完整心理过程模型及循环反馈机制
+  </text>
+</svg>

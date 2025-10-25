@@ -1,0 +1,5 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <polygon points="400,150 550,300 400,450 250,300" fill="#27ae60" opacity="0.8"/>
+  <text x="400" y="300" text-anchor="middle" font-size="24" fill="white">方法论</text>
+</svg>

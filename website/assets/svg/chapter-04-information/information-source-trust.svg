@@ -1,0 +1,190 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 信息源可信度评估 -->
+  <defs>
+    <!-- 高可信度渐变 -->
+    <linearGradient id="high-trust-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 中可信度渐变 -->
+    <linearGradient id="medium-trust-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 低可信度渐变 -->
+    <linearGradient id="low-trust-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 评估标准渐变 -->
+    <linearGradient id="criteria-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    信息源可信度评估
+  </text>
+  
+  <!-- 可信度等级 -->
+  <g transform="translate(400, 150)">
+    <!-- 高可信度 -->
+    <g transform="translate(-200, 0)">
+      <rect x="-60" y="-30" width="120" height="60" rx="30" fill="url(#high-trust-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="高可信度：权威可靠" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">高可信度</text>
+      <text y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">80-100%</text>
+    </g>
+    
+    <!-- 中可信度 -->
+    <g transform="translate(0, 0)">
+      <rect x="-60" y="-30" width="120" height="60" rx="30" fill="url(#medium-trust-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="中可信度：一般可靠" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">中可信度</text>
+      <text y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">50-79%</text>
+    </g>
+    
+    <!-- 低可信度 -->
+    <g transform="translate(200, 0)">
+      <rect x="-60" y="-30" width="120" height="60" rx="30" fill="url(#low-trust-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="低可信度：需要验证" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">低可信度</text>
+      <text y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">0-49%</text>
+    </g>
+  </g>
+  
+  <!-- 评估标准 -->
+  <g transform="translate(400, 300)">
+    <text x="0" y="-80" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">评估标准</text>
+    
+    <!-- 专业性 -->
+    <g transform="translate(-150, -40)">
+      <ellipse cx="0" cy="0" rx="60" ry="25" fill="url(#criteria-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="专业性：专业知识和技能" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">专业性</text>
+    </g>
+    
+    <!-- 客观性 -->
+    <g transform="translate(150, -40)">
+      <ellipse cx="0" cy="0" rx="60" ry="25" fill="url(#criteria-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="客观性：无偏见和利益冲突" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">客观性</text>
+    </g>
+    
+    <!-- 准确性 -->
+    <g transform="translate(-150, 20)">
+      <ellipse cx="0" cy="0" rx="60" ry="25" fill="url(#criteria-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="准确性：信息正确可靠" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">准确性</text>
+    </g>
+    
+    <!-- 时效性 -->
+    <g transform="translate(150, 20)">
+      <ellipse cx="0" cy="0" rx="60" ry="25" fill="url(#criteria-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="时效性：信息及时更新" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">时效性</text>
+    </g>
+    
+    <!-- 完整性 -->
+    <g transform="translate(0, 50)">
+      <ellipse cx="0" cy="0" rx="60" ry="25" fill="url(#criteria-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="完整性：信息全面充分" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">完整性</text>
+    </g>
+    
+    <!-- 连接线 -->
+    <path d="M -90 -40 L -45 -20" stroke="#667eea" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M 90 -40 L 45 -20" stroke="#667eea" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M -90 20 L -45 30" stroke="#667eea" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M 90 20 L 45 30" stroke="#667eea" stroke-width="1" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- 信息源类型 -->
+  <g transform="translate(50, 200)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">信息源类型：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">权威机构：医院、监管部门</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">专业人士：医生、专家</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">媒体平台：新闻、网站</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">社交媒体：朋友圈、微博</text>
+    </g>
+    
+    <g transform="translate(0, 105)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">商业广告：营销推广</text>
+    </g>
+  </g>
+  
+  <!-- 医美信息评估 -->
+  <g transform="translate(550, 200)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">医美信息评估：</text>
+    
+    <text y="25" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 医生资质认证和经验</text>
+    <text y="45" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 机构合法性和设备情况</text>
+    <text y="65" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 案例真实性和代表性</text>
+    <text y="85" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 价格透明度和合理性</text>
+    <text y="105" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 风险提示的充分性</text>
+  </g>
+  
+  <!-- 评估工具 -->
+  <g transform="translate(100, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">评估工具：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 可信度评分表</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 信息源验证清单</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 偏见检测工具</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 交叉验证方法</text>
+  </g>
+  
+  <!-- 提升策略 -->
+  <g transform="translate(450, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">提升策略：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 培养批判性思维</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 学习信息评估技能</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 建立多源验证习惯</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 关注权威信息源</text>
+  </g>
+  
+  <!-- 可信度指示器 -->
+  <g transform="translate(50, 320)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">综合可信度：</text>
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="100" height="15" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="75" height="15" rx="7" fill="#2ecc71"/>
+      <text x="110" y="12" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">75%</text>
+    </g>
+  </g>
+  
+  <!-- 动态效果 -->
+  <circle cx="400" cy="300" r="100" fill="none" stroke="#667eea" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="100;120;100" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各标准查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

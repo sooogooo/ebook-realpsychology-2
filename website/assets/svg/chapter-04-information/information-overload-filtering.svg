@@ -1,0 +1,198 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 信息过载与筛选 -->
+  <defs>
+    <!-- 信息过载渐变 -->
+    <linearGradient id="overload-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 筛选机制渐变 -->
+    <linearGradient id="filter-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 优化处理渐变 -->
+    <linearGradient id="optimized-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 认知负荷渐变 -->
+    <linearGradient id="cognitive-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    信息过载与筛选
+  </text>
+  
+  <!-- 信息流处理过程 -->
+  <g transform="translate(400, 300)">
+    <!-- 原始信息 -->
+    <g transform="translate(-250, 0)">
+      <rect x="-60" y="-40" width="120" height="80" rx="10" fill="url(#overload-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="原始信息：大量未筛选信息" data-onclick="details"/>
+      <text y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">原始信息</text>
+      <text y="-20" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">100%</text>
+      <text y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">过载状态</text>
+    </g>
+    
+    <!-- 注意力筛选 -->
+    <g transform="translate(-100, 0)">
+      <path d="M -30 -40 L 30 -40 L 40 0 L 30 40 L -30 40 L -40 0 Z" fill="url(#filter-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="注意力筛选：选择性注意" data-onclick="details"/>
+      <text y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">注意力</text>
+      <text y="-20" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">筛选</text>
+      <text y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">60%</text>
+    </g>
+    
+    <!-- 认知加工 -->
+    <g transform="translate(100, 0)">
+      <path d="M -30 -40 L 30 -40 L 40 0 L 30 40 L -30 40 L -40 0 Z" fill="url(#cognitive-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="认知加工：深度处理" data-onclick="details"/>
+      <text y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">认知</text>
+      <text y="-20" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">加工</text>
+      <text y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">30%</text>
+    </g>
+    
+    <!-- 优化信息 -->
+    <g transform="translate(250, 0)">
+      <rect x="-60" y="-40" width="120" height="80" rx="10" fill="url(#optimized-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="优化信息：有效信息" data-onclick="details"/>
+      <text y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">优化信息</text>
+      <text y="-20" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">15%</text>
+      <text y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">可用状态</text>
+    </g>
+    
+    <!-- 连接箭头 -->
+    <path d="M -190 0 L -140 0" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -60 0 L 60 0" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 140 0 L 190 0" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- 信息流失指示 -->
+    <path d="M -100 -60 Q -100 -80 -80 -80" stroke="#e74c3c" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+    <text x="-70" y="-85" font-family="Arial, sans-serif" font-size="8" fill="#e74c3c">40%流失</text>
+    
+    <path d="M 100 -60 Q 100 -80 120 -80" stroke="#f39c12" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+    <text x="110" y="-85" font-family="Arial, sans-serif" font-size="8" fill="#f39c12">30%流失</text>
+    
+    <path d="M 250 -60 Q 250 -80 270 -80" stroke="#2ecc71" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+    <text x="260" y="-85" font-family="Arial, sans-serif" font-size="8" fill="#2ecc71">15%保留</text>
+  </g>
+  
+  <!-- 过载症状 -->
+  <g transform="translate(50, 150)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">过载症状：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">注意力分散：难以集中</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">决策疲劳：选择困难</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">焦虑增加：压力感</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">记忆力下降：信息遗忘</text>
+    </g>
+  </g>
+  
+  <!-- 筛选策略 -->
+  <g transform="translate(550, 150)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">筛选策略：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">重要性排序：优先级筛选</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">来源可信度：权威性筛选</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">相关性判断：匹配需求</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">时效性考虑：最新信息</text>
+    </g>
+  </g>
+  
+  <!-- 医美信息过载 -->
+  <g transform="translate(100, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">医美信息过载：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 大量机构宣传信息</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 各种项目技术介绍</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 价格和优惠信息</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 用户评价和案例</text>
+  </g>
+  
+  <!-- 优化建议 -->
+  <g transform="translate(450, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">优化建议：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 分阶段获取信息</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 制定信息收集计划</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 使用筛选工具和方法</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 寻求专业指导</text>
+  </g>
+  
+  <!-- 认知负荷指示器 -->
+  <g transform="translate(50, 320)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">认知负荷：</text>
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="15" height="80" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="8" width="15" height="72" rx="7" fill="#e74c3c"/>
+      <text x="25" y="50" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">90%</text>
+    </g>
+  </g>
+  
+  <!-- 处理效率 -->
+  <g transform="translate(700, 320)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">处理效率：</text>
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="15" height="80" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="40" width="15" height="40" rx="7" fill="#2ecc71"/>
+      <text x="-35" y="65" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">50%</text>
+    </g>
+  </g>
+  
+  <!-- 信息流动画 -->
+  <circle r="3" fill="#667eea">
+    <animateMotion dur="4s" repeatCount="indefinite">
+      <mpath href="#information-flow-path"/>
+    </animateMotion>
+  </circle>
+  
+  <!-- 定义信息流路径 -->
+  <path id="information-flow-path" d="M 150 300 L 300 300 L 400 300 L 500 300 L 650 300" fill="none"/>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各阶段查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

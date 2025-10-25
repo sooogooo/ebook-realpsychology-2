@@ -1,0 +1,223 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 产业转型路线图 -->
+  <defs>
+    <!-- 技术升级渐变 -->
+    <linearGradient id="tech-upgrade-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 服务模式渐变 -->
+    <linearGradient id="service-model-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 产业链整合渐变 -->
+    <linearGradient id="industry-integration-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 全球化战略渐变 -->
+    <linearGradient id="global-strategy-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    产业转型路线图
+  </text>
+  
+  <!-- 转型路线中心 -->
+  <g transform="translate(400, 150)">
+    <text x="0" y="-50" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">医美产业转型路径</text>
+    
+    <!-- 技术升级 -->
+    <g transform="translate(-150, 0)">
+      <rect x="-45" y="-25" width="90" height="50" rx="25" fill="url(#tech-upgrade-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="技术升级：技术创新驱动" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">技术</text>
+      <text y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">升级</text>
+    </g>
+    
+    <!-- 服务模式 -->
+    <g transform="translate(-50, 0)">
+      <rect x="-45" y="-25" width="90" height="50" rx="25" fill="url(#service-model-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="服务模式：服务体验优化" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">服务</text>
+      <text y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">模式</text>
+    </g>
+    
+    <!-- 产业链整合 -->
+    <g transform="translate(50, 0)">
+      <rect x="-45" y="-25" width="90" height="50" rx="25" fill="url(#industry-integration-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="产业链整合：资源优化配置" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">产业</text>
+      <text y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">整合</text>
+    </g>
+    
+    <!-- 全球化战略 -->
+    <g transform="translate(150, 0)">
+      <rect x="-45" y="-25" width="90" height="50" rx="25" fill="url(#global-strategy-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="全球化战略：国际市场拓展" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">全球</text>
+      <text y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">战略</text>
+    </g>
+    
+    <!-- 连接线 -->
+    <path d="M -105 0 L -95 0" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M -5 0 L 5 0" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M 95 0 L 105 0" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- 技术升级详情 -->
+  <g transform="translate(50, 280)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3498db">技术升级路径：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">传统技术向智能化转型</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">引进先进医疗设备</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">建立研发创新中心</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">技术人才培养体系</text>
+    </g>
+  </g>
+  
+  <!-- 服务模式详情 -->
+  <g transform="translate(350, 280)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e74c3c">服务模式创新：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">标准化服务流程</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">个性化定制服务</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">线上线下融合模式</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">全生命周期服务</text>
+    </g>
+  </g>
+  
+  <!-- 产业链整合详情 -->
+  <g transform="translate(50, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f39c12">产业链整合策略：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">上下游资源整合</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">跨界合作模式</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">平台化运营体系</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">产业集群化发展</text>
+    </g>
+  </g>
+  
+  <!-- 全球化战略详情 -->
+  <g transform="translate(350, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2ecc71">全球化战略布局：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">国际品牌本土化</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">海外市场拓展</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">国际标准对接</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">全球资源配置</text>
+    </g>
+  </g>
+  
+  <!-- 转型时间轴 -->
+  <g transform="translate(650, 200)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">转型时间轴：</text>
+    
+    <!-- 第一阶段 -->
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="15" height="30" rx="3" fill="#3498db"/>
+      <text x="25" y="20" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">2024-2026</text>
+      <text x="25" y="32" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">基础建设</text>
+    </g>
+    
+    <!-- 第二阶段 -->
+    <g transform="translate(0, 60)">
+      <rect x="0" y="0" width="15" height="30" rx="3" fill="#f39c12"/>
+      <text x="25" y="20" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">2027-2029</text>
+      <text x="25" y="32" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">快速发展</text>
+    </g>
+    
+    <!-- 第三阶段 -->
+    <g transform="translate(0, 100)">
+      <rect x="0" y="0" width="15" height="30" rx="3" fill="#2ecc71"/>
+      <text x="25" y="20" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">2030-2035</text>
+      <text x="25" y="32" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">成熟完善</text>
+    </g>
+  </g>
+  
+  <!-- 转型路线动画 -->
+  <g transform="translate(400, 300)">
+    <path d="M -80,0 L 80,0" stroke="#667eea" stroke-width="3" opacity="0.5" marker-end="url(#arrowhead)">
+      <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    
+    <text x="0" y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#667eea">转型进程</text>
+  </g>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各路径查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

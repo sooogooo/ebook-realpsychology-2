@@ -1,0 +1,9 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <g transform="translate(400,300)">
+    <rect x="-80" y="-60" width="160" height="120" rx="15" fill="#1abc9c" opacity="0.8"/>
+    <circle cx="-40" cy="-30" r="20" fill="#3498db" opacity="0.9"/>
+    <circle cx="40" cy="-30" r="20" fill="#e74c3c" opacity="0.9"/>
+  </g>
+  <text x="400" y="300" text-anchor="middle" font-size="20" fill="white">混合研究</text>
+</svg>

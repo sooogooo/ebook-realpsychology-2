@@ -1,0 +1,201 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    医美心理学研究中的常见偏见类型
+  </text>
+  
+  <!-- 偏见类型网格 -->
+  <!-- 确认偏见 -->
+  <rect x="50" y="100" width="150" height="100" fill="#FFCDD2" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="125" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C62828">
+    确认偏见
+  </text>
+  <text x="125" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#C62828">
+    寻找支持假设的信息
+  </text>
+  <text x="125" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#C62828">
+    忽视矛盾证据
+  </text>
+  <text x="125" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#C62828">
+    选择性记忆
+  </text>
+  <text x="125" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#C62828">
+    解释偏差
+  </text>
+  
+  <!-- 选择性报告 -->
+  <rect x="225" y="100" width="150" height="100" fill="#FFEBEE" stroke="#F44336" stroke-width="2" rx="10"/>
+  <text x="300" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C62828">
+    选择性报告
+  </text>
+  <text x="300" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#C62828">
+    只报告显著结果
+  </text>
+  <text x="300" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#C62828">
+    忽略不显著数据
+  </text>
+  <text x="300" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#C62828">
+    过度乐观估计
+  </text>
+  <text x="300" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#C62828">
+    结果美化
+  </text>
+  
+  <!-- 样本偏见 -->
+  <rect x="400" y="100" width="150" height="100" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="475" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E65100">
+    样本偏见
+  </text>
+  <text x="475" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    自选择偏差
+  </text>
+  <text x="475" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    便利抽样偏差
+  </text>
+  <text x="475" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    文化偏见
+  </text>
+  <text x="475" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    代表性不足
+  </text>
+  
+  <!-- 商业利益影响 -->
+  <rect x="575" y="100" width="150" height="100" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="650" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+    商业利益影响
+  </text>
+  <text x="650" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    资助方影响
+  </text>
+  <text x="650" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    利益冲突
+  </text>
+  <text x="650" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    结果偏向
+  </text>
+  <text x="650" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    透明度不足
+  </text>
+  
+  <!-- 测量偏见 -->
+  <rect x="137.5" y="225" width="150" height="100" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="2" rx="10"/>
+  <text x="212.5" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0277BD">
+    测量偏见
+  </text>
+  <text x="212.5" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277BD">
+    社会期望效应
+  </text>
+  <text x="212.5" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277BD">
+    记忆偏见
+  </text>
+  <text x="212.5" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277BD">
+    理解偏差
+  </text>
+  <text x="212.5" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277BD">
+    工具失效
+  </text>
+  
+  <!-- 分析偏见 -->
+  <rect x="312.5" y="225" width="150" height="100" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="387.5" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A">
+    分析偏见
+  </text>
+  <text x="387.5" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    p值偏见
+  </text>
+  <text x="387.5" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    多重比较偏见
+  </text>
+  <text x="387.5" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    数据挖掘偏见
+  </text>
+  <text x="387.5" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    方法选择偏差
+  </text>
+  
+  <!-- 偏见影响说明 -->
+  <rect x="487.5" y="225" width="150" height="100" fill="#F3E5F5" stroke="#CE93D8" stroke-width="2" rx="10"/>
+  <text x="562.5" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A">
+    偏见影响
+  </text>
+  <text x="562.5" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    研究质量下降
+  </text>
+  <text x="562.5" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    结果可靠性降低
+  </text>
+  <text x="562.5" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    决策误导
+  </text>
+  <text x="562.5" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    信任危机
+  </text>
+  
+  <!-- 偏见控制方法 -->
+  <rect x="50" y="350" width="700" height="120" fill="#F8F8F8" stroke="#D4A574" stroke-width="2" rx="15"/>
+  <text x="400" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#8B4513">
+    偏见控制方法
+  </text>
+  
+  <!-- 控制方法项目 -->
+  <rect x="80" y="390" width="140" height="60" fill="#E8F5E8" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="150" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">
+    提高批判思维
+  </text>
+  <text x="150" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    自我反思习惯
+  </text>
+  <text x="150" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    偏见识别训练
+  </text>
+  
+  <rect x="240" y="390" width="140" height="60" fill="#FFF3E0" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="310" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">
+    完善研究设计
+  </text>
+  <text x="310" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    随机抽样
+  </text>
+  <text x="310" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E65100">
+    双盲实验
+  </text>
+  
+  <rect x="400" y="390" width="140" height="60" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="470" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0277BD">
+    加强质量控制
+  </text>
+  <text x="470" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277BD">
+    数据准确性
+  </text>
+  <text x="470" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277BD">
+    完整性检查
+  </text>
+  
+  <rect x="560" y="390" width="140" height="60" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="630" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C62828">
+    促进透明度
+  </text>
+  <text x="630" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#C62828">
+    公开研究过程
+  </text>
+  <text x="630" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#C62828">
+    同行检验
+  </text>
+  
+  <!-- 质量控制体系 -->
+  <rect x="150" y="490" width="500" height="50" fill="#FFF8E1" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E65100">
+    偏见识别与控制质量体系
+  </text>
+  <text x="400" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#E65100">
+    研究前风险评估 → 研究中监控措施 → 研究后检验程序 → 结果披露要求
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图2.2：医美心理学研究中的六种主要偏见类型及控制方法
+  </text>
+</svg>

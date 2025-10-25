@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="医美技术快速发展对消费者心理的影响研究 - 深入探讨技术变革与心理适应的交互作用，分析技术发展趋势、心理影响机制、适应挑战及应对策略。">
+    <meta name="keywords" content="医美技术,心理影响,技术适应,消费心理,研究论文">
+    <meta name="author" content="重庆联合丽格科技有限公司">
+    <title>医美技术快速发展对消费者心理的影响研究 - 专业研究</title>
+    <link rel="icon" type="image/png" href="https://docs.bccsw.cn/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gray: #f8f9fa;
+            --secondary-gray: #e9ecef;
+            --text-primary: #2c3e50;
+            --text-secondary: #6c757d;
+            --accent-mint: #98d8c8;
+            --accent-lavender: #b8a9c9;
+            --accent-coral: #ff9a8b;
+            --accent-rose: #f4a261;
+            --border-light: #dee2e6;
+            --shadow-light: 0 2px 8px rgba(0,0,0,0.08);
+            --shadow-medium: 0 4px 16px rgba(0,0,0,0.12);
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--primary-gray);
+            color: var(--text-primary);
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: var(--shadow-light);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 400;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-mint);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: white;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .breadcrumb-nav a:hover {
+            color: var(--text-primary);
+        }
+
+        .breadcrumb-nav .separator {
+            color: var(--text-secondary);
+        }
+
+        /* Research Content */
+        .research-wrapper {
+            background: white;
+            margin: 2rem 0;
+            border-radius: 16px;
+            box-shadow: var(--shadow-light);
+            overflow: hidden;
+        }
+
+        .research-header {
+            background: linear-gradient(135deg, var(--accent-coral) 0%, var(--accent-rose) 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .research-title {
+            font-size: 2.2rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        .research-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .research-content {
+            padding: 3rem 2rem;
+        }
+
+        .executive-summary {
+            background: var(--primary-gray);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border-left: 4px solid var(--accent-coral);
+        }
+
+        .executive-summary h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--accent-mint);
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin: 2rem 0 1rem 0;
+            color: var(--text-primary);
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .section ul, .section ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 0.8rem;
+            color: var(--text-primary);
+        }
+
+        .key-finding {
+            background: var(--primary-gray);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 3px solid var(--accent-lavender);
+        }
+
+        .key-finding h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .recommendations {
+            background: linear-gradient(135deg, var(--accent-mint) 0%, var(--accent-lavender) 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .recommendations h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        .recommendations ul {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .recommendations li {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            line-height: 1.8;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-bottom a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .research-header {
+                padding: 2rem 1rem;
+            }
+
+            .research-title {
+                font-size: 1.8rem;
+            }
+
+            .research-content {
+                padding: 2rem 1rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            .section h3 {
+                font-size: 1.2rem;
+            }
+
+            .section p {
+                font-size: 1rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="https://docs.bccsw.cn/logo.png" alt="Logo">
+                <h1>医美消费心理学</h1>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#overview">概述</a></li>
+                <li><a href="index.html#chapters">章节</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html">首页</a>
+                <span class="separator">›</span>
+                <a href="index.html#research">专业研究</a>
+                <span class="separator">›</span>
+                <span>技术发展对消费者心理的影响研究</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="research-wrapper">
+            <div class="research-header">
+                <h1 class="research-title">医美技术快速发展对消费者心理的影响研究</h1>
+                <p class="research-subtitle">深入探讨技术变革与心理适应的交互作用，分析技术发展趋势、心理影响机制及适应策略</p>
+            </div>
+
+            <div class="research-content">
+                <div class="executive-summary">
+                    <h3>执行摘要</h3>
+                    <p>本研究深入探讨了医美技术快速发展对消费者心理的多维度影响，重点关注技术变革与心理适应的交互作用。通过对医美消费心理学的系统分析，本研究揭示了技术发展趋势、心理影响机制、适应挑战及应对策略，为构建健康的医美消费生态系统提供了理论指导和实践建议。</p>
+                </div>
+
+                <div class="section">
+                    <h2>一、医美技术发展的主要趋势和特点</h2>
+                    
+                    <!-- Innovation Psychological Impact -->
+                    <div class="concept-visualization svg-animated">
+                        <h4>技术创新的心理影响分析</h4>
+                        <div class="svg-container" style="text-align: center; margin: 2rem 0;">
+                            <img src="assets/svg/chapter-08-technology/innovation-psychological-impact.svg" alt="技术创新的心理影响分析" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        </div>
+                        <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                            <svg class="svg-icon svg-icon-small" viewBox="0 0 24 24" style="width: 16px; height: 16px; vertical-align: middle;">
+                                <g stroke="#98d8c8" stroke-width="1.5" fill="none">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 2v10m0 0l-4-4m4 4l4-4"/>
+                                </g>
+                            </svg>
+                            医美技术创新对消费者心理的多维度影响机制和效应分析
+                        </p>
+                    </div>
+                    
+                    <h3>1.1 技术发展的核心趋势</h3>
+                    <p>医美技术正经历前所未有的快速发展，呈现出几个明显的核心趋势：</p>
+                    <ul>
+                        <li><strong>微创技术的普及化</strong>：从传统手术向微创、无创技术转变，恢复期缩短，风险降低，接受度提高，技术门槛降低，消费者决策压力减小</li>
+                        <li><strong>个性化定制的精准化</strong>：基于大数据和人工智能的个性化方案设计，3D打印、生物材料等技术实现精准定制，从标准化服务向个性化服务转变</li>
+                        <li><strong>数字化技术的深度融合</strong>：VR/AR技术在术前模拟和效果预测中的应用，人工智能辅助诊断和治疗方案制定，数字化平台改变信息获取和决策方式</li>
+                        <li><strong>生物技术的创新突破</strong>：再生医学、干细胞技术在抗衰老领域的应用，生物材料替代传统填充物，基因检测指导个性化医美方案</li>
+                    </ul>
+
+                    <h3>1.2 技术发展的心理影响特征</h3>
+                    <p>技术发展对消费者心理产生了深远影响，呈现出以下特征：</p>
+                    <ul>
+                        <li><strong>可及性提升与决策门槛降低</strong>：技术普及使更多消费者能够接受医美服务，轻微美容项目的日常化趋势，消费决策从重大决定向常规消费转变</li>
+                        <li><strong>效果预期与实际体验的差距变化</strong>：技术进步提高效果可预测性，数字化模拟可能造成不切实际的期望，术后适应期的心理调适需求变化</li>
+                        <li><strong>风险-收益平衡的重新定义</strong>：技术安全性提高改变风险认知，消费者可能低估新技术风险，长期效果与短期收益的权衡变化</li>
+                    </ul>
+
+                    <div class="key-finding">
+                        <h4>关键发现</h4>
+                        <p>技术发展既提高了医美的可及性和效果可预测性，也带来了新的心理挑战。消费者需要在技术便利性和心理适应性之间找到平衡，避免过度依赖技术而忽视自然美的价值。</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>二、新技术对消费者心理的影响机制</h2>
+                    
+                    <h3>2.1 认知层面的影响</h3>
+                    <p>新技术从根本上改变了消费者的认知模式和信息处理方式：</p>
+                    <ul>
+                        <li><strong>信息处理模式的转变</strong>：从专业依赖向自主信息搜索转变，数字化信息过载与决策困难，信息质量识别能力的重要性提升</li>
+                        <li><strong>风险感知的重构</strong>：技术安全性提高降低风险焦虑，新技术未知性增加不确定性，风险评估从经验判断向数据分析转变</li>
+                        <li><strong>期望管理的复杂化</strong>：数字化模拟提高期望精确度，技术承诺与实际效果的可能差距，个性化定制带来的独特期望管理挑战</li>
+                    </ul>
+
+                    <h3>2.2 情感层面的影响</h3>
+                    <p>技术发展对消费者的情感状态和情绪调节产生了复杂影响：</p>
+                    <ul>
+                        <li><strong>外貌焦虑的转化</strong>：技术可及性可能加剧外貌焦虑，"完美化"趋势导致新的焦虑来源，技术依赖与自我认同的关系变化</li>
+                        <li><strong>决策情绪的波动</strong>：技术选择增多导致决策焦虑，对新技术的兴奋与担忧并存，术后情绪适应周期的变化</li>
+                        <li><strong>满足感的延迟与转移</strong>：技术效果立竿见影但心理适应需要时间，从技术满足向心理满足的转变过程，持续技术更新的满足感维持挑战</li>
+                    </ul>
+
+                    <h3>2.3 行为层面的影响</h3>
+                    <p>技术发展显著改变了消费者的行为模式和社会互动方式：</p>
+                    <ul>
+                        <li><strong>消费行为的模式变化</strong>：从重大决策向日常消费转变，技术更新加速消费频率，跨平台、跨机构的比较行为增加</li>
+                        <li><strong>社会互动行为的调整</strong>：技术体验分享的社交化趋势，基于技术认同的社群形成，医美技术成为社交话题和身份标识</li>
+                        <li><strong>决策过程的复杂化</strong>：多技术方案的比较评估，专业意见与个人偏好的平衡，长期规划与即时满足的协调</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>三、技术快速发展带来的心理适应挑战</h2>
+                    
+                    <h3>3.1 认知适应挑战</h3>
+                    <p>消费者在认知层面面临多重适应挑战：</p>
+                    <ul>
+                        <li><strong>信息过载与决策疲劳</strong>：技术信息爆炸性增长，消费者认知资源有限性，决策质量与信息量的非线性关系</li>
+                        <li><strong>技术理解与评估困难</strong>：专业知识门槛的限制，技术术语与实际效果的对应困难，客观评估与主观感受的整合挑战</li>
+                        <li><strong>持续学习压力</strong>：技术更新速度加快，消费者知识更新需求增加，学习成本与决策效益的平衡</li>
+                    </ul>
+
+                    <h3>3.2 情感适应挑战</h3>
+                    <p>情感适应是技术适应中最具挑战性的方面：</p>
+                    <ul>
+                        <li><strong>技术依赖与自我认同</strong>：对技术改善外貌的依赖心理，自然老化与技术干预的心理冲突，自我价值与技术效果的关联过度</li>
+                        <li><strong>期望与现实的持续调适</strong>：技术宣传与实际效果的差距，个性化结果与标准化期望的矛盾，长期满意度的维持困难</li>
+                        <li><strong>社交比较的加剧</strong>：技术效果的可视化和可比较性，社交媒体上的技术炫耀和比较，独特性与从众心理的冲突</li>
+                    </ul>
+
+                    <h3>3.3 行为适应挑战</h3>
+                    <p>行为适应挑战直接影响消费者的日常生活和社会关系：</p>
+                    <ul>
+                        <li><strong>消费行为的失控风险</strong>：技术可及性提高导致的过度消费，"微调整"累积为重大改变，消费边界感的模糊化</li>
+                        <li><strong>决策标准的不稳定</strong>：技术标准的变化影响价值判断，个人偏好随技术发展而调整，长期规划与短期趋势的冲突</li>
+                        <li><strong>社会适应的压力</strong>：技术接受度的社会差异，技术使用的公开与私密平衡，技术选择的社会认同需求</li>
+                    </ul>
+
+                    <div class="key-finding">
+                        <h4>关键发现</h4>
+                        <p>技术适应是一个涉及认知、情感、行为多个层面的复杂过程。不同消费者面临的适应挑战各不相同，需要个性化的支持和干预策略。适应的成功与否直接影响消费者的长期满意度和心理健康。</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>四、不同人群对技术适应的差异特征</h2>
+                    
+                    <h3>4.1 年龄差异</h3>
+                    <p>不同年龄段的消费者在技术适应方面表现出明显差异：</p>
+                    <ul>
+                        <li><strong>年轻群体（18-30岁）</strong>：技术接受度高，适应能力强，社交媒体影响显著，预防性医美意识强，风险认知相对不足</li>
+                        <li><strong>中年群体（30-45岁）</strong>：技术选择更加理性，抗衰老需求驱动明显，职业形象考虑重要，经济能力与消费意愿匹配</li>
+                        <li><strong>年长群体（45岁以上）</strong>：技术适应相对保守，健康安全考虑优先，传统观念与现代技术的冲突，家庭支持系统影响决策</li>
+                    </ul>
+
+                    <h3>4.2 教育水平差异</h3>
+                    <p>教育水平显著影响消费者的技术理解和适应能力：</p>
+                    <ul>
+                        <li><strong>高教育水平群体</strong>：信息分析能力强，技术理解深度高，决策过程更加系统化，对专业意见的依赖程度适中</li>
+                        <li><strong>中等教育水平群体</strong>：信息来源相对单一，技术理解存在困难，决策更依赖口碑和推荐，对价格敏感度较高</li>
+                        <li><strong>低教育水平群体</strong>：信息获取渠道有限，技术理解障碍明显，决策容易受营销影响，风险评估能力不足</li>
+                    </ul>
+
+                    <h3>4.3 文化背景差异</h3>
+                    <p>文化背景深刻影响消费者对技术的接受和使用方式：</p>
+                    <ul>
+                        <li><strong>东方文化背景</strong>：集体主义影响显著，社会认同需求强烈，自然美的传统观念，技术使用的私密性偏好</li>
+                        <li><strong>西方文化背景</strong>：个人主义导向明显，自我表达需求突出，技术接受度相对较高，公开讨论的开放态度</li>
+                        <li><strong>文化融合影响</strong>：全球化带来的观念交流，本土化与国际化趋势并存，文化身份与技术选择的关联，跨文化技术理解的挑战</li>
+                    </ul>
+
+                    <h3>4.4 经济条件差异</h3>
+                    <p>经济条件直接影响消费者的技术选择范围和适应能力：</p>
+                    <ul>
+                        <li><strong>高收入群体</strong>：技术选择更加自由，风险承受能力较强，追求最新和最好的技术，个性化定制需求突出</li>
+                        <li><strong>中等收入群体</strong>：性价比考虑重要，技术选择相对谨慎，倾向选择成熟技术，分期付款等财务安排</li>
+                        <li><strong>低收入群体</strong>：经济限制明显，技术选择范围有限，风险承受能力较低，基础需求优先考虑</li>
+                    </ul>
+                </div>
+
+                <div class="recommendations">
+                    <h3>五、帮助消费者适应技术发展的策略建议</h3>
+                    <ul>
+                        <li><strong>个人层面</strong>：建立健康的技术观念，提升信息素养能力，发展心理调适能力，构建支持系统网络</li>
+                        <li><strong>机构层面</strong>：提供个性化的咨询服务，优化服务流程设计，加强消费者教育培训，建立质量保障体系</li>
+                        <li><strong>行业层面</strong>：制定技术标准和规范，加强行业自律管理，促进信息透明化，推动专业人才培养</li>
+                        <li><strong>社会层面</strong>：营造理性的社会氛围，完善法律法规体系，加强公共教育宣传，建立社会监督机制</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>六、结论与展望</h2>
+                    
+                    <h3>6.1 主要研究结论</h3>
+                    <p>通过对医美技术快速发展与消费者心理适应的深入分析，本研究得出以下主要结论：</p>
+                    <ul>
+                        <li><strong>技术发展的双面性</strong>：技术进步带来便利性和可及性提升，同时也带来新的心理适应挑战，需要平衡技术发展与心理健康的关系</li>
+                        <li><strong>心理影响的复杂性</strong>：技术对心理的影响是多维度、多层次的，个体差异在技术适应中起着关键作用，需要综合考虑认知、情感、行为的交互影响</li>
+                        <li><strong>适应策略的系统性</strong>：个人、机构、行业、社会需要协同努力，短期干预与长期支持相结合，预防、干预、教育并重的综合策略</li>
+                    </ul>
+
+                    <h3>6.2 未来研究方向</h3>
+                    <p>基于本研究发现，未来研究应该关注以下方向：</p>
+                    <ul>
+                        <li><strong>技术发展的心理影响研究</strong>：新兴技术（如基因技术）的心理影响，长期技术使用的心理适应研究，技术依赖与心理健康的关系研究</li>
+                        <li><strong>个体差异的深入研究</strong>：遗传因素在技术适应中的作用，人格特质与技术接受度的关系，文化背景对技术使用的影响</li>
+                        <li><strong>干预效果的评估研究</strong>：不同干预策略的效果比较，长期干预效果的追踪研究，成本效益分析研究</li>
+                        <li><strong>跨学科研究的拓展</strong>：神经科学在医美心理研究中的应用，计算机科学与心理学的交叉研究，社会学与心理学的整合研究</li>
+                    </ul>
+
+                    <div class="key-finding">
+                        <h4>研究启示</h4>
+                        <p>医美技术的快速发展既是机遇也是挑战。只有在技术创新和人文关怀之间找到平衡，才能实现技术发展与心理健康的和谐统一。未来的研究应该更加注重跨学科合作，探索更加有效的适应策略，为构建健康的医美消费生态系统提供科学依据。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>地址：重庆市渝中区临江支路28号</p>
+                    <p>电话：<a href="tel:023-68726872">023-68726872</a></p>
+                    <p>邮箱：<a href="mailto:bccsw@cqlhlg.work">bccsw@cqlhlg.work</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>关于我们</h4>
+                    <p>重庆联合丽格科技有限公司致力于医美行业的专业研究和咨询服务，推动行业健康发展。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <p><a href="index.html">首页</a></p>
+                    <p><a href="index.html#chapters">章节内容</a></p>
+                    <p><a href="index.html#research">专业研究</a></p>
+                    <p><a href="index.html#contact">联系我们</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 重庆联合丽格科技有限公司 | <a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2024023473号</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 文化能力评估工具 -->
+  <defs>
+    <!-- 认知能力渐变 -->
+    <linearGradient id="cognitive-ability-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 情感能力渐变 -->
+    <linearGradient id="emotional-ability-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 行为能力渐变 -->
+    <linearGradient id="behavioral-ability-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 技能能力渐变 -->
+    <linearGradient id="skill-ability-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    文化能力评估工具
+  </text>
+  
+  <!-- 评估工具中心 -->
+  <g transform="translate(400, 150)">
+    <text x="0" y="-50" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">文化能力维度</text>
+    
+    <!-- 认知能力 -->
+    <g transform="translate(-120, -60)">
+      <circle cx="0" cy="0" r="30" fill="url(#cognitive-ability-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="认知能力：文化理解和认知" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">认知</text>
+      <text y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">能力</text>
+    </g>
+    
+    <!-- 情感能力 -->
+    <g transform="translate(120, -60)">
+      <circle cx="0" cy="0" r="30" fill="url(#emotional-ability-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="情感能力：情感理解和调节" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">情感</text>
+      <text y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">能力</text>
+    </g>
+    
+    <!-- 行为能力 -->
+    <g transform="translate(-120, 60)">
+      <circle cx="0" cy="0" r="30" fill="url(#behavioral-ability-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="行为能力：跨文化行为适应" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">行为</text>
+      <text y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">能力</text>
+    </g>
+    
+    <!-- 技能能力 -->
+    <g transform="translate(120, 60)">
+      <circle cx="0" cy="0" r="30" fill="url(#skill-ability-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="技能能力：实际技能掌握" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">技能</text>
+      <text y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">能力</text>
+    </g>
+    
+    <!-- 连接线 -->
+    <path d="M -90 -60 L 90 -60" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M -120 -30 L -120 30" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M 120 -30 L 120 30" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M -90 60 L 90 60" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- 评估指标 -->
+  <g transform="translate(100, 300)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">评估指标：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">文化知识：对不同文化的了解程度</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">文化意识：对文化差异的敏感度</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">沟通技能：跨文化沟通技巧</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">适应能力：文化环境适应能力</text>
+    </g>
+  </g>
+  
+  <!-- 评估方法 -->
+  <g transform="translate(400, 300)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">评估方法：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">问卷调查：文化能力问卷测试</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">情境测试：跨文化情境模拟</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">行为观察：实际行为表现观察</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">360度评估：多维度综合评估</text>
+    </g>
+  </g>
+  
+  <!-- 能力等级 -->
+  <g transform="translate(100, 470)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">能力等级：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">初级：基础文化知识了解</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">中级：基本跨文化沟通能力</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">高级：熟练跨文化适应能力</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">专家：文化融合创新能力</text>
+    </g>
+  </g>
+  
+  <!-- 提升建议 -->
+  <g transform="translate(400, 470)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">提升建议：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 持续学习不同文化知识</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 增加跨文化交流实践</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 反思总结文化冲突经验</text>
+  </g>
+  
+  <!-- 评估结果 -->
+  <g transform="translate(650, 200)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">综合评分：</text>
+    
+    <!-- 评分指示器 -->
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="15" height="80" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="16" width="15" height="64" rx="7" fill="#2ecc71"/>
+      <text x="25" y="50" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">80%</text>
+    </g>
+    
+    <!-- 等级说明 -->
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">初级：0-40%</text>
+    <text x="0" y="135" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">中级：41-70%</text>
+    <text x="0" y="150" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">高级：71-100%</text>
+  </g>
+  
+  <!-- 评估工具动画 -->
+  <circle cx="400" cy="150" r="100" fill="none" stroke="#667eea" stroke-width="2" opacity="0.3">
+    <animate attributeName="r" values="100;120;100" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各能力维度查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

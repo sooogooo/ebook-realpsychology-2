@@ -1,0 +1,203 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 文化比较矩阵 -->
+  <defs>
+    <!-- 东亚文化渐变 -->
+    <linearGradient id="east-asian-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 西方文化渐变 -->
+    <linearGradient id="western-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 中东文化渐变 -->
+    <linearGradient id="middle-eastern-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 拉美文化渐变 -->
+    <linearGradient id="latin-american-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    文化比较矩阵
+  </text>
+  
+  <!-- 矩阵中心 -->
+  <g transform="translate(400, 300)">
+    <!-- 矩阵网格 -->
+    <g stroke="#ddd" stroke-width="1" fill="none">
+      <!-- 垂直线 -->
+      <line x1="-200" y1="-150" x2="-200" y2="150"/>
+      <line x1="-100" y1="-150" x2="-100" y2="150"/>
+      <line x1="0" y1="-150" x2="0" y2="150"/>
+      <line x1="100" y1="-150" x2="100" y2="150"/>
+      <line x1="200" y1="-150" x2="200" y2="150"/>
+      
+      <!-- 水平线 -->
+      <line x1="-200" y1="-150" x2="200" y2="-150"/>
+      <line x1="-200" y1="-75" x2="200" y2="-75"/>
+      <line x1="-200" y1="0" x2="200" y2="0"/>
+      <line x1="-200" y1="75" x2="200" y2="75"/>
+      <line x1="-200" y1="150" x2="200" y2="150"/>
+    </g>
+    
+    <!-- 文化区域标签 -->
+    <text x="-150" y="-170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e74c3c">东亚文化</text>
+    <text x="-50" y="-170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#3498db">西方文化</text>
+    <text x="50" y="-170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f39c12">中东文化</text>
+    <text x="150" y="-170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#9b59b6">拉美文化</text>
+    
+    <!-- 维度标签 -->
+    <text x="-230" y="-110" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" transform="rotate(-90 -230 -110)">集体主义</text>
+    <text x="-230" y="-35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" transform="rotate(-90 -230 -35)">权力距离</text>
+    <text x="-230" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" transform="rotate(-90 -230 40)">不确定性规避</text>
+    <text x="-230" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" transform="rotate(-90 -230 115)">长期导向</text>
+    
+    <!-- 文化特征点 -->
+    <!-- 东亚文化特征 -->
+    <g transform="translate(-150, -110)">
+      <circle r="15" fill="url(#east-asian-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="东亚文化：高集体主义" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">高</text>
+    </g>
+    
+    <g transform="translate(-150, -35)">
+      <circle r="15" fill="url(#east-asian-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="东亚文化：中等权力距离" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">中</text>
+    </g>
+    
+    <g transform="translate(-150, 40)">
+      <circle r="15" fill="url(#east-asian-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="东亚文化：中等不确定性规避" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">中</text>
+    </g>
+    
+    <g transform="translate(-150, 115)">
+      <circle r="15" fill="url(#east-asian-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="东亚文化：高长期导向" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">高</text>
+    </g>
+    
+    <!-- 西方文化特征 -->
+    <g transform="translate(-50, -110)">
+      <circle r="15" fill="url(#western-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="西方文化：低集体主义" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">低</text>
+    </g>
+    
+    <g transform="translate(-50, -35)">
+      <circle r="15" fill="url(#western-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="西方文化：低权力距离" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">低</text>
+    </g>
+    
+    <g transform="translate(-50, 40)">
+      <circle r="15" fill="url(#western-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="西方文化：低不确定性规避" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">低</text>
+    </g>
+    
+    <g transform="translate(-50, 115)">
+      <circle r="15" fill="url(#western-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="西方文化：中等长期导向" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">中</text>
+    </g>
+    
+    <!-- 中东文化特征 -->
+    <g transform="translate(50, -110)">
+      <circle r="15" fill="url(#middle-eastern-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="中东文化：高集体主义" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">高</text>
+    </g>
+    
+    <g transform="translate(50, -35)">
+      <circle r="15" fill="url(#middle-eastern-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="中东文化：高权力距离" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">高</text>
+    </g>
+    
+    <g transform="translate(50, 40)">
+      <circle r="15" fill="url(#middle-eastern-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="中东文化：高不确定性规避" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">高</text>
+    </g>
+    
+    <g transform="translate(50, 115)">
+      <circle r="15" fill="url(#middle-eastern-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="中东文化：中等长期导向" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">中</text>
+    </g>
+    
+    <!-- 拉美文化特征 -->
+    <g transform="translate(150, -110)">
+      <circle r="15" fill="url(#latin-american-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="拉美文化：中等集体主义" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">中</text>
+    </g>
+    
+    <g transform="translate(150, -35)">
+      <circle r="15" fill="url(#latin-american-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="拉美文化：高权力距离" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">高</text>
+    </g>
+    
+    <g transform="translate(150, 40)">
+      <circle r="15" fill="url(#latin-american-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="拉美文化：高不确定性规避" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">高</text>
+    </g>
+    
+    <g transform="translate(150, 115)">
+      <circle r="15" fill="url(#latin-american-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="拉美文化：低长期导向" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">低</text>
+    </g>
+  </g>
+  
+  <!-- 图例 -->
+  <g transform="translate(50, 500)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">文化维度：</text>
+    
+    <g transform="translate(0, 20)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">东亚：中国、日本、韩国</text>
+    </g>
+    
+    <g transform="translate(0, 40)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">西方：美国、英国、德国</text>
+    </g>
+    
+    <g transform="translate(200, 20)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">中东：沙特、阿联酋、伊朗</text>
+    </g>
+    
+    <g transform="translate(200, 40)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">拉美：巴西、墨西哥、阿根廷</text>
+    </g>
+  </g>
+  
+  <!-- 评分标准 -->
+  <g transform="translate(550, 500)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">评分标准：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">高：7-10分  中：4-6分  低：1-3分</text>
+  </g>
+  
+  <!-- 矩阵动画 -->
+  <rect x="200" y="150" width="400" height="300" fill="none" stroke="#667eea" stroke-width="2" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各文化特征点查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

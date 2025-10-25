@@ -1,0 +1,290 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    销售伦理自评量表
+  </text>
+  
+  <!-- 工具说明 -->
+  <rect x="100" y="80" width="600" height="60" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    实用工具7.1
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    帮助医美销售人员和机构评估销售实践的伦理水平，识别潜在伦理风险，改进销售实践
+  </text>
+  
+  <!-- 四个评估维度 -->
+  <rect x="50" y="160" width="700" height="360" fill="#F3E5F5" stroke="#CE93D8" stroke-width="3" rx="15"/>
+  <text x="400" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#6A1B9A">
+    评估维度与评分项目
+  </text>
+  
+  <!-- 信息披露伦理 -->
+  <rect x="80" y="210" width="150" height="130" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="155" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    信息披露伦理
+  </text>
+  <text x="155" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    (每项1-5分)
+  </text>
+  <text x="155" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    1. 信息完整性
+  </text>
+  <text x="155" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    2. 信息准确性
+  </text>
+  <text x="155" y="291" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    3. 信息透明度
+  </text>
+  <text x="155" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    小计: ___ 分
+  </text>
+  <text x="155" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    风险披露、费用透明
+  </text>
+  
+  <!-- 销售压力管理 -->
+  <rect x="250" y="210" width="150" height="130" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="325" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    销售压力管理
+  </text>
+  <text x="325" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    (每项1-5分)
+  </text>
+  <text x="325" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    4. 时间压力控制
+  </text>
+  <text x="325" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    5. 情感压力管理
+  </text>
+  <text x="325" y="291" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    6. 社会压力控制
+  </text>
+  <text x="325" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    小计: ___ 分
+  </text>
+  <text x="325" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    无压力环境、自主权
+  </text>
+  
+  <!-- 利益冲突管理 -->
+  <rect x="420" y="210" width="150" height="130" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="495" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    利益冲突管理
+  </text>
+  <text x="495" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    (每项1-5分)
+  </text>
+  <text x="495" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    7. 建议客观性
+  </text>
+  <text x="495" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    8. 利益冲突披露
+  </text>
+  <text x="495" y="291" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    9. 长期利益考量
+  </text>
+  <text x="495" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    小计: ___ 分
+  </text>
+  <text x="495" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    客观推荐、透明化
+  </text>
+  
+  <!-- 专业诚信度 -->
+  <rect x="590" y="210" width="130" height="130" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="655" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    专业诚信度
+  </text>
+  <text x="655" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    (每项1-5分)
+  </text>
+  <text x="655" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    10. 专业资质真实
+  </text>
+  <text x="655" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    11. 技术局限说明
+  </text>
+  <text x="655" y="291" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    12. 案例真实性
+  </text>
+  <text x="655" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    小计: ___ 分
+  </text>
+  <text x="655" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    资质真实、诚实守信
+  </text>
+  
+  <!-- 综合评估 -->
+  <rect x="80" y="360" width="640" height="140" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    综合评估与等级判定
+  </text>
+  
+  <!-- 评分汇总 -->
+  <rect x="110" y="395" width="120" height="95" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="170" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    评分汇总
+  </text>
+  <text x="170" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    信息完整性: ___
+  </text>
+  <text x="170" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    信息准确性: ___
+  </text>
+  <text x="170" y="451" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    信息透明度: ___
+  </text>
+  <text x="170" y="464" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    时间压力控制: ___
+  </text>
+  <text x="170" y="477" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    情感压力管理: ___
+  </text>
+  <text x="170" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    社会压力控制: ___
+  </text>
+  <text x="170" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    建议客观性: ___
+  </text>
+  <text x="170" y="516" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    利益冲突披露: ___
+  </text>
+  <text x="170" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    长期利益考量: ___
+  </text>
+  <text x="170" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    专业资质真实: ___
+  </text>
+  <text x="170" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    技术局限说明: ___
+  </text>
+  <text x="170" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    案例真实性: ___
+  </text>
+  <text x="170" y="581" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    总分: ___ 分 (12-60分)
+  </text>
+  
+  <!-- 伦理等级 -->
+  <rect x="250" y="395" width="120" height="95" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="310" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    伦理等级
+  </text>
+  <text x="310" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    优秀 (48-60分)
+  </text>
+  <text x="310" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    销售伦理水平很高
+  </text>
+  <text x="310" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    值得信赖
+  </text>
+  <text x="310" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    良好 (36-47分)
+  </text>
+  <text x="310" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    销售伦理水平较好
+  </text>
+  <text x="310" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    有改进空间
+  </text>
+  <text x="310" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    一般 (24-35分)
+  </text>
+  <text x="310" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    销售伦理水平一般
+  </text>
+  <text x="310" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    需要改进
+  </text>
+  <text x="310" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    较差 (12-23分)
+  </text>
+  <text x="310" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    销售伦理水平较差
+  </text>
+  <text x="310" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    急需改进
+  </text>
+  
+  <!-- 改进建议 -->
+  <rect x="390" y="395" width="120" height="95" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="450" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    改进建议
+  </text>
+  <text x="450" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    1. 得分较低维度
+  </text>
+  <text x="450" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    是改进重点
+  </text>
+  <text x="450" y="451" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    2. 制定具体改进
+  </text>
+  <text x="450" y="464" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    措施和时间表
+  </text>
+  <text x="450" y="477" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    3. 定期重新评估
+  </text>
+  <text x="450" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    跟踪改进效果
+  </text>
+  <text x="450" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    4. 寻求同事和
+  </text>
+  <text x="450" y="516" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    上级反馈支持
+  </text>
+  <text x="450" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    5. 持续学习提升
+  </text>
+  <text x="450" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    伦理意识和能力
+  </text>
+  
+  <!-- 使用建议 -->
+  <rect x="530" y="395" width="170" height="95" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="615" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    使用建议
+  </text>
+  <text x="615" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    1. 定期进行自评
+  </text>
+  <text x="615" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    建议每季度一次
+  </text>
+  <text x="615" y="451" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    2. 结合客户反馈
+  </text>
+  <text x="615" y="464" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    和投诉情况评估
+  </text>
+  <text x="615" y="477" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    3. 与团队成员分享
+  </text>
+  <text x="615" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    评估结果共同改进
+  </text>
+  <text x="615" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    4. 将评估结果纳入
+  </text>
+  <text x="615" y="516" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    绩效考核和培训
+  </text>
+  <text x="615" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    5. 建立伦理改进
+  </text>
+  <text x="615" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    长效机制
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图7.6：销售伦理自评量表结构、评估维度及使用指南
+  </text>
+</svg>

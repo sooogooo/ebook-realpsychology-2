@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一章：医美消费的多维视角 - 医美消费心理学</title>
+    <link rel="stylesheet" href="assets/css/inline-svg-icons.css">
+    <style>
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        
+        .article-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .article-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #98d8c8;
+        }
+        
+        .article-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .article-subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            font-weight: 300;
+        }
+        
+        .article-content {
+            text-align: justify;
+        }
+        
+        .section {
+            margin: 40px 0;
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            color: #34495e;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 4px solid #98d8c8;
+        }
+        
+        .subsection {
+            margin: 30px 0;
+        }
+        
+        .subsection-title {
+            font-size: 1.4em;
+            color: #34495e;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .paragraph {
+            margin-bottom: 20px;
+            text-indent: 2em;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(152, 216, 200, 0.1), rgba(184, 169, 201, 0.1));
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 4px solid #98d8c8;
+        }
+        
+        .key-point {
+            background: rgba(152, 216, 200, 0.15);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: 500;
+        }
+        
+        .example-box {
+            background: rgba(184, 169, 201, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #b8a9c9;
+        }
+        
+        .example-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .data-point {
+            background: rgba(52, 152, 219, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #3498db;
+        }
+        
+        .conclusion {
+            background: rgba(46, 204, 113, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 4px solid #2ecc71;
+        }
+        
+        .conclusion-title {
+            font-weight: 600;
+            color: #27ae60;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        .article-footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #ecf0f1;
+            text-align: center;
+            color: #7f8c8d;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .nav-btn {
+            padding: 10px 20px;
+            background: #98d8c8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .nav-btn:hover {
+            background: #7fb8a8;
+        }
+        
+        /* 图标在文章中的样式 */
+        .article-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin: 0 2px;
+            padding: 2px 8px;
+            background: rgba(152, 216, 200, 0.1);
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        
+        .article-icon .ma-icon {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .inline-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            vertical-align: middle;
+        }
+        
+        .inline-icon .ma-icon {
+            width: 18px;
+            height: 18px;
+        }
+        
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 20px;
+            }
+            
+            .article-title {
+                font-size: 2em;
+            }
+            
+            .section-title {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="article-header">
+            <div class="chapter-icon">
+                <span class="ma-icon ma-icon-consumer ma-icon-xl ma-icon-primary">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="6" r="4" fill="currentColor"/>
+                        <path d="M12 12c-4 0-7 3-7 7v2h14v-2c0-4-3-7-7-7z" fill="currentColor"/>
+                    </svg>
+                </span>
+                <h1 class="article-title">第一章：医美消费的多维视角</h1>
+            </div>
+            <p class="article-subtitle">从四个利益相关者角度分析医美消费的复杂性</p>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="inline-icon">
+                        <span class="ma-icon ma-icon-consumer ma-icon-primary">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="6" r="4" fill="currentColor"/>
+                                <path d="M12 12c-4 0-7 3-7 7v2h14v-2c0-4-3-7-7-7z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        消费者视角
+                    </span>
+                </h2>
+                
+                <p class="paragraph">
+                    医美消费的核心主体是<span class="article-icon">👤 消费者</span>，他们的需求、动机和决策过程构成了整个医美消费生态的基础。从消费者视角来看，医美消费不仅涉及外在形象的改善，更包含了深层次的<span class="article-icon">🧠 心理</span>需求和社会认同的寻求。
+                </p>
+                
+                <div class="key-point">
+                    <span class="inline-icon">
+                        <span class="ma-icon ma-icon-psychology ma-icon-info">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C7 2 3 6 3 11c0 2.4 1.2 4.5 3 6v5l6-2 6 2v-5c1.8-1.5 3-3.6 3-6 0-5-4-9-9-9z" fill="currentColor"/>
+                                <circle cx="12" cy="11" r="2" fill="white"/>
+                            </svg>
+                        </span>
+                        消费者核心关注点
+                    </span>
+                </div>
+                
+                <ul>
+                    <li><span class="article-icon">🔒 安全性</span> - 医疗风险和副作用的最小化</li>
+                    <li><span class="article-icon">💰 成本</span> - 经济承受能力和性价比评估</li>
+                    <li><span class="article-icon">🎯 效果</span> - 预期效果与实际效果的匹配度</li>
+                    <li><span class="article-icon">⏰ 持续性</span> - 效果维持时间和后续维护</li>
+                </ul>
+                
+                <div class="example-box">
+                    <div class="example-title">
+                        <span class="ma-icon ma-icon-analysis ma-icon-lavender">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        案例分析
+                    </div>
+                    <p>某28岁女性消费者在考虑进行面部填充时，不仅要评估医疗机构的<span class="article-icon">🏥 专业性</span>，还要考虑自身的<span class="article-icon">💼 经济状况</span>、社会环境对医美的<span class="article-icon">👥 认同度</span>，以及术后对自我<span class="article-icon">😊 认知</span>的影响。</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="inline-icon">
+                        <span class="ma-icon ma-icon-medical ma-icon-success">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z" fill="currentColor"/>
+                                <path d="M12 7v10M7 12h10" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        医生视角
+                    </span>
+                </h2>
+                
+                <p class="paragraph">
+                    医生作为医美服务的提供者，需要在<span class="article-icon">⚕️ 专业判断</span>和<span class="article-icon">👂 患者需求</span>之间找到平衡。医生不仅要具备专业的医学知识，还要有良好的<span class="article-icon">🗣️ 沟通能力</span>和<span class="article-icon">⚖️ 伦理意识</span>。
+                </p>
+                
+                <div class="highlight-box">
+                    <h3>医生专业责任</h3>
+                    <ul>
+                        <li>提供客观的<span class="article-icon">📋 诊断</span>和建议</li>
+                        <li>充分告知<span class="article-icon">⚠️ 风险</span>和可能的并发症</li>
+                        <li>尊重患者的<span class="article-icon">🤝 自主权</span>和选择权</li>
+                        <li>维护<span class="article-icon">🔒 隐私</span>和机密性</li>
+                        <li>持续学习和更新<span class="article-icon">📚 技术</span>知识</li>
+                    </ul>
+                </div>
+                
+                <div class="data-point">
+                    <strong>数据统计：</strong>根据2024年的调研数据，85%的医美医生认为患者教育和知情同意是最重要的伦理责任，78%的医生表示曾拒绝过不符合患者利益的医美需求。
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="inline-icon">
+                        <span class="ma-icon ma-icon-ethics ma-icon-warning">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8 2 5 5 5 9v10c0 4 3 7 7 7s7-3 7-7V9c0-4-3-7-7-7zm0 4c1.7 0 3 1.3 3 3v6c0 1.7-1.3 3-3 3s-3-1.3-3-3V9c0-1.7 1.3-3 3-3z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        销售人员视角
+                    </span>
+                </h2>
+                
+                <p class="paragraph">
+                    销售人员在医美消费中扮演着<span class="article-icon">🌉 桥梁</span>的角色，他们需要将医学专业知识转化为消费者能够理解的<span class="article-icon">💬 信息</span>，同时平衡商业目标和<span class="article-icon">🎯 消费者利益</span>。
+                </p>
+                
+                <div class="subsection">
+                    <h3 class="subsection-title">销售心理学的应用边界</h3>
+                    <p class="paragraph">
+                        销售人员可以运用<span class="article-icon">📊 数据</span>分析和<span class="article-icon">🎭 心理技巧</span>来提高销售效率，但必须遵循<span class="article-icon">⚖️ 伦理边界</span>。过度营销或虚假宣传不仅会损害消费者利益，也会对整个行业造成负面影响。
+                    </p>
+                    
+                    <div class="key-point">
+                        <span class="inline-icon">
+                            <span class="ma-icon ma-icon-warning ma-icon-warning">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 20h20L12 2zm0 6v6m0 2v2" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                            </span>
+                            伦理警示线
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="inline-icon">
+                        <span class="ma-icon ma-icon-trend ma-icon-info">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <polyline points="4,18 8,14 12,16 16,10 20,12" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="4,14 8,10 12,12 16,6 20,8" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        投资者视角
+                    </span>
+                </h2>
+                
+                <p class="paragraph">
+                    投资者关注医美行业的<span class="article-icon">📈 发展趋势</span>和<span class="article-icon">💰 投资回报</span>，但同时也需要承担相应的<span class="article-icon">🏢 社会责任</span>。理性的投资者应该关注行业的可持续发展，而不是短期的利益最大化。
+                </p>
+                
+                <div class="example-box">
+                    <div class="example-title">
+                        <span class="ma-icon ma-icon-target ma-icon-primary">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        投资决策框架
+                    </div>
+                    <p>投资者在评估医美项目时，需要综合考虑<span class="article-icon">📊 市场数据</span>、<span class="article-icon">🔬 技术创新</span>、<span class="article-icon">⚖️ 政策环境</span>和<span class="article-icon">🌍 社会影响</span>等多个维度，做出符合长期发展规律的投资决策。</p>
+                </div>
+            </div>
+            
+            <div class="conclusion">
+                <h3 class="conclusion-title">
+                    <span class="inline-icon">
+                        <span class="ma-icon ma-icon-check ma-icon-success">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <polyline points="20,6 9,17 4,12" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        章节总结
+                    </span>
+                </h3>
+                <p>医美消费的多维视角分析表明，只有当<span class="article-icon">👤 消费者</span>、<span class="article-icon">👨‍⚕️ 医生</span>、<span class="article-icon">👥 销售人员</span>和<span class="article-icon">💼 投资者</span>四个利益相关者的需求和责任得到平衡时，医美行业才能实现健康可持续的发展。每个视角都有其独特的价值和局限性，需要在实践中不断协调和优化。</p>
+                
+                <p>后续章节将深入探讨各个视角的具体内容，为医美消费的各个参与者提供更详细的指导和建议。</p>
+            </div>
+        </div>
+        
+        <div class="article-footer">
+            <div class="navigation">
+                <a href="00-preface-and-introduction.html" class="nav-btn">← 上一章：序言</a>
+                <a href="02-research-methods-and-critical-thinking.html" class="nav-btn">下一章：研究方法 →</a>
+            </div>
+            <p>《医美消费心理学》 - 2025年版</p>
+        </div>
+    </div>
+    
+    <script src="assets/js/icon-replacer.js"></script>
+    <script>
+        // 页面特定的交互功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 添加滚动高亮效果
+            const sections = document.querySelectorAll('.section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+            
+            sections.forEach(section => {
+                section.style.opacity = '0.7';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

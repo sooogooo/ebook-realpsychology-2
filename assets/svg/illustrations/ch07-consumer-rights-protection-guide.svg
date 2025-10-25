@@ -1,0 +1,267 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    消费者权益保护指南
+  </text>
+  
+  <!-- 工具说明 -->
+  <rect x="100" y="80" width="600" height="60" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    实用工具7.3
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    帮助医美消费者了解自身权益，识别不当销售行为，保护自身利益
+  </text>
+  
+  <!-- 六大基本权益 -->
+  <rect x="50" y="160" width="700" height="140" fill="#F3E5F5" stroke="#CE93D8" stroke-width="3" rx="15"/>
+  <text x="400" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#6A1B9A">
+    消费者六大基本权益
+  </text>
+  
+  <!-- 知情权 -->
+  <rect x="80" y="210" width="100" height="75" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="130" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    知情权
+  </text>
+  <text x="130" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 完整准确信息
+  </text>
+  <text x="130" y="253" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 医生资质了解
+  </text>
+  <text x="130" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 风险副作用知情
+  </text>
+  <text x="130" y="279" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 详细费用说明
+  </text>
+  
+  <!-- 选择权 -->
+  <rect x="200" y="210" width="100" height="75" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="250" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    选择权
+  </text>
+  <text x="250" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 选择适合项目
+  </text>
+  <text x="250" y="253" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 多种方案选择
+  </text>
+  <text x="250" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 拒绝不想要服务
+  </text>
+  <text x="250" y="279" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 随时改变决定
+  </text>
+  
+  <!-- 安全权 -->
+  <rect x="320" y="210" width="100" height="75" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="370" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    安全权
+  </text>
+  <text x="370" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 安全环境服务
+  </text>
+  <text x="370" y="253" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 合格医疗服务
+  </text>
+  <text x="370" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 紧急情况处理
+  </text>
+  <text x="370" y="279" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 术后跟踪服务
+  </text>
+  
+  <!-- 隐私权 -->
+  <rect x="440" y="210" width="100" height="75" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="490" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    隐私权
+  </text>
+  <text x="490" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 个人隐私保护
+  </text>
+  <text x="490" y="253" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 照片使用控制
+  </text>
+  <text x="490" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 信息保密要求
+  </text>
+  <text x="490" y="279" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 信息安全保障
+  </text>
+  
+  <!-- 投诉权 -->
+  <rect x="560" y="210" width="100" height="75" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="610" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    投诉权
+  </text>
+  <text x="610" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 服务投诉权利
+  </text>
+  <text x="610" y="253" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 获得处理结果
+  </text>
+  <text x="610" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 寻求第三方调解
+  </text>
+  <text x="610" y="279" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 向监管举报
+  </text>
+  
+  <!-- 求偿权 -->
+  <rect x="680" y="210" width="70" height="75" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="715" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    求偿权
+  </text>
+  <text x="715" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 问题赔偿
+  </text>
+  <text x="715" y="253" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 事故补偿
+  </text>
+  <text x="715" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 心理赔偿
+  </text>
+  <text x="715" y="279" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 法律救济
+  </text>
+  
+  <!-- 不当销售识别 -->
+  <rect x="50" y="320" width="700" height="120" fill="#FFEBEE" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="400" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    不当销售行为识别清单
+  </text>
+  
+  <!-- 四类识别 -->
+  <rect x="80" y="360" width="150" height="65" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="155" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    信息操控识别
+  </text>
+  <text x="155" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 100%成功或无风险宣传
+  </text>
+  <text x="155" y="403" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 只展示成功案例
+  </text>
+  <text x="155" y="416" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 过度修饰对比照片
+  </text>
+  <text x="155" y="429" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 模糊或误导性表述
+  </text>
+  
+  <rect x="250" y="360" width="150" height="65" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="325" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    压力销售识别
+  </text>
+  <text x="325" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 优惠只限今天或名额有限
+  </text>
+  <text x="325" y="403" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 催促立即签约付款
+  </text>
+  <text x="325" y="416" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 阻碍寻求第二意见
+  </text>
+  <text x="325" y="429" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 利用情绪弱点营销
+  </text>
+  
+  <rect x="420" y="360" width="150" height="65" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="495" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    价格欺诈识别
+  </text>
+  <text x="495" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 隐藏重要附加费用
+  </text>
+  <text x="495" y="403" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 价格远高于市场水平
+  </text>
+  <text x="495" y="416" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 拒绝提供详细清单
+  </text>
+  <text x="495" y="429" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 过程中不断增加费用
+  </text>
+  
+  <rect x="590" y="360" width="140" height="65" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="660" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    资质造假识别
+  </text>
+  <text x="660" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 医生资质信息模糊
+  </text>
+  <text x="660" y="403" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 机构认证过期无效
+  </text>
+  <text x="660" y="416" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 设备材料来源不明
+  </text>
+  <text x="660" y="429" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 荣誉奖项无法证实
+  </text>
+  
+  <!-- 自我保护策略 -->
+  <rect x="50" y="460" width="700" height="100" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    消费者自我保护策略
+  </text>
+  
+  <!-- 三个阶段 -->
+  <rect x="80" y="495" width="200" height="55" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="180" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    决策前保护
+  </text>
+  <text x="180" y="523" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    充分收集信息 | 验证资质认证 | 咨询专业意见
+  </text>
+  <text x="180" y="536" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    与家人朋友讨论 | 给予充分考虑时间
+  </text>
+  <text x="180" y="549" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    系统评估风险收益
+  </text>
+  
+  <rect x="300" y="495" width="200" height="55" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="400" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    决策中保护
+  </text>
+  <text x="400" y="523" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    要求书面详细信息 | 确保理解所有风险
+  </text>
+  <text x="400" y="536" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    明确费用构成支付方式 | 保留所有沟通记录
+  </text>
+  <text x="400" y="549" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    不在压力下做决定
+  </text>
+  
+  <rect x="520" y="495" width="200" height="55" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="620" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    决策后保护
+  </text>
+  <text x="620" y="523" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    保留所有服务记录凭证 | 观察术后效果反应
+  </text>
+  <text x="620" y="536" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    及时报告问题 | 寻求必要后续治疗
+  </text>
+  <text x="620" y="549" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    记录服务评价 | 分享经验帮助他人
+  </text>
+  
+  <!-- 维权渠道 -->
+  <rect x="100" y="580" width="600" height="15" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="400" y="592" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0277BD">
+    维权渠道：内部投诉 | 行业投诉 | 监管投诉 | 法律维权 | 证据收集：书面证据 | 视听证据 | 证人证据 | 专业证据
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图7.8：消费者权益保护指南、不当销售识别及自我保护策略
+  </text>
+</svg>

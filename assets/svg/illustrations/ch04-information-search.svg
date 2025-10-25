@@ -1,0 +1,223 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    医美消费信息搜索行为模式
+  </text>
+  
+  <!-- 四个阶段框架 -->
+  <rect x="50" y="80" width="700" height="480" fill="#E8F5E8" stroke="#81C784" stroke-width="3" rx="15"/>
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">
+    信息搜索四阶段模型 (基于1500名消费者研究)
+  </text>
+  
+  <!-- 阶段1：需求识别 -->
+  <g transform="translate(0, 0)">
+    <rect x="100" y="140" width="130" height="100" fill="#C8E6C9" stroke="#81C784" stroke-width="2" rx="10"/>
+    <text x="165" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+      需求识别阶段
+    </text>
+    <text x="165" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 触发事件引起
+    </text>
+    <text x="165" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 被动接收信息
+    </text>
+    <text x="165" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 产生搜索动机
+    </text>
+    <text x="165" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 意识到医美需求
+    </text>
+  </g>
+  
+  <!-- 阶段2：初步搜索 -->
+  <g transform="translate(180, 0)">
+    <rect x="100" y="140" width="130" height="100" fill="#C8E6C9" stroke="#81C784" stroke-width="2" rx="10"/>
+    <text x="165" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+      初步搜索阶段
+    </text>
+    <text x="165" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 搜索引擎80%
+    </text>
+    <text x="165" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 社交媒体70%
+    </text>
+    <text x="165" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 朋友咨询60%
+    </text>
+    <text x="165" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 主动寻找信息
+    </text>
+  </g>
+  
+  <!-- 阶段3：深入评估 -->
+  <g transform="translate(360, 0)">
+    <rect x="100" y="140" width="130" height="100" fill="#C8E6C9" stroke="#81C784" stroke-width="2" rx="10"/>
+    <text x="165" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+      深入评估阶段
+    </text>
+    <text x="165" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 专业咨询40%
+    </text>
+    <text x="165" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 机构资质查询
+    </text>
+    <text x="165" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 风险效果分析
+    </text>
+    <text x="165" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 理性系统化
+    </text>
+  </g>
+  
+  <!-- 阶段4：决策确认 -->
+  <g transform="translate(540, 0)">
+    <rect x="100" y="140" width="130" height="100" fill="#C8E6C9" stroke="#81C784" stroke-width="2" rx="10"/>
+    <text x="165" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+      决策确认阶段
+    </text>
+    <text x="165" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 再次确认50%
+    </text>
+    <text x="165" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 专业意见咨询
+    </text>
+    <text x="165" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 风险收益评估
+    </text>
+    <text x="165" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+      • 谨慎决策态度
+    </text>
+  </g>
+  
+  <!-- 流程箭头 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <path d="M 230 190 L 280 190" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 410 190 L 460 190" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 590 190 L 640 190" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- 信息渠道分析 -->
+  <rect x="80" y="280" width="640" height="120" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    信息渠道使用率与信任度分析
+  </text>
+  
+  <!-- 四个渠道 -->
+  <rect x="110" y="320" width="130" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="175" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    互联网渠道
+  </text>
+  <text x="175" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    使用率: 90%
+  </text>
+  <text x="175" y="363" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    信任度: 30%
+  </text>
+  <text x="175" y="376" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    质量参差不齐
+  </text>
+  
+  <rect x="260" y="320" width="130" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="325" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    人际渠道
+  </text>
+  <text x="325" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    使用率: 70%
+  </text>
+  <text x="325" y="363" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    信任度: 75%
+  </text>
+  <text x="325" y="376" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    影响决策很大
+  </text>
+  
+  <rect x="410" y="320" width="130" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="475" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    专业渠道
+  </text>
+  <text x="475" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    使用率: 40%
+  </text>
+  <text x="475" y="363" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    信任度: 85%
+  </text>
+  <text x="475" y="376" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    满意度显著高
+  </text>
+  
+  <rect x="560" y="320" width="130" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="625" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    媒体渠道
+  </text>
+  <text x="625" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    使用率: 30%
+  </text>
+  <text x="625" y="363" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    信任度: 60%
+  </text>
+  <text x="625" y="376" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    年长群体影响大
+  </text>
+  
+  <!-- 常见问题 -->
+  <rect x="100" y="420" width="600" height="120" fill="#FFCDD2" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="400" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    信息搜索常见问题与挑战
+  </text>
+  
+  <!-- 三个问题 -->
+  <rect x="130" y="460" width="160" height="65" fill="#FFEBEE" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="210" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    信息过载
+  </text>
+  <text x="210" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    60%消费者感到困惑
+  </text>
+  <text x="210" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    难以筛选评估
+  </text>
+  <text x="210" y="516" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    决策焦虑增加
+  </text>
+  
+  <rect x="320" y="460" width="160" height="65" fill="#FFEBEE" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="400" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    确认偏见
+  </text>
+  <text x="400" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    70%消费者存在
+  </text>
+  <text x="400" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    寻找支持性信息
+  </text>
+  <text x="400" y="516" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    忽视反对意见
+  </text>
+  
+  <rect x="510" y="460" width="160" height="65" fill="#FFEBEE" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="590" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    信息不对称
+  </text>
+  <text x="590" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    80%理解困难
+  </text>
+  <text x="590" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    缺乏专业知识
+  </text>
+  <text x="590" y="516" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    评估能力有限
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图4.1：医美消费信息搜索四阶段模型、渠道使用特点及常见问题分析
+  </text>
+</svg>

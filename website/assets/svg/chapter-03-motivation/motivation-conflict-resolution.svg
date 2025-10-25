@@ -1,0 +1,203 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 动机冲突解决 -->
+  <defs>
+    <!-- 冲突渐变 -->
+    <linearGradient id="conflict-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 解决方案渐变 -->
+    <linearGradient id="solution-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 平衡渐变 -->
+    <linearGradient id="balance-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    动机冲突解决
+  </text>
+  
+  <!-- 冲突类型 -->
+  <g transform="translate(400, 150)">
+    <!-- 趋近-趋近冲突 -->
+    <g transform="translate(-200, 0)">
+      <rect x="-80" y="-30" width="160" height="60" rx="30" fill="url(#conflict-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="趋近-趋近冲突：两个都有吸引力的选择" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">趋近-趋近</text>
+      <text y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">双趋冲突</text>
+    </g>
+    
+    <!-- 趋避冲突 -->
+    <g transform="translate(0, 0)">
+      <rect x="-80" y="-30" width="160" height="60" rx="30" fill="url(#conflict-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="趋避冲突：同一选择既有吸引力又有排斥力" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">趋避冲突</text>
+      <text y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">矛盾心理</text>
+    </g>
+    
+    <!-- 回避-回避冲突 -->
+    <g transform="translate(200, 0)">
+      <rect x="-80" y="-30" width="160" height="60" rx="30" fill="url(#conflict-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="回避-回避冲突：两个都不想要的选择" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">回避-回避</text>
+      <text y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">双避冲突</text>
+    </g>
+  </g>
+  
+  <!-- 解决流程 -->
+  <g transform="translate(400, 350)">
+    <!-- 冲突识别 -->
+    <g transform="translate(-250, -50)">
+      <ellipse rx="60" ry="35" fill="url(#solution-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="冲突识别：认识到动机冲突的存在" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">冲突识别</text>
+    </g>
+    
+    <!-- 原因分析 -->
+    <g transform="translate(-100, -50)">
+      <ellipse rx="60" ry="35" fill="url(#solution-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="原因分析：深入了解冲突根源" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">原因分析</text>
+    </g>
+    
+    <!-- 方案评估 -->
+    <g transform="translate(50, -50)">
+      <ellipse rx="60" ry="35" fill="url(#solution-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="方案评估：评估各种解决方案" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">方案评估</text>
+    </g>
+    
+    <!-- 决策选择 -->
+    <g transform="translate(200, -50)">
+      <ellipse rx="60" ry="35" fill="url(#solution-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="决策选择：做出最优决策" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">决策选择</text>
+    </g>
+    
+    <!-- 执行调整 -->
+    <g transform="translate(350, -50)">
+      <ellipse rx="60" ry="35" fill="url(#solution-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="执行调整：实施方案并动态调整" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">执行调整</text>
+    </g>
+    
+    <!-- 连接箭头 -->
+    <path d="M -190 -50 L -160 -50" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -40 -50 L -10 -50" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 110 -50 L 140 -50" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 260 -50 L 290 -50" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- 反馈循环 -->
+    <path d="M 350 -15 Q 400 20 350 50 Q 0 50 -250 50 Q -300 50 -300 -15 Q -300 -50 -250 -50" 
+          stroke="#e74c3c" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+    <text x="400" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">反馈循环</text>
+  </g>
+  
+  <!-- 解决策略 -->
+  <g transform="translate(50, 250)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">解决策略：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">优先级排序：明确各动机的重要性</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">折中方案：寻找平衡点</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">延迟满足：分阶段实现目标</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">重新框架：转换思考角度</text>
+    </g>
+    
+    <g transform="translate(0, 105)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">寻求帮助：专业咨询支持</text>
+    </g>
+  </g>
+  
+  <!-- 医美应用场景 -->
+  <g transform="translate(550, 250)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">医美应用场景：</text>
+    
+    <text y="25" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 安全 vs 效果的权衡</text>
+    <text y="45" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 价格 vs 价值的考量</text>
+    <text y="65" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 短期 vs 长期效果</text>
+    <text y="85" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 自然 vs 明显的改变</text>
+    <text y="105" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 个人意愿 vs 社会期待</text>
+  </g>
+  
+  <!-- 平衡状态 -->
+  <g transform="translate(400, 480)">
+    <rect x="-120" y="-30" width="240" height="60" rx="30" fill="url(#balance-grad)" filter="url(#shadow)"/>
+    <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">动机平衡状态</text>
+    <text y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">内在和谐与外在协调</text>
+  </g>
+  
+  <!-- 动态平衡效果 -->
+  <g transform="translate(400, 480)">
+    <circle r="80" fill="none" stroke="#f39c12" stroke-width="2" opacity="0.3">
+      <animate attributeName="r" values="80;100;80" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle r="100" fill="none" stroke="#f39c12" stroke-width="1" opacity="0.2">
+      <animate attributeName="r" values="100;120;100" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.05;0.2" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- 冲突强度指示器 -->
+  <g transform="translate(100, 480)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">冲突强度：</text>
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="100" height="15" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="60" height="15" rx="7" fill="#e74c3c"/>
+      <text x="110" y="12" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">当前 60%</text>
+    </g>
+  </g>
+  
+  <!-- 解决满意度 -->
+  <g transform="translate(600, 480)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">解决满意度：</text>
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="100" height="15" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="85" height="15" rx="7" fill="#2ecc71"/>
+      <text x="110" y="12" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">目标 85%</text>
+    </g>
+  </g>
+  
+  <!-- 流程动画 -->
+  <circle r="4" fill="#667eea">
+    <animateMotion dur="5s" repeatCount="indefinite">
+      <mpath href="#conflict-path"/>
+    </animateMotion>
+  </circle>
+  
+  <!-- 定义流程路径 -->
+  <path id="conflict-path" d="M 150 300 L 300 300 L 450 300 L 600 300 L 750 300" fill="none"/>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各步骤查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

@@ -1,0 +1,275 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 全球美容标准对比 -->
+  <defs>
+    <!-- 东亚美容标准渐变 -->
+    <linearGradient id="east-asian-beauty-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 西方美容标准渐变 -->
+    <linearGradient id="western-beauty-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 中东美容标准渐变 -->
+    <linearGradient id="middle-eastern-beauty-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 非洲美容标准渐变 -->
+    <linearGradient id="african-beauty-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 拉美美容标准渐变 -->
+    <linearGradient id="latin-american-beauty-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    全球美容标准对比
+  </text>
+  
+  <!-- 美容标准中心 -->
+  <g transform="translate(400, 150)">
+    <text x="0" y="-50" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">区域美容标准</text>
+    
+    <!-- 东亚美容标准 -->
+    <g transform="translate(-160, 0)">
+      <rect x="-40" y="-25" width="80" height="50" rx="25" fill="url(#east-asian-beauty-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="东亚美容标准" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">东亚</text>
+      <text y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">标准</text>
+    </g>
+    
+    <!-- 西方美容标准 -->
+    <g transform="translate(-80, 0)">
+      <rect x="-40" y="-25" width="80" height="50" rx="25" fill="url(#western-beauty-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="西方美容标准" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">西方</text>
+      <text y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">标准</text>
+    </g>
+    
+    <!-- 中东美容标准 -->
+    <g transform="translate(0, 0)">
+      <rect x="-40" y="-25" width="80" height="50" rx="25" fill="url(#middle-eastern-beauty-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="中东美容标准" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">中东</text>
+      <text y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">标准</text>
+    </g>
+    
+    <!-- 非洲美容标准 -->
+    <g transform="translate(80, 0)">
+      <rect x="-40" y="-25" width="80" height="50" rx="25" fill="url(#african-beauty-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="非洲美容标准" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">非洲</text>
+      <text y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">标准</text>
+    </g>
+    
+    <!-- 拉美美容标准 -->
+    <g transform="translate(160, 0)">
+      <rect x="-40" y="-25" width="80" height="50" rx="25" fill="url(#latin-american-beauty-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="拉美美容标准" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">拉美</text>
+      <text y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">标准</text>
+    </g>
+    
+    <!-- 连接线 -->
+    <path d="M -120 0 L -120 0" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M -40 0 L -40 0" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M 40 0 L 40 0" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M 120 0 L 120 0" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- 东亚美容特征 -->
+  <g transform="translate(50, 250)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e74c3c">东亚美容特征：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">白皙皮肤：追求白皙无瑕的肌肤</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">精致五官：小巧玲珑的五官</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">瘦弱身材：纤细苗条的身材</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">自然妆容：淡雅自然的妆容</text>
+    </g>
+  </g>
+  
+  <!-- 西方美容特征 -->
+  <g transform="translate(250, 250)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3498db">西方美容特征：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">健康肤色：小麦色健康肌肤</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">立体五官：轮廓分明的五官</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">健美身材：健壮有线条的身材</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">个性妆容：大胆创新的妆容</text>
+    </g>
+  </g>
+  
+  <!-- 中东美容特征 -->
+  <g transform="translate(450, 250)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f39c12">中东美容特征：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">深邃眼眸：浓密深邃的眼部</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">浓密头发：乌黑浓密的头发</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">优雅身姿：优雅高贵的气质</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">精致妆容：华丽精致的妆容</text>
+    </g>
+  </g>
+  
+  <!-- 非洲美容特征 -->
+  <g transform="translate(50, 420)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2ecc71">非洲美容特征：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">深色肌肤：深黑亮丽的肌肤</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">丰满身材：丰满健美的身材</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">天然卷发：自然卷曲的头发</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">鲜艳色彩：鲜艳夺目的装扮</text>
+    </g>
+  </g>
+  
+  <!-- 拉美美容特征 -->
+  <g transform="translate(250, 420)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#9b59b6">拉美美容特征：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">古铜肤色：古铜色健康肌肤</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">曲线身材：凹凸有致的身材</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">热情气质：热情奔放的气质</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">浓烈妆容：浓烈性感的妆容</text>
+    </g>
+  </g>
+  
+  <!-- 全球化影响 -->
+  <g transform="translate(450, 420)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">全球化影响：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#667eea"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">标准融合：美容标准相互融合</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#667eea"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">多元化：美容观念多元化</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#667eea"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">个性化：追求个性化美容</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#667eea"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">包容性：对不同美的包容</text>
+    </g>
+  </g>
+  
+  <!-- 美容趋势指标 -->
+  <g transform="translate(650, 250)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">趋势变化：</text>
+    
+    <!-- 趋势指示器 -->
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="15" height="80" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="8" width="15" height="72" rx="7" fill="#2ecc71"/>
+      <text x="25" y="50" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">90%</text>
+    </g>
+    
+    <!-- 趋势说明 -->
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">传统：0-40%</text>
+    <text x="0" y="135" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">融合：41-70%</text>
+    <text x="0" y="150" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">全球化：71-100%</text>
+  </g>
+  
+  <!-- 全球美容动画 -->
+  <circle cx="400" cy="150" r="200" fill="none" stroke="#667eea" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="200;220;200" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各地区查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

@@ -1,0 +1,213 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 决策树模型 -->
+  <defs>
+    <!-- 决策节点渐变 -->
+    <linearGradient id="decision-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 机会节点渐变 -->
+    <linearGradient id="chance-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 结果节点渐变 -->
+    <linearGradient id="outcome-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 风险节点渐变 -->
+    <linearGradient id="risk-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    决策树模型
+  </text>
+  
+  <!-- 决策树结构 -->
+  <g transform="translate(400, 100)">
+    <!-- 根节点：医美需求 -->
+    <g transform="translate(0, 0)">
+      <rect x="-60" y="-25" width="120" height="50" rx="25" fill="url(#decision-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="医美需求识别" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">医美需求</text>
+    </g>
+    
+    <!-- 第二层：项目选择 -->
+    <g transform="translate(-150, 80)">
+      <rect x="-50" y="-20" width="100" height="40" rx="20" fill="url(#decision-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="选择医美项目" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">项目选择</text>
+    </g>
+    
+    <g transform="translate(150, 80)">
+      <rect x="-50" y="-20" width="100" height="40" rx="20" fill="url(#decision-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="暂不执行" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">暂不执行</text>
+    </g>
+    
+    <!-- 第三层：机构选择 -->
+    <g transform="translate(-250, 160)">
+      <rect x="-45" y="-18" width="90" height="36" rx="18" fill="url(#chance-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="选择正规机构" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">正规机构</text>
+    </g>
+    
+    <g transform="translate(-150, 160)">
+      <rect x="-45" y="-18" width="90" height="36" rx="18" fill="url(#risk-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="选择非正规机构" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">非正规</text>
+    </g>
+    
+    <g transform="translate(-50, 160)">
+      <rect x="-45" y="-18" width="90" height="36" rx="18" fill="url(#chance-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="考虑性价比" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">性价比</text>
+    </g>
+    
+    <!-- 第四层：医生选择 -->
+    <g transform="translate(-300, 240)">
+      <rect x="-40" y="-16" width="80" height="32" rx="16" fill="url(#chance-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="资深医生" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">资深医生</text>
+    </g>
+    
+    <g transform="translate(-200, 240)">
+      <rect x="-40" y="-16" width="80" height="32" rx="16" fill="url(#chance-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="普通医生" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">普通医生</text>
+    </g>
+    
+    <g transform="translate(-100, 240)">
+      <rect x="-40" y="-16" width="80" height="32" rx="16" fill="url(#risk-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="无资质医生" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">无资质</text>
+    </g>
+    
+    <!-- 第五层：结果 -->
+    <g transform="translate(-350, 320)">
+      <ellipse cx="0" cy="0" rx="35" ry="20" fill="url(#outcome-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="理想效果" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">理想效果</text>
+    </g>
+    
+    <g transform="translate(-250, 320)">
+      <ellipse cx="0" cy="0" rx="35" ry="20" fill="url(#outcome-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="一般效果" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">一般效果</text>
+    </g>
+    
+    <g transform="translate(-150, 320)">
+      <ellipse cx="0" cy="0" rx="35" ry="20" fill="url(#risk-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="效果不佳" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">效果不佳</text>
+    </g>
+    
+    <g transform="translate(-50, 320)">
+      <ellipse cx="0" cy="0" rx="35" ry="20" fill="url(#risk-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="并发症" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">并发症</text>
+    </g>
+    
+    <!-- 连接线 -->
+    <path d="M -30 25 L -100 60" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 30 25 L 100 60" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -150 100 L -200 142" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -150 100 L -150 142" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -150 100 L -100 142" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -250 178 L -280 222" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -250 178 L -220 222" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -150 178 L -120 222" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -300 256 L -340 300" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -200 256 L -240 300" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -200 256 L -160 300" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -100 256 L -140 300" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -100 256 L -60 300" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- 概率标注 -->
+    <text x="-200" y="130" font-family="Arial, sans-serif" font-size="9" fill="#667eea">60%</text>
+    <text x="-125" y="130" font-family="Arial, sans-serif" font-size="9" fill="#e74c3c">25%</text>
+    <text x="-75" y="130" font-family="Arial, sans-serif" font-size="9" fill="#f39c12">15%</text>
+    <text x="-290" y="210" font-family="Arial, sans-serif" font-size="9" fill="#667eea">70%</text>
+    <text x="-210" y="210" font-family="Arial, sans-serif" font-size="9" fill="#667eea">30%</text>
+    <text x="-110" y="210" font-family="Arial, sans-serif" font-size="9" fill="#e74c3c">40%</text>
+    <text x="-340" y="290" font-family="Arial, sans-serif" font-size="9" fill="#2ecc71">80%</text>
+    <text x="-240" y="290" font-family="Arial, sans-serif" font-size="9" fill="#2ecc71">60%</text>
+    <text x="-160" y="290" font-family="Arial, sans-serif" font-size="9" fill="#e74c3c">30%</text>
+    <text x="-80" y="290" font-family="Arial, sans-serif" font-size="9" fill="#e74c3c">15%</text>
+  </g>
+  
+  <!-- 决策要素 -->
+  <g transform="translate(50, 150)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">决策要素：</text>
+    
+    <g transform="translate(0, 25)">
+      <rect x="0" y="0" width="12" height="12" fill="#3498db"/>
+      <text x="18" y="10" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">决策节点：需要做出选择的点</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <rect x="0" y="0" width="12" height="12" fill="#f39c12"/>
+      <text x="18" y="10" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">机会节点：存在概率结果</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <rect x="0" y="0" width="12" height="12" fill="#2ecc71"/>
+      <text x="18" y="10" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">结果节点：最终 outcomes</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <rect x="0" y="0" width="12" height="12" fill="#e74c3c"/>
+      <text x="18" y="10" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">风险节点：高风险选择</text>
+    </g>
+  </g>
+  
+  <!-- 期望值计算 -->
+  <g transform="translate(550, 150)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">期望值计算：</text>
+    
+    <text y="25" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">理想效果 = 0.8 × 90 = 72</text>
+    <text y="45" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">一般效果 = 0.6 × 60 = 36</text>
+    <text y="65" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">效果不佳 = 0.3 × 30 = 9</text>
+    <text y="85" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">并发症 = 0.15 × 0 = 0</text>
+  </g>
+  
+  <!-- 敏感性分析 -->
+  <g transform="translate(100, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">敏感性分析：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 医生资质对结果影响最大</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 机构选择决定风险水平</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 价格因素影响决策质量</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 个人偏好影响选择路径</text>
+  </g>
+  
+  <!-- 应用指导 -->
+  <g transform="translate(450, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">应用指导：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 系统化分析决策路径</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 量化评估各选项价值</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 识别关键决策节点</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 制定风险应对策略</text>
+  </g>
+  
+  <!-- 决策流程动画 -->
+  <circle r="3" fill="#667eea">
+    <animateMotion dur="6s" repeatCount="indefinite">
+      <mpath href="#decision-path"/>
+    </animateMotion>
+  </circle>
+  
+  <!-- 定义决策路径 -->
+  <path id="decision-path" d="M 400 125 L 250 180 L 150 260 L 50 340 L 50 420" fill="none"/>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各节点查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

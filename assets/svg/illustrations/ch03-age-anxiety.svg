@@ -1,0 +1,156 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    年龄焦虑与社会压力影响机制
+  </text>
+  
+  <!-- 核心概念：年龄焦虑 -->
+  <rect x="250" y="80" width="300" height="60" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="3" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0277BD">
+    年龄焦虑
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0277BD">
+    对时间流逝的心理反应，80%医美消费者受社会对年轻的推崇影响
+  </text>
+  
+  <!-- 社会压力来源 -->
+  <rect x="50" y="170" width="700" height="140" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    社会压力来源
+  </text>
+  
+  <!-- 职场竞争 -->
+  <rect x="80" y="210" width="150" height="85" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="155" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">
+    职场竞争
+  </text>
+  <text x="155" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 35-45岁主力群体
+  </text>
+  <text x="155" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 女性占比75%
+  </text>
+  <text x="155" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 关键期压力
+  </text>
+  <text x="155" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 年龄与机会关联
+  </text>
+  
+  <!-- 婚恋市场 -->
+  <rect x="250" y="210" width="150" height="85" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="325" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">
+    婚恋市场
+  </text>
+  <text x="325" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 年龄筛选标准
+  </text>
+  <text x="325" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 30-40岁单身女性
+  </text>
+  <text x="325" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 消费意愿强烈
+  </text>
+  <text x="325" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 竞争力担忧
+  </text>
+  
+  <!-- 社交媒体 -->
+  <rect x="420" y="210" width="150" height="85" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="495" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">
+    社交媒体
+  </text>
+  <text x="495" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 美丽形象强化
+  </text>
+  <text x="495" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 重度用户焦虑高
+  </text>
+  <text x="495" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 修饰形象对比
+  </text>
+  <text x="495" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 社会认可机制
+  </text>
+  
+  <!-- 文化标准 -->
+  <rect x="590" y="210" width="150" height="85" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="665" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">
+    文化标准
+  </text>
+  <text x="665" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 年轻=积极价值
+  </text>
+  <text x="665" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 年老=消极价值
+  </text>
+  <text x="665" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 年龄刻板印象
+  </text>
+  <text x="665" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    • 社会建构概念
+  </text>
+  
+  <!-- 代际差异 -->
+  <rect x="100" y="330" width="600" height="100" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    代际差异特征
+  </text>
+  
+  <!-- 三个年龄段 -->
+  <rect x="130" y="370" width="160" height="50" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="210" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    年轻消费者 (20-30岁)
+  </text>
+  <text x="210" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    关注外貌完美和个性化，锦上添花型
+  </text>
+  <text x="210" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    自我表达和审美满足
+  </text>
+  
+  <rect x="320" y="370" width="160" height="50" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="400" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    中年消费者 (30-45岁)
+  </text>
+  <text x="400" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    关注抗衰老和职业竞争力，雪中送炭型
+  </text>
+  <text x="400" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    压力驱动和需求导向
+  </text>
+  
+  <rect x="510" y="370" width="160" height="50" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="590" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    年长消费者 (45岁以上)
+  </text>
+  <text x="590" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    关注健康和生活质量，理性型
+  </text>
+  <text x="590" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E65100">
+    功能改善和健康维护
+  </text>
+  
+  <!-- 性别差异 -->
+  <rect x="150" y="450" width="500" height="60" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="400" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A">
+    性别差异：女性更关注外貌吸引力和社会认可，男性更关注职业竞争力和健康状况
+  </text>
+  <text x="400" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6A1B9A">
+    女性消费占主导地位，但男性消费比例在增加
+  </text>
+  
+  <!-- 文化影响 -->
+  <rect x="150" y="530" width="500" height="50" fill="#FFCDD2" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="400" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C62828">
+    文化影响：西方文化更强调年轻活力，东方文化相对包容，全球化促进文化交融
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图3.2：年龄焦虑的社会压力来源及代际、性别、文化差异分析
+  </text>
+</svg>

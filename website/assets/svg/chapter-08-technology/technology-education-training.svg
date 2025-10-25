@@ -1,0 +1,197 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 技术教育与培训体系 -->
+  <defs>
+    <!-- 教育内容渐变 -->
+    <linearGradient id="education-content-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 培训方法渐变 -->
+    <linearGradient id="training-method-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 评估反馈渐变 -->
+    <linearGradient id="evaluation-feedback-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 持续改进渐变 -->
+    <linearGradient id="continuous-improvement-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    技术教育与培训体系
+  </text>
+  
+  <!-- 教育培训体系中心 -->
+  <g transform="translate(400, 150)">
+    <text x="0" y="-60" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">教育培训体系</text>
+    
+    <!-- 核心圆 -->
+    <circle cx="0" cy="0" r="45" fill="url(#education-content-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="技术教育培训核心" data-onclick="details"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">技术</text>
+    <text x="0" y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">教育</text>
+    
+    <!-- 培训模块 -->
+    <g transform="translate(-120, -80)">
+      <circle cx="0" cy="0" r="30" fill="url(#training-method-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="理论知识：技术理论培训" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">理论</text>
+      <text y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">知识</text>
+    </g>
+    
+    <g transform="translate(120, -80)">
+      <circle cx="0" cy="0" r="30" fill="url(#training-method-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="实践技能：实际操作培训" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">实践</text>
+      <text y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">技能</text>
+    </g>
+    
+    <g transform="translate(-120, 80)">
+      <circle cx="0" cy="0" r="30" fill="url(#training-method-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="案例分析：案例学习分析" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">案例</text>
+      <text y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">分析</text>
+    </g>
+    
+    <g transform="translate(120, 80)">
+      <circle cx="0" cy="0" r="30" fill="url(#training-method-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="伦理教育：技术伦理培训" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">伦理</text>
+      <text y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">教育</text>
+    </g>
+    
+    <!-- 连接线 -->
+    <path d="M -90 -50 L -45 -25" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M 90 -50 L 45 -25" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M -90 50 L -45 25" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M 90 50 L 45 25" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- 教育内容 -->
+  <g transform="translate(100, 320)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">教育内容：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">技术原理：技术基础知识</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">操作技能：实际操作技能</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">安全知识：安全使用知识</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">伦理规范：技术伦理规范</text>
+    </g>
+  </g>
+  
+  <!-- 培训方法 -->
+  <g transform="translate(400, 320)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">培训方法：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">课堂教学：系统理论讲解</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">实践操作：动手实践操作</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">在线学习：灵活在线学习</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">导师指导：个性化指导</text>
+    </g>
+  </g>
+  
+  <!-- 培训效果 -->
+  <g transform="translate(650, 200)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">培训效果：</text>
+    
+    <!-- 培训效果指示器 -->
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="15" height="80" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="12" width="15" height="68" rx="7" fill="#2ecc71"/>
+      <text x="25" y="50" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">85%</text>
+    </g>
+    
+    <!-- 效果说明 -->
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">差：0-40%</text>
+    <text x="0" y="135" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">一般：41-70%</text>
+    <text x="0" y="150" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">优秀：71-100%</text>
+  </g>
+  
+  <!-- 评估机制 -->
+  <g transform="translate(100, 470)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">评估机制：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">知识测试：理论知识测试</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">技能考核：实际技能考核</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">应用评估：实际应用评估</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">反馈调查：培训效果反馈</text>
+    </g>
+  </g>
+  
+  <!-- 持续改进 -->
+  <g transform="translate(400, 470)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">持续改进：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 定期更新培训内容</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 优化培训方法手段</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 建立反馈改进机制</text>
+  </g>
+  
+  <!-- 知识传播动画 -->
+  <circle cx="400" cy="150" r="100" fill="none" stroke="#3498db" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="100;120;100" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各模块查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

@@ -1,0 +1,322 @@
+/* 医美消费心理学内联SVG图标系统 */
+
+/* 图标基础样式 */
+.ma-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  color: #2c3e50;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  margin: 0 4px;
+}
+
+/* 图标尺寸变体 */
+.ma-icon-sm {
+  width: 16px;
+  height: 16px;
+}
+
+.ma-icon-md {
+  width: 20px;
+  height: 20px;
+}
+
+.ma-icon-lg {
+  width: 32px;
+  height: 32px;
+}
+
+.ma-icon-xl {
+  width: 48px;
+  height: 48px;
+}
+
+/* 图标颜色变体 */
+.ma-icon-primary {
+  color: #3498db;
+}
+
+.ma-icon-success {
+  color: #27ae60;
+}
+
+.ma-icon-warning {
+  color: #f39c12;
+}
+
+.ma-icon-danger {
+  color: #e74c3c;
+}
+
+.ma-icon-info {
+  color: #9b59b6;
+}
+
+.ma-icon-mint {
+  color: #98d8c8;
+}
+
+.ma-icon-lavender {
+  color: #b8a9c9;
+}
+
+.ma-icon-coral {
+  color: #ff9a8b;
+}
+
+/* 图标按钮样式 */
+.ma-icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.ma-icon-btn:hover {
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.ma-icon-btn:active {
+  transform: scale(0.95);
+}
+
+/* 图标组样式 */
+.ma-icon-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* 图标文字组合 */
+.ma-icon-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ma-icon-text .ma-icon {
+  flex-shrink: 0;
+}
+
+/* 图标徽章 */
+.ma-icon-badge {
+  position: relative;
+}
+
+.ma-icon-badge::after {
+  content: attr(data-badge);
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 16px;
+  text-align: center;
+  line-height: 1;
+}
+
+/* 响应式图标 */
+@media (max-width: 768px) {
+  .ma-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .ma-icon-lg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .ma-icon-xl {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* 特殊图标样式 */
+.ma-icon-solid {
+  fill: currentColor;
+  stroke: none;
+}
+
+.ma-icon-filled {
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 1;
+}
+
+/* 图标动画 */
+.ma-icon-animate {
+  animation: iconPulse 2s infinite;
+}
+
+@keyframes iconPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 图标旋转动画 */
+.ma-icon-rotate {
+  animation: iconRotate 2s linear infinite;
+}
+
+@keyframes iconRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 文章内嵌图标样式 */
+.article-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 2px;
+  padding: 2px 6px;
+  background: rgba(152, 216, 200, 0.1);
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.article-icon .ma-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* 章节标题图标 */
+.chapter-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.chapter-icon .ma-icon {
+  width: 28px;
+  height: 28px;
+  color: #98d8c8;
+}
+
+/* 段落强调图标 */
+.emphasis-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: linear-gradient(135deg, rgba(152, 216, 200, 0.1), rgba(184, 169, 201, 0.1));
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+.emphasis-icon .ma-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* 列表图标 */
+.list-icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.list-icon .ma-icon {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+/* 提示框图标 */
+.tip-box {
+  background: rgba(152, 216, 200, 0.1);
+  border-left: 4px solid #98d8c8;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.tip-box-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.tip-box-header .ma-icon {
+  width: 20px;
+  height: 20px;
+  color: #98d8c8;
+}
+
+/* 警告框图标 */
+.warning-box {
+  background: rgba(243, 156, 18, 0.1);
+  border-left: 4px solid #f39c12;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.warning-box-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.warning-box-header .ma-icon {
+  width: 20px;
+  height: 20px;
+  color: #f39c12;
+}
+
+/* 案例框图标 */
+.case-box {
+  background: rgba(184, 169, 201, 0.1);
+  border-left: 4px solid #b8a9c9;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.case-box-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.case-box-header .ma-icon {
+  width: 20px;
+  height: 20px;
+  color: #b8a9c9;
+}

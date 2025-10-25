@@ -1,0 +1,10 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <g transform="translate(400,300)">
+    <rect x="-80" y="-60" width="160" height="120" rx="15" fill="#27ae60" opacity="0.8"/>
+    <circle cx="-30" cy="-20" r="8" fill="white"/>
+    <circle cx="30" cy="-20" r="8" fill="white"/>
+    <rect x="-40" y="10" width="80" height="30" rx="5" fill="white" opacity="0.9"/>
+  </g>
+  <text x="400" y="300" text-anchor="middle" font-size="20" fill="white">知情同意</text>
+</svg>

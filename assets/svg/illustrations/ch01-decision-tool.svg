@@ -1,0 +1,95 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    医美消费决策评估工具
+  </text>
+  
+  <!-- 评估流程图 -->
+  <rect x="100" y="80" width="600" height="480" fill="#F8F8F8" stroke="#D4A574" stroke-width="2" rx="15"/>
+  
+  <!-- 基本信息 -->
+  <rect x="150" y="120" width="500" height="80" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    第一步：基本信息评估
+  </text>
+  <text x="200" y="170" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    • 个人基本信息（年龄、性别、职业、教育程度、收入）
+  </text>
+  <text x="200" y="185" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    • 医美项目信息（项目类型、预期费用、计划时间）
+  </text>
+  
+  <!-- 动机分析 -->
+  <rect x="150" y="220" width="500" height="80" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    第二步：动机分析
+  </text>
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="12" fill="#E65100">
+    • 内在动机 vs 外在动机 • 自我需求 vs 社会压力
+  </text>
+  <text x="200" y="285" font-family="Arial, sans-serif" font-size="12" fill="#E65100">
+    • 1-5分评分系统评估动机纯度和强度
+  </text>
+  
+  <!-- 风险评估 -->
+  <rect x="150" y="320" width="500" height="80" fill="#FFCDD2" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="400" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    第三步：风险评估
+  </text>
+  <text x="200" y="370" font-family="Arial, sans-serif" font-size="12" fill="#C62828">
+    • 健康风险 • 心理风险 • 财务风险 • 社会风险
+  </text>
+  <text x="200" y="385" font-family="Arial, sans-serif" font-size="12" fill="#C62828">
+    • 风险承受能力评估 • 风险认知偏差检查
+  </text>
+  
+  <!-- 决策准备 -->
+  <rect x="150" y="420" width="500" height="80" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="400" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6A1B9A">
+    第四步：决策准备
+  </text>
+  <text x="200" y="470" font-family="Arial, sans-serif" font-size="12" fill="#6A1B9A">
+    • 信息收集完整性 • 专业咨询充分性 • 期望合理性
+  </text>
+  <text x="200" y="485" font-family="Arial, sans-serif" font-size="12" fill="#6A1B9A">
+    • 应急预案制定 • 长期效果考虑
+  </text>
+  
+  <!-- 流程箭头 -->
+  <path d="M 400 200 L 400 220" stroke="#D4A574" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 300 L 400 320" stroke="#D4A574" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 400 L 400 420" stroke="#D4A574" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#D4A574"/>
+    </marker>
+  </defs>
+  
+  <!-- 侧边工具说明 -->
+  <rect x="50" y="250" width="80" height="100" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="90" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    工具特点
+  </text>
+  <text x="90" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    系统化
+  </text>
+  <text x="90" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    全面性
+  </text>
+  <text x="90" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    实用性
+  </text>
+  <text x="90" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    科学性
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图1.7：医美消费决策评估工具的四个步骤
+  </text>
+</svg>

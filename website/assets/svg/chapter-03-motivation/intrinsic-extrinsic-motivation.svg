@@ -1,0 +1,166 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 内在动机vs外在动机 -->
+  <defs>
+    <!-- 内在动机渐变 -->
+    <linearGradient id="intrinsic-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 外在动机渐变 -->
+    <linearGradient id="extrinsic-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 平衡渐变 -->
+    <linearGradient id="balance-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    内在动机 vs 外在动机
+  </text>
+  
+  <!-- 天平支架 -->
+  <g transform="translate(400, 200)">
+    <!-- 支架柱 -->
+    <rect x="-5" y="0" width="10" height="150" fill="#34495e" filter="url(#shadow)"/>
+    <!-- 支架底座 -->
+    <rect x="-50" y="140" width="100" height="20" fill="#34495e" filter="url(#shadow)"/>
+    <!-- 天平横杆 -->
+    <rect x="-200" y="-5" width="400" height="10" fill="#34495e" filter="url(#shadow)"/>
+    <!-- 支点 -->
+    <circle cx="0" cy="0" r="15" fill="#667eea" filter="url(#shadow)"/>
+    
+    <!-- 内在动机天平盘 -->
+    <g transform="translate(-150, 50)">
+      <!-- 悬挂线 -->
+      <line x1="0" y1="-50" x2="0" y2="0" stroke="#34495e" stroke-width="2"/>
+      <!-- 天平盘 -->
+      <ellipse cx="0" cy="20" rx="80" ry="15" fill="url(#intrinsic-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="内在动机：源于兴趣、享受、满足感" data-onclick="details"/>
+      <text x="0" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">内在动机</text>
+      
+      <!-- 内在动机特征 -->
+      <g transform="translate(0, 50)">
+        <rect x="-70" y="0" width="140" height="120" rx="10" fill="white" stroke="#2ecc71" stroke-width="2" filter="url(#shadow)"/>
+        <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2ecc71">内在动机特征</text>
+        
+        <text x="-60" y="40" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">• 兴趣驱动</text>
+        <text x="-60" y="55" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">• 享受过程</text>
+        <text x="-60" y="70" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">• 自主选择</text>
+        <text x="-60" y="85" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">• 持久性强</text>
+        <text x="-60" y="100" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">• 创造性高</text>
+      </g>
+    </g>
+    
+    <!-- 外在动机天平盘 -->
+    <g transform="translate(150, 50)">
+      <!-- 悬挂线 -->
+      <line x1="0" y1="-50" x2="0" y2="0" stroke="#34495e" stroke-width="2"/>
+      <!-- 天平盘 -->
+      <ellipse cx="0" cy="20" rx="80" ry="15" fill="url(#extrinsic-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="外在动机：源于奖励、惩罚、社会压力" data-onclick="details"/>
+      <text x="0" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">外在动机</text>
+      
+      <!-- 外在动机特征 -->
+      <g transform="translate(0, 50)">
+        <rect x="-70" y="0" width="140" height="120" rx="10" fill="white" stroke="#e74c3c" stroke-width="2" filter="url(#shadow)"/>
+        <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e74c3c">外在动机特征</text>
+        
+        <text x="-60" y="40" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">• 奖励驱动</text>
+        <text x="-60" y="55" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">• 避免惩罚</text>
+        <text x="-60" y="70" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">• 社会压力</text>
+        <text x="-60" y="85" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">• 短期有效</text>
+        <text x="-60" y="100" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">• 目标导向</text>
+      </g>
+    </g>
+    
+    <!-- 平衡指示器 -->
+    <g transform="translate(0, -30)">
+      <rect x="-30" y="-10" width="60" height="20" rx="10" fill="url(#balance-grad)" filter="url(#shadow)"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">动态平衡</text>
+    </g>
+  </g>
+  
+  <!-- 医美消费应用 -->
+  <g transform="translate(100, 420)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">医美消费应用：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">内在：自我提升、美丽追求</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">外在：社交认同、职业需要</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">平衡：个人价值与社会认可</text>
+    </g>
+  </g>
+  
+  <!-- 动机转化过程 -->
+  <g transform="translate(450, 420)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">动机转化过程：</text>
+    
+    <g transform="translate(0, 25)">
+      <rect x="0" y="-10" width="80" height="20" rx="10" fill="#e74c3c" opacity="0.7"/>
+      <text x="40" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">外在动机</text>
+    </g>
+    
+    <path d="M 40 45 L 40 65" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <g transform="translate(0, 80)">
+      <rect x="0" y="-10" width="80" height="20" rx="10" fill="#f39c12" opacity="0.7"/>
+      <text x="40" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">内化过程</text>
+    </g>
+    
+    <path d="M 40 100 L 40 120" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <g transform="translate(0, 135)">
+      <rect x="0" y="-10" width="80" height="20" rx="10" fill="#2ecc71" opacity="0.7"/>
+      <text x="40" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">内在动机</text>
+    </g>
+  </g>
+  
+  <!-- 调节策略 -->
+  <g transform="translate(50, 100)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">调节策略：</text>
+    <text y="15" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">• 增强自主性支持</text>
+    <text y="30" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">• 提供能力反馈</text>
+    <text y="45" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">• 建立关系连接</text>
+  </g>
+  
+  <!-- 动态平衡效果 -->
+  <g transform="translate(400, 200)">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 0 0;-5 0 0;5 0 0;0 0 0"
+      dur="4s"
+      repeatCount="indefinite"/>
+  </g>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击天平盘查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

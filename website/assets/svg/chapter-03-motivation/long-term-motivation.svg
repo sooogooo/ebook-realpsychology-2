@@ -1,0 +1,210 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 长期动机维持 -->
+  <defs>
+    <!-- 启动阶段渐变 -->
+    <linearGradient id="start-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 维持阶段渐变 -->
+    <linearGradient id="maintain-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 强化阶段渐变 -->
+    <linearGradient id="reinforce-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 巩固阶段渐变 -->
+    <linearGradient id="consolidate-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 习惯阶段渐变 -->
+    <linearGradient id="habit-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    长期动机维持
+  </text>
+  
+  <!-- 循环图 -->
+  <g transform="translate(400, 320)">
+    <!-- 1. 启动阶段 -->
+    <g transform="translate(0, -120)">
+      <circle cx="0" cy="0" r="50" fill="url(#start-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="启动阶段：激发初始动机" data-onclick="details"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">启动</text>
+      <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">激发兴趣</text>
+    </g>
+    
+    <!-- 2. 维持阶段 -->
+    <g transform="translate(114, -37)">
+      <circle cx="0" cy="0" r="50" fill="url(#maintain-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="维持阶段：保持动机水平" data-onclick="details"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">维持</text>
+      <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">持续投入</text>
+    </g>
+    
+    <!-- 3. 强化阶段 -->
+    <g transform="translate(114, 37)">
+      <circle cx="0" cy="0" r="50" fill="url(#reinforce-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="强化阶段：增强动机强度" data-onclick="details"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">强化</text>
+      <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">效果验证</text>
+    </g>
+    
+    <!-- 4. 巩固阶段 -->
+    <g transform="translate(0, 120)">
+      <circle cx="0" cy="0" r="50" fill="url(#consolidate-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="巩固阶段：稳定动机状态" data-onclick="details"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">巩固</text>
+      <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">内化认同</text>
+    </g>
+    
+    <!-- 5. 习惯阶段 -->
+    <g transform="translate(-114, 37)">
+      <circle cx="0" cy="0" r="50" fill="url(#habit-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="习惯阶段：形成自动行为" data-onclick="details"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">习惯</text>
+      <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">自动化</text>
+    </g>
+    
+    <!-- 6. 评估调整 -->
+    <g transform="translate(-114, -37)">
+      <circle cx="0" cy="0" r="50" fill="url(#start-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="评估调整：持续优化改进" data-onclick="details"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">评估</text>
+      <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">反馈调整</text>
+    </g>
+    
+    <!-- 连接箭头 -->
+    <path d="M 35 -95 Q 75 -70 85 -37" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 114 13 L 114 37" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 85 37 Q 75 70 35 95" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -35 95 Q -75 70 -85 37" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -114 13 L -114 -13" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -85 -37 Q -75 -70 -35 -95" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- 中心目标 -->
+    <circle cx="0" cy="0" r="40" fill="white" stroke="#667eea" stroke-width="3" filter="url(#shadow)"/>
+    <text x="0" y="-5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#667eea">长期</text>
+    <text x="0" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#667eea">动机</text>
+  </g>
+  
+  <!-- 维持策略 -->
+  <g transform="translate(50, 150)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">维持策略：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">目标设定：设定明确可达的目标</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">进度追踪：记录和可视化进展</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">奖励机制：建立正反馈循环</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">社会支持：获得鼓励和支持</text>
+    </g>
+    
+    <g transform="translate(0, 105)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">环境优化：创造有利条件</text>
+    </g>
+  </g>
+  
+  <!-- 医美应用 -->
+  <g transform="translate(550, 150)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">医美应用：</text>
+    
+    <text y="25" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 定期护理计划的制定</text>
+    <text y="45" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 效果跟踪和记录系统</text>
+    <text y="65" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 会员积分和奖励机制</text>
+    <text y="85" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 社群分享和支持网络</text>
+    <text y="105" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 个性化服务定制</text>
+  </g>
+  
+  <!-- 失败原因分析 -->
+  <g transform="translate(100, 480)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">失败原因分析：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 目标设定过高或过低</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 缺乏即时反馈和奖励</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 环境干扰和诱惑过多</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 自我效能感不足</text>
+  </g>
+  
+  <!-- 成功要素 -->
+  <g transform="translate(450, 480)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">成功要素：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 内在动机的充分激发</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 适当的挑战和成就感</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 良好的自我监控能力</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 弹性的调整和适应机制</text>
+  </g>
+  
+  <!-- 循环动画效果 -->
+  <circle cx="400" cy="320" r="120" fill="none" stroke="#667eea" stroke-width="2" opacity="0.3">
+    <animate attributeName="stroke-dasharray" values="0 753;753 0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 旋转指示器 -->
+  <g transform="translate(400, 320)">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 0 0;360 0 0"
+      dur="20s"
+      repeatCount="indefinite"/>
+    <polygon points="0,-140 5,-130 0,-135 -5,-130" fill="#667eea"/>
+  </g>
+  
+  <!-- 动机强度指示器 -->
+  <g transform="translate(50, 320)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">动机强度：</text>
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="15" height="100" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="40" width="15" height="60" rx="7" fill="#2ecc71"/>
+      <text x="25" y="70" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">60%</text>
+    </g>
+  </g>
+  
+  <!-- 维持时间指示器 -->
+  <g transform="translate(700, 320)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">维持时间：</text>
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="15" height="100" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="20" width="15" height="80" rx="7" fill="#3498db"/>
+      <text x="-30" y="70" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">80%</text>
+    </g>
+  </g>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各阶段查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

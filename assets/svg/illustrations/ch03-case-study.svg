@@ -1,0 +1,210 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    案例分析3.1：多重动机驱动的医美消费决策
+  </text>
+  
+  <!-- 案例背景 -->
+  <rect x="100" y="80" width="600" height="60" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    案例背景
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    李女士，35岁，外企市场总监，年收入40万元，3年多项医美项目，累计花费15万元
+  </text>
+  
+  <!-- 动机形成过程 -->
+  <rect x="50" y="160" width="700" height="160" fill="#F3E5F5" stroke="#CE93D8" stroke-width="2" rx="10"/>
+  <text x="400" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6A1B9A">
+    动机形成过程
+  </text>
+  
+  <!-- 初始动机 -->
+  <rect x="80" y="200" width="140" height="60" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="150" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    初始动机
+  </text>
+  <text x="150" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    职场竞争压力
+  </text>
+  <text x="150" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    外在动机驱动
+  </text>
+  <text x="150" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    33岁危机触发
+  </text>
+  
+  <!-- 动机强化 -->
+  <rect x="240" y="200" width="140" height="60" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="310" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    动机强化
+  </text>
+  <text x="310" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    社交媒体影响
+  </text>
+  <text x="310" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    媒体影响动机
+  </text>
+  <text x="310" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    美丽形象比较
+  </text>
+  
+  <!-- 动机转变 -->
+  <rect x="400" y="200" width="140" height="60" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="470" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    动机转变
+  </text>
+  <text x="470" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    自我提升需求
+  </text>
+  <text x="470" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    内在动机增强
+  </text>
+  <text x="470" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    自信心提升
+  </text>
+  
+  <!-- 动机复杂化 -->
+  <rect x="560" y="200" width="140" height="60" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="630" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    动机复杂化
+  </text>
+  <text x="630" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    多重因素交织
+  </text>
+  <text x="630" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6A1B9A">
+    混合动机状态
+  </text>
+  <text x="630" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    综合考量决策
+  </text>
+  
+  <!-- 流程箭头 -->
+  <path d="M 220 230 L 240 230" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 380 230 L 400 230" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 540 230 L 560 230" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 心理机制 -->
+  <rect x="100" y="340" width="600" height="120" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    心理机制与行为相互作用
+  </text>
+  
+  <!-- 心理账户 -->
+  <rect x="130" y="380" width="120" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="190" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#E65100">
+    心理账户
+  </text>
+  <text x="190" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    归类为投资
+  </text>
+  <text x="190" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    占收入8%
+  </text>
+  <text x="190" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    预算规划
+  </text>
+  <text x="190" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    专门资金预留
+  </text>
+  
+  <!-- 风险认知 -->
+  <rect x="270" y="380" width="120" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="330" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#E65100">
+    风险认知
+  </text>
+  <text x="330" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    早期低估风险
+  </text>
+  <text x="330" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    高估收益
+  </text>
+  <text x="330" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    选择性关注
+  </text>
+  <text x="330" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    动机驱动偏差
+  </text>
+  
+  <!-- 满意度变化 -->
+  <rect x="410" y="380" width="120" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="470" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#E65100">
+    满意度变化
+  </text>
+  <text x="470" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    内在动机项目
+  </text>
+  <text x="470" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    满意度较高
+  </text>
+  <text x="470" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    外在动机项目
+  </text>
+  <text x="470" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    满足感短暂
+  </text>
+  
+  <!-- 多方视角 -->
+  <rect x="550" y="380" width="120" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="610" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#E65100">
+    多方视角
+  </text>
+  <text x="610" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    消费者成长
+  </text>
+  <text x="610" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    医生专业观察
+  </text>
+  <text x="610" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    销售行为变化
+  </text>
+  <text x="610" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    投资者价值认可
+  </text>
+  
+  <!-- 案例启示 -->
+  <rect x="150" y="480" width="500" height="80" fill="#C8E6C9" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    案例启示
+  </text>
+  
+  <!-- 启示要点 -->
+  <rect x="180" y="515" width="100" height="35" fill="#E8F5E8" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="230" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2E7D32">
+    动态性
+  </text>
+  <text x="230" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    动机随时间变化
+  </text>
+  
+  <rect x="300" y="515" width="100" height="35" fill="#E8F5E8" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="350" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2E7D32">
+    多样性
+  </text>
+  <text x="350" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    多重动机交织
+  </text>
+  
+  <rect x="420" y="515" width="100" height="35" fill="#E8F5E8" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="470" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2E7D32">
+    成长性
+  </text>
+  <text x="470" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    冲动到理性发展
+  </text>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图3.7：多重动机驱动医美消费决策的形成过程、心理机制及案例启示
+  </text>
+</svg>

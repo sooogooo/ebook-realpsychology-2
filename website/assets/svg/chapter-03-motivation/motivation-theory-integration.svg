@@ -1,0 +1,149 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 动机理论整合图 -->
+  <defs>
+    <!-- 马斯洛需求理论渐变 -->
+    <linearGradient id="maslow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- 自我决定理论渐变 -->
+    <linearGradient id="sdt-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- 期望理论渐变 -->
+    <linearGradient id="expectancy-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- 成就动机理论渐变 -->
+    <linearGradient id="achievement-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- 认知评价理论渐变 -->
+    <linearGradient id="cognitive-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    动机理论整合图
+  </text>
+  
+  <!-- 理论圆形重叠区域 -->
+  <g transform="translate(400, 320)">
+    <!-- 马斯洛需求理论 -->
+    <circle cx="-60" cy="-30" r="120" fill="url(#maslow-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="马斯洛需求层次理论：生理、安全、社交、尊重、自我实现需求" data-onclick="details"/>
+    <text x="-60" y="-30" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">马斯洛需求理论</text>
+    
+    <!-- 自我决定理论 -->
+    <circle cx="60" cy="-30" r="120" fill="url(#sdt-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="自我决定理论：自主性、胜任感、关系性" data-onclick="details"/>
+    <text x="60" y="-30" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">自我决定理论</text>
+    
+    <!-- 期望理论 -->
+    <circle cx="-60" cy="50" r="120" fill="url(#expectancy-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="期望理论：期望、工具性、效价" data-onclick="details"/>
+    <text x="-60" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">期望理论</text>
+    
+    <!-- 成就动机理论 -->
+    <circle cx="60" cy="50" r="120" fill="url(#achievement-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="成就动机理论：成就需要、权力需要、亲和需要" data-onclick="details"/>
+    <text x="60" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">成就动机理论</text>
+    
+    <!-- 认知评价理论 -->
+    <circle cx="0" cy="10" r="100" fill="url(#cognitive-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="认知评价理论：内在动机与外在动机的关系" data-onclick="details"/>
+    <text x="0" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">认知评价理论</text>
+    
+    <!-- 中心整合区域 -->
+    <circle cx="0" cy="10" r="40" fill="white" stroke="#667eea" stroke-width="3" filter="url(#shadow)"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#667eea">医美消费</text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#667eea">动机整合</text>
+  </g>
+  
+  <!-- 理论特点说明 -->
+  <g transform="translate(50, 120)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">理论特点：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">马斯洛：需求层次递进</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">自我决定：内在动机驱动</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">期望理论：结果预期计算</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">成就动机：成功追求导向</text>
+    </g>
+    
+    <g transform="translate(0, 105)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">认知评价：动机类型转化</text>
+    </g>
+  </g>
+  
+  <!-- 医美应用领域 -->
+  <g transform="translate(600, 120)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">医美应用：</text>
+    
+    <text y="25" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 美丽需求满足</text>
+    <text y="45" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 自主选择权</text>
+    <text y="65" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 效果期望管理</text>
+    <text y="85" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 社会认同获得</text>
+    <text y="105" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 自我价值提升</text>
+  </g>
+  
+  <!-- 整合要点 -->
+  <g transform="translate(100, 480)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">整合要点：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 多层次需求同时作用</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 内外在动机相互影响</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 期望与现实需要平衡</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 个人特质与社会环境互动</text>
+  </g>
+  
+  <!-- 理论选择指南 -->
+  <g transform="translate(450, 480)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">理论选择：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 基础需求分析 → 马斯洛</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 自主性研究 → 自我决定</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 决策过程 → 期望理论</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 动机类型 → 认知评价</text>
+  </g>
+  
+  <!-- 动态效果 -->
+  <circle cx="400" cy="100" r="3" fill="#667eea">
+    <animate attributeName="r" values="3;8;3" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各理论查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

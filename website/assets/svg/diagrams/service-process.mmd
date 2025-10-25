@@ -1,0 +1,29 @@
+```mermaid
+sequenceDiagram
+    participant C as 消费者
+    participant S as 销售人员
+    participant D as 医生
+    participant T as 技术设备
+    
+    C->>S: 咨询需求
+    S->>C: 初步建议
+    C->>D: 专业咨询
+    D->>C: 面诊评估
+    
+    D->>T: 技术方案制定
+    T->>D: 效果预测
+    D->>C: 方案讲解
+    
+    C->>S: 价格咨询
+    S->>C: 报价方案
+    C->>C: 决策过程
+    
+    C->>D: 确认方案
+    D->>T: 准备治疗
+    T->>C: 实施治疗
+    
+    C->>S: 术后服务
+    S->>C: 跟踪回访
+    C->>D: 复诊评估
+    D->>C: 效果确认
+```

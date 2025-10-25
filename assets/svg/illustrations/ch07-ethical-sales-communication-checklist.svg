@@ -1,0 +1,295 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    伦理销售沟通检查清单
+  </text>
+  
+  <!-- 工具说明 -->
+  <rect x="100" y="80" width="600" height="60" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    实用工具7.2
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    帮助医美销售人员在日常工作中实践伦理销售，确保沟通符合伦理标准
+  </text>
+  
+  <!-- 沟通前准备 -->
+  <rect x="50" y="160" width="340" height="120" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="2" rx="10"/>
+  <text x="220" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0277BD">
+    沟通前准备
+  </text>
+  
+  <!-- 信息准备 -->
+  <rect x="80" y="200" width="140" height="65" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="150" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0277BD">
+    信息准备
+  </text>
+  <text x="150" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    □ 完整项目信息
+  </text>
+  <text x="150" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    □ 了解基本情况
+  </text>
+  <text x="150" y="256" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    □ 相关案例资料
+  </text>
+  <text x="150" y="269" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    □ 合适环境时间
+  </text>
+  
+  <!-- 心态准备 -->
+  <rect x="240" y="200" width="130" height="65" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="305" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0277BD">
+    心态准备
+  </text>
+  <text x="305" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    □ 帮助消费者出发
+  </text>
+  <text x="305" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    □ 尊重决策权
+  </text>
+  <text x="305" y="256" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    □ 耐心倾听准备
+  </text>
+  <text x="305" y="269" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    □ 应对质疑准备
+  </text>
+  
+  <!-- 沟通过程检查 -->
+  <rect x="410" y="160" width="340" height="120" fill="#F3E5F5" stroke="#CE93D8" stroke-width="2" rx="10"/>
+  <text x="580" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6A1B9A">
+    沟通过程检查
+  </text>
+  
+  <!-- 五个阶段 -->
+  <rect x="440" y="200" width="60" height="65" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="470" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    开场
+  </text>
+  <text x="470" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 自我介绍
+  </text>
+  <text x="470" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 了解需求
+  </text>
+  <text x="470" y="256" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 建立氛围
+  </text>
+  <text x="470" y="269" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 说明流程
+  </text>
+  
+  <rect x="520" y="200" width="60" height="65" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="550" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    需求
+  </text>
+  <text x="550" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 深入了解动机
+  </text>
+  <text x="550" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 询问期望担忧
+  </text>
+  <text x="550" y="256" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 评估适合度
+  </text>
+  <text x="550" y="269" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 考虑心理状态
+  </text>
+  
+  <rect x="600" y="200" width="60" height="65" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="630" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    信息
+  </text>
+  <text x="630" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 完整风险信息
+  </text>
+  <text x="630" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 效果局限性
+  </text>
+  <text x="630" y="256" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 费用构成解释
+  </text>
+  <text x="630" y="269" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 易懂语言
+  </text>
+  
+  <rect x="680" y="200" width="60" height="65" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="710" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    方案
+  </text>
+  <text x="710" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 多种选择
+  </text>
+  <text x="710" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 优缺点说明
+  </text>
+  <text x="710" y="256" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 最适合推荐
+  </text>
+  <text x="710" y="269" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 尊重偏好
+  </text>
+  
+  <!-- 沟通后跟进 -->
+  <rect x="50" y="300" width="340" height="120" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="220" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    沟通后跟进
+  </text>
+  
+  <!-- 信息确认 -->
+  <rect x="80" y="340" width="140" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="150" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    信息确认
+  </text>
+  <text x="150" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    □ 确认理解程度
+  </text>
+  <text x="150" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    □ 书面信息总结
+  </text>
+  <text x="150" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    □ 安排后续沟通
+  </text>
+  <text x="150" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    □ 留下联系方式
+  </text>
+  
+  <!-- 后续服务 -->
+  <rect x="240" y="340" width="130" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="305" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    后续服务
+  </text>
+  <text x="305" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    □ 随访机制建立
+  </text>
+  <text x="305" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    □ 术后指导提供
+  </text>
+  <text x="305" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    □ 满意度关注
+  </text>
+  <text x="305" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    □ 问题处理
+  </text>
+  
+  <!-- 伦理警示信号 -->
+  <rect x="410" y="300" width="340" height="120" fill="#FFEBEE" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="580" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    伦理警示信号
+  </text>
+  
+  <!-- 三类警示 -->
+  <rect x="440" y="340" width="100" height="65" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="490" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    信息操控
+  </text>
+  <text x="490" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 只强调积极效果
+  </text>
+  <text x="490" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 模糊误导表述
+  </text>
+  <text x="490" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 修饰对比照片
+  </text>
+  <text x="490" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 隐藏重要信息
+  </text>
+  
+  <rect x="560" y="340" width="100" height="65" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="610" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    压力销售
+  </text>
+  <text x="610" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 催促立即决定
+  </text>
+  <text x="610" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 虚假紧急情况
+  </text>
+  <text x="610" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 利用情绪弱点
+  </text>
+  <text x="610" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 阻碍第二意见
+  </text>
+  
+  <rect x="680" y="340" width="60" height="65" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="710" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    利益
+  </text>
+  <text x="710" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 过度推销
+  </text>
+  <text x="710" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 忽视需求
+  </text>
+  <text x="710" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 不必要服务
+  </text>
+  <text x="710" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    □ 隐藏激励
+  </text>
+  
+  <!-- 应对策略 -->
+  <rect x="100" y="440" width="600" height="100" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    关键应对策略
+  </text>
+  
+  <!-- 三种情况应对 -->
+  <rect x="130" y="475" width="160" height="55" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="210" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    面对消费者犹豫时
+  </text>
+  <text x="210" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    尊重犹豫 | 给予时间 | 提供更多信息
+  </text>
+  <text x="210" y="516" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    建议咨询 | 不施压力 | 尊重决定
+  </text>
+  <text x="210" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    建立信任 | 长期关系
+  </text>
+  
+  <rect x="310" y="475" width="160" height="55" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="390" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    面对消费者质疑时
+  </text>
+  <text x="390" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    耐心解答 | 承认不确定性 | 提供验证
+  </text>
+  <text x="390" y="516" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    保持开放 | 诚实态度 | 专业解释
+  </text>
+  <text x="390" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    建立可信 | 增强信任
+  </text>
+  
+  <rect x="490" y="475" width="180" height="55" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="580" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    面对竞争对比时
+  </text>
+  <text x="580" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    客观比较 | 强调特色优势 | 不贬低对手
+  </text>
+  <text x="580" y="516" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    尊重选择权 | 专业分析 | 价值呈现
+  </text>
+  <text x="580" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    差异化竞争 | 诚信为本
+  </text>
+  
+  <!-- 使用建议 -->
+  <rect x="100" y="560" width="600" height="25" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="400" y="577" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0277BD">
+    使用建议：每次重要销售沟通前使用 | 定期反思改进 | 分享最佳实践 | 根据反馈优化技巧
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图7.7：伦理销售沟通检查清单及应对策略
+  </text>
+</svg>

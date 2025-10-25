@@ -1,0 +1,276 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    数字化时代的医美消费心理
+  </text>
+  
+  <!-- 数字化应用场景 -->
+  <rect x="100" y="80" width="600" height="80" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    数字化技术五大应用场景
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    信息获取 | 咨询评估 | 治疗过程 | 效果跟踪 | 社交分享
+  </text>
+  <text x="400" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    VR/AR/AI技术渗透到医美服务全链条，重塑服务交付方式和消费者心理体验
+  </text>
+  
+  <!-- 数字化心理特征 -->
+  <rect x="50" y="160" width="700" height="200" fill="#F3E5F5" stroke="#CE93D8" stroke-width="3" rx="15"/>
+  <text x="400" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#6A1B9A">
+    数字化时代消费心理五大特征
+  </text>
+  
+  <!-- 即时性 -->
+  <rect x="80" y="210" width="120" height="130" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="140" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    即时性
+  </text>
+  <text x="140" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    即时满足期待
+  </text>
+  <text x="140" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 快速获取信息
+  </text>
+  <text x="140" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 快速看到效果
+  </text>
+  <text x="140" y="291" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 快速解决问题
+  </text>
+  <text x="140" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 服务设计新要求
+  </text>
+  <text x="140" y="317" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 交付方式变革
+  </text>
+  <text x="140" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    速度与效率优先
+  </text>
+  
+  <!-- 可视化 -->
+  <rect x="220" y="210" width="120" height="130" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="280" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    可视化
+  </text>
+  <text x="280" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    抽象概念直观化
+  </text>
+  <text x="280" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 图像视频偏好
+  </text>
+  <text x="280" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 3D模拟效果
+  </text>
+  <text x="280" y="291" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • VR预览体验
+  </text>
+  <text x="280" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 信息理解方式
+  </text>
+  <text x="280" y="317" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 决策辅助工具
+  </text>
+  <text x="280" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    直观体验需求
+  </text>
+  
+  <!-- 互动性 -->
+  <rect x="360" y="210" width="120" height="130" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="420" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    互动性
+  </text>
+  <text x="420" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    参与性体验特征
+  </text>
+  <text x="420" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 互动期待增强
+  </text>
+  <text x="420" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 参与感需求
+  </text>
+  <text x="420" y="291" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 个性化反馈
+  </text>
+  <text x="420" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 实时调整可能
+  </text>
+  <text x="420" y="317" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 服务设计变革
+  </text>
+  <text x="420" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    用户体验核心
+  </text>
+  
+  <!-- 社交化 -->
+  <rect x="500" y="210" width="120" height="130" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="560" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    社交化
+  </text>
+  <text x="560" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    连接性互动特征
+  </text>
+  <text x="560" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 社交网络广泛
+  </text>
+  <text x="560" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 社交认同重视
+  </text>
+  <text x="560" y="291" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 同伴影响增强
+  </text>
+  <text x="560" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 经验分享意愿
+  </text>
+  <text x="560" y="317" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 决策参考变化
+  </text>
+  <text x="560" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    社交连接驱动
+  </text>
+  
+  <!-- 个性化 -->
+  <rect x="640" y="210" width="100" height="130" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="690" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    个性化
+  </text>
+  <text x="690" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    定制化服务特征
+  </text>
+  <text x="690" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 个性化服务期待
+  </text>
+  <text x="690" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 精准度要求高
+  </text>
+  <text x="690" y="291" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 适配性需求强
+  </text>
+  <text x="690" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 数据驱动服务
+  </text>
+  <text x="690" y="317" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • AI定制方案
+  </text>
+  <text x="690" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    个体差异尊重
+  </text>
+  
+  <!-- 数字化双刃剑效应 -->
+  <rect x="80" y="380" width="640" height="120" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="2" rx="10"/>
+  <text x="400" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0277BD">
+    数字化双刃剑效应
+  </text>
+  
+  <!-- 五个方面的双刃剑 -->
+  <rect x="110" y="420" width="110" height="70" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="165" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0277BD">
+    信息获取
+  </text>
+  <text x="165" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    + 丰富信息资源
+  </text>
+  <text x="165" y="463" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    - 信息过载虚假
+  </text>
+  <text x="165" y="476" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    = 信息质量平衡
+  </text>
+  
+  <rect x="240" y="420" width="110" height="70" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="295" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0277BD">
+    决策制定
+  </text>
+  <text x="295" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    + 决策支持便利
+  </text>
+  <text x="295" y="463" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    - 技术依赖退化
+  </text>
+  <text x="295" y="476" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    = 自主决策保持
+  </text>
+  
+  <rect x="370" y="420" width="110" height="70" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="425" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0277BD">
+    期望管理
+  </text>
+  <text x="425" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    + 可视化建立期望
+  </text>
+  <text x="425" y="463" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    - 不切实际期望
+  </text>
+  <text x="425" y="476" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    = 现实期望建立
+  </text>
+  
+  <rect x="500" y="420" width="110" height="70" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="555" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0277BD">
+    社交互动
+  </text>
+  <text x="555" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    + 社交支持机会
+  </text>
+  <text x="555" y="463" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    - 社交比较焦虑
+  </text>
+  <text x="555" y="476" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    = 健康社交利用
+  </text>
+  
+  <rect x="630" y="420" width="80" height="70" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="670" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0277BD">
+    隐私保护
+  </text>
+  <text x="670" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    + 服务便捷性
+  </text>
+  <text x="670" y="463" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    - 隐私安全风险
+  </text>
+  <text x="670" y="476" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    = 数据安全保护
+  </text>
+  
+  <!-- 数字化素养 -->
+  <rect x="100" y="520" width="600" height="60" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    数字化素养五大核心能力
+  </text>
+  
+  <!-- 五大能力 -->
+  <rect x="130" y="555" width="100" height="20" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="180" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    信息评估能力
+  </text>
+  
+  <rect x="250" y="555" width="100" height="20" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="300" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    批判思维能力
+  </text>
+  
+  <rect x="370" y="555" width="100" height="20" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="420" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    隐私保护意识
+  </text>
+  
+  <rect x="490" y="555" width="100" height="20" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="540" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    技术适应能力
+  </text>
+  
+  <rect x="610" y="555" width="80" height="20" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="650" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    心理健康管理
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图8.3：数字化时代医美消费心理特征、双刃剑效应及素养要求
+  </text>
+</svg>

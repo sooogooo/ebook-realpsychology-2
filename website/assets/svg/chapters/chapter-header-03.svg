@@ -1,0 +1,57 @@
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff9a8b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4a261;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <g stroke="#2c3e50" stroke-width="1.5" fill="none">
+    <!-- Heart with motivation arrows -->
+    <g transform="translate(150, 100)">
+      <path d="M 0 5 C -20 -15, -50 -15, -25 5 C -10 15, 0 25, 0 25 C 0 25, 10 15, 25 5 C 50 -15, 20 -15, 0 5 Z" stroke-width="2"/>
+      
+      <!-- Upward arrows representing motivation -->
+      <path d="M -30 0 L -30 -25 M -35 -20 L -30 -25 L -25 -20" stroke-width="2" fill="#98d8c8"/>
+      <path d="M 30 0 L 30 -25 M 25 -20 L 30 -25 L 35 -20" stroke-width="2" fill="#b8a9c9"/>
+    </g>
+    
+    <!-- Maslow's pyramid simplified -->
+    <g transform="translate(350, 140)">
+      <path d="M 0 0 L -60 0 L -40 -30 L 40 -30 L 60 0 Z" stroke-width="1" fill="#98d8c8" opacity="0.2"/>
+      <path d="M 0 -20 L -40 -20 L -25 -40 L 25 -40 L 40 -20 Z" stroke-width="1" fill="#b8a9c9" opacity="0.2"/>
+      <path d="M 0 -35 L -25 -35 L -15 -50 L 15 -50 L 25 -35 Z" stroke-width="1" fill="#ff9a8b" opacity="0.2"/>
+      <path d="M 0 -45 L -15 -45 L -10 -55 L 10 -55 L 15 -45 Z" stroke-width="1" fill="#f4a261" opacity="0.2"/>
+    </g>
+    
+    <!-- Brain with gears -->
+    <g transform="translate(500, 100)">
+      <path d="M 0 0 Q -25 -20, 0 -35 Q 25 -20, 30 0 Q 25 20, 0 30 Q -25 20, 0 0" stroke-width="1.5"/>
+      
+      <!-- Gears representing motivation -->
+      <g transform="translate(-10, -5)">
+        <circle cx="0" cy="0" r="8" stroke-width="1"/>
+        <circle cx="0" cy="0" r="4" fill="#98d8c8"/>
+      </g>
+      
+      <g transform="translate(15, 5)">
+        <circle cx="0" cy="0" r="6" stroke-width="1"/>
+        <circle cx="0" cy="0" r="3" fill="#b8a9c9"/>
+      </g>
+    </g>
+    
+    <!-- Target/bullseye representing goals -->
+    <g transform="translate(650, 100)">
+      <circle cx="0" cy="0" r="25" stroke-width="1"/>
+      <circle cx="0" cy="0" r="18" stroke-width="1"/>
+      <circle cx="0" cy="0" r="12" stroke-width="1"/>
+      <circle cx="0" cy="0" r="6" fill="#ff9a8b"/>
+      
+      <!-- Arrow hitting target -->
+      <line x1="-30" y1="-30" x2="-5" y2="-5" stroke-width="2" stroke-dasharray="3,3"/>
+    </g>
+  </g>
+  
+  <!-- Background accent -->
+  <rect x="50" y="50" width="700" height="100" fill="url(#grad3)" opacity="0.1" rx="10"/>
+</svg>

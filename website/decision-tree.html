@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="医美消费心理学 - 交互式决策树可视化">
+    <meta name="keywords" content="医美消费心理学,决策树,消费决策,风险评估,心理决策">
+    <meta name="author" content="重庆联合丽格科技有限公司">
+    <title>交互式决策树 - 医美消费心理学</title>
+    <link rel="icon" type="image/png" href="https://docs.bccsw.cn/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/decision-tree.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="https://docs.bccsw.cn/logo.png" alt="Logo">
+                <h1>医美消费心理学</h1>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#overview">概述</a></li>
+                <li><a href="index.html#chapters">章节</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html">首页</a>
+                <span class="separator">›</span>
+                <span>交互式决策树</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="decision-tree-header">
+                <h1>交互式决策树可视化</h1>
+                <p>基于医美消费心理学理论的智能决策支持系统</p>
+            </div>
+
+            <div class="decision-tree-content">
+                <!-- 决策树类型选择 -->
+                <div class="tree-type-selector">
+                    <button class="tree-type-button active" data-type="consumer-decision">
+                        <span class="material-symbols-outlined">person</span>
+                        消费者决策树
+                    </button>
+                    <button class="tree-type-button" data-type="risk-assessment">
+                        <span class="material-symbols-outlined">warning</span>
+                        风险评估树
+                    </button>
+                    <button class="tree-type-button" data-type="treatment-path">
+                        <span class="material-symbols-outlined">medical_services</span>
+                        治疗路径树
+                    </button>
+                    <button class="tree-type-button" data-type="psychological-journey">
+                        <span class="material-symbols-outlined">psychology</span>
+                        心理历程树
+                    </button>
+                </div>
+
+                <!-- 消费者决策树 -->
+                <div class="tree-section active" id="consumer-decision-tree">
+                    <div class="tree-container">
+                        <h2>消费者决策路径分析</h2>
+                        <p>分析消费者在医美决策过程中的心理变化和关键节点</p>
+                        
+                        <div id="consumer-decision-chart" class="decision-tree-chart">
+                            <div class="tree-loading">
+                                <div class="tree-spinner"></div>
+                                <p>加载中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 风险评估树 -->
+                <div class="tree-section" id="risk-assessment-tree">
+                    <div class="tree-container">
+                        <h2>风险评估决策树</h2>
+                        <p>系统化评估医美消费中的各种风险因素</p>
+                        
+                        <div id="risk-assessment-chart" class="decision-tree-chart">
+                            <div class="tree-loading">
+                                <div class="tree-spinner"></div>
+                                <p>加载中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 治疗路径树 -->
+                <div class="tree-section" id="treatment-path-tree">
+                    <div class="tree-container">
+                        <h2>治疗路径决策树</h2>
+                        <p>根据个人情况制定最优的治疗方案路径</p>
+                        
+                        <div id="treatment-path-chart" class="decision-tree-chart">
+                            <div class="tree-loading">
+                                <div class="tree-spinner"></div>
+                                <p>加载中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 心理历程树 -->
+                <div class="tree-section" id="psychological-journey-tree">
+                    <div class="tree-container">
+                        <h2>心理历程决策树</h2>
+                        <p>追踪消费者在医美过程中的心理变化历程</p>
+                        
+                        <div id="psychological-journey-chart" class="decision-tree-chart">
+                            <div class="tree-loading">
+                                <div class="tree-spinner"></div>
+                                <p>加载中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 决策结果展示 -->
+                <div class="decision-results" id="decision-results" style="display: none;">
+                    <h3>决策分析结果</h3>
+                    <div class="result-summary" id="result-summary">
+                        <!-- 结果将通过JavaScript动态生成 -->
+                    </div>
+                </div>
+
+                <!-- 决策路径历史 -->
+                <div class="decision-history" id="decision-history" style="display: none;">
+                    <h3>决策路径历史</h3>
+                    <div class="history-timeline" id="history-timeline">
+                        <!-- 历史记录将通过JavaScript动态生成 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>地址：重庆市渝中区临江支路28号</p>
+                    <p>电话：<a href="tel:023-68726872">023-68726872</a></p>
+                    <p>邮箱：<a href="mailto:bccsw@cqlhlg.work">bccsw@cqlhlg.work</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>关于我们</h4>
+                    <p>重庆联合丽格科技有限公司致力于医美行业的专业研究和咨询服务，推动行业健康发展。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <p><a href="index.html">首页</a></p>
+                    <p><a href="index.html#chapters">章节内容</a></p>
+                    <p><a href="index.html#perspectives">专业视角</a></p>
+                    <p><a href="index.html#contact">联系我们</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 重庆联合丽格科技有限公司 | <a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2024023473号</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/decision-tree.js"></script>
+    <script>
+        // 消费者决策树数据
+        const consumerDecisionData = {
+            id: 'consumer-decision',
+            name: '消费者决策路径',
+            description: '分析消费者在医美决策过程中的心理变化',
+            rootNode: {
+                id: 'start',
+                label: '开始决策',
+                type: 'start',
+                x: 400,
+                y: 50,
+                description: '消费者开始考虑医美项目',
+                children: [
+                    {
+                        id: 'information-gathering',
+                        label: '信息收集',
+                        type: 'process',
+                        x: 400,
+                        y: 150,
+                        description: '收集医美相关信息',
+                        condition: '消费者主动寻找信息',
+                        children: [
+                            {
+                                id: 'online-research',
+                                label: '线上研究',
+                                type: 'action',
+                                x: 200,
+                                y: 250,
+                                description: '通过网络平台了解信息',
+                                probability: 0.65,
+                                children: [
+                                    {
+                                        id: 'social-media',
+                                        label: '社交媒体',
+                                        type: 'source',
+                                        x: 100,
+                                        y: 350,
+                                        description: '通过社交媒体了解',
+                                        influence: 0.4
+                                    },
+                                    {
+                                        id: 'official-websites',
+                                        label: '官方网站',
+                                        type: 'source',
+                                        x: 200,
+                                        y: 350,
+                                        description: '查看官方网站信息',
+                                        influence: 0.3
+                                    },
+                                    {
+                                        id: 'review-platforms',
+                                        label: '评价平台',
+                                        type: 'source',
+                                        x: 300,
+                                        y: 350,
+                                        description: '查看用户评价',
+                                        influence: 0.3
+                                    }
+                                ]
+                            },
+                            {
+                                id: 'offline-consultation',
+                                label: '线下咨询',
+                                type: 'action',
+                                x: 600,
+                                y: 250,
+                                description: '到机构进行咨询',
+                                probability: 0.35,
+                                children: [
+                                    {
+                                        id: 'doctor-consultation',
+                                        label: '医生咨询',
+                                        type: 'source',
+                                        x: 500,
+                                        y: 350,
+                                        description: '与医生面对面咨询',
+                                        influence: 0.6
+                                    },
+                                    {
+                                        id: 'friend-referral',
+                                        label: '朋友推荐',
+                                        type: 'source',
+                                        x: 600,
+                                        y: 350,
+                                        description: '通过朋友推荐',
+                                        influence: 0.25
+                                    },
+                                    {
+                                        id: 'experience-sharing',
+                                        label: '经验分享',
+                                        type: 'source',
+                                        x: 700,
+                                        y: 350,
+                                        description: '听取他人经验',
+                                        influence: 0.15
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: 'risk-assessment',
+                        label: '风险评估',
+                        type: 'process',
+                        x: 400,
+                        y: 450,
+                        description: '评估医美风险',
+                        condition: '消费者开始考虑风险',
+                        children: [
+                            {
+                                id: 'physical-risk',
+                                label: '生理风险',
+                                type: 'risk',
+                                x: 200,
+                                y: 550,
+                                description: '评估身体健康风险',
+                                severity: 'high',
+                                probability: 0.4
+                            },
+                            {
+                                id: 'psychological-risk',
+                                label: '心理风险',
+                                type: 'risk',
+                                x: 400,
+                                y: 550,
+                                description: '评估心理承受能力',
+                                severity: 'medium',
+                                probability: 0.35
+                            },
+                            {
+                                id: 'financial-risk',
+                                label: '经济风险',
+                                type: 'risk',
+                                x: 600,
+                                y: 550,
+                                description: '评估经济承受能力',
+                                severity: 'medium',
+                                probability: 0.25
+                            }
+                        ]
+                    },
+                    {
+                        id: 'final-decision',
+                        label: '最终决策',
+                        type: 'decision',
+                        x: 400,
+                        y: 650,
+                        description: '做出最终决定',
+                        children: [
+                            {
+                                id: 'proceed',
+                                label: '进行项目',
+                                type: 'outcome',
+                                x: 300,
+                                y: 750,
+                                description: '决定进行医美项目',
+                                probability: 0.6,
+                                satisfaction: 0.8
+                            },
+                            {
+                                id: 'postpone',
+                                label: '推迟决定',
+                                type: 'outcome',
+                                x: 500,
+                                y: 750,
+                                description: '推迟或放弃决定',
+                                probability: 0.4,
+                                satisfaction: 0.4
+                            }
+                        ]
+                    }
+                ]
+            }
+        };
+
+        // 风险评估树数据
+        const riskAssessmentData = {
+            id: 'risk-assessment',
+            name: '风险评估决策树',
+            description: '系统化评估医美消费中的各种风险因素',
+            rootNode: {
+                id: 'risk-start',
+                label: '风险评估开始',
+                type: 'start',
+                x: 400,
+                y: 50,
+                description: '开始评估医美风险',
+                children: [
+                    {
+                        id: 'personal-factors',
+                        label: '个人因素',
+                        type: 'category',
+                        x: 200,
+                        y: 150,
+                        description: '评估个人相关风险因素',
+                        children: [
+                            {
+                                id: 'health-status',
+                                label: '健康状况',
+                                type: 'factor',
+                                x: 100,
+                                y: 250,
+                                description: '评估身体健康状况',
+                                riskLevel: 'variable',
+                                children: [
+                                    {
+                                        id: 'good-health',
+                                        label: '健康状况良好',
+                                        type: 'outcome',
+                                        x: 50,
+                                        y: 350,
+                                        description: '适合进行医美项目',
+                                        riskScore: 20
+                                    },
+                                    {
+                                        id: 'chronic-conditions',
+                                        label: '慢性疾病',
+                                        type: 'outcome',
+                                        x: 150,
+                                        y: 350,
+                                        description: '需要谨慎评估',
+                                        riskScore: 70
+                                    }
+                                ]
+                            },
+                            {
+                                id: 'psychological-state',
+                                label: '心理状态',
+                                type: 'factor',
+                                x: 300,
+                                y: 250,
+                                description: '评估心理准备程度',
+                                riskLevel: 'medium',
+                                children: [
+                                    {
+                                        id: 'ready',
+                                        label: '心理准备充分',
+                                        type: 'outcome',
+                                        x: 250,
+                                        y: 350,
+                                        description: '心理状态良好',
+                                        riskScore: 30
+                                    },
+                                    {
+                                        id: 'anxious',
+                                        label: '焦虑不安',
+                                        type: 'outcome',
+                                        x: 350,
+                                        y: 350,
+                                        description: '需要心理疏导',
+                                        riskScore: 60
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: 'project-factors',
+                        label: '项目因素',
+                        type: 'category',
+                        x: 600,
+                        y: 150,
+                        description: '评估项目相关风险因素',
+                        children: [
+                            {
+                                id: 'project-complexity',
+                                label: '项目复杂度',
+                                type: 'factor',
+                                x: 500,
+                                y: 250,
+                                description: '评估技术复杂程度',
+                                riskLevel: 'high',
+                                children: [
+                                    {
+                                        id: 'simple-procedure',
+                                        label: '简单项目',
+                                        type: 'outcome',
+                                        x: 450,
+                                        y: 350,
+                                        description: '风险较低',
+                                        riskScore: 25
+                                    },
+                                    {
+                                        id: 'complex-surgery',
+                                        label: '复杂手术',
+                                        type: 'outcome',
+                                        x: 550,
+                                        y: 350,
+                                        description: '风险较高',
+                                        riskScore: 80
+                                    }
+                                ]
+                            },
+                            {
+                                id: 'provider-experience',
+                                label: '机构经验',
+                                type: 'factor',
+                                x: 700,
+                                y: 250,
+                                description: '评估机构专业水平',
+                                riskLevel: 'medium',
+                                children: [
+                                    {
+                                        id: 'experienced-provider',
+                                        label: '经验丰富',
+                                        type: 'outcome',
+                                        x: 650,
+                                        y: 350,
+                                        description: '风险可控',
+                                        riskScore: 20
+                                    },
+                                    {
+                                        id: 'inexperienced-provider',
+                                        label: '经验不足',
+                                        type: 'outcome',
+                                        x: 750,
+                                        y: 350,
+                                        description: '风险较高',
+                                        riskScore: 75
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        };
+
+        // 治疗路径树数据
+        const treatmentPathData = {
+            id: 'treatment-path',
+            name: '治疗路径决策树',
+            description: '根据个人情况制定最优的治疗方案路径',
+            rootNode: {
+                id: 'treatment-start',
+                label: '治疗路径规划',
+                type: 'start',
+                x: 400,
+                y: 50,
+                description: '开始制定治疗方案',
+                children: [
+                    {
+                        id: 'skin-concerns',
+                        label: '皮肤问题',
+                        type: 'category',
+                        x: 200,
+                        y: 150,
+                        description: '识别皮肤问题类型',
+                        children: [
+                            {
+                                id: 'aging-concerns',
+                                label: '衰老问题',
+                                type: 'concern',
+                                x: 100,
+                                y: 250,
+                                description: '皮肤松弛、皱纹等',
+                                severity: 'moderate',
+                                children: [
+                                    {
+                                        id: 'non-invasive',
+                                        label: '非手术治疗',
+                                        type: 'treatment',
+                                        x: 50,
+                                        y: 350,
+                                        description: '注射、激光等',
+                                        effectiveness: 0.7,
+                                        recovery: 'fast'
+                                    },
+                                    {
+                                        id: 'surgical',
+                                        label: '手术治疗',
+                                        type: 'treatment',
+                                        x: 150,
+                                        y: 350,
+                                        description: '面部提升等',
+                                        effectiveness: 0.9,
+                                        recovery: 'slow'
+                                    }
+                                ]
+                            },
+                            {
+                                id: 'pigmentation',
+                                label: '色素问题',
+                                type: 'concern',
+                                x: 300,
+                                y: 250,
+                                description: '色斑、暗沉等',
+                                severity: 'mild',
+                                children: [
+                                    {
+                                        id: 'laser-treatment',
+                                        label: '激光治疗',
+                                        type: 'treatment',
+                                        x: 250,
+                                        y: 350,
+                                        description: '各类激光项目',
+                                        effectiveness: 0.8,
+                                        recovery: 'fast'
+                                    },
+                                    {
+                                        id: 'chemical-peels',
+                                        label: '化学焕肤',
+                                        type: 'treatment',
+                                        x: 350,
+                                        y: 350,
+                                        description: '果酸换肤等',
+                                        effectiveness: 0.6,
+                                        recovery: 'medium'
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: 'body-concerns',
+                        label: '身体问题',
+                        type: 'category',
+                        x: 600,
+                        y: 150,
+                        description: '识别身体塑形需求',
+                        children: [
+                            {
+                                id: 'fat-reduction',
+                                label: '减脂需求',
+                                type: 'concern',
+                                x: 500,
+                                y: 250,
+                                description: '局部脂肪堆积',
+                                severity: 'mild',
+                                children: [
+                                    {
+                                        id: 'coolsculpting',
+                                        label: '冷冻溶脂',
+                                        type: 'treatment',
+                                        x: 450,
+                                        y: 350,
+                                        description: '非侵入式减脂',
+                                        effectiveness: 0.7,
+                                        recovery: 'fast'
+                                    },
+                                    {
+                                        id: 'liposuction',
+                                        label: '吸脂手术',
+                                        type: 'treatment',
+                                        x: 550,
+                                        y: 350,
+                                        description: '手术吸脂',
+                                        effectiveness: 0.9,
+                                        recovery: 'slow'
+                                    }
+                                ]
+                            },
+                            {
+                                id: 'muscle-toning',
+                                label: '肌肉塑形',
+                                type: 'concern',
+                                x: 700,
+                                y: 250,
+                                description: '肌肉紧致需求',
+                                severity: 'mild',
+                                children: [
+                                    {
+                                        id: 'emsculpt',
+                                        label: '电磁塑形',
+                                        type: 'treatment',
+                                        x: 650,
+                                        y: 350,
+                                        description: '非侵入式塑形',
+                                        effectiveness: 0.6,
+                                        recovery: 'fast'
+                                    },
+                                    {
+                                        id: 'surgical-lifting',
+                                        label: '手术提升',
+                                        type: 'treatment',
+                                        x: 750,
+                                        y: 350,
+                                        description: '手术提升紧致',
+                                        effectiveness: 0.85,
+                                        recovery: 'slow'
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        };
+
+        // 心理历程树数据
+        const psychologicalJourneyData = {
+            id: 'psychological-journey',
+            name: '心理历程决策树',
+            description: '追踪消费者在医美过程中的心理变化历程',
+            rootNode: {
+                id: 'journey-start',
+                label: '心理历程开始',
+                type: 'start',
+                x: 400,
+                y: 50,
+                description: '开始心理历程追踪',
+                children: [
+                    {
+                        id: 'awareness-stage',
+                        label: '认知阶段',
+                        type: 'stage',
+                        x: 400,
+                        y: 150,
+                        description: '消费者认知医美需求',
+                        emotions: ['curiosity', 'interest'],
+                        children: [
+                            {
+                                id: 'initial-curiosity',
+                                label: '初步好奇',
+                                type: 'emotion',
+                                x: 300,
+                                y: 250,
+                                description: '对医美产生好奇',
+                                intensity: 0.6,
+                                duration: '1-2周'
+                            },
+                            {
+                                id: 'information-seeking',
+                                label: '信息寻求',
+                                type: 'emotion',
+                                x: 500,
+                                y: 250,
+                                description: '主动寻求信息',
+                                intensity: 0.7,
+                                duration: '2-4周'
+                            }
+                        ]
+                    },
+                    {
+                        id: 'consideration-stage',
+                        label: '考虑阶段',
+                        type: 'stage',
+                        x: 400,
+                        y: 350,
+                        description: '消费者认真考虑',
+                        emotions: ['anxiety', 'hope', 'confusion'],
+                        children: [
+                            {
+                                id: 'risk-anxiety',
+                                label: '风险焦虑',
+                                type: 'emotion',
+                                x: 200,
+                                y: 450,
+                                description: '担心项目风险',
+                                intensity: 0.8,
+                                duration: '1-3周'
+                            },
+                            {
+                                id: 'result-expectation',
+                                label: '结果期待',
+                                type: 'emotion',
+                                x: 400,
+                                y: 450,
+                                description: '期待良好效果',
+                                intensity: 0.7,
+                                duration: '持续'
+                            },
+                            {
+                                id: 'decision-conflict',
+                                label: '决策冲突',
+                                type: 'emotion',
+                                x: 600,
+                                y: 450,
+                                description: '犹豫不决',
+                                intensity: 0.6,
+                                duration: '1-2周'
+                            }
+                        ]
+                    },
+                    {
+                        id: 'action-stage',
+                        label: '行动阶段',
+                        type: 'stage',
+                        x: 400,
+                        y: 550,
+                        description: '消费者做出行动',
+                        emotions: ['fear', 'excitement', 'determination'],
+                        children: [
+                            {
+                                id: 'pre-procedure-fear',
+                                label: '术前恐惧',
+                                type: 'emotion',
+                                x: 300,
+                                y: 650,
+                                description: '手术前的恐惧',
+                                intensity: 0.9,
+                                duration: '1-3天'
+                            },
+                            {
+                                id: 'procedure-excitement',
+                                label: '术中兴奋',
+                                type: 'emotion',
+                                x: 500,
+                                y: 650,
+                                description: '进行中的兴奋',
+                                intensity: 0.5,
+                                duration: '手术期间'
+                            }
+                        ]
+                    },
+                    {
+                        id: 'post-stage',
+                        label: '术后阶段',
+                        type: 'stage',
+                        x: 400,
+                        y: 750,
+                        description: '术后心理变化',
+                        emotions: ['satisfaction', 'disappointment', 'adaptation'],
+                        children: [
+                            {
+                                id: 'immediate-satisfaction',
+                                label: '即时满足',
+                                type: 'emotion',
+                                x: 300,
+                                y: 850,
+                                description: '术后的满足感',
+                                intensity: 0.8,
+                                duration: '1-2周'
+                            },
+                            {
+                                id: 'long-term-adaptation',
+                                label: '长期适应',
+                                type: 'emotion',
+                                x: 500,
+                                y: 850,
+                                description: '适应新形象',
+                                intensity: 0.6,
+                                duration: '1-6月'
+                            }
+                        ]
+                    }
+                ]
+            }
+        };
+
+        // 初始化决策树
+        let currentTree = null;
+        let consumerDecisionTree = null;
+        let riskAssessmentTree = null;
+        let treatmentPathTree = null;
+        let psychologicalJourneyTree = null;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始化各种决策树
+            consumerDecisionTree = new DecisionTree('consumer-decision-chart', {
+                width: 800,
+                height: 600,
+                responsive: true,
+                interactive: true
+            });
+
+            riskAssessmentTree = new DecisionTree('risk-assessment-chart', {
+                width: 800,
+                height: 600,
+                responsive: true,
+                interactive: true
+            });
+
+            treatmentPathTree = new DecisionTree('treatment-path-chart', {
+                width: 800,
+                height: 600,
+                responsive: true,
+                interactive: true
+            });
+
+            psychologicalJourneyTree = new DecisionTree('psychological-journey-chart', {
+                width: 800,
+                height: 600,
+                responsive: true,
+                interactive: true
+            });
+
+            // 默认显示消费者决策树
+            currentTree = consumerDecisionTree;
+            setTimeout(() => {
+                currentTree.setData(consumerDecisionData);
+            }, 1000);
+
+            // 绑定决策树类型切换事件
+            document.querySelectorAll('.tree-type-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    const type = this.dataset.type;
+                    switchTree(type);
+                });
+            });
+        });
+
+        function switchTree(type) {
+            // 更新按钮状态
+            document.querySelectorAll('.tree-type-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[data-type="${type}"]`).classList.add('active');
+
+            // 隐藏所有决策树区域
+            document.querySelectorAll('.tree-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // 显示选中的决策树区域
+            document.getElementById(`${type}-tree`).classList.add('active');
+
+            // 切换决策树
+            switch(type) {
+                case 'consumer-decision':
+                    currentTree = consumerDecisionTree;
+                    setTimeout(() => {
+                        currentTree.setData(consumerDecisionData);
+                    }, 300);
+                    break;
+                case 'risk-assessment':
+                    currentTree = riskAssessmentTree;
+                    setTimeout(() => {
+                        currentTree.setData(riskAssessmentData);
+                    }, 300);
+                    break;
+                case 'treatment-path':
+                    currentTree = treatmentPathTree;
+                    setTimeout(() => {
+                        currentTree.setData(treatmentPathData);
+                    }, 300);
+                    break;
+                case 'psychological-journey':
+                    currentTree = psychologicalJourneyTree;
+                    setTimeout(() => {
+                        currentTree.setData(psychologicalJourneyData);
+                    }, 300);
+                    break;
+            }
+
+            // 隐藏结果展示
+            document.getElementById('decision-results').style.display = 'none';
+            document.getElementById('decision-history').style.display = 'none';
+        }
+
+        function showDecisionResults(pathData) {
+            const resultsContainer = document.getElementById('decision-results');
+            const summaryContainer = document.getElementById('result-summary');
+            
+            let resultsHTML = `
+                <div class="result-overview">
+                    <h4>决策路径分析</h4>
+                    <p>路径长度: ${pathData.length} 个节点</p>
+                    <p>总体风险评分: ${calculateOverallRisk(pathData)}</p>
+                    <p>预期满意度: ${calculateExpectedSatisfaction(pathData)}</p>
+                </div>
+                <div class="path-details">
+                    <h4>路径详情</h4>
+            `;
+            
+            pathData.forEach((node, index) => {
+                resultsHTML += `
+                    <div class="path-node">
+                        <span class="node-step">步骤 ${index + 1}</span>
+                        <span class="node-label">${node.label}</span>
+                        <span class="node-type">${node.type}</span>
+                        <span class="node-description">${node.description}</span>
+                    </div>
+                `;
+            });
+            
+            resultsHTML += '</div>';
+            summaryContainer.innerHTML = resultsHTML;
+            resultsContainer.style.display = 'block';
+        }
+
+        function calculateOverallRisk(pathData) {
+            const riskNodes = pathData.filter(node => node.riskScore);
+            if (riskNodes.length === 0) return '低';
+            const avgRisk = riskNodes.reduce((sum, node) => sum + node.riskScore, 0) / riskNodes.length;
+            if (avgRisk < 30) return '低';
+            if (avgRisk < 60) return '中';
+            return '高';
+        }
+
+        function calculateExpectedSatisfaction(pathData) {
+            const satisfactionNodes = pathData.filter(node => node.satisfaction);
+            if (satisfactionNodes.length === 0) return '未知';
+            const avgSatisfaction = satisfactionNodes.reduce((sum, node) => sum + node.satisfaction, 0) / satisfactionNodes.length;
+            return Math.round(avgSatisfaction * 100) + '%';
+        }
+
+        function showDecisionHistory(historyData) {
+            const historyContainer = document.getElementById('decision-history');
+            const timelineContainer = document.getElementById('history-timeline');
+            
+            let historyHTML = '';
+            historyData.forEach((item, index) => {
+                historyHTML += `
+                    <div class="history-item">
+                        <div class="history-time">${item.timestamp}</div>
+                        <div class="history-action">${item.action}</div>
+                        <div class="history-result">${item.result}</div>
+                    </div>
+                `;
+            });
+            
+            timelineContainer.innerHTML = historyHTML;
+            historyContainer.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="医美技术发展时间线 - 展示医美技术的演进历程">
+    <meta name="keywords" content="医美技术,时间线,技术发展,创新历程">
+    <meta name="author" content="重庆联合丽格科技有限公司">
+    <title>技术发展时间线 - 医美消费心理学</title>
+    <link rel="icon" type="image/png" href="https://docs.bccsw.cn/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/technology-timeline.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="https://docs.bccsw.cn/logo.png" alt="Logo">
+                <h1>医美消费心理学</h1>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#overview">概述</a></li>
+                <li><a href="index.html#chapters">章节</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html">首页</a>
+                <span class="separator">›</span>
+                <span>技术发展时间线</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="timeline-header">
+                <h1>医美技术发展时间线</h1>
+                <p>探索医美技术的演进历程，了解技术创新对消费心理的影响</p>
+            </div>
+
+            <div class="timeline-content">
+                <div class="timeline-container">
+                    <div id="timeline-chart" class="timeline-chart">
+                        <div class="timeline-loading">
+                            <div class="timeline-spinner"></div>
+                            <p>加载中...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 技术分类说明 -->
+                <div class="technology-categories">
+                    <h2>技术分类说明</h2>
+                    <div class="category-grid">
+                        <div class="category-item">
+                            <div class="category-icon" style="background: #98d8c8;">
+                                <span class="material-symbols-outlined">biotech</span>
+                            </div>
+                            <h3>注射技术</h3>
+                            <p>包括肉毒素、填充剂等非手术治疗技术，强调微创性和快速恢复</p>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon" style="background: #b8a9c9;">
+                                <span class="material-symbols-outlined">laser</span>
+                            </div>
+                            <h3>激光技术</h3>
+                            <p>激光皮肤治疗、脱毛、祛斑等光学美容技术</p>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon" style="background: #ff9a8b;">
+                                <span class="material-symbols-outlined">medical_services</span>
+                            </div>
+                            <h3>手术技术</h3>
+                            <p>传统整形手术技术，包括面部轮廓、胸部整形等</p>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon" style="background: #f4a261;">
+                                <span class="material-symbols-outlined">smartphone</span>
+                            </div>
+                            <h3>数字技术</h3>
+                            <p>人工智能、虚拟现实、3D打印等新兴技术在医美领域的应用</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 关键技术节点 -->
+                <div class="key-technologies">
+                    <h2>关键技术节点</h2>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-year">1970s</div>
+                            <h3>现代整形外科兴起</h3>
+                            <p>整形外科作为独立专科正式确立，为现代医美技术奠定基础</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-year">1980s</div>
+                            <h3>激光美容技术</h3>
+                            <p>激光技术开始应用于皮肤治疗，开启了非手术美容的新时代</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-year">1990s</div>
+                            <h3>肉毒素应用</h3>
+                            <p>肉毒素被批准用于美容用途，微创注射技术开始普及</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-year">2000s</div>
+                            <h3>填充剂革命</h3>
+                            <p>透明质酸等填充剂技术的成熟，推动面部年轻化治疗</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-year">2010s</div>
+                            <h3>精准医学</h3>
+                            <p>个性化治疗方案和精准医学理念在医美领域的应用</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-year">2020s</div>
+                            <h3>智能化医美</h3>
+                            <p>人工智能、大数据、虚拟现实等技术与医美的深度融合</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 技术影响分析 -->
+                <div class="technology-impact">
+                    <h2>技术对消费心理的影响</h2>
+                    <div class="impact-section">
+                        <div class="impact-chart">
+                            <h3>风险感知变化</h3>
+                            <div class="impact-visual">
+                                <div class="impact-bar">
+                                    <div class="impact-fill" style="width: 85%; background: #98d8c8;">
+                                        <span class="impact-label">微创技术</span>
+                                        <span class="impact-value">85%</span>
+                                    </div>
+                                </div>
+                                <div class="impact-bar">
+                                    <div class="impact-fill" style="width: 60%; background: #b8a9c9;">
+                                        <span class="impact-label">恢复时间</span>
+                                        <span class="impact-value">60%</span>
+                                    </div>
+                                </div>
+                                <div class="impact-bar">
+                                    <div class="impact-fill" style="width: 75%; background: #ff9a8b;">
+                                        <span class="impact-label">自然效果</span>
+                                        <span class="impact-value">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="impact-text">
+                            <h3>消费者心理变化</h3>
+                            <ul>
+                                <li><strong>风险降低：</strong>微创技术的发展显著降低了消费者的风险感知</li>
+                                <li><strong>接受度提高：</strong>恢复时间缩短提高了消费者的接受度</li>
+                                <li><strong>期望提升：</strong>技术的精准性提升使消费者对效果有更高期望</li>
+                                <li><strong>决策简化：</strong>技术的成熟简化了消费者的决策过程</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 未来趋势 -->
+                <div class="future-trends">
+                    <h2>未来发展趋势</h2>
+                    <div class="trend-grid">
+                        <div class="trend-item">
+                            <div class="trend-icon">
+                                <span class="material-symbols-outlined">psychology</span>
+                            </div>
+                            <h3>AI辅助决策</h3>
+                            <p>人工智能技术将帮助消费者做出更明智的医美决策</p>
+                        </div>
+                        <div class="trend-item">
+                            <div class="trend-icon">
+                                <span class="material-symbols-outlined">view_in_ar</span>
+                            </div>
+                            <h3>虚拟现实体验</h3>
+                            <p>VR技术让消费者提前体验医美效果，降低不确定性</p>
+                        </div>
+                        <div class="trend-item">
+                            <div class="trend-icon">
+                                <span class="material-symbols-outlined">dna</span>
+                            </div>
+                            <h3>基因定制化</h3>
+                            <p>基于基因检测的个性化医美方案将成为主流</p>
+                        </div>
+                        <div class="trend-item">
+                            <div class="trend-icon">
+                                <span class="material-symbols-outlined">monitoring</span>
+                            </div>
+                            <h3>实时监测</h3>
+                            <p>智能穿戴设备实现术后效果的实时监测和调整</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>地址：重庆市渝中区临江支路28号</p>
+                    <p>电话：<a href="tel:023-68726872">023-68726872</a></p>
+                    <p>邮箱：<a href="mailto:bccsw@cqlhlg.work">bccsw@cqlhlg.work</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>关于我们</h4>
+                    <p>重庆联合丽格科技有限公司致力于医美行业的专业研究和咨询服务，推动行业健康发展。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <p><a href="index.html">首页</a></p>
+                    <p><a href="index.html#chapters">章节内容</a></p>
+                    <p><a href="index.html#perspectives">专业视角</a></p>
+                    <p><a href="index.html#contact">联系我们</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 重庆联合丽格科技有限公司 | <a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2024023473号</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/technology-timeline.js"></script>
+    <script>
+        // 模拟技术发展数据
+        const technologyData = {
+            technologies: [
+                // 早期发展 (1970-1990)
+                {
+                    id: 1,
+                    name: '现代整形外科确立',
+                    type: '手术技术',
+                    year: '1970',
+                    impact: 80,
+                    description: '整形外科作为独立专科正式确立，建立了现代医美的基础框架',
+                    influencedBy: []
+                },
+                {
+                    id: 2,
+                    name: '激光皮肤治疗',
+                    type: '激光技术',
+                    year: '1975',
+                    impact: 70,
+                    description: '激光技术首次应用于皮肤治疗，开创了非手术美容的先河',
+                    influencedBy: [1]
+                },
+                {
+                    id: 3,
+                    name: '硅凝胶乳房植入',
+                    type: '手术技术',
+                    year: '1982',
+                    impact: 75,
+                    description: '现代乳房植入技术的重大突破，提高了安全性和效果',
+                    influencedBy: [1]
+                },
+                {
+                    id: 4,
+                    name: '化学换肤技术',
+                    type: '激光技术',
+                    year: '1985',
+                    impact: 65,
+                    description: '化学换肤技术的标准化，为皮肤美容提供了新选择',
+                    influencedBy: [2]
+                },
+                
+                // 中期发展 (1990-2010)
+                {
+                    id: 5,
+                    name: '肉毒素美容应用',
+                    type: '注射技术',
+                    year: '1992',
+                    impact: 90,
+                    description: '肉毒素被批准用于美容用途，开启了微创注射时代',
+                    influencedBy: [1]
+                },
+                {
+                    id: 6,
+                    name: '激光脱毛技术',
+                    type: '激光技术',
+                    year: '1995',
+                    impact: 85,
+                    description: '永久性激光脱毛技术的成熟，改变了传统的脱毛方式',
+                    influencedBy: [2, 4]
+                },
+                {
+                    id: 7,
+                    name: '透明质酸填充剂',
+                    type: '注射技术',
+                    year: '1996',
+                    impact: 95,
+                    description: '透明质酸填充剂的问世，革命性地改变了面部年轻化治疗',
+                    influencedBy: [5]
+                },
+                {
+                    id: 8,
+                    name: '内窥镜整形技术',
+                    type: '手术技术',
+                    year: '1998',
+                    impact: 80,
+                    description: '内窥镜技术在整形手术中的应用，减少了创伤和恢复时间',
+                    influencedBy: [1, 3]
+                },
+                {
+                    id: 9,
+                    name: '激光皮肤重建',
+                    type: '激光技术',
+                    year: '2000',
+                    impact: 75,
+                    description: '点阵激光等皮肤重建技术的出现，提高了治疗效果',
+                    influencedBy: [6]
+                },
+                {
+                    id: 10,
+                    name: '自体脂肪移植',
+                    type: '手术技术',
+                    year: '2002',
+                    impact: 85,
+                    description: '自体脂肪移植技术的完善，提供了更自然的填充效果',
+                    influencedBy: [8]
+                },
+                {
+                    id: 11,
+                    name: '射频紧肤技术',
+                    type: '激光技术',
+                    year: '2005',
+                    impact: 70,
+                    description: '射频技术在皮肤紧致方面的应用，开创了无创紧肤新方法',
+                    influencedBy: [9]
+                },
+                {
+                    id: 12,
+                    name: '注射美容规范化',
+                    type: '注射技术',
+                    year: '2008',
+                    impact: 88,
+                    description: '注射美容技术的标准化和规范化，提高了安全性和效果',
+                    influencedBy: [5, 7]
+                },
+                
+                // 现代技术 (2010-2020)
+                {
+                    id: 13,
+                    name: '超声刀技术',
+                    type: '激光技术',
+                    year: '2010',
+                    impact: 82,
+                    description: '超声波紧肤技术的出现，提供了更深层的抗衰老解决方案',
+                    influencedBy: [11]
+                },
+                {
+                    id: 14,
+                    name: '3D整形模拟',
+                    type: '数字技术',
+                    year: '2012',
+                    impact: 78,
+                    description: '3D模拟技术在整形规划中的应用，提高了手术精准度',
+                    influencedBy: [8, 10]
+                },
+                {
+                    id: 15,
+                    name: '干细胞美容',
+                    type: '手术技术',
+                    year: '2014',
+                    impact: 85,
+                    description: '干细胞技术在美容医学中的应用，开创了再生美容新领域',
+                    influencedBy: [10]
+                },
+                {
+                    id: 16,
+                    name: '精准注射技术',
+                    type: '注射技术',
+                    year: '2015',
+                    impact: 90,
+                    description: '基于解剖学的精准注射技术，提高了安全性和效果',
+                    influencedBy: [12]
+                },
+                {
+                    id: 17,
+                    name: 'AI辅助诊断',
+                    type: '数字技术',
+                    year: '2017',
+                    impact: 75,
+                    description: '人工智能在皮肤诊断和治疗方案制定中的应用',
+                    influencedBy: [14]
+                },
+                {
+                    id: 18,
+                    name: '个性化定制方案',
+                    type: '数字技术',
+                    year: '2018',
+                    impact: 88,
+                    description: '基于大数据分析的个性化医美方案定制',
+                    influencedBy: [17]
+                },
+                {
+                    id: 19,
+                    name: '微创面部提升',
+                    type: '手术技术',
+                    year: '2019',
+                    impact: 92,
+                    description: '微创面部提升技术的成熟，结合了手术和非手术的优势',
+                    influencedBy: [8, 13]
+                },
+                
+                // 未来趋势 (2020+)
+                {
+                    id: 20,
+                    name: 'VR术前模拟',
+                    type: '数字技术',
+                    year: '2020',
+                    impact: 80,
+                    description: '虚拟现实技术在术前效果模拟中的应用',
+                    influencedBy: [14, 17]
+                },
+                {
+                    id: 21,
+                    name: '智能皮肤监测',
+                    type: '数字技术',
+                    year: '2021',
+                    impact: 75,
+                    description: '智能穿戴设备在皮肤健康监测中的应用',
+                    influencedBy: [17]
+                },
+                {
+                    id: 22,
+                    name: '基因定制美容',
+                    type: '数字技术',
+                    year: '2023',
+                    impact: 85,
+                    description: '基于基因检测的个性化美容方案定制',
+                    influencedBy: [18]
+                },
+                {
+                    id: 23,
+                    name: '机器人辅助手术',
+                    type: '手术技术',
+                    year: '2024',
+                    impact: 90,
+                    description: '机器人技术在整形手术中的应用，提高了精准度',
+                    influencedBy: [19]
+                },
+                {
+                    id: 24,
+                    name: '生物打印技术',
+                    type: '数字技术',
+                    year: '2025',
+                    impact: 95,
+                    description: '3D生物打印技术在组织修复和美容中的应用',
+                    influencedBy: [15, 23]
+                }
+            ]
+        };
+
+        // 初始化时间线
+        document.addEventListener('DOMContentLoaded', function() {
+            const timeline = new TechnologyTimeline('timeline-chart', {
+                width: 1000,
+                height: 600,
+                responsive: true
+            });
+
+            // 设置数据
+            setTimeout(() => {
+                timeline.setData(technologyData);
+            }, 1000);
+
+            // 添加导出功能
+            document.addEventListener('keydown', function(e) {
+                if (e.ctrlKey && e.key === 's') {
+                    e.preventDefault();
+                    timeline.exportTimeline();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    不当销售行为识别与防范
+  </text>
+  
+  <!-- 四大特征类型 -->
+  <rect x="50" y="80" width="700" height="200" fill="#FFEBEE" stroke="#E57373" stroke-width="3" rx="15"/>
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#C62828">
+    不当销售行为四大典型特征
+  </text>
+  
+  <!-- 信息操控 -->
+  <rect x="80" y="130" width="150" height="130" fill="#FFCDD2" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="155" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C62828">
+    信息操控
+  </text>
+  <text x="155" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    选择性报告成功案例
+  </text>
+  <text x="155" y="181" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 隐藏失败案例
+  </text>
+  <text x="155" y="194" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 过度修饰对比照片
+  </text>
+  <text x="155" y="207" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 不完整风险信息
+  </text>
+  <text x="155" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 夸大效果安全性
+  </text>
+  <text x="155" y="233" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 专业术语遮蔽
+  </text>
+  <text x="155" y="246" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#C62828">
+    利用信息不对称
+  </text>
+  
+  <!-- 心理压力施放 -->
+  <rect x="250" y="130" width="150" height="130" fill="#FFCDD2" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="325" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C62828">
+    心理压力施放
+  </text>
+  <text x="325" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    制造紧迫感和焦虑
+  </text>
+  <text x="325" y="181" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 虚假紧急情况
+  </text>
+  <text x="325" y="194" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 情绪弱点利用
+  </text>
+  <text x="325" y="207" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 阻碍第二意见
+  </text>
+  <text x="325" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 从众心理压力
+  </text>
+  <text x="325" y="233" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 时间限制催促
+  </text>
+  <text x="325" y="246" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#C62828">
+    侵犯自主决策权
+  </text>
+  
+  <!-- 利益冲突 -->
+  <rect x="420" y="130" width="150" height="130" fill="#FFCDD2" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="495" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C62828">
+    利益冲突
+  </text>
+  <text x="495" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    销售利益与消费者冲突
+  </text>
+  <text x="495" y="181" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 佣金与利益冲突
+  </text>
+  <text x="495" y="194" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 过度推销高利润
+  </text>
+  <text x="495" y="207" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 忽视真实需求
+  </text>
+  <text x="495" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 不必要服务推荐
+  </text>
+  <text x="495" y="233" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 隐藏利益动机
+  </text>
+  <text x="495" y="246" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#C62828">
+    偏离最佳利益
+  </text>
+  
+  <!-- 虚假承诺 -->
+  <rect x="590" y="130" width="130" height="130" fill="#FFCDD2" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="655" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C62828">
+    虚假承诺
+  </text>
+  <text x="655" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    绝对化表述和保证
+  </text>
+  <text x="655" y="181" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 100%成功承诺
+  </text>
+  <text x="655" y="194" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 无风险宣传
+  </text>
+  <text x="655" y="207" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 永久效果保证
+  </text>
+  <text x="655" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 无法兑现售后服务
+  </text>
+  <text x="655" y="233" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 隐瞒重要禁忌症
+  </text>
+  <text x="655" y="246" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#C62828">
+    构成商业欺诈
+  </text>
+  
+  <!-- 识别方法 -->
+  <rect x="50" y="300" width="700" height="120" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    识别方法与策略
+  </text>
+  
+  <!-- 四种识别方法 -->
+  <rect x="80" y="340" width="140" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="150" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    信息完整性检查
+  </text>
+  <text x="150" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 要求完整风险信息
+  </text>
+  <text x="150" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 询问失败案例处理
+  </text>
+  <text x="150" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 查看真实资质
+  </text>
+  
+  <rect x="240" y="340" width="140" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="310" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    压力感知测试
+  </text>
+  <text x="310" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 是否被迫立即决定
+  </text>
+  <text x="310" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 优惠只限今天
+  </text>
+  <text x="310" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 阻碍寻求意见
+  </text>
+  
+  <rect x="400" y="340" width="140" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="470" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    利益冲突分析
+  </text>
+  <text x="470" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 了解激励机制
+  </text>
+  <text x="470" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 询问其他选择
+  </text>
+  <text x="470" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 比较机构建议
+  </text>
+  
+  <rect x="560" y="340" width="140" height="65" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="630" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    合理性判断
+  </text>
+  <text x="630" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 效果承诺合理性
+  </text>
+  <text x="630" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 价格市场比较
+  </text>
+  <text x="630" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 风险描述一致性
+  </text>
+  
+  <!-- 防范策略 -->
+  <rect x="50" y="440" width="700" height="120" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    多层次防范策略
+  </text>
+  
+  <!-- 个人层面 -->
+  <rect x="80" y="480" width="130" height="65" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="145" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    个人层面
+  </text>
+  <text x="145" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 知识武装
+  </text>
+  <text x="145" y="523" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 理性决策过程
+  </text>
+  <text x="145" y="536" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 社会支持网络
+  </text>
+  
+  <!-- 机构层面 -->
+  <rect x="230" y="480" width="130" height="65" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="295" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    机构层面
+  </text>
+  <text x="295" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 伦理培训制度
+  </text>
+  <text x="295" y="523" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 激励机制优化
+  </text>
+  <text x="295" y="536" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 质量监控体系
+  </text>
+  
+  <!-- 行业层面 -->
+  <rect x="380" y="480" width="130" height="65" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="445" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    行业层面
+  </text>
+  <text x="445" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 行业标准制定
+  </text>
+  <text x="445" y="523" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 信息透明平台
+  </text>
+  <text x="445" y="536" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 争议调解机制
+  </text>
+  
+  <!-- 社会层面 -->
+  <rect x="530" y="480" width="130" height="65" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="595" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    社会层面
+  </text>
+  <text x="595" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 监管政策完善
+  </text>
+  <text x="595" y="523" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 公众教育普及
+  </text>
+  <text x="595" y="536" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 媒体监督加强
+  </text>
+  
+  <!-- 法律保障 -->
+  <rect x="680" y="480" width="60" height="65" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="710" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    法律
+  </text>
+  <text x="710" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 法律法规
+  </text>
+  <text x="710" y="523" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 执法监督
+  </text>
+  <text x="710" y="536" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 维权渠道
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图7.3：不当销售行为识别方法及多层次防范策略体系
+  </text>
+</svg>

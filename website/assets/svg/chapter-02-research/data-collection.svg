@@ -1,0 +1,10 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <g transform="translate(400,300)">
+    <circle cx="0" cy="0" r="80" fill="#9b59b6" opacity="0.8"/>
+    <rect x="-60" y="-10" width="30" height="20" fill="white" opacity="0.9"/>
+    <rect x="-20" y="-10" width="30" height="20" fill="white" opacity="0.9"/>
+    <rect x="20" y="-10" width="30" height="20" fill="white" opacity="0.9"/>
+  </g>
+  <text x="400" y="300" text-anchor="middle" font-size="20" fill="white">数据收集</text>
+</svg>

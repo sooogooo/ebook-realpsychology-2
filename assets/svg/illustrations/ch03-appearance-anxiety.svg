@@ -1,0 +1,177 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    外貌焦虑与身体意象形成机制
+  </text>
+  
+  <!-- 核心概念：外貌焦虑 -->
+  <rect x="250" y="80" width="300" height="60" fill="#FFCDD2" stroke="#E57373" stroke-width="3" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    外貌焦虑
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#C62828">
+    对自身外貌的不满和担忧，65%医美消费者存在
+  </text>
+  
+  <!-- 形成因素：三个层面 -->
+  <!-- 生物学因素 -->
+  <rect x="50" y="170" width="200" height="120" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="2" rx="10"/>
+  <text x="150" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0277BD">
+    生物学因素
+  </text>
+  <text x="150" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0277BD">
+    • 进化历史影响
+  </text>
+  <text x="150" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0277BD">
+    • 健康生育关联
+  </text>
+  <text x="150" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0277BD">
+    • 生物学适应性
+  </text>
+  <text x="150" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0277BD">
+    • 遗传基因影响
+  </text>
+  <text x="150" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0277BD">
+    • 荷尔蒙水平
+  </text>
+  
+  <!-- 心理学因素 -->
+  <rect x="300" y="170" width="200" height="120" fill="#F3E5F5" stroke="#CE93D8" stroke-width="2" rx="10"/>
+  <text x="400" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A">
+    心理学因素
+  </text>
+  <text x="400" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6A1B9A">
+    • 自我概念
+  </text>
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6A1B9A">
+    • 人格特质
+  </text>
+  <text x="400" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6A1B9A">
+    • 早期经历
+  </text>
+  <text x="400" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6A1B9A">
+    • 完美主义倾向
+  </text>
+  <text x="400" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6A1B9A">
+    • 自尊水平
+  </text>
+  
+  <!-- 社会学因素 -->
+  <rect x="550" y="170" width="200" height="120" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="650" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+    社会学因素
+  </text>
+  <text x="650" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 文化标准
+  </text>
+  <text x="650" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 媒体影响
+  </text>
+  <text x="650" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 社会比较
+  </text>
+  <text x="650" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 家庭影响
+  </text>
+  <text x="650" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 同伴压力
+  </text>
+  
+  <!-- 连接线 -->
+  <path d="M 150 170 L 350 140" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 400 170 L 400 140" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 650 170 L 450 140" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 核心理论：社会比较理论 -->
+  <rect x="200" y="310" width="400" height="60" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    社会比较理论
+  </text>
+  <text x="400" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#E65100">
+    通过与他人比较来评估自己的能力和特征，高社会比较倾向者消费频率更高
+  </text>
+  
+  <!-- 身体意象问题类型 -->
+  <rect x="50" y="390" width="700" height="120" fill="#FFEBEE" stroke="#F44336" stroke-width="2" rx="10"/>
+  <text x="400" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    身体意象问题类型（70%医美消费者存在）
+  </text>
+  
+  <!-- 四种类型 -->
+  <rect x="80" y="430" width="140" height="65" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="150" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    感知扭曲型 (45%)
+  </text>
+  <text x="150" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    对外貌感知与实际
+  </text>
+  <text x="150" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    情况存在偏差
+  </text>
+  <text x="150" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    过度关注特定部位
+  </text>
+  
+  <rect x="240" y="430" width="140" height="65" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="310" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    认知扭曲型 (30%)
+  </text>
+  <text x="310" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    非黑即白思维
+  </text>
+  <text x="310" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    完美主义倾向
+  </text>
+  <text x="310" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    过度概括化
+  </text>
+  
+  <rect x="400" y="430" width="140" height="65" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="470" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    情感困扰型 (15%)
+  </text>
+  <text x="470" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    强烈负面情绪
+  </text>
+  <text x="470" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    焦虑抑郁情绪
+  </text>
+  <text x="470" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    情绪波动剧烈
+  </text>
+  
+  <rect x="560" y="430" width="140" height="65" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="630" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    行为失调型 (10%)
+  </text>
+  <text x="630" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    避免社交活动
+  </text>
+  <text x="630" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    过度关注外貌
+  </text>
+  <text x="630" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#C62828">
+    重复检查行为
+  </text>
+  
+  <!-- 完美主义影响 -->
+  <rect x="150" y="530" width="500" height="50" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="400" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A">
+    完美主义影响：与医美消费频率和强度正相关，过度完美主义导致不切实际期望和持续失望
+  </text>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图3.1：外貌焦虑与身体意象形成机制及影响因素分析
+  </text>
+</svg>

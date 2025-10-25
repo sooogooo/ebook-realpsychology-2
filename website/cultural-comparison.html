@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="文化差异对比分析 - 医美消费心理学的跨文化研究">
+    <meta name="keywords" content="文化差异,医美消费心理学,跨文化研究,消费行为对比">
+    <meta name="author" content="重庆联合丽格科技有限公司">
+    <title>文化差异对比分析 - 医美消费心理学</title>
+    <link rel="icon" type="image/png" href="https://docs.bccsw.cn/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/cultural-comparison.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="https://docs.bccsw.cn/logo.png" alt="Logo">
+                <h1>医美消费心理学</h1>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#overview">概述</a></li>
+                <li><a href="index.html#chapters">章节</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html">首页</a>
+                <span class="separator">›</span>
+                <span>文化差异对比分析</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="cultural-header">
+                <h1>文化差异对比分析</h1>
+                <p>探索不同文化背景下医美消费心理学的差异与共性</p>
+            </div>
+
+            <div class="cultural-content">
+                <!-- 文化区域选择 -->
+                <div class="culture-selector">
+                    <div class="culture-selector-header">
+                        <h2>选择文化区域</h2>
+                        <p>选择2-4个文化区域进行对比分析</p>
+                    </div>
+                    <div class="culture-grid">
+                        <div class="culture-card" data-culture="east-asia">
+                            <div class="culture-icon">
+                                <span class="material-symbols-outlined">east</span>
+                            </div>
+                            <h3>东亚文化</h3>
+                            <p>中国、日本、韩国等儒家文化圈</p>
+                        </div>
+                        <div class="culture-card" data-culture="southeast-asia">
+                            <div class="culture-icon">
+                                <span class="material-symbols-outlined">southeast</span>
+                            </div>
+                            <h3>东南亚文化</h3>
+                            <p>泰国、新加坡、马来西亚等</p>
+                        </div>
+                        <div class="culture-card" data-culture="western">
+                            <div class="culture-icon">
+                                <span class="material-symbols-outlined">west</span>
+                            </div>
+                            <h3>西方文化</h3>
+                            <p>美国、欧洲、澳大利亚等</p>
+                        </div>
+                        <div class="culture-card" data-culture="middle-east">
+                            <div class="culture-icon">
+                                <span class="material-symbols-outlined">south</span>
+                            </div>
+                            <h3>中东文化</h3>
+                            <p>阿联酋、沙特阿拉伯等</p>
+                        </div>
+                        <div class="culture-card" data-culture="latin-america">
+                            <div class="culture-icon">
+                                <span class="material-symbols-outlined">language</span>
+                            </div>
+                            <h3>拉丁美洲</h3>
+                            <p>巴西、墨西哥、阿根廷等</p>
+                        </div>
+                        <div class="culture-card" data-culture="africa">
+                            <div class="culture-icon">
+                                <span class="material-symbols-outlined">public</span>
+                            </div>
+                            <h3>非洲文化</h3>
+                            <p>南非、尼日利亚、埃及等</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 对比维度选择 -->
+                <div class="dimension-selector">
+                    <h2>选择对比维度</h2>
+                    <div class="dimension-tabs">
+                        <button class="dimension-tab active" data-dimension="beauty-standards">
+                            <span class="material-symbols-outlined">auto_awesome</span>
+                            美丽标准
+                        </button>
+                        <button class="dimension-tab" data-dimension="consumption-motivation">
+                            <span class="material-symbols-outlined">psychology</span>
+                            消费动机
+                        </button>
+                        <button class="dimension-tab" data-dimension="risk-perception">
+                            <span class="material-symbols-outlined">warning</span>
+                            风险感知
+                        </button>
+                        <button class="dimension-tab" data-dimension="decision-making">
+                            <span class="material-symbols-outlined">lightbulb</span>
+                            决策过程
+                        </button>
+                        <button class="dimension-tab" data-dimension="social-influence">
+                            <span class="material-symbols-outlined">groups</span>
+                            社会影响
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 主要对比图表 -->
+                <div class="comparison-charts">
+                    <div class="main-comparison">
+                        <div class="chart-header">
+                            <h3 id="comparison-title">美丽标准对比</h3>
+                            <div class="chart-controls">
+                                <button class="chart-type-button active" data-type="radar">
+                                    <span class="material-symbols-outlined">radar</span>
+                                    雷达图
+                                </button>
+                                <button class="chart-type-button" data-type="bar">
+                                    <span class="material-symbols-outlined">bar_chart</span>
+                                    柱状图
+                                </button>
+                                <button class="chart-type-button" data-type="heatmap">
+                                    <span class="material-symbols-outlined">grid_view</span>
+                                    热力图
+                                </button>
+                            </div>
+                        </div>
+                        <div id="main-chart" class="comparison-chart">
+                            <div class="chart-loading">
+                                <div class="chart-spinner"></div>
+                                <p>加载中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 详细对比数据 -->
+                <div class="detailed-comparison">
+                    <div class="comparison-tabs">
+                        <button class="comparison-tab active" data-comparison="values">
+                            价值观对比
+                        </button>
+                        <button class="comparison-tab" data-comparison="behaviors">
+                            行为模式对比
+                        </button>
+                        <button class="comparison-tab" data-comparison="preferences">
+                            偏好对比
+                        </button>
+                        <button class="comparison-tab" data-comparison="trends">
+                            趋势对比
+                        </button>
+                    </div>
+
+                    <!-- 价值观对比 -->
+                    <div class="comparison-content active" id="values-comparison">
+                        <div class="comparison-grid">
+                            <div class="comparison-matrix">
+                                <h4>文化价值观矩阵</h4>
+                                <div id="values-matrix" class="matrix-chart"></div>
+                            </div>
+                            <div class="comparison-insights">
+                                <h4>关键洞察</h4>
+                                <div class="insight-list">
+                                    <div class="insight-item">
+                                        <div class="insight-icon">
+                                            <span class="material-symbols-outlined">insights</span>
+                                        </div>
+                                        <div class="insight-content">
+                                            <h5>集体主义 vs 个人主义</h5>
+                                            <p>东亚文化强调集体和谐，西方文化注重个人表达</p>
+                                        </div>
+                                    </div>
+                                    <div class="insight-item">
+                                        <div class="insight-icon">
+                                            <span class="material-symbols-outlined">insights</span>
+                                        </div>
+                                        <div class="insight-content">
+                                            <h5>传统价值观 vs 现代化</h5>
+                                            <p>传统价值观与现代审美标准的冲突与融合</p>
+                                        </div>
+                                    </div>
+                                    <div class="insight-item">
+                                        <div class="insight-icon">
+                                            <span class="material-symbols-outlined">insights</span>
+                                        </div>
+                                        <div class="insight-content">
+                                            <h5>宗教影响</h5>
+                                            <p>宗教信仰对医美消费态度的深远影响</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 行为模式对比 -->
+                    <div class="comparison-content" id="behaviors-comparison">
+                        <div class="comparison-grid">
+                            <div class="behavior-patterns">
+                                <h4>消费行为模式</h4>
+                                <div id="behavior-chart" class="behavior-chart"></div>
+                            </div>
+                            <div class="decision-journey">
+                                <h4>决策路径对比</h4>
+                                <div id="journey-chart" class="journey-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 偏好对比 -->
+                    <div class="comparison-content" id="preferences-comparison">
+                        <div class="comparison-grid">
+                            <div class="treatment-preferences">
+                                <h4>治疗项目偏好</h4>
+                                <div id="preferences-chart" class="preferences-chart"></div>
+                            </div>
+                            <div class="price-sensitivity">
+                                <h4>价格敏感度分析</h4>
+                                <div id="price-chart" class="price-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 趋势对比 -->
+                    <div class="comparison-content" id="trends-comparison">
+                        <div class="comparison-grid">
+                            <div class="trend-analysis">
+                                <h4>发展趋势对比</h4>
+                                <div id="trend-chart" class="trend-chart"></div>
+                            </div>
+                            <div class="future-predictions">
+                                <h4>未来预测</h4>
+                                <div class="prediction-list">
+                                    <div class="prediction-item">
+                                        <div class="prediction-year">2025-2030</div>
+                                        <div class="prediction-content">
+                                            <h5>全球化加速</h5>
+                                            <p>文化交流促进医美标准全球化</p>
+                                        </div>
+                                    </div>
+                                    <div class="prediction-item">
+                                        <div class="prediction-year">2030-2035</div>
+                                        <div class="prediction-content">
+                                            <h5>技术普惠化</h5>
+                                            <p>先进技术在不同文化背景下的普及</p>
+                                        </div>
+                                    </div>
+                                    <div class="prediction-item">
+                                        <div class="prediction-year">2035-2040</div>
+                                        <div class="prediction-content">
+                                            <h5>文化融合</h5>
+                                            <p>东西方美容观念的深度整合</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 文化特征详细分析 -->
+                <div class="cultural-profiles">
+                    <h2>文化特征详细分析</h2>
+                    <div class="profile-grid">
+                        <div class="culture-profile">
+                            <div class="profile-header">
+                                <div class="profile-flag">🇨🇳</div>
+                                <div class="profile-info">
+                                    <h3>东亚文化</h3>
+                                    <p>儒家文化圈</p>
+                                </div>
+                            </div>
+                            <div class="profile-content">
+                                <div class="profile-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">接受度</span>
+                                        <span class="stat-value">78%</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">年增长率</span>
+                                        <span class="stat-value">12%</span>
+                                    </div>
+                                </div>
+                                <div class="profile-traits">
+                                    <h4>文化特征</h4>
+                                    <ul>
+                                        <li>强调自然和谐美</li>
+                                        <li>注重群体认同</li>
+                                        <li>偏好微创治疗</li>
+                                        <li>家庭影响显著</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="culture-profile">
+                            <div class="profile-header">
+                                <div class="profile-flag">🇺🇸</div>
+                                <div class="profile-info">
+                                    <h3>西方文化</h3>
+                                    <p>欧美文化圈</p>
+                                </div>
+                            </div>
+                            <div class="profile-content">
+                                <div class="profile-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">接受度</span>
+                                        <span class="stat-value">85%</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">年增长率</span>
+                                        <span class="stat-value">8%</span>
+                                    </div>
+                                </div>
+                                <div class="profile-traits">
+                                    <h4>文化特征</h4>
+                                    <ul>
+                                        <li>追求个性表达</li>
+                                        <li>注重即时效果</li>
+                                        <li>接受手术干预</li>
+                                        <li>媒体影响强烈</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="culture-profile">
+                            <div class="profile-header">
+                                <div class="profile-flag">🇸🇦</div>
+                                <div class="profile-info">
+                                    <h3>中东文化</h3>
+                                    <p>伊斯兰文化圈</p>
+                                </div>
+                            </div>
+                            <div class="profile-content">
+                                <div class="profile-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">接受度</span>
+                                        <span class="stat-value">45%</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">年增长率</span>
+                                        <span class="stat-value">15%</span>
+                                    </div>
+                                </div>
+                                <div class="profile-traits">
+                                    <h4>文化特征</h4>
+                                    <ul>
+                                        <li>宗教约束明显</li>
+                                        <li>性别差异显著</li>
+                                        <li>隐私保护重要</li>
+                                        <li>高端消费倾向</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 数据导出和分享 -->
+                <div class="data-actions">
+                    <div class="action-buttons">
+                        <button class="action-button" id="export-data">
+                            <span class="material-symbols-outlined">download</span>
+                            导出数据
+                        </button>
+                        <button class="action-button" id="export-chart">
+                            <span class="material-symbols-outlined">image</span>
+                            导出图表
+                        </button>
+                        <button class="action-button" id="share-analysis">
+                            <span class="material-symbols-outlined">share</span>
+                            分享分析
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>地址：重庆市渝中区临江支路28号</p>
+                    <p>电话：<a href="tel:023-68726872">023-68726872</a></p>
+                    <p>邮箱：<a href="mailto:bccsw@cqlhlg.work">bccsw@cqlhlg.work</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>关于我们</h4>
+                    <p>重庆联合丽格科技有限公司致力于医美行业的专业研究和咨询服务，推动行业健康发展。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <p><a href="index.html">首页</a></p>
+                    <p><a href="index.html#chapters">章节内容</a></p>
+                    <p><a href="index.html#perspectives">专业视角</a></p>
+                    <p><a href="index.html#contact">联系我们</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 重庆联合丽格科技有限公司 | <a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2024023473号</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/cultural-comparison.js"></script>
+    <script>
+        // 文化差异对比数据
+        const culturalData = {
+            cultures: {
+                'east-asia': {
+                    name: '东亚文化',
+                    values: {
+                        '集体主义': 85,
+                        '个人主义': 35,
+                        '传统价值观': 75,
+                        '现代化': 65,
+                        '宗教影响': 45,
+                        '世俗化': 70,
+                        '权力距离': 80,
+                        '平等意识': 40
+                    },
+                    beautyStandards: {
+                        '自然美': 85,
+                        '精致美': 75,
+                        '个性美': 45,
+                        '和谐美': 90,
+                        '健康美': 80
+                    },
+                    motivations: {
+                        '社会认同': 80,
+                        '个人满足': 60,
+                        '职业发展': 70,
+                        '婚恋需求': 65,
+                        '健康改善': 75
+                    },
+                    riskPerception: {
+                        '生理风险': 70,
+                        '心理风险': 65,
+                        '社会风险': 75,
+                        '经济风险': 60,
+                        '时间风险': 55
+                    },
+                    behaviors: {
+                        '信息收集': 85,
+                        '专业咨询': 80,
+                        '朋友推荐': 75,
+                        '在线评价': 70,
+                        '冲动消费': 30
+                    }
+                },
+                'western': {
+                    name: '西方文化',
+                    values: {
+                        '集体主义': 35,
+                        '个人主义': 85,
+                        '传统价值观': 40,
+                        '现代化': 90,
+                        '宗教影响': 55,
+                        '世俗化': 75,
+                        '权力距离': 30,
+                        '平等意识': 85
+                    },
+                    beautyStandards: {
+                        '自然美': 60,
+                        '精致美': 85,
+                        '个性美': 90,
+                        '和谐美': 55,
+                        '健康美': 70
+                    },
+                    motivations: {
+                        '社会认同': 55,
+                        '个人满足': 90,
+                        '职业发展': 60,
+                        '婚恋需求': 40,
+                        '健康改善': 65
+                    },
+                    riskPerception: {
+                        '生理风险': 50,
+                        '心理风险': 45,
+                        '社会风险': 35,
+                        '经济风险': 70,
+                        '时间风险': 40
+                    },
+                    behaviors: {
+                        '信息收集': 70,
+                        '专业咨询': 60,
+                        '朋友推荐': 55,
+                        '在线评价': 80,
+                        '冲动消费': 65
+                    }
+                },
+                'middle-east': {
+                    name: '中东文化',
+                    values: {
+                        '集体主义': 75,
+                        '个人主义': 40,
+                        '传统价值观': 90,
+                        '现代化': 50,
+                        '宗教影响': 85,
+                        '世俗化': 30,
+                        '权力距离': 85,
+                        '平等意识': 35
+                    },
+                    beautyStandards: {
+                        '自然美': 70,
+                        '精致美': 80,
+                        '个性美': 30,
+                        '和谐美': 75,
+                        '健康美': 65
+                    },
+                    motivations: {
+                        '社会认同': 85,
+                        '个人满足': 50,
+                        '职业发展': 55,
+                        '婚恋需求': 80,
+                        '健康改善': 60
+                    },
+                    riskPerception: {
+                        '生理风险': 60,
+                        '心理风险': 75,
+                        '社会风险': 85,
+                        '经济风险': 45,
+                        '时间风险': 50
+                    },
+                    behaviors: {
+                        '信息收集': 60,
+                        '专业咨询': 85,
+                        '朋友推荐': 80,
+                        '在线评价': 40,
+                        '冲动消费': 25
+                    }
+                },
+                'southeast-asia': {
+                    name: '东南亚文化',
+                    values: {
+                        '集体主义': 70,
+                        '个人主义': 50,
+                        '传统价值观': 60,
+                        '现代化': 75,
+                        '宗教影响': 65,
+                        '世俗化': 55,
+                        '权力距离': 65,
+                        '平等意识': 50
+                    },
+                    beautyStandards: {
+                        '自然美': 75,
+                        '精致美': 85,
+                        '个性美': 60,
+                        '和谐美': 80,
+                        '健康美': 70
+                    },
+                    motivations: {
+                        '社会认同': 75,
+                        '个人满足': 70,
+                        '职业发展': 65,
+                        '婚恋需求': 60,
+                        '健康改善': 65
+                    },
+                    riskPerception: {
+                        '生理风险': 55,
+                        '心理风险': 60,
+                        '社会风险': 65,
+                        '经济风险': 70,
+                        '时间风险': 45
+                    },
+                    behaviors: {
+                        '信息收集': 75,
+                        '专业咨询': 70,
+                        '朋友推荐': 85,
+                        '在线评价': 65,
+                        '冲动消费': 45
+                    }
+                }
+            },
+            dimensions: {
+                'beauty-standards': {
+                    name: '美丽标准',
+                    metrics: ['自然美', '精致美', '个性美', '和谐美', '健康美']
+                },
+                'consumption-motivation': {
+                    name: '消费动机',
+                    metrics: ['社会认同', '个人满足', '职业发展', '婚恋需求', '健康改善']
+                },
+                'risk-perception': {
+                    name: '风险感知',
+                    metrics: ['生理风险', '心理风险', '社会风险', '经济风险', '时间风险']
+                },
+                'decision-making': {
+                    name: '决策过程',
+                    metrics: ['信息收集', '专业咨询', '朋友推荐', '在线评价', '冲动消费']
+                },
+                'social-influence': {
+                    name: '社会影响',
+                    metrics: ['家庭影响', '媒体影响', '同伴影响', '名人影响', '文化传统']
+                }
+            }
+        };
+
+        // 初始化文化对比工具
+        let culturalComparison = null;
+        let selectedCultures = ['east-asia', 'western'];
+        let currentDimension = 'beauty-standards';
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始化文化对比工具
+            culturalComparison = new CulturalComparison('main-chart', {
+                width: 800,
+                height: 600,
+                responsive: true
+            });
+
+            // 设置默认选中的文化
+            selectedCultures.forEach(culture => {
+                document.querySelector(`[data-culture="${culture}"]`).classList.add('selected');
+            });
+
+            // 加载默认数据
+            setTimeout(() => {
+                updateComparison();
+            }, 1000);
+
+            // 绑定文化选择事件
+            document.querySelectorAll('.culture-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    toggleCulture(this.dataset.culture);
+                });
+            });
+
+            // 绑定维度切换事件
+            document.querySelectorAll('.dimension-tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    switchDimension(this.dataset.dimension);
+                });
+            });
+
+            // 绑定图表类型切换事件
+            document.querySelectorAll('.chart-type-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    switchChartType(this.dataset.type);
+                });
+            });
+
+            // 绑定对比标签切换事件
+            document.querySelectorAll('.comparison-tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    switchComparison(this.dataset.comparison);
+                });
+            });
+
+            // 绑定操作按钮事件
+            document.getElementById('export-data').addEventListener('click', exportData);
+            document.getElementById('export-chart').addEventListener('click', exportChart);
+            document.getElementById('share-analysis').addEventListener('click', shareAnalysis);
+        });
+
+        function toggleCulture(culture) {
+            const card = document.querySelector(`[data-culture="${culture}"]`);
+            const index = selectedCultures.indexOf(culture);
+
+            if (index > -1) {
+                // 取消选择
+                selectedCultures.splice(index, 1);
+                card.classList.remove('selected');
+            } else {
+                // 选择文化
+                if (selectedCultures.length < 4) {
+                    selectedCultures.push(culture);
+                    card.classList.add('selected');
+                } else {
+                    alert('最多只能选择4个文化区域进行对比');
+                }
+            }
+
+            updateComparison();
+        }
+
+        function switchDimension(dimension) {
+            currentDimension = dimension;
+
+            // 更新标签状态
+            document.querySelectorAll('.dimension-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector(`[data-dimension="${dimension}"]`).classList.add('active');
+
+            // 更新标题
+            const dimensionInfo = culturalData.dimensions[dimension];
+            document.getElementById('comparison-title').textContent = dimensionInfo.name + '对比';
+
+            updateComparison();
+        }
+
+        function switchChartType(type) {
+            // 更新按钮状态
+            document.querySelectorAll('.chart-type-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            document.querySelector(`[data-type="${type}"]`).classList.add('active');
+
+            // 更新图表类型
+            if (culturalComparison) {
+                culturalComparison.setChartType(type);
+            }
+        }
+
+        function switchComparison(comparison) {
+            // 更新标签状态
+            document.querySelectorAll('.comparison-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector(`[data-comparison="${comparison}"]`).classList.add('active');
+
+            // 更新内容显示
+            document.querySelectorAll('.comparison-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(`${comparison}-comparison`).classList.add('active');
+
+            // 渲染相应的详细图表
+            renderDetailedComparison(comparison);
+        }
+
+        function updateComparison() {
+            if (selectedCultures.length === 0) return;
+
+            const dimensionData = culturalData.dimensions[currentDimension];
+            const comparisonData = {
+                cultures: selectedCultures.map(c => culturalData.cultures[c]),
+                metrics: dimensionData.metrics,
+                dimension: currentDimension
+            };
+
+            culturalComparison.setData(comparisonData);
+        }
+
+        function renderDetailedComparison(comparison) {
+            // 根据不同的对比类型渲染详细图表
+            switch(comparison) {
+                case 'values':
+                    renderValuesMatrix();
+                    break;
+                case 'behaviors':
+                    renderBehaviorChart();
+                    break;
+                case 'preferences':
+                    renderPreferencesChart();
+                    break;
+                case 'trends':
+                    renderTrendChart();
+                    break;
+            }
+        }
+
+        function renderValuesMatrix() {
+            const matrixContainer = d3.select('#values-matrix');
+            matrixContainer.html('');
+
+            // 创建价值观矩阵
+            const matrixData = [];
+            selectedCultures.forEach(culture => {
+                const cultureInfo = culturalData.cultures[culture];
+                Object.entries(cultureInfo.values).forEach(([key, value]) => {
+                    matrixData.push({
+                        culture: cultureInfo.name,
+                        value: key,
+                        score: value
+                    });
+                });
+            });
+
+            // 渲染热力图
+            const width = 400;
+            const height = 300;
+            const margin = { top: 20, right: 20, bottom: 60, left: 80 };
+
+            const svg = matrixContainer.append('svg')
+                .attr('width', width)
+                .attr('height', height);
+
+            const cultures = [...new Set(matrixData.map(d => d.culture))];
+            const values = [...new Set(matrixData.map(d => d.value))];
+
+            const x = d3.scaleBand()
+                .domain(cultures)
+                .range([margin.left, width - margin.right])
+                .padding(0.1);
+
+            const y = d3.scaleBand()
+                .domain(values)
+                .range([margin.top, height - margin.bottom])
+                .padding(0.1);
+
+            const color = d3.scaleSequential(d3.interpolateBlues)
+                .domain([0, 100]);
+
+            // 绘制热力图
+            svg.selectAll('.matrix-cell')
+                .data(matrixData)
+                .enter()
+                .append('rect')
+                .attr('class', 'matrix-cell')
+                .attr('x', d => x(d.culture))
+                .attr('y', d => y(d.value))
+                .attr('width', x.bandwidth())
+                .attr('height', y.bandwidth())
+                .attr('fill', d => color(d.score))
+                .attr('stroke', '#fff')
+                .attr('stroke-width', 1);
+
+            // 添加标签
+            svg.selectAll('.x-label')
+                .data(cultures)
+                .enter()
+                .append('text')
+                .attr('class', 'x-label')
+                .attr('x', d => x(d) + x.bandwidth() / 2)
+                .attr('y', height - 10)
+                .attr('text-anchor', 'middle')
+                .style('font-size', '12px')
+                .style('fill', '#2c3e50')
+                .text(d => d);
+
+            svg.selectAll('.y-label')
+                .data(values)
+                .enter()
+                .append('text')
+                .attr('class', 'y-label')
+                .attr('x', margin.left - 10)
+                .attr('y', d => y(d) + y.bandwidth() / 2)
+                .attr('text-anchor', 'end')
+                .attr('dominant-baseline', 'middle')
+                .style('font-size', '12px')
+                .style('fill', '#2c3e50')
+                .text(d => d);
+        }
+
+        function renderBehaviorChart() {
+            // 渲染行为模式图表
+            const behaviorContainer = d3.select('#behavior-chart');
+            behaviorContainer.html('');
+
+            const behaviorData = selectedCultures.map(culture => {
+                const cultureInfo = culturalData.cultures[culture];
+                return {
+                    culture: cultureInfo.name,
+                    ...cultureInfo.behaviors
+                };
+            });
+
+            // 创建行为模式柱状图
+            const width = 500;
+            const height = 300;
+            const margin = { top: 20, right: 20, bottom: 60, left: 60 };
+
+            const svg = behaviorContainer.append('svg')
+                .attr('width', width)
+                .attr('height', height);
+
+            const behaviors = Object.keys(behaviorData[0]).filter(k => k !== 'culture');
+            const cultures = behaviorData.map(d => d.culture);
+
+            const x0 = d3.scaleBand()
+                .domain(cultures)
+                .range([margin.left, width - margin.right])
+                .padding(0.1);
+
+            const x1 = d3.scaleBand()
+                .domain(behaviors)
+                .range([0, x0.bandwidth()])
+                .padding(0.05);
+
+            const y = d3.scaleLinear()
+                .domain([0, 100])
+                .range([height - margin.bottom, margin.top]);
+
+            const color = d3.scaleOrdinal()
+                .domain(behaviors)
+                .range(['#98d8c8', '#b8a9c9', '#ff9a8b', '#f4a261', '#4ecdc4']);
+
+            // 绘制柱状图
+            cultures.forEach(culture => {
+                const cultureData = behaviorData.find(d => d.culture === culture);
+                const g = svg.append('g')
+                    .attr('transform', `translate(${x0(culture)}, 0)`);
+
+                behaviors.forEach(behavior => {
+                    g.append('rect')
+                        .attr('x', x1(behavior))
+                        .attr('y', y(cultureData[behavior]))
+                        .attr('width', x1.bandwidth())
+                        .attr('height', height - margin.bottom - y(cultureData[behavior]))
+                        .attr('fill', color(behavior))
+                        .attr('opacity', 0.8);
+                });
+            });
+
+            // 添加图例
+            const legend = svg.append('g')
+                .attr('transform', `translate(${width - 150}, 20)`);
+
+            behaviors.forEach((behavior, i) => {
+                const legendItem = legend.append('g')
+                    .attr('transform', `translate(0, ${i * 20})`);
+
+                legendItem.append('rect')
+                    .attr('width', 15)
+                    .attr('height', 15)
+                    .attr('fill', color(behavior));
+
+                legendItem.append('text')
+                    .attr('x', 20)
+                    .attr('y', 12)
+                    .style('font-size', '12px')
+                    .style('fill', '#2c3e50')
+                    .text(behavior);
+            });
+        }
+
+        function renderPreferencesChart() {
+            // 渲染偏好对比图表
+            const preferencesContainer = d3.select('#preferences-chart');
+            preferencesContainer.html('<p>偏好对比图表开发中...</p>');
+        }
+
+        function renderTrendChart() {
+            // 渲染趋势对比图表
+            const trendContainer = d3.select('#trend-chart');
+            trendContainer.html('<p>趋势对比图表开发中...</p>');
+        }
+
+        function exportData() {
+            const data = {
+                selectedCultures: selectedCultures,
+                currentDimension: currentDimension,
+                timestamp: new Date().toISOString(),
+                data: culturalData
+            };
+
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'cultural-comparison-data.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function exportChart() {
+            if (culturalComparison) {
+                culturalComparison.exportChart();
+            }
+        }
+
+        function shareAnalysis() {
+            const shareUrl = window.location.href;
+            const shareText = `文化差异对比分析 - 医美消费心理学`;
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: shareText,
+                    url: shareUrl
+                });
+            } else {
+                // 复制链接到剪贴板
+                navigator.clipboard.writeText(shareUrl).then(() => {
+                    alert('链接已复制到剪贴板');
+                });
+            }
+        }
+    </script>
+</body>
+</html>

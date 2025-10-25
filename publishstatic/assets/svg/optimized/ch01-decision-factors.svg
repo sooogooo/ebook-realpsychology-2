@@ -1,0 +1,104 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 优雅背景 -->
+  <rect width="800" height="600" fill="#fafafa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="300" fill="#2c3e50">
+    医美消费决策的影响因素
+  </text>
+  
+  <!-- 中央决策圆 - 优雅设计 -->
+  <circle cx="400" cy="300" r="70" fill="none" stroke="#3498db" stroke-width="1.5"/>
+  <circle cx="400" cy="300" r="65" fill="#f8f9fa" stroke="none"/>
+  <text x="400" y="295" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="300" fill="#2c3e50">
+    消费决策
+  </text>
+  <text x="400" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#7f8c8d">
+    复杂系统
+  </text>
+  
+  <!-- 个人因素 -->
+  <ellipse cx="200" cy="150" rx="80" ry="50" fill="none" stroke="#3498db" stroke-width="1"/>
+  <text x="200" y="145" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="300" fill="#2c3e50">
+    个人因素
+  </text>
+  <text x="200" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+    年龄性别 · 教育背景
+  </text>
+  <text x="200" y="173" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+    收入水平 · 性格特质
+  </text>
+  
+  <!-- 心理因素 -->
+  <ellipse cx="600" cy="150" rx="80" ry="50" fill="none" stroke="#e74c3c" stroke-width="1"/>
+  <text x="600" y="145" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="300" fill="#2c3e50">
+    心理因素
+  </text>
+  <text x="600" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+    外貌焦虑 · 自尊水平
+  </text>
+  <text x="600" y="173" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+    完美主义 · 风险态度
+  </text>
+  
+  <!-- 社会因素 -->
+  <ellipse cx="150" cy="400" rx="80" ry="50" fill="none" stroke="#27ae60" stroke-width="1"/>
+  <text x="150" y="395" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="300" fill="#2c3e50">
+    社会因素
+  </text>
+  <text x="150" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+    家庭影响 · 朋友意见
+  </text>
+  <text x="150" y="423" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+    社交媒体 · 文化标准
+  </text>
+  
+  <!-- 经济因素 -->
+  <ellipse cx="650" cy="400" rx="80" ry="50" fill="none" stroke="#f39c12" stroke-width="1"/>
+  <text x="650" y="395" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="300" fill="#2c3e50">
+    经济因素
+  </text>
+  <text x="650" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+    价格水平 · 支付方式
+  </text>
+  <text x="650" y="423" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+    经济状况 · 价值感知
+  </text>
+  
+  <!-- 信息因素 -->
+  <ellipse cx="300" cy="480" rx="75" ry="40" fill="none" stroke="#9b59b6" stroke-width="1"/>
+  <text x="300" y="475" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="300" fill="#2c3e50">
+    信息因素
+  </text>
+  <text x="300" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+    信息质量 · 信息获取
+  </text>
+  <text x="300" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+    专业咨询
+  </text>
+  
+  <!-- 情境因素 -->
+  <ellipse cx="500" cy="480" rx="75" ry="40" fill="none" stroke="#1abc9c" stroke-width="1"/>
+  <text x="500" y="475" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="300" fill="#2c3e50">
+    情境因素
+  </text>
+  <text x="500" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+    生活事件 · 时机选择
+  </text>
+  <text x="500" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+    环境压力
+  </text>
+  
+  <!-- 优雅连接线 -->
+  <line x1="270" y1="190" x2="340" y2="250" stroke="#bdc3c7" stroke-width="0.5" opacity="0.6"/>
+  <line x1="530" y1="190" x2="460" y2="250" stroke="#bdc3c7" stroke-width="0.5" opacity="0.6"/>
+  <line x1="220" y1="360" x2="340" y2="340" stroke="#bdc3c7" stroke-width="0.5" opacity="0.6"/>
+  <line x1="580" y1="360" x2="460" y2="340" stroke="#bdc3c7" stroke-width="0.5" opacity="0.6"/>
+  <line x1="350" y1="450" x2="370" y2="360" stroke="#bdc3c7" stroke-width="0.5" opacity="0.6"/>
+  <line x1="450" y1="450" x2="430" y2="360" stroke="#bdc3c7" stroke-width="0.5" opacity="0.6"/>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#95a5a6" font-style="italic">
+    图1.8：医美消费决策的多维度影响因素及相互作用
+  </text>
+</svg>

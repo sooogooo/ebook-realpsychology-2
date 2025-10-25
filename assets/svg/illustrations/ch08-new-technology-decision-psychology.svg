@@ -1,0 +1,252 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    新技术环境下的决策心理学
+  </text>
+  
+  <!-- 决策环境变革 -->
+  <rect x="100" y="80" width="600" height="80" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    新技术决策环境四大特征
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    信息丰富性 | 选择多样性 | 动态变化性 | 高度个性化
+  </text>
+  <text x="400" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    从信息稀缺到信息过载，从有限选择到无限可能，决策环境的复杂性显著提升
+  </text>
+  
+  <!-- 决策心理学机制 -->
+  <rect x="50" y="180" width="700" height="320" fill="#F3E5F5" stroke="#CE93D8" stroke-width="3" rx="15"/>
+  <text x="400" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#6A1B9A">
+    决策心理学机制的四大转变
+  </text>
+  
+  <!-- 信息处理模式转变 -->
+  <rect x="80" y="230" width="150" height="120" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="155" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    信息处理模式
+  </text>
+  <text x="155" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    从线性到网络化
+  </text>
+  <text x="155" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 传统：固定步骤处理
+  </text>
+  <text x="155" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 新技术：非线性处理
+  </text>
+  <text x="155" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 频繁信息源切换
+  </text>
+  <text x="155" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 认知能力要求提高
+  </text>
+  <text x="155" y="337" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    多源信息整合挑战
+  </text>
+  
+  <!-- 风险评估机制变化 -->
+  <rect x="250" y="230" width="150" height="120" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="325" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    风险评估机制
+  </text>
+  <text x="325" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    复杂性显著增加
+  </text>
+  <text x="325" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 新风险特征不同
+  </text>
+  <text x="325" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 更多未知因素
+  </text>
+  <text x="325" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 长期影响不确定
+  </text>
+  <text x="325" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 风险认知更复杂
+  </text>
+  <text x="325" y="337" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    成熟风险评估需求
+  </text>
+  
+  <!-- 期望管理过程挑战 -->
+  <rect x="420" y="230" width="150" height="120" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="495" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    期望管理过程
+  </text>
+  <text x="495" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    数字化模拟带来新挑战
+  </text>
+  <text x="495" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 可视化体验直观
+  </text>
+  <text x="495" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 期望形成更具体
+  </text>
+  <text x="495" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 理想化风险增加
+  </text>
+  <text x="495" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 现实差距感知挑战
+  </text>
+  <text x="495" y="337" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    平衡便利与期望管理
+  </text>
+  
+  <!-- 社会影响机制变化 -->
+  <rect x="590" y="230" width="130" height="120" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="655" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    社会影响机制
+  </text>
+  <text x="655" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    社交媒体影响扩大
+  </text>
+  <text x="655" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 影响更直接广泛
+  </text>
+  <text x="655" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 多元社会因素
+  </text>
+  <text x="655" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 网络社区影响
+  </text>
+  <text x="655" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 意见领袖作用
+  </text>
+  <text x="655" y="337" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    从众压力风险增加
+  </text>
+  
+  <!-- 新决策偏差 -->
+  <rect x="80" y="370" width="640" height="110" fill="#FFEBEE" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="400" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    新技术环境下的五大决策偏差
+  </text>
+  
+  <!-- 五大偏差 -->
+  <rect x="110" y="410" width="110" height="60" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="165" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    信息过载偏差
+  </text>
+  <text x="165" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    简化策略应对
+  </text>
+  <text x="165" y="453" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    关注表面特征
+  </text>
+  <text x="165" y="466" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    避免深入分析
+  </text>
+  
+  <rect x="240" y="410" width="110" height="60" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="295" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    技术乐观偏见
+  </text>
+  <text x="295" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    新技术必然更好
+  </text>
+  <text x="295" y="453" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    更安全有效
+  </text>
+  <text x="295" y="466" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    风险低估倾向
+  </text>
+  
+  <rect x="370" y="410" width="110" height="60" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="425" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    完美主义搜索
+  </text>
+  <text x="425" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    过度追求完美
+  </text>
+  <text x="425" y="453" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    无休止比较搜索
+  </text>
+  <text x="425" y="466" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    决策延迟焦虑
+  </text>
+  
+  <rect x="500" y="410" width="110" height="60" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="555" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    社会证明偏差
+  </text>
+  <text x="555" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    过度依赖网络评价
+  </text>
+  <text x="555" y="453" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    相似他人影响
+  </text>
+  <text x="555" y="466" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    忽视个人差异
+  </text>
+  
+  <rect x="630" y="410" width="90" height="60" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="675" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    即时满足偏好
+  </text>
+  <text x="675" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    立即见效倾向
+  </text>
+  <text x="675" y="453" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    忽视长期方案
+  </text>
+  <text x="675" y="466" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    短期效果偏好
+  </text>
+  
+  <!-- 决策支持策略 -->
+  <rect x="100" y="500" width="600" height="80" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    新技术决策支持五大策略
+  </text>
+  
+  <!-- 五大策略 -->
+  <rect x="130" y="535" width="100" height="35" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="180" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#E65100">
+    个性化信息推荐
+  </text>
+  <text x="180" y="563" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    基于个人特点推荐
+  </text>
+  
+  <rect x="250" y="535" width="100" height="35" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="300" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#E65100">
+    决策辅助工具
+  </text>
+  <text x="300" y="563" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    系统化分析比较
+  </text>
+  
+  <rect x="370" y="535" width="100" height="35" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="420" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#E65100">
+    专业咨询数字化
+  </text>
+  <text x="420" y="563" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    在线远程评估
+  </text>
+  
+  <rect x="490" y="535" width="100" height="35" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="540" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#E65100">
+    社会支持网络
+  </text>
+  <text x="540" y="563" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    线上社区经验分享
+  </text>
+  
+  <rect x="610" y="535" width="90" height="35" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="655" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#E65100">
+    决策教育普及
+  </text>
+  <text x="655" y="563" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    提升决策素养
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图8.2：新技术环境下决策心理学机制转变、偏差识别及支持策略
+  </text>
+</svg>

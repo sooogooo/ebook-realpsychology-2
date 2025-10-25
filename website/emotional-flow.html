@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情绪状态流程图 - 医美消费心理学</title>
+    <meta name="description" content="医美消费过程中的情绪状态变化流程图，展示消费者在不同阶段的心理状态转变">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/emotional-flow.css">
+    
+    <!-- JavaScript -->
+    <script src="assets/js/emotional-flow.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="material-symbols-outlined">psychology</span>
+                <span>医美消费心理学</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">
+                    <span class="material-symbols-outlined">home</span>
+                    首页
+                </a>
+                <a href="data-visualization.html" class="nav-link">
+                    <span class="material-symbols-outlined">insights</span>
+                    数据可视化
+                </a>
+                <a href="cultural-comparison.html" class="nav-link">
+                    <span class="material-symbols-outlined">public</span>
+                    文化差异
+                </a>
+                <a href="decision-tree.html" class="nav-link">
+                    <span class="material-symbols-outlined">account_tree</span>
+                    决策树
+                </a>
+                <a href="emotional-flow.html" class="nav-link active">
+                    <span class="material-symbols-outlined">mood</span>
+                    情绪流程
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>情绪状态流程图</h1>
+                <p>探索医美消费过程中消费者情绪状态的动态变化和心理转变过程</p>
+            </div>
+        </section>
+
+        <!-- Emotional Flow Container -->
+        <section class="emotional-container">
+            <div class="container">
+                <!-- Flow Type Selector -->
+                <div class="flow-selector">
+                    <div class="selector-header">
+                        <h2>选择情绪流程类型</h2>
+                        <p>选择不同的消费场景来查看相应的情绪状态变化流程</p>
+                    </div>
+                    <div class="flow-grid">
+                        <div class="flow-card active" data-flow="consultation">
+                            <div class="flow-icon">
+                                <span class="material-symbols-outlined">medical_services</span>
+                            </div>
+                            <h3>咨询流程</h3>
+                            <p>从初次咨询到决策过程的情绪变化</p>
+                        </div>
+                        <div class="flow-card" data-flow="treatment">
+                            <div class="flow-icon">
+                                <span class="material-symbols-outlined">healing</span>
+                            </div>
+                            <h3>治疗流程</h3>
+                            <p>治疗过程中的情绪状态和心理适应</p>
+                        </div>
+                        <div class="flow-card" data-flow="recovery">
+                            <div class="flow-icon">
+                                <span class="material-symbols-outlined">spa</span>
+                            </div>
+                            <h3>恢复流程</h3>
+                            <p>恢复期的情绪波动和心理调整</p>
+                        </div>
+                        <div class="flow-card" data-flow="long-term">
+                            <div class="flow-icon">
+                                <span class="material-symbols-outlined">timeline</span>
+                            </div>
+                            <h3>长期影响</h3>
+                            <p>长期心理影响和情绪稳定过程</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flow Visualization -->
+                <div class="flow-visualization">
+                    <div class="viz-header">
+                        <div class="viz-title">
+                            <h3 id="flow-title">咨询流程情绪状态图</h3>
+                            <p id="flow-description">展示消费者在咨询过程中的情绪变化和心理状态</p>
+                        </div>
+                        <div class="viz-controls">
+                            <div class="view-controls">
+                                <button class="view-button active" data-view="flow">
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+                                    流程图
+                                </button>
+                                <button class="view-button" data-view="network">
+                                    <span class="material-symbols-outlined">hub</span>
+                                    网络图
+                                </button>
+                                <button class="view-button" data-view="timeline">
+                                    <span class="material-symbols-outlined">schedule</span>
+                                    时间线
+                                </button>
+                            </div>
+                            <div class="action-controls">
+                                <button class="control-button" data-action="play">
+                                    <span class="material-symbols-outlined">play_arrow</span>
+                                    播放
+                                </button>
+                                <button class="control-button" data-action="reset">
+                                    <span class="material-symbols-outlined">refresh</span>
+                                    重置
+                                </button>
+                                <button class="control-button" data-action="export">
+                                    <span class="material-symbols-outlined">download</span>
+                                    导出
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="emotional-flow-chart" class="emotional-flow-chart"></div>
+                </div>
+
+                <!-- Emotional States Panel -->
+                <div class="emotional-states">
+                    <div class="states-header">
+                        <h3>情绪状态详情</h3>
+                        <p>点击流程图中的节点查看详细情绪状态信息</p>
+                    </div>
+                    <div id="state-details" class="state-details">
+                        <div class="state-placeholder">
+                            <span class="material-symbols-outlined">touch_app</span>
+                            <p>点击流程图中的情绪状态节点查看详细信息</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emotional Transitions -->
+                <div class="emotional-transitions">
+                    <div class="transitions-header">
+                        <h3>情绪转换分析</h3>
+                        <p>分析不同情绪状态之间的转换模式和影响因素</p>
+                    </div>
+                    <div class="transitions-content">
+                        <div class="transitions-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">主要情绪状态</span>
+                                <span class="stat-value" id="primary-states">8</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">转换路径</span>
+                                <span class="stat-value" id="transition-paths">12</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">关键转折点</span>
+                                <span class="stat-value" id="critical-points">3</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">情绪周期</span>
+                                <span class="stat-value" id="emotion-cycles">2-3周</span>
+                            </div>
+                        </div>
+                        <div class="transitions-insights">
+                            <h4>关键洞察</h4>
+                            <div class="insight-list">
+                                <div class="insight-item">
+                                    <div class="insight-icon">
+                                        <span class="material-symbols-outlined">psychology</span>
+                                    </div>
+                                    <div class="insight-content">
+                                        <h5>预期与现实的差距</h5>
+                                        <p>消费者在咨询后期和治疗初期常出现预期与现实的情绪落差</p>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <div class="insight-icon">
+                                        <span class="material-symbols-outlined">trending_up</span>
+                                    </div>
+                                    <div class="insight-content">
+                                        <h5>恢复期的情绪波动</h5>
+                                        <p>恢复期通常经历从焦虑到期待的积极情绪转变</p>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <div class="insight-icon">
+                                        <span class="material-symbols-outlined">balance</span>
+                                    </div>
+                                    <div class="insight-content">
+                                        <h5>长期心理适应</h5>
+                                        <p>成功的医美体验会带来长期的自信心提升和心理满足</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Risk Factors -->
+                <div class="risk-factors">
+                    <div class="risk-header">
+                        <h3>情绪风险因素</h3>
+                        <p>识别可能导致负面情绪状态的风险因素和干预策略</p>
+                    </div>
+                    <div class="risk-grid">
+                        <div class="risk-card high-risk">
+                            <div class="risk-header-card">
+                                <span class="material-symbols-outlined">warning</span>
+                                <h4>高风险因素</h4>
+                            </div>
+                            <ul class="risk-list">
+                                <li>不切实际的期望值</li>
+                                <li>缺乏充分的信息了解</li>
+                                <li>社会压力和外部影响</li>
+                                <li>术前焦虑和恐惧</li>
+                            </ul>
+                        </div>
+                        <div class="risk-card medium-risk">
+                            <div class="risk-header-card">
+                                <span class="material-symbols-outlined">error</span>
+                                <h4>中等风险因素</h4>
+                            </div>
+                            <ul class="risk-list">
+                                <li>恢复期的身体不适</li>
+                                <li>社交活动的暂时限制</li>
+                                <li>经济压力</li>
+                                <li>结果的不确定性</li>
+                            </ul>
+                        </div>
+                        <div class="risk-card low-risk">
+                            <div class="risk-header-card">
+                                <span class="material-symbols-outlined">info</span>
+                                <h4>低风险因素</h4>
+                            </div>
+                            <ul class="risk-list">
+                                <li>轻微的术后不适</li>
+                                <li>暂时的外观变化</li>
+                                <li>恢复期的耐心等待</li>
+                                <li>生活习惯的调整</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intervention Strategies -->
+                <div class="intervention-strategies">
+                    <div class="strategies-header">
+                        <h3>干预策略</h3>
+                        <p>针对不同情绪状态的专业干预和支持策略</p>
+                    </div>
+                    <div class="strategies-grid">
+                        <div class="strategy-card">
+                            <div class="strategy-icon">
+                                <span class="material-symbols-outlined">school</span>
+                            </div>
+                            <h4>教育干预</h4>
+                            <p>提供全面的医美知识和风险评估，帮助消费者建立合理期望</p>
+                            <div class="strategy-tags">
+                                <span class="tag">术前教育</span>
+                                <span class="tag">风险评估</span>
+                                <span class="tag">期望管理</span>
+                            </div>
+                        </div>
+                        <div class="strategy-card">
+                            <div class="strategy-icon">
+                                <span class="material-symbols-outlined">support_agent</span>
+                            </div>
+                            <h4>心理支持</h4>
+                            <p>提供专业的心理咨询和情绪支持，帮助消费者处理焦虑和恐惧</p>
+                            <div class="strategy-tags">
+                                <span class="tag">心理咨询</span>
+                                <span class="tag">情绪管理</span>
+                                <span class="tag">压力缓解</span>
+                            </div>
+                        </div>
+                        <div class="strategy-card">
+                            <div class="strategy-icon">
+                                <span class="material-symbols-outlined">groups</span>
+                            </div>
+                            <h4>社会支持</h4>
+                            <p>建立支持群体和社区，促进经验分享和情感支持</p>
+                            <div class="strategy-tags">
+                                <span class="tag">同伴支持</span>
+                                <span class="tag">经验分享</span>
+                                <span class="tag">社区建设</span>
+                            </div>
+                        </div>
+                        <div class="strategy-card">
+                            <div class="strategy-icon">
+                                <span class="material-symbols-outlined">medical_services</span>
+                            </div>
+                            <h4>专业跟进</h4>
+                            <p>提供持续的术后跟进和专业指导，确保情绪稳定和满意度</p>
+                            <div class="strategy-tags">
+                                <span class="tag">术后跟进</span>
+                                <span class="tag">专业指导</span>
+                                <span class="tag">满意度评估</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>医美消费心理学</h4>
+                    <p>探索医疗美容消费背后的心理机制和行为模式</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <div class="footer-links">
+                        <a href="index.html">首页</a>
+                        <a href="data-visualization.html">数据可视化</a>
+                        <a href="cultural-comparison.html">文化差异</a>
+                        <a href="decision-tree.html">决策树</a>
+                        <a href="emotional-flow.html">情绪流程</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>关于项目</h4>
+                    <p>本网站为《这才是医美消费心理学》学术项目的可视化展示平台</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 医美消费心理学. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

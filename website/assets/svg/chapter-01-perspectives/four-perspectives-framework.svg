@@ -1,0 +1,97 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 四维视角框架图 -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    四维视角框架
+  </text>
+  
+  <!-- 3D金字塔效果 -->
+  <g transform="translate(400, 320)">
+    <!-- 底面 -->
+    <polygon points="-150,80 150,80 150,-80 -150,-80" fill="url(#grad1)" opacity="0.8" filter="url(#shadow)"/>
+    
+    <!-- 左侧面 -->
+    <polygon points="-150,80 -150,-80 0,-180 0,40" fill="url(#grad2)" opacity="0.9" filter="url(#shadow)"/>
+    
+    <!-- 右侧面 -->
+    <polygon points="150,80 150,-80 0,-180 0,40" fill="url(#grad3)" opacity="0.9" filter="url(#shadow)"/>
+    
+    <!-- 后面 -->
+    <polygon points="-150,-80 150,-80 0,-180" fill="url(#grad4)" opacity="0.9" filter="url(#shadow)"/>
+    
+    <!-- 视角标签 -->
+    <text x="0" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      消费者视角
+    </text>
+    
+    <text x="-100" y="-30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      医生视角
+    </text>
+    
+    <text x="100" y="-30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      销售视角
+    </text>
+    
+    <text x="0" y="-160" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      投资者视角
+    </text>
+    
+    <!-- 连接线 -->
+    <line x1="0" y1="40" x2="0" y2="-140" stroke="white" stroke-width="2" opacity="0.7"/>
+    <line x1="-75" y1="0" x2="0" y2="-70" stroke="white" stroke-width="2" opacity="0.7"/>
+    <line x1="75" y1="0" x2="0" y2="-70" stroke="white" stroke-width="2" opacity="0.7"/>
+    
+    <!-- 中心点 -->
+    <circle cx="0" cy="0" r="8" fill="white" stroke="#2c3e50" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2c3e50">
+      核心
+    </text>
+  </g>
+  
+  <!-- 视角说明 -->
+  <g transform="translate(50, 480)">
+    <rect x="0" y="0" width="15" height="15" fill="url(#grad1)"/>
+    <text x="20" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">消费者视角：需求、心理、行为</text>
+    
+    <rect x="200" y="0" width="15" height="15" fill="url(#grad2)"/>
+    <text x="220" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">医生视角：专业、伦理、责任</text>
+    
+    <rect x="0" y="25" width="15" height="15" fill="url(#grad3)"/>
+    <text x="20" y="37" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">销售视角：沟通、营销、服务</text>
+    
+    <rect x="200" y="25" width="15" height="15" fill="url(#grad4)"/>
+    <text x="220" y="37" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">投资者视角：市场、风险、回报</text>
+  </g>
+  
+  <!-- 交互式提示 -->
+  <g data-interactive="true" data-tooltip="点击各视角查看详细内容">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

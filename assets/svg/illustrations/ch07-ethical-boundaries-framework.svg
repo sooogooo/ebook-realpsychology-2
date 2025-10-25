@@ -1,0 +1,233 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    销售伦理边界四维体系
+  </text>
+  
+  <!-- 核心原则 -->
+  <rect x="100" y="80" width="600" height="80" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    医美销售伦理四大核心原则
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    尊重自主性 | 无害原则 | 有利原则 | 公正原则
+  </text>
+  <text x="400" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">
+    为伦理边界的界定提供基本框架，指导销售实践的伦理决策
+  </text>
+  
+  <!-- 四个维度 -->
+  <rect x="50" y="180" width="700" height="360" fill="#F3E5F5" stroke="#CE93D8" stroke-width="3" rx="15"/>
+  <text x="400" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#6A1B9A">
+    伦理边界具体界定维度
+  </text>
+  
+  <!-- 信息披露伦理 -->
+  <rect x="80" y="230" width="150" height="140" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="155" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    信息披露伦理
+  </text>
+  <text x="155" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    基于透明和诚实原则
+  </text>
+  <text x="155" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 全面披露风险副作用
+  </text>
+  <text x="155" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 确保信息准确性
+  </text>
+  <text x="155" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 使用清晰易懂语言
+  </text>
+  <text x="155" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 提供完整价格信息
+  </text>
+  <text x="155" y="337" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 避免选择性报告
+  </text>
+  <text x="155" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 不夸大效果成功率
+  </text>
+  <text x="155" y="363" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    核心：信息真实完整
+  </text>
+  
+  <!-- 销售压力管理 -->
+  <rect x="250" y="230" width="150" height="140" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="325" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    销售压力管理
+  </text>
+  <text x="325" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    基于尊重自主性原则
+  </text>
+  <text x="325" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 不制造虚假紧急情况
+  </text>
+  <text x="325" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 给予充分考虑时间
+  </text>
+  <text x="325" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 避免情绪激动时交易
+  </text>
+  <text x="325" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 尊重犹豫和拒绝
+  </text>
+  <text x="325" y="337" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 不施不当压力
+  </text>
+  <text x="325" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 避免稀缺性欺骗
+  </text>
+  <text x="325" y="363" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    核心：决策自主权
+  </text>
+  
+  <!-- 弱势群体保护 -->
+  <rect x="420" y="230" width="150" height="140" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="495" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    弱势群体保护
+  </text>
+  <text x="495" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    基于无害和有利原则
+  </text>
+  <text x="495" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 未成年人额外保护
+  </text>
+  <text x="495" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 孕妇特殊关怀
+  </text>
+  <text x="495" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 识别心理脆弱者
+  </text>
+  <text x="495" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 避免利用经济困难
+  </text>
+  <text x="495" y="337" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 不利用情感需求
+  </text>
+  <text x="495" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 考虑文化差异
+  </text>
+  <text x="495" y="363" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    核心：特殊群体保护
+  </text>
+  
+  <!-- 利益冲突管理 -->
+  <rect x="590" y="230" width="130" height="140" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="655" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    利益冲突管理
+  </text>
+  <text x="655" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    基于公正原则
+  </text>
+  <text x="655" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 披露激励机制
+  </text>
+  <text x="655" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 避免过度推销
+  </text>
+  <text x="655" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 基于需求推荐
+  </text>
+  <text x="655" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 避免不必要服务
+  </text>
+  <text x="655" y="337" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 透明价格政策
+  </text>
+  <text x="655" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    □ 公平对待所有
+  </text>
+  <text x="655" y="363" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    核心：利益透明化
+  </text>
+  
+  <!-- 伦理挑战 -->
+  <rect x="80" y="390" width="640" height="130" fill="#FFEBEE" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="400" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    现实伦理挑战
+  </text>
+  
+  <!-- 四大挑战 -->
+  <rect x="110" y="430" width="130" height="75" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="175" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    业绩压力
+  </text>
+  <text x="175" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 竞争激烈环境
+  </text>
+  <text x="175" y="473" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 销售指标要求
+  </text>
+  <text x="175" y="486" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 伦理标准降低
+  </text>
+  <text x="175" y="499" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 不当行为增加
+  </text>
+  
+  <rect x="260" y="430" width="130" height="75" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="325" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    信息不对称
+  </text>
+  <text x="325" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 高度专业性
+  </text>
+  <text x="325" y="473" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 消费者知识缺乏
+  </text>
+  <text x="325" y="486" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 不当销售空间
+  </text>
+  <text x="325" y="499" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 判断能力受限
+  </text>
+  
+  <rect x="410" y="430" width="130" height="75" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="475" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    期望管理困难
+  </text>
+  <text x="475" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 不切实际期望
+  </text>
+  <text x="475" y="473" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 媒体影响
+  </text>
+  <text x="475" y="486" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 期望平衡难度
+  </text>
+  <text x="475" y="499" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 商业机会损失
+  </text>
+  
+  <rect x="560" y="430" width="130" height="75" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="625" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">
+    文化差异影响
+  </text>
+  <text x="625" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 美标准差异
+  </text>
+  <text x="625" y="473" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 销售接受度
+  </text>
+  <text x="625" y="486" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 风险态度差异
+  </text>
+  <text x="625" y="499" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 统一标准困难
+  </text>
+  
+  <!-- 平衡策略 -->
+  <rect x="100" y="540" width="600" height="40" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="400" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0277BD">
+    平衡策略：建立伦理培训制度 | 优化激励机制 | 完善质量监控 | 加强消费者教育 | 制定行业标准
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图7.2：医美销售伦理边界四维体系及现实挑战分析
+  </text>
+</svg>

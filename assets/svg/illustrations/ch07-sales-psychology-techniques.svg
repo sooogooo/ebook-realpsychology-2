@@ -1,0 +1,284 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    医美销售心理技巧分类与原理
+  </text>
+  
+  <!-- 五大心理技巧 -->
+  <rect x="50" y="80" width="700" height="480" fill="#F3E5F5" stroke="#CE93D8" stroke-width="3" rx="15"/>
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#6A1B9A">
+    五大销售心理技巧及心理学原理
+  </text>
+  
+  <!-- 紧迫感营造 -->
+  <rect x="80" y="130" width="120" height="120" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="140" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    紧迫感营造
+  </text>
+  <text x="140" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    基于损失厌恶原理
+  </text>
+  <text x="140" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 限时优惠
+  </text>
+  <text x="140" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 预约等待
+  </text>
+  <text x="140" y="211" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 季节性营销
+  </text>
+  <text x="140" y="224" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    效果提升40-60%
+  </text>
+  <text x="140" y="237" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    害怕失去大于获得快乐
+  </text>
+  
+  <!-- 社会证明利用 -->
+  <rect x="220" y="130" width="120" height="120" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="280" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    社会证明利用
+  </text>
+  <text x="280" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    基于从众心理倾向
+  </text>
+  <text x="280" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 成功案例展示
+  </text>
+  <text x="280" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 大家都在做
+  </text>
+  <text x="280" y="211" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 名人效应
+  </text>
+  <text x="280" y="224" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    高不确定性领域
+  </text>
+  <text x="280" y="237" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    依赖他人经验选择
+  </text>
+  
+  <!-- 稀缺性原则 -->
+  <rect x="360" y="130" width="120" height="120" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="420" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    稀缺性原则
+  </text>
+  <text x="420" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    基于独特性渴望
+  </text>
+  <text x="420" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 独家技术
+  </text>
+  <text x="420" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 专利设备
+  </text>
+  <text x="420" y="211" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 限量名额
+  </text>
+  <text x="420" y="224" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    价值评估提高25%
+  </text>
+  <text x="420" y="237" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    稀缺资源渴望心理
+  </text>
+  
+  <!-- 情感激发 -->
+  <rect x="500" y="130" width="120" height="120" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="560" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    情感激发
+  </text>
+  <text x="560" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    基于情绪系统影响
+  </text>
+  <text x="560" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 焦虑情绪激活
+  </text>
+  <text x="560" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 美好愿景描绘
+  </text>
+  <text x="560" y="211" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 问题性强调
+  </text>
+  <text x="560" y="224" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    神经科学影响
+  </text>
+  <text x="560" y="237" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    情绪激动改变判断
+  </text>
+  
+  <!-- 认知偏差利用 -->
+  <rect x="640" y="130" width="120" height="120" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="700" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">
+    认知偏差利用
+  </text>
+  <text x="700" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    基于思维系统性偏差
+  </text>
+  <text x="700" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 锚定效应
+  </text>
+  <text x="700" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 框架效应
+  </text>
+  <text x="700" y="211" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    • 确认偏见
+  </text>
+  <text x="700" y="224" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    不知不觉影响
+  </text>
+  <text x="700" y="237" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    投资自己vs花钱
+  </text>
+  
+  <!-- 影响效果分析 -->
+  <rect x="80" y="270" width="640" height="120" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    心理技巧的影响效果分析
+  </text>
+  
+  <!-- 短期效果 -->
+  <rect x="110" y="310" width="140" height="65" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="180" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    短期效果
+  </text>
+  <text x="180" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 销售转化率提升
+  </text>
+  <text x="180" y="353" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 决策速度加快
+  </text>
+  <text x="180" y="366" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 业绩显著增长
+  </text>
+  
+  <!-- 长期影响 -->
+  <rect x="270" y="310" width="140" height="65" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="340" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    长期影响
+  </text>
+  <text x="340" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 消费者信任下降
+  </text>
+  <text x="340" y="353" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 行业声誉受损
+  </text>
+  <text x="340" y="366" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 监管风险增加
+  </text>
+  
+  <!-- 消费者影响 -->
+  <rect x="430" y="310" width="140" height="65" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="500" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    消费者影响
+  </text>
+  <text x="500" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 决策偏差形成
+  </text>
+  <text x="500" y="353" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 期望管理不当
+  </text>
+  <text x="500" y="366" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 满意度显著降低
+  </text>
+  
+  <!-- 心理健康影响 -->
+  <rect x="590" y="310" width="110" height="65" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="645" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+    心理影响
+  </text>
+  <text x="645" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7B9A">
+    • 外貌焦虑加重
+  </text>
+  <text x="645" y="353" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 身体意象障碍
+  </text>
+  <text x="645" y="366" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2E7D32">
+    • 决策能力损害
+  </text>
+  
+  <!-- 伦理边界 -->
+  <rect x="80" y="410" width="640" height="130" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    伦理边界与平衡考量
+  </text>
+  
+  <!-- 商业利益 -->
+  <rect x="110" y="450" width="140" height="75" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="180" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    商业利益
+  </text>
+  <text x="180" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 销售业绩需求
+  </text>
+  <text x="180" y="493" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 市场竞争压力
+  </text>
+  <text x="180" y="506" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 机构生存发展
+  </text>
+  <text x="180" y="519" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 从业者收入
+  </text>
+  
+  <!-- 消费者保护 -->
+  <rect x="270" y="450" width="140" height="75" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="340" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    消费者保护
+  </text>
+  <text x="340" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 知情权保障
+  </text>
+  <text x="340" y="493" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 自主决策权
+  </text>
+  <text x="340" y="506" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 身心健康保护
+  </text>
+  <text x="340" y="519" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 公平交易权
+  </text>
+  
+  <!-- 平衡点 -->
+  <rect x="430" y="450" width="140" height="75" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="500" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    伦理平衡点
+  </text>
+  <text x="500" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 透明信息披露
+  </text>
+  <text x="500" y="493" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 尊重自主性
+  </text>
+  <text x="500" y="506" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 长期关系建立
+  </text>
+  <text x="500" y="519" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 专业诚信服务
+  </text>
+  
+  <!-- 监管需求 -->
+  <rect x="590" y="450" width="110" height="75" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="645" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E65100">
+    监管需求
+  </text>
+  <text x="645" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 行业标准制定
+  </text>
+  <text x="645" y="493" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 执法监督检查
+  </text>
+  <text x="645" y="506" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 消费者教育
+  </text>
+  <text x="645" y="519" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    • 争议处理机制
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图7.1：医美销售中心理技巧分类、心理学原理及伦理边界分析框架
+  </text>
+</svg>

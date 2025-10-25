@@ -1,0 +1,172 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 社会影响机制 -->
+  <defs>
+    <!-- 从众效应渐变 -->
+    <linearGradient id="conformity-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 认同效应渐变 -->
+    <linearGradient id="identification-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 服从效应渐变 -->
+    <linearGradient id="compliance-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 社会证明渐变 -->
+    <linearGradient id="social-proof-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 权威影响渐变 -->
+    <linearGradient id="authority-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    社会影响机制
+  </text>
+  
+  <!-- 中心消费者 -->
+  <g transform="translate(400, 320)">
+    <circle cx="0" cy="0" r="50" fill="#667eea" filter="url(#shadow)" data-interactive="true" data-tooltip="目标消费者：受多种社会影响机制作用" data-onclick="details"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">消费者</text>
+    
+    <!-- 影响机制节点 -->
+    <!-- 从众效应 -->
+    <g transform="translate(-120, -80)">
+      <circle cx="0" cy="0" r="40" fill="url(#conformity-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="从众效应：跟随群体行为和意见" data-onclick="details"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">从众效应</text>
+      <path d="M 40 0 L 80 80" stroke="#3498db" stroke-width="2" fill="none" marker-end="url(#arrowhead)" opacity="0.7"/>
+    </g>
+    
+    <!-- 认同效应 -->
+    <g transform="translate(120, -80)">
+      <circle cx="0" cy="0" r="40" fill="url(#identification-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="认同效应：渴望与特定群体建立关系" data-onclick="details"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">认同效应</text>
+      <path d="M -40 0 L -80 80" stroke="#e74c3c" stroke-width="2" fill="none" marker-end="url(#arrowhead)" opacity="0.7"/>
+    </g>
+    
+    <!-- 服从效应 -->
+    <g transform="translate(-150, 60)">
+      <circle cx="0" cy="0" r="40" fill="url(#compliance-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="服从效应：回应直接请求或压力" data-onclick="details"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">服从效应</text>
+      <path d="M 40 0 L 150 -60" stroke="#2ecc71" stroke-width="2" fill="none" marker-end="url(#arrowhead)" opacity="0.7"/>
+    </g>
+    
+    <!-- 社会证明 -->
+    <g transform="translate(150, 60)">
+      <circle cx="0" cy="0" r="40" fill="url(#social-proof-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="社会证明：他人行为作为正确性证据" data-onclick="details"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">社会证明</text>
+      <path d="M -40 0 L -150 -60" stroke="#f39c12" stroke-width="2" fill="none" marker-end="url(#arrowhead)" opacity="0.7"/>
+    </g>
+    
+    <!-- 权威影响 -->
+    <g transform="translate(0, 120)">
+      <circle cx="0" cy="0" r="40" fill="url(#authority-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="权威影响：专家或权威人士的指导" data-onclick="details"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">权威影响</text>
+      <path d="M 0 -40 L 0 -50" stroke="#9b59b6" stroke-width="2" fill="none" marker-end="url(#arrowhead)" opacity="0.7"/>
+    </g>
+  </g>
+  
+  <!-- 影响强度调节 -->
+  <g transform="translate(50, 150)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">影响强度：</text>
+    
+    <!-- 从众强度 -->
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="100" height="15" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="70" height="15" rx="7" fill="#3498db"/>
+      <text x="110" y="12" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">从众 70%</text>
+    </g>
+    
+    <!-- 认同强度 -->
+    <g transform="translate(0, 55)">
+      <rect x="0" y="0" width="100" height="15" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="85" height="15" rx="7" fill="#e74c3c"/>
+      <text x="110" y="12" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">认同 85%</text>
+    </g>
+    
+    <!-- 服从强度 -->
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="100" height="15" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="60" height="15" rx="7" fill="#2ecc71"/>
+      <text x="110" y="12" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">服从 60%</text>
+    </g>
+    
+    <!-- 社会证明强度 -->
+    <g transform="translate(0, 105)">
+      <rect x="0" y="0" width="100" height="15" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="90" height="15" rx="7" fill="#f39c12"/>
+      <text x="110" y="12" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">社会证明 90%</text>
+    </g>
+    
+    <!-- 权威强度 -->
+    <g transform="translate(0, 130)">
+      <rect x="0" y="0" width="100" height="15" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="0" width="75" height="15" rx="7" fill="#9b59b6"/>
+      <text x="110" y="12" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">权威 75%</text>
+    </g>
+  </g>
+  
+  <!-- 医美应用场景 -->
+  <g transform="translate(550, 150)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">医美应用场景：</text>
+    
+    <text y="25" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 网红美容项目跟风</text>
+    <text y="45" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 明星同款美容追求</text>
+    <text y="65" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 销售人员推销</text>
+    <text y="85" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 用户评价参考</text>
+    <text y="105" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 医生专业建议</text>
+  </g>
+  
+  <!-- 影响路径 -->
+  <g transform="translate(100, 480)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">影响路径：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 信息传播 → 认知改变 → 态度形成 → 行为决策</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 群体压力 → 规范内化 → 行为调整 → 习惯养成</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 权威指导 → 信任建立 → 决策依据 → 行动执行</text>
+  </g>
+  
+  <!-- 调节策略 -->
+  <g transform="translate(450, 480)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">调节策略：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 提高批判性思维能力</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 增强自主决策意识</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 寻求多元信息来源</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 建立理性评估标准</text>
+  </g>
+  
+  <!-- 动态效果 -->
+  <circle cx="400" cy="320" r="60" fill="none" stroke="#667eea" stroke-width="2" opacity="0.3">
+    <animate attributeName="r" values="60;80;60" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各机制查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

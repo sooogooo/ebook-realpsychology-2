@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="医美消费心理学 - 心理评估工具可视化">
+    <meta name="keywords" content="医美消费心理学,心理评估,人格特质,风险评估,情绪分析">
+    <meta name="author" content="重庆联合丽格科技有限公司">
+    <title>心理评估工具 - 医美消费心理学</title>
+    <link rel="icon" type="image/png" href="https://docs.bccsw.cn/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/psychological-assessment.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="https://docs.bccsw.cn/logo.png" alt="Logo">
+                <h1>医美消费心理学</h1>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#overview">概述</a></li>
+                <li><a href="index.html#chapters">章节</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html">首页</a>
+                <span class="separator">›</span>
+                <span>心理评估工具</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="assessment-header">
+                <h1>心理评估工具可视化</h1>
+                <p>基于医美消费心理学研究的专业心理评估工具</p>
+            </div>
+
+            <div class="assessment-content">
+                <!-- 评估类型选择 -->
+                <div class="assessment-type-selector">
+                    <button class="assessment-type-button active" data-type="personality">
+                        <span class="material-symbols-outlined">psychology</span>
+                        人格特质评估
+                    </button>
+                    <button class="assessment-type-button" data-type="risk">
+                        <span class="material-symbols-outlined">warning</span>
+                        风险评估
+                    </button>
+                    <button class="assessment-type-button" data-type="emotion">
+                        <span class="material-symbols-outlined">sentiment_satisfied</span>
+                        情绪状态评估
+                    </button>
+                </div>
+
+                <!-- 人格特质评估 -->
+                <div class="assessment-section active" id="personality-assessment">
+                    <div class="assessment-container">
+                        <h2>大五人格特质评估</h2>
+                        <p>基于大五人格理论，评估医美消费者的个性特征</p>
+                        
+                        <div id="personality-chart" class="assessment-chart">
+                            <div class="assessment-loading">
+                                <div class="assessment-spinner"></div>
+                                <p>加载中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 风险评估 -->
+                <div class="assessment-section" id="risk-assessment">
+                    <div class="assessment-container">
+                        <h2>医美消费风险评估</h2>
+                        <p>全面评估医美消费中的各种风险因素</p>
+                        
+                        <div id="risk-chart" class="assessment-chart">
+                            <div class="assessment-loading">
+                                <div class="assessment-spinner"></div>
+                                <p>加载中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 情绪状态评估 -->
+                <div class="assessment-section" id="emotion-assessment">
+                    <div class="assessment-container">
+                        <h2>情绪状态评估</h2>
+                        <p>监测和分析消费者在医美过程中的情绪变化</p>
+                        
+                        <div id="emotion-chart" class="assessment-chart">
+                            <div class="assessment-loading">
+                                <div class="assessment-spinner"></div>
+                                <p>加载中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 评估结果展示 -->
+                <div class="assessment-results" id="assessment-results" style="display: none;">
+                    <h3>综合评估结果</h3>
+                    <div class="result-summary" id="result-summary">
+                        <!-- 结果将通过JavaScript动态生成 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>地址：重庆市渝中区临江支路28号</p>
+                    <p>电话：<a href="tel:023-68726872">023-68726872</a></p>
+                    <p>邮箱：<a href="mailto:bccsw@cqlhlg.work">bccsw@cqlhlg.work</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>关于我们</h4>
+                    <p>重庆联合丽格科技有限公司致力于医美行业的专业研究和咨询服务，推动行业健康发展。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <p><a href="index.html">首页</a></p>
+                    <p><a href="index.html#chapters">章节内容</a></p>
+                    <p><a href="index.html#perspectives">专业视角</a></p>
+                    <p><a href="index.html#contact">联系我们</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 重庆联合丽格科技有限公司 | <a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2024023473号</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/psychological-assessment.js"></script>
+    <script>
+        // 模拟数据
+        const personalityData = {
+            assessments: [
+                {
+                    id: 1,
+                    question: "您是否喜欢尝试新的医美项目？",
+                    traits: {
+                        '开放性': 85,
+                        '尽责性': 60,
+                        '外向性': 75,
+                        '宜人性': 70,
+                        '神经质': 45
+                    }
+                },
+                {
+                    id: 2,
+                    question: "您在做决定时会仔细研究相关信息吗？",
+                    traits: {
+                        '开放性': 70,
+                        '尽责性': 90,
+                        '外向性': 55,
+                        '宜人性': 80,
+                        '神经质': 35
+                    }
+                },
+                {
+                    id: 3,
+                    question: "您是否愿意向他人推荐您的医美体验？",
+                    traits: {
+                        '开放性': 65,
+                        '尽责性': 75,
+                        '外向性': 85,
+                        '宜人性': 90,
+                        '神经质': 40
+                    }
+                },
+                {
+                    id: 4,
+                    question: "您对医美效果的心理预期如何？",
+                    traits: {
+                        '开放性': 80,
+                        '尽责性': 70,
+                        '外向性': 60,
+                        '宜人性': 75,
+                        '神经质': 50
+                    }
+                },
+                {
+                    id: 5,
+                    question: "您如何应对医美过程中的压力？",
+                    traits: {
+                        '开放性': 75,
+                        '尽责性': 85,
+                        '外向性': 65,
+                        '宜人性': 80,
+                        '神经质': 30
+                    }
+                }
+            ]
+        };
+
+        const riskData = {
+            assessments: [
+                {
+                    id: 1,
+                    question: "评估手术风险",
+                    risks: {
+                        '生理风险-低': 20,
+                        '生理风险-中': 60,
+                        '生理风险-高': 20,
+                        '心理风险-低': 30,
+                        '心理风险-中': 50,
+                        '心理风险-高': 20,
+                        '社会风险-低': 40,
+                        '社会风险-中': 45,
+                        '社会风险-高': 15,
+                        '经济风险-低': 25,
+                        '经济风险-中': 55,
+                        '经济风险-高': 20,
+                        '时间风险-低': 35,
+                        '时间风险-中': 50,
+                        '时间风险-高': 15
+                    }
+                },
+                {
+                    id: 2,
+                    question: "评估恢复期风险",
+                    risks: {
+                        '生理风险-低': 35,
+                        '生理风险-中': 50,
+                        '生理风险-高': 15,
+                        '心理风险-低': 40,
+                        '心理风险-中': 45,
+                        '心理风险-高': 15,
+                        '社会风险-低': 50,
+                        '社会风险-中': 40,
+                        '社会风险-高': 10,
+                        '经济风险-低': 45,
+                        '经济风险-中': 45,
+                        '经济风险-高': 10,
+                        '时间风险-低': 30,
+                        '时间风险-中': 55,
+                        '时间风险-高': 15
+                    }
+                },
+                {
+                    id: 3,
+                    question: "评估效果风险",
+                    risks: {
+                        '生理风险-低': 45,
+                        '生理风险-中': 40,
+                        '生理风险-高': 15,
+                        '心理风险-低': 35,
+                        '心理风险-中': 45,
+                        '心理风险-高': 20,
+                        '社会风险-低': 35,
+                        '社会风险-中': 50,
+                        '社会风险-高': 15,
+                        '经济风险-低': 25,
+                        '经济风险-中': 55,
+                        '经济风险-高': 20,
+                        '时间风险-低': 40,
+                        '时间风险-中': 45,
+                        '时间风险-高': 15
+                    }
+                }
+            ]
+        };
+
+        const emotionData = {
+            assessments: [
+                {
+                    id: 1,
+                    question: "术前情绪状态",
+                    emotions: {
+                        '喜悦': 20,
+                        '悲伤': 15,
+                        '愤怒': 10,
+                        '恐惧': 65,
+                        '惊讶': 25,
+                        '厌恶': 15
+                    },
+                    timeline: [
+                        { time: '术前1周', emotion: '恐惧', intensity: 8 },
+                        { time: '术前3天', emotion: '恐惧', intensity: 9 },
+                        { time: '术前1天', emotion: '惊讶', intensity: 7 },
+                        { time: '手术当天', emotion: '恐惧', intensity: 10 }
+                    ]
+                },
+                {
+                    id: 2,
+                    question: "术后情绪状态",
+                    emotions: {
+                        '喜悦': 35,
+                        '悲伤': 25,
+                        '愤怒': 15,
+                        '恐惧': 40,
+                        '惊讶': 30,
+                        '厌恶': 20
+                    },
+                    timeline: [
+                        { time: '术后1天', emotion: '悲伤', intensity: 6 },
+                        { time: '术后3天', emotion: '悲伤', intensity: 7 },
+                        { time: '术后1周', emotion: '惊讶', intensity: 5 },
+                        { time: '术后2周', emotion: '喜悦', intensity: 6 }
+                    ]
+                },
+                {
+                    id: 3,
+                    question: "恢复期情绪状态",
+                    emotions: {
+                        '喜悦': 60,
+                        '悲伤': 20,
+                        '愤怒': 10,
+                        '恐惧': 25,
+                        '惊讶': 35,
+                        '厌恶': 15
+                    },
+                    timeline: [
+                        { time: '术后1月', emotion: '喜悦', intensity: 7 },
+                        { time: '术后2月', emotion: '喜悦', intensity: 8 },
+                        { time: '术后3月', emotion: '喜悦', intensity: 9 },
+                        { time: '术后6月', emotion: '喜悦', intensity: 8 }
+                    ]
+                }
+            ]
+        };
+
+        // 初始化评估工具
+        let currentAssessment = null;
+        let personalityAssessment = null;
+        let riskAssessment = null;
+        let emotionAssessment = null;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始化人格特质评估
+            personalityAssessment = new PersonalityAssessment('personality-chart', {
+                width: 800,
+                height: 600,
+                responsive: true
+            });
+
+            // 初始化风险评估
+            riskAssessment = new RiskAssessment('risk-chart', {
+                width: 800,
+                height: 600,
+                responsive: true
+            });
+
+            // 初始化情绪状态评估
+            emotionAssessment = new EmotionalStateAssessment('emotion-chart', {
+                width: 800,
+                height: 600,
+                responsive: true
+            });
+
+            // 默认显示人格特质评估
+            currentAssessment = personalityAssessment;
+            setTimeout(() => {
+                currentAssessment.setData(personalityData);
+            }, 1000);
+
+            // 绑定评估类型切换事件
+            document.querySelectorAll('.assessment-type-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    const type = this.dataset.type;
+                    switchAssessment(type);
+                });
+            });
+        });
+
+        function switchAssessment(type) {
+            // 更新按钮状态
+            document.querySelectorAll('.assessment-type-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[data-type="${type}"]`).classList.add('active');
+
+            // 隐藏所有评估区域
+            document.querySelectorAll('.assessment-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // 显示选中的评估区域
+            document.getElementById(`${type}-assessment`).classList.add('active');
+
+            // 切换评估工具
+            switch(type) {
+                case 'personality':
+                    currentAssessment = personalityAssessment;
+                    setTimeout(() => {
+                        currentAssessment.setData(personalityData);
+                    }, 300);
+                    break;
+                case 'risk':
+                    currentAssessment = riskAssessment;
+                    setTimeout(() => {
+                        currentAssessment.setData(riskData);
+                    }, 300);
+                    break;
+                case 'emotion':
+                    currentAssessment = emotionAssessment;
+                    setTimeout(() => {
+                        currentAssessment.setData(emotionData);
+                    }, 300);
+                    break;
+            }
+
+            // 隐藏结果展示
+            document.getElementById('assessment-results').style.display = 'none';
+        }
+
+        function showResults() {
+            const resultsContainer = document.getElementById('assessment-results');
+            const summaryContainer = document.getElementById('result-summary');
+            
+            let scores = {};
+            if (currentAssessment) {
+                scores = currentAssessment.calculateScores();
+            }
+
+            let resultsHTML = '';
+            Object.entries(scores).forEach(([trait, score]) => {
+                const level = getScoreLevel(score);
+                resultsHTML += `
+                    <div class="result-item">
+                        <span class="trait-name">${trait}</span>
+                        <span class="trait-score">${score}分</span>
+                        <span class="trait-level ${level}">${level}</span>
+                    </div>
+                `;
+            });
+
+            summaryContainer.innerHTML = resultsHTML;
+            resultsContainer.style.display = 'block';
+        }
+
+        function getScoreLevel(score) {
+            if (score >= 80) return 'high';
+            if (score >= 60) return 'medium';
+            return 'low';
+        }
+    </script>
+</body>
+</html>

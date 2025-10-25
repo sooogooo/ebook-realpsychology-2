@@ -1,0 +1,117 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 批判性思维框架 -->
+  <defs>
+    <linearGradient id="think-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="think-grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="think-grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="think-grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="think-grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    批判性思维框架
+  </text>
+  
+  <!-- 中心核心 -->
+  <g transform="translate(400, 300)">
+    <circle r="50" fill="#34495e" filter="url(#shadow)"/>
+    <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">批判性思维</text>
+  </g>
+  
+  <!-- 五个核心要素 -->
+  <!-- 1. 识别假设 -->
+  <g transform="translate(250, 150)">
+    <rect x="-60" y="-25" width="120" height="50" rx="25" fill="url(#think-grad1)" filter="url(#shadow)" data-interactive="true" data-tooltip="识别假设：发现隐藏的前提和预设" data-onclick="details"/>
+    <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">识别假设</text>
+  </g>
+  
+  <!-- 2. 评估证据 -->
+  <g transform="translate(550, 150)">
+    <rect x="-60" y="-25" width="120" height="50" rx="25" fill="url(#think-grad2)" filter="url(#shadow)" data-interactive="true" data-tooltip="评估证据：检验信息的可靠性和有效性" data-onclick="details"/>
+    <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">评估证据</text>
+  </g>
+  
+  <!-- 3. 逻辑推理 -->
+  <g transform="translate(600, 350)">
+    <rect x="-60" y="-25" width="120" height="50" rx="25" fill="url(#think-grad3)" filter="url(#shadow)" data-interactive="true" data-tooltip="逻辑推理：分析论证的逻辑性和一致性" data-onclick="details"/>
+    <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">逻辑推理</text>
+  </g>
+  
+  <!-- 4. 多角度思考 -->
+  <g transform="translate(200, 350)">
+    <rect x="-60" y="-25" width="120" height="50" rx="25" fill="url(#think-grad4)" filter="url(#shadow)" data-interactive="true" data-tooltip="多角度思考：考虑不同的观点和视角" data-onclick="details"/>
+    <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">多角度思考</text>
+  </g>
+  
+  <!-- 5. 得出结论 -->
+  <g transform="translate(400, 450)">
+    <rect x="-60" y="-25" width="120" height="50" rx="25" fill="url(#think-grad5)" filter="url(#shadow)" data-interactive="true" data-tooltip="得出结论：基于分析和推理形成判断" data-onclick="details"/>
+    <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">得出结论</text>
+  </g>
+  
+  <!-- 连接线 -->
+  <path d="M 310 170 Q 355 235 360 270" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 490 170 Q 445 235 440 270" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 540 350 Q 470 340 450 320" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 260 350 Q 330 340 350 320" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 400 L 400 350" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 循环箭头 -->
+  <path d="M 250 175 Q 150 250 200 325" stroke="#e74c3c" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  <path d="M 550 175 Q 650 250 600 325" stroke="#3498db" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  
+  <!-- 应用示例 -->
+  <g transform="translate(50, 500)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">医美应用示例：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 评估广告宣传的真实性</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 分析治疗效果的科学研究</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 辨别专家意见的可靠性</text>
+  </g>
+  
+  <!-- 思维层次 -->
+  <g transform="translate(500, 500)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">思维层次：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 基础思考：接受信息</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 分析思考：质疑验证</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 批判思考：综合判断</text>
+  </g>
+  
+  <!-- 动态效果 -->
+  <circle cx="400" cy="300" r="60" fill="none" stroke="#667eea" stroke-width="2" opacity="0.5">
+    <animate attributeName="r" values="60;80;60" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各要素查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

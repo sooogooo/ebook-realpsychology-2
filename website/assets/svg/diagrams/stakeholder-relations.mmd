@@ -1,0 +1,23 @@
+```mermaid
+graph LR
+    A[消费者] -->|需求表达| B[医生]
+    A -->|期望沟通| C[销售人员]
+    A -->|价值评估| D[投资者]
+    
+    B -->|专业诊断| A
+    B -->|技术方案| C
+    B -->|风险评估| D
+    
+    C -->|咨询服务| A
+    C -->|市场反馈| B
+    C -->|成本分析| D
+    
+    D -->|资金支持| A
+    D -->|技术投资| B
+    D -->|营销投入| C
+    
+    style A fill:#98d8c8,stroke:#2c3e50,stroke-width:2px
+    style B fill:#b8a9c9,stroke:#2c3e50,stroke-width:2px
+    style C fill:#ff9a8b,stroke:#2c3e50,stroke-width:2px
+    style D fill:#f4a261,stroke:#2c3e50,stroke-width:2px
+```

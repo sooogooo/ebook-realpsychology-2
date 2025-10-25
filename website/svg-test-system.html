@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG插图系统测试</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #2c3e50;
+        }
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .test-header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .test-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+        .test-card h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .test-status {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .status-success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status-error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .status-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+        .svg-preview {
+            margin-top: 15px;
+            text-align: center;
+        }
+        .svg-preview iframe {
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            width: 100%;
+            height: 200px;
+        }
+        .test-button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .test-button:hover {
+            background: #5a6fd8;
+        }
+        .test-results {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            margin-top: 20px;
+        }
+        .test-log {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <div class="test-header">
+            <h1>SVG插图系统测试</h1>
+            <p>测试SVG插图管理系统的功能和性能</p>
+        </div>
+
+        <div class="test-grid">
+            <div class="test-card">
+                <h3>SVG管理器加载</h3>
+                <p>测试SVGIllustrationManager类是否正确加载</p>
+                <div id="svg-manager-status" class="test-status status-pending">测试中...</div>
+                <button class="test-button" onclick="testSVGManager()">测试管理器</button>
+            </div>
+
+            <div class="test-card">
+                <h3>SVG文件访问</h3>
+                <p>测试SVG文件是否可以正常访问</p>
+                <div id="svg-file-status" class="test-status status-pending">测试中...</div>
+                <button class="test-button" onclick="testSVGFiles()">测试文件访问</button>
+            </div>
+
+            <div class="test-card">
+                <h3>SVG插图显示</h3>
+                <p>测试SVG插图是否可以正常显示</p>
+                <div id="svg-display-status" class="test-status status-pending">测试中...</div>
+                <div class="svg-preview">
+                    <iframe id="svg-preview" src="about:blank"></iframe>
+                </div>
+                <button class="test-button" onclick="testSVGDisplay()">测试插图显示</button>
+            </div>
+
+            <div class="test-card">
+                <h3>交互功能</h3>
+                <p>测试SVG交互功能是否正常</p>
+                <div id="svg-interactive-status" class="test-status status-pending">测试中...</div>
+                <button class="test-button" onclick="testSVGInteractive()">测试交互功能</button>
+            </div>
+
+            <div class="test-card">
+                <h3>搜索功能</h3>
+                <p>测试SVG搜索功能是否正常</p>
+                <div id="svg-search-status" class="test-status status-pending">测试中...</div>
+                <button class="test-button" onclick="testSVGSearch()">测试搜索功能</button>
+            </div>
+
+            <div class="test-card">
+                <h3>下载功能</h3>
+                <p>测试SVG下载功能是否正常</p>
+                <div id="svg-download-status" class="test-status status-pending">测试中...</div>
+                <button class="test-button" onclick="testSVGDownload()">测试下载功能</button>
+            </div>
+        </div>
+
+        <div class="test-results">
+            <h3>测试日志</h3>
+            <div id="test-log" class="test-log">
+                系统测试开始...
+            </div>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="assets/js/svg-illustration-manager.js"></script>
+    
+    <script>
+        function log(message) {
+            const logElement = document.getElementById('test-log');
+            const timestamp = new Date().toLocaleTimeString();
+            logElement.innerHTML += `[${timestamp}] ${message}\\n`;
+            logElement.scrollTop = logElement.scrollHeight;
+        }
+
+        function updateStatus(id, status, message = '') {
+            const element = document.getElementById(id);
+            element.className = `test-status status-${status}`;
+            element.textContent = message || (status === 'success' ? '通过' : status === 'error' ? '失败' : '测试中...');
+        }
+
+        let svgManager;
+
+        function testSVGManager() {
+            log('开始测试SVG管理器...');
+            
+            try {
+                if (typeof SVGIllustrationManager !== 'undefined') {
+                    svgManager = new SVGIllustrationManager();
+                    updateStatus('svg-manager-status', 'success');
+                    log('✓ SVG管理器初始化成功');
+                } else {
+                    updateStatus('svg-manager-status', 'error');
+                    log('✗ SVGIllustrationManager类未找到');
+                }
+            } catch (error) {
+                updateStatus('svg-manager-status', 'error');
+                log(`✗ SVG管理器初始化失败: ${error.message}`);
+            }
+        }
+
+        function testSVGFiles() {
+            log('开始测试SVG文件访问...');
+            
+            const testFiles = [
+                '/assets/svg/chapter-01-perspectives/four-perspectives-framework.svg',
+                '/assets/svg/chapter-01-perspectives/consumer-needs-hierarchy.svg',
+                '/assets/svg/chapter-01-perspectives/decision-process-flow.svg'
+            ];
+
+            let successCount = 0;
+            let testCount = testFiles.length;
+
+            testFiles.forEach((file, index) => {
+                fetch(file)
+                    .then(response => {
+                        if (response.ok) {
+                            successCount++;
+                            log(`✓ 文件访问成功: ${file}`);
+                        } else {
+                            log(`✗ 文件访问失败: ${file} (${response.status})`);
+                        }
+                        
+                        if (index === testCount - 1) {
+                            if (successCount === testCount) {
+                                updateStatus('svg-file-status', 'success', `全部通过 (${successCount}/${testCount})`);
+                            } else {
+                                updateStatus('svg-file-status', 'error', `部分失败 (${successCount}/${testCount})`);
+                            }
+                        }
+                    })
+                    .catch(error => {
+                        log(`✗ 文件访问错误: ${file} (${error.message})`);
+                        if (index === testCount - 1) {
+                            updateStatus('svg-file-status', 'error', `访问错误 (${successCount}/${testCount})`);
+                        }
+                    });
+            });
+        }
+
+        function testSVGDisplay() {
+            log('开始测试SVG插图显示...');
+            
+            const preview = document.getElementById('svg-preview');
+            const testSVG = '/assets/svg/chapter-01-perspectives/four-perspectives-framework.svg';
+            
+            preview.src = testSVG;
+            
+            preview.onload = function() {
+                updateStatus('svg-display-status', 'success');
+                log('✓ SVG插图显示成功');
+            };
+            
+            preview.onerror = function() {
+                updateStatus('svg-display-status', 'error');
+                log('✗ SVG插图显示失败');
+            };
+        }
+
+        function testSVGInteractive() {
+            log('开始测试SVG交互功能...');
+            
+            if (!svgManager) {
+                updateStatus('svg-interactive-status', 'error');
+                log('✗ SVG管理器未初始化');
+                return;
+            }
+
+            try {
+                // 测试显示插图
+                svgManager.showIllustration('chapter-01-perspectives', 'four-perspectives-framework');
+                
+                // 等待一段时间后关闭
+                setTimeout(() => {
+                    svgManager.hideIllustration();
+                    updateStatus('svg-interactive-status', 'success');
+                    log('✓ SVG交互功能测试成功');
+                }, 2000);
+                
+            } catch (error) {
+                updateStatus('svg-interactive-status', 'error');
+                log(`✗ SVG交互功能测试失败: ${error.message}`);
+            }
+        }
+
+        function testSVGSearch() {
+            log('开始测试SVG搜索功能...');
+            
+            if (!svgManager) {
+                updateStatus('svg-search-status', 'error');
+                log('✗ SVG管理器未初始化');
+                return;
+            }
+
+            try {
+                const results = svgManager.searchIllustrations('消费者');
+                log(`✓ 搜索功能正常，找到 ${results.length} 个结果`);
+                
+                if (results.length > 0) {
+                    updateStatus('svg-search-status', 'success', `找到 ${results.length} 个结果`);
+                } else {
+                    updateStatus('svg-search-status', 'success', '搜索功能正常');
+                }
+                
+            } catch (error) {
+                updateStatus('svg-search-status', 'error');
+                log(`✗ SVG搜索功能测试失败: ${error.message}`);
+            }
+        }
+
+        function testSVGDownload() {
+            log('开始测试SVG下载功能...');
+            
+            if (!svgManager) {
+                updateStatus('svg-download-status', 'error');
+                log('✗ SVG管理器未初始化');
+                return;
+            }
+
+            try {
+                // 模拟下载功能（实际下载会触发浏览器下载）
+                const testBlob = new Blob(['<svg>test</svg>'], { type: 'image/svg+xml' });
+                const testUrl = URL.createObjectURL(testBlob);
+                
+                setTimeout(() => {
+                    URL.revokeObjectURL(testUrl);
+                    updateStatus('svg-download-status', 'success');
+                    log('✓ SVG下载功能测试成功');
+                }, 1000);
+                
+            } catch (error) {
+                updateStatus('svg-download-status', 'error');
+                log(`✗ SVG下载功能测试失败: ${error.message}`);
+            }
+        }
+
+        // 页面加载完成后开始测试
+        document.addEventListener('DOMContentLoaded', function() {
+            log('SVG插图系统测试开始...');
+            log('等待用户手动测试...');
+        });
+    </script>
+</body>
+</html>

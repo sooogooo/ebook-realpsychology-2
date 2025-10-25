@@ -1,0 +1,178 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 注意力分配模型 -->
+  <defs>
+    <!-- 集中注意渐变 -->
+    <linearGradient id="focused-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 分散注意渐变 -->
+    <linearGradient id="divided-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 选择性注意渐变 -->
+    <linearGradient id="selective-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 持续注意渐变 -->
+    <linearGradient id="sustained-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    注意力分配模型
+  </text>
+  
+  <!-- 注意力资源池 -->
+  <g transform="translate(400, 300)">
+    <!-- 资源池 -->
+    <circle cx="0" cy="0" r="80" fill="white" stroke="#667eea" stroke-width="3" filter="url(#shadow)"/>
+    <text x="0" y="-5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#667eea">注意力</text>
+    <text x="0" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#667eea">资源池</text>
+    
+    <!-- 资源量指示器 -->
+    <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#667eea">100%</text>
+    
+    <!-- 注意力分配 -->
+    <g transform="translate(0, -120)">
+      <circle cx="0" cy="0" r="25" fill="url(#focused-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="集中注意：深度聚焦" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">集中</text>
+    </g>
+    
+    <g transform="translate(-120, 0)">
+      <circle cx="0" cy="0" r="25" fill="url(#selective-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="选择性注意：筛选信息" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">选择</text>
+    </g>
+    
+    <g transform="translate(120, 0)">
+      <circle cx="0" cy="0" r="25" fill="url(#divided-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="分散注意：多任务处理" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">分散</text>
+    </g>
+    
+    <g transform="translate(0, 120)">
+      <circle cx="0" cy="0" r="25" fill="url(#sustained-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="持续注意：长时间维持" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">持续</text>
+    </g>
+    
+    <!-- 连接线 -->
+    <path d="M 0 -95 L 0 -55" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M -95 0 L -55 0" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 95 0 L 55 0" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 0 95 L 0 55" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- 分配比例 -->
+    <text x="0" y="-140" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#e74c3c">35%</text>
+    <text x="-140" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2ecc71">25%</text>
+    <text x="140" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#f39c12">20%</text>
+    <text x="0" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#3498db">20%</text>
+  </g>
+  
+  <!-- 注意力特征 -->
+  <g transform="translate(50, 150)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">注意力特征：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">有限性：资源有限，需要分配</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">选择性：主动选择注意对象</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">转移性：可以快速转移焦点</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">波动性：注意力水平会变化</text>
+    </g>
+  </g>
+  
+  <!-- 医美消费中的注意力 -->
+  <g transform="translate(550, 150)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">医美消费中的注意力：</text>
+    
+    <text y="25" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 效果展示：前后对比图片</text>
+    <text y="45" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 价格信息：优惠活动</text>
+    <text y="65" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 医生资质：专业背景</text>
+    <text y="85" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 风险提示：并发症说明</text>
+    <text y="105" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">• 用户评价：成功案例</text>
+  </g>
+  
+  <!-- 注意力影响因素 -->
+  <g transform="translate(100, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">影响因素：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 个人兴趣和需求</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 信息重要性和紧急性</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 情绪状态和动机强度</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 环境干扰和疲劳程度</text>
+  </g>
+  
+  <!-- 注意力管理策略 -->
+  <g transform="translate(450, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">管理策略：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 减少环境干扰</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 分段处理信息</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 优先级排序</text>
+    <text y="80" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 适当休息恢复</text>
+  </g>
+  
+  <!-- 注意力消耗指示器 -->
+  <g transform="translate(50, 320)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">当前消耗：</text>
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="15" height="80" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="32" width="15" height="48" rx="7" fill="#f39c12"/>
+      <text x="25" y="60" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">60%</text>
+    </g>
+  </g>
+  
+  <!-- 注意力质量 -->
+  <g transform="translate(700, 320)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">注意质量：</text>
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="15" height="80" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="16" width="15" height="64" rx="7" fill="#2ecc71"/>
+      <text x="-35" y="60" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">80%</text>
+    </g>
+  </g>
+  
+  <!-- 动态注意力流动 -->
+  <circle r="3" fill="#667eea">
+    <animateMotion dur="4s" repeatCount="indefinite">
+      <mpath href="#attention-path"/>
+    </animateMotion>
+  </circle>
+  
+  <!-- 定义注意力路径 -->
+  <path id="attention-path" d="M 400 180 L 400 220 L 280 300 L 400 380 L 520 300 L 400 220" fill="none"/>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各类型查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

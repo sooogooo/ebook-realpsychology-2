@@ -1,0 +1,238 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    医美消费动机类型多样性
+  </text>
+  
+  <!-- 动机基本维度 -->
+  <rect x="200" y="80" width="400" height="60" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="3" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0277BD">
+    动机基本维度
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0277BD">
+    内在动机驱动45% • 外在动机驱动35% • 混合驱动20%（基于2000名消费者调查）
+  </text>
+  
+  <!-- 内在动机 -->
+  <rect x="50" y="160" width="320" height="160" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="2" rx="10"/>
+  <text x="210" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0277BD">
+    内在动机
+  </text>
+  <text x="210" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0277BD">
+    由内部需求驱动，满意度高，后悔率低
+  </text>
+  
+  <!-- 内在动机亚类型 -->
+  <rect x="70" y="220" width="90" height="85" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="115" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0277BD">
+    自我提升
+  </text>
+  <text x="115" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 提升形象
+  </text>
+  <text x="115" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 增强自信
+  </text>
+  <text x="115" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 实现理想
+  </text>
+  <text x="115" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 自我表达
+  </text>
+  <text x="115" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    (30%)
+  </text>
+  
+  <rect x="170" y="220" width="90" height="85" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="215" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0277BD">
+    健康考虑
+  </text>
+  <text x="215" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 改善功能
+  </text>
+  <text x="215" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 修复缺陷
+  </text>
+  <text x="215" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 减轻不适
+  </text>
+  <text x="215" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 预防问题
+  </text>
+  <text x="215" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    (10%)
+  </text>
+  
+  <rect x="270" y="220" width="90" height="85" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="315" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0277BD">
+    功能改善
+  </text>
+  <text x="315" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 日常功能
+  </text>
+  <text x="315" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 工作效率
+  </text>
+  <text x="315" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 运动能力
+  </text>
+  <text x="315" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    • 护理便利
+  </text>
+  <text x="315" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0277BD">
+    (5%)
+  </text>
+  
+  <!-- 外在动机 -->
+  <rect x="430" y="160" width="320" height="160" fill="#FFCDD2" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="590" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    外在动机
+  </text>
+  <text x="590" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    由外部因素驱动，期望落差大，后悔率高
+  </text>
+  
+  <!-- 外在动机亚类型 -->
+  <rect x="450" y="220" width="90" height="85" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="495" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#C62828">
+    社会压力
+  </text>
+  <text x="495" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 家庭期望
+  </text>
+  <text x="495" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 朋友影响
+  </text>
+  <text x="495" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 审美标准
+  </text>
+  <text x="495" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 担心评判
+  </text>
+  <text x="495" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    (20%)
+  </text>
+  
+  <rect x="550" y="220" width="90" height="85" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="595" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#C62828">
+    职业需求
+  </text>
+  <text x="595" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 形象要求
+  </text>
+  <text x="595" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 职场竞争
+  </text>
+  <text x="595" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 行业标准
+  </text>
+  <text x="595" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 职业机会
+  </text>
+  <text x="595" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    (10%)
+  </text>
+  
+  <rect x="650" y="220" width="90" height="85" fill="#FFCDD2" stroke="#E57373" stroke-width="1" rx="5"/>
+  <text x="695" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#C62828">
+    媒体影响
+  </text>
+  <text x="695" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 社交媒体
+  </text>
+  <text x="695" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 明星网红
+  </text>
+  <text x="695" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 广告宣传
+  </text>
+  <text x="695" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    • 流行趋势
+  </text>
+  <text x="695" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C62828">
+    (5%)
+  </text>
+  
+  <!-- 动机特征 -->
+  <rect x="100" y="340" width="600" height="120" fill="#F3E5F5" stroke="#CE93D8" stroke-width="2" rx="10"/>
+  <text x="400" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6A1B9A">
+    动机特征分析
+  </text>
+  
+  <!-- 四个特征 -->
+  <rect x="130" y="380" width="120" height="65" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="190" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    动态变化
+  </text>
+  <text x="190" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    随时间推移而变化
+  </text>
+  <text x="190" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    外在→内在发展
+  </text>
+  <text x="190" y="434" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    影响满意度和行为
+  </text>
+  
+  <rect x="270" y="380" width="120" height="65" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="330" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    层次性
+  </text>
+  <text x="330" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    满足不同需求层次
+  </text>
+  <text x="330" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    基础→高层次需求
+  </text>
+  <text x="330" y="434" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    收入教育水平差异
+  </text>
+  
+  <rect x="410" y="380" width="120" height="65" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="470" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    冲突整合
+  </text>
+  <text x="470" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    多重动机交织
+  </text>
+  <text x="470" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    可能存在冲突
+  </text>
+  <text x="470" y="434" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    整合者满意度高
+  </text>
+  
+  <rect x="550" y="380" width="120" height="65" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="610" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6A1B9A">
+    文化差异
+  </text>
+  <text x="610" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    个人主义文化
+  </text>
+  <text x="610" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    强调自我表达
+  </text>
+  <text x="610" y="434" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    集体主义重和谐
+  </text>
+  
+  <!-- 马斯洛需求层次 -->
+  <rect x="150" y="480" width="500" height="80" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    马斯洛需求层次对应
+  </text>
+  <text x="400" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#E65100">
+    生理安全需求 → 社交尊重需求 → 自我实现需求
+  </text>
+  <text x="400" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E65100">
+    不同收入教育水平消费者关注的需求层次存在显著差异
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图3.4：医美消费动机类型多样性、特征及需求层次分析
+  </text>
+</svg>

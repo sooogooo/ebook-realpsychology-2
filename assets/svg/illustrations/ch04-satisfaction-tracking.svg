@@ -1,0 +1,220 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    术后满意度追踪工具
+  </text>
+  
+  <!-- 工具说明 -->
+  <rect x="100" y="80" width="600" height="60" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    实用工具4.3
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    帮助消费者系统追踪和评估医美术后的满意度变化，识别影响满意度的关键因素
+  </text>
+  
+  <!-- 四个时间点 -->
+  <rect x="50" y="160" width="700" height="100" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="2" rx="10"/>
+  <text x="400" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0277BD">
+    追踪时间点
+  </text>
+  
+  <!-- 时间点1-4 -->
+  <rect x="100" y="200" width="140" height="50" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="170" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0277BD">
+    术后即时
+  </text>
+  <text x="170" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277BD">
+    1-7天
+  </text>
+  <text x="170" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0277BD">
+    恢复期观察
+  </text>
+  
+  <rect x="260" y="200" width="140" height="50" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="330" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0277BD">
+    术后短期
+  </text>
+  <text x="330" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277BD">
+    2-4周
+  </text>
+  <text x="330" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0277BD">
+    初步适应期
+  </text>
+  
+  <rect x="420" y="200" width="140" height="50" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="490" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0277BD">
+    术后中期
+  </text>
+  <text x="490" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277BD">
+    2-3个月
+  </text>
+  <text x="490" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0277BD">
+    心理稳定期
+  </text>
+  
+  <rect x="580" y="200" width="140" height="50" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="1" rx="5"/>
+  <text x="650" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0277BD">
+    术后长期
+  </text>
+  <text x="650" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277BD">
+    6个月以上
+  </text>
+  <text x="650" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0277BD">
+    完全适应期
+  </text>
+  
+  <!-- 四个评估维度 -->
+  <rect x="50" y="280" width="700" height="140" fill="#F3E5F5" stroke="#CE93D8" stroke-width="2" rx="10"/>
+  <text x="400" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6A1B9A">
+    满意度评估维度
+  </text>
+  
+  <!-- 技术效果 -->
+  <rect x="80" y="320" width="150" height="85" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="155" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    技术效果满意度
+  </text>
+  <text x="155" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    1. 整体改善效果
+  </text>
+  <text x="155" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    2. 期望匹配度
+  </text>
+  <text x="155" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    3. 效果自然度
+  </text>
+  <text x="155" y="386" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    4. 效果持久性
+  </text>
+  <text x="155" y="398" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    (每项1-5分)
+  </text>
+  
+  <!-- 服务体验 -->
+  <rect x="250" y="320" width="150" height="85" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="325" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    服务体验满意度
+  </text>
+  <text x="325" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    5. 术前咨询服务
+  </text>
+  <text x="325" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    6. 医生专业水平
+  </text>
+  <text x="325" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    7. 护理服务质量
+  </text>
+  <text x="325" y="386" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    8. 术后跟踪服务
+  </text>
+  <text x="325" y="398" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    (每项1-5分)
+  </text>
+  
+  <!-- 心理感受 -->
+  <rect x="420" y="320" width="150" height="85" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="495" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    心理感受满意度
+  </text>
+  <text x="495" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    9. 自信心提升
+  </text>
+  <text x="495" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    10. 焦虑减轻
+  </text>
+  <text x="495" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    11. 自我认同改善
+  </text>
+  <text x="495" y="386" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    12. 整体幸福感
+  </text>
+  <text x="495" y="398" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    (每项1-5分)
+  </text>
+  
+  <!-- 社会认同 -->
+  <rect x="590" y="320" width="150" height="85" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1" rx="5"/>
+  <text x="665" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    社会认同满意度
+  </text>
+  <text x="665" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    13. 他人积极评价
+  </text>
+  <text x="665" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    14. 社交活动改善
+  </text>
+  <text x="665" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    15. 职业形象提升
+  </text>
+  <text x="665" y="386" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6A1B9A">
+    16. 整体社会适应
+  </text>
+  <text x="665" y="398" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6A1B9A">
+    (每项1-5分)
+  </text>
+  
+  <!-- 满意度追踪表 -->
+  <rect x="100" y="440" width="600" height="100" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    满意度追踪表示例
+  </text>
+  
+  <!-- 表格结构 -->
+  <rect x="130" y="475" width="540" height="55" fill="#FFECB3" stroke="#FFB74D" stroke-width="1" rx="5"/>
+  <text x="150" y="490" text-anchor="start" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    评估维度
+  </text>
+  <text x="250" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    术后即时
+  </text>
+  <text x="330" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    术后短期
+  </text>
+  <text x="410" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    术后中期
+  </text>
+  <text x="490" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    术后长期
+  </text>
+  <text x="570" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#E65100">
+    变化趋势
+  </text>
+  
+  <text x="150" y="505" text-anchor="start" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    技术效果
+  </text>
+  <text x="150" y="518" text-anchor="start" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    服务体验
+  </text>
+  <text x="150" y="531" text-anchor="start" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    心理感受
+  </text>
+  <text x="150" y="544" text-anchor="start" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    社会认同
+  </text>
+  <text x="150" y="557" text-anchor="start" font-family="Arial, sans-serif" font-size="8" fill="#E65100">
+    整体满意度
+  </text>
+  
+  <!-- 虚线表格分隔 -->
+  <line x1="230" y1="480" x2="230" y2="525" stroke="#FFB74D" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="290" y1="480" x2="290" y2="525" stroke="#FFB74D" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="370" y1="480" x2="370" y2="525" stroke="#FFB74D" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="450" y1="480" x2="450" y2="525" stroke="#FFB74D" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="530" y1="480" x2="530" y2="525" stroke="#FFB74D" stroke-width="1" stroke-dasharray="2,2"/>
+  
+  <!-- 分析功能 -->
+  <rect x="100" y="560" width="600" height="25" fill="#C8E6C9" stroke="#81C784" stroke-width="1" rx="5"/>
+  <text x="400" y="577" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2E7D32">
+    关键功能：问题记录、满意度变化分析、影响因素识别、经验总结与建议、决策反思
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图4.7：术后满意度追踪工具结构、评估维度及动态分析框架
+  </text>
+</svg>

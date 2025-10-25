@@ -1,0 +1,5 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <rect x="300" y="200" width="200" height="200" rx="100" fill="#e74c3c" opacity="0.8"/>
+  <text x="400" y="300" text-anchor="middle" font-size="24" fill="white">医生视角</text>
+</svg>

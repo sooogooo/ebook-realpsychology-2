@@ -1,0 +1,173 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    混合研究方法在医美心理学中的应用
+  </text>
+  
+  <!-- 混合研究定义 -->
+  <rect x="50" y="80" width="700" height="60" fill="#C8E6C9" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    混合研究方法
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    结合定量和定性研究的优势，提供更全面和深入的研究视角，实现方法的互补和验证
+  </text>
+  
+  <!-- 主要设计类型 -->
+  <!-- 序列设计 -->
+  <rect x="50" y="160" width="200" height="120" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="150" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    序列设计
+  </text>
+  <text x="150" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 定性→定量
+  </text>
+  <text x="150" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 探索→验证
+  </text>
+  <text x="150" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 假设生成→检验
+  </text>
+  <text x="150" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 深度理解→广泛验证
+  </text>
+  <text x="150" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 适合新领域探索
+  </text>
+  
+  <!-- 并行设计 -->
+  <rect x="300" y="160" width="200" height="120" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="400" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    并行设计
+  </text>
+  <text x="400" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 同时进行
+  </text>
+  <text x="400" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 相互补充
+  </text>
+  <text x="400" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 三角验证
+  </text>
+  <text x="400" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 结果对比整合
+  </text>
+  <text x="400" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 提高研究效度
+  </text>
+  
+  <!-- 转换设计 -->
+  <rect x="550" y="160" width="200" height="120" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="650" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    转换设计
+  </text>
+  <text x="650" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 灵活切换
+  </text>
+  <text x="650" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 根据需要调整
+  </text>
+  <text x="650" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 迭代优化
+  </text>
+  <text x="650" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 适应性研究
+  </text>
+  <text x="650" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    • 动态问题解决
+  </text>
+  
+  <!-- 整合策略 -->
+  <rect x="100" y="300" width="600" height="80" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    数据整合策略
+  </text>
+  <text x="400" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#E65100">
+    连接整合 → 解释整合 → 转换整合 → 主题整合 → 理论整合
+  </text>
+  <text x="400" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#E65100">
+    (通过不同策略实现定量和定性数据的有机融合)
+  </text>
+  
+  <!-- 在医美心理学中的应用实例 -->
+  <rect x="50" y="400" width="700" height="100" fill="#E1BEE7" stroke="#BA68C8" stroke-width="2" rx="10"/>
+  <text x="400" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6A1B9A">
+    在医美心理学中的应用实例
+  </text>
+  
+  <!-- 应用实例 -->
+  <rect x="80" y="440" width="150" height="50" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="155" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    销售人员研究
+  </text>
+  <text x="155" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    问卷调查+参与观察
+  </text>
+  <text x="155" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    业绩与心理素质关系
+  </text>
+  
+  <rect x="250" y="440" width="150" height="50" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="325" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    消费者决策研究
+  </text>
+  <text x="325" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    大样本调查+深度访谈
+  </text>
+  <text x="325" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    决策机制全面理解
+  </text>
+  
+  <rect x="420" y="440" width="150" height="50" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="495" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    效果评估研究
+  </text>
+  <text x="495" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    客观测量+主观体验
+  </text>
+  <text x="495" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    多维度效果评估
+  </text>
+  
+  <rect x="590" y="440" width="150" height="50" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="665" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    机构改进研究
+  </text>
+  <text x="665" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    数据分析+行动研究
+  </text>
+  <text x="665" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    实践导向改进
+  </text>
+  
+  <!-- 优势与挑战 -->
+  <rect x="150" y="520" width="200" height="60" fill="#B3E5FC" stroke="#4FC3F7" stroke-width="2" rx="10"/>
+  <text x="250" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0277BD">
+    优势
+  </text>
+  <text x="250" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0277BD">
+    全面性 • 深度广度结合 • 互补验证
+  </text>
+  <text x="250" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0277BD">
+    更高研究效度
+  </text>
+  
+  <rect x="450" y="520" width="200" height="60" fill="#FFCDD2" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="550" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C62828">
+    挑战
+  </text>
+  <text x="550" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    复杂性高 • 整合难度大 • 资源需求多
+  </text>
+  <text x="550" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    需要多学科技能
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图2.9：混合研究方法的设计类型、整合策略及在医美心理学中的应用
+  </text>
+</svg>

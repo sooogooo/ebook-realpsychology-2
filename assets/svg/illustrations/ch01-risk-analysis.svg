@@ -1,0 +1,154 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    医美消费的高风险性分析
+  </text>
+  
+  <!-- 风险等级图示 -->
+  <rect x="50" y="80" width="700" height="120" fill="#FFEBEE" stroke="#F44336" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    风险等级评估
+  </text>
+  
+  <!-- 风险等级条 -->
+  <rect x="100" y="130" width="600" height="30" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+  <rect x="100" y="130" width="120" height="30" fill="#4CAF50"/>
+  <rect x="220" y="130" width="120" height="30" fill="#FFC107"/>
+  <rect x="340" y="130" width="120" height="30" fill="#FF9800"/>
+  <rect x="460" y="130" width="120" height="30" fill="#F44336"/>
+  <rect x="580" y="130" width="120" height="30" fill="#B71C1C"/>
+  
+  <text x="160" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">低风险</text>
+  <text x="280" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">中低风险</text>
+  <text x="400" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">中等风险</text>
+  <text x="520" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">高风险</text>
+  <text x="640" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">极高风险</text>
+  
+  <text x="400" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    医美消费风险等级分布（60%消费者低估风险）
+  </text>
+  
+  <!-- 主要风险类型 -->
+  <text x="400" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C3E50">
+    主要风险类型
+  </text>
+  
+  <!-- 健康风险 -->
+  <rect x="50" y="270" width="150" height="100" fill="#FFCDD2" stroke="#F44336" stroke-width="2" rx="8"/>
+  <text x="125" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C62828">
+    健康风险
+  </text>
+  <text x="125" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 手术并发症
+  </text>
+  <text x="125" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 感染风险
+  </text>
+  <text x="125" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 过敏反应
+  </text>
+  <text x="125" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 长期后遗症
+  </text>
+  
+  <!-- 心理风险 -->
+  <rect x="220" y="270" width="150" height="100" fill="#E1BEE7" stroke="#9C27B0" stroke-width="2" rx="8"/>
+  <text x="295" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A">
+    心理风险
+  </text>
+  <text x="295" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6A1B9A">
+    • 期望落差
+  </text>
+  <text x="295" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6A1B9A">
+    • 身体意象障碍
+  </text>
+  <text x="295" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6A1B9A">
+    • 成瘾倾向
+  </text>
+  <text x="295" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6A1B9A">
+    • 抑郁焦虑
+  </text>
+  
+  <!-- 财务风险 -->
+  <rect x="390" y="270" width="150" height="100" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="8"/>
+  <text x="465" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E65100">
+    财务风险
+  </text>
+  <text x="465" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E65100">
+    • 高额费用
+  </text>
+  <text x="465" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E65100">
+    • 重复消费
+  </text>
+  <text x="465" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E65100">
+    • 维护成本
+  </text>
+  <text x="465" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E65100">
+    • 经济负担
+  </text>
+  
+  <!-- 社会风险 -->
+  <rect x="560" y="270" width="150" height="100" fill="#FFEBEE" stroke="#E91E63" stroke-width="2" rx="8"/>
+  <text x="635" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C2185B">
+    社会风险
+  </text>
+  <text x="635" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C2185B">
+    • 社交压力
+  </text>
+  <text x="635" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C2185B">
+    • 人际关系变化
+  </text>
+  <text x="635" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C2185B">
+    • 职业影响
+  </text>
+  <text x="635" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C2185B">
+    • 社会偏见
+  </text>
+  
+  <!-- 风险认知偏差 -->
+  <rect x="100" y="400" width="600" height="120" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" rx="10"/>
+  <text x="400" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6A1B9A">
+    消费者风险认知偏差
+  </text>
+  
+  <!-- 偏差类型 -->
+  <circle cx="180" cy="470" r="25" fill="#CE93D8" stroke="#9C27B0" stroke-width="2"/>
+  <text x="180" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4A148C">
+    乐观偏见
+  </text>
+  
+  <circle cx="300" cy="470" r="25" fill="#CE93D8" stroke="#9C27B0" stroke-width="2"/>
+  <text x="300" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4A148C">
+    从众心理
+  </text>
+  
+  <circle cx="420" cy="470" r="25" fill="#CE93D8" stroke="#9C27B0" stroke-width="2"/>
+  <text x="420" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4A148C">
+    沉没成本
+  </text>
+  
+  <circle cx="540" cy="470" r="25" fill="#CE93D8" stroke="#9C27B0" stroke-width="2"/>
+  <text x="540" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4A148C">
+    确认偏见
+  </text>
+  
+  <circle cx="660" cy="470" r="25" fill="#CE93D8" stroke="#9C27B0" stroke-width="2"/>
+  <text x="660" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4A148C">
+    短视思维
+  </text>
+  
+  <!-- 连接线 -->
+  <line x1="180" y1="445" x2="180" y2="445" stroke="#9C27B0" stroke-width="1"/>
+  <line x1="300" y1="445" x2="300" y2="445" stroke="#9C27B0" stroke-width="1"/>
+  <line x1="420" y1="445" x2="420" y2="445" stroke="#9C27B0" stroke-width="1"/>
+  <line x1="540" y1="445" x2="540" y2="445" stroke="#9C27B0" stroke-width="1"/>
+  <line x1="660" y1="445" x2="660" y2="445" stroke="#9C27B0" stroke-width="1"/>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图1.3：医美消费的多维度风险分析及认知偏差
+  </text>
+</svg>

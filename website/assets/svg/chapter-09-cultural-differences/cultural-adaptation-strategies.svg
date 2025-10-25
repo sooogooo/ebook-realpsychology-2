@@ -1,0 +1,201 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 文化适应策略 -->
+  <defs>
+    <!-- 文化认知渐变 -->
+    <linearGradient id="cultural-awareness-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 技能发展渐变 -->
+    <linearGradient id="skill-development-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 行为调整渐变 -->
+    <linearGradient id="behavioral-adjustment-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 心理适应渐变 -->
+    <linearGradient id="psychological-adaptation-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    文化适应策略
+  </text>
+  
+  <!-- 适应策略中心 -->
+  <g transform="translate(400, 150)">
+    <text x="0" y="-50" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">文化适应策略</text>
+    
+    <!-- 文化认知 -->
+    <g transform="translate(-150, 0)">
+      <circle cx="0" cy="0" r="35" fill="url(#cultural-awareness-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="文化认知：了解文化差异" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">文化</text>
+      <text y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">认知</text>
+    </g>
+    
+    <!-- 技能发展 -->
+    <g transform="translate(-50, 0)">
+      <circle cx="0" cy="0" r="35" fill="url(#skill-development-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="技能发展：培养跨文化技能" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">技能</text>
+      <text y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">发展</text>
+    </g>
+    
+    <!-- 行为调整 -->
+    <g transform="translate(50, 0)">
+      <circle cx="0" cy="0" r="35" fill="url(#behavioral-adjustment-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="行为调整：调整行为方式" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">行为</text>
+      <text y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">调整</text>
+    </g>
+    
+    <!-- 心理适应 -->
+    <g transform="translate(150, 0)">
+      <circle cx="0" cy="0" r="35" fill="url(#psychological-adaptation-grad)" filter="url(#shadow)" data-interactive="true" data-tooltip="心理适应：心理状态调整" data-onclick="details"/>
+      <text y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">心理</text>
+      <text y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">适应</text>
+    </g>
+    
+    <!-- 连接线 -->
+    <path d="M -115 0 L -85 0" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M -15 0 L 15 0" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M 85 0 L 115 0" stroke="#667eea" stroke-width="2" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- 适应阶段 -->
+  <g transform="translate(100, 280)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">适应阶段：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">蜜月期：新鲜感和兴奋感</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">文化冲击：困惑和失落感</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">调整期：逐步适应和调整</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">适应期：文化融入和认同</text>
+    </g>
+  </g>
+  
+  <!-- 适应策略详情 -->
+  <g transform="translate(400, 280)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">策略详情：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#3498db"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">文化学习：学习目标文化知识和价值观</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#e74c3c"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">语言训练：提高语言沟通能力</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#f39c12"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">行为模仿：观察和模仿当地行为</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#2ecc71"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">心理调适：保持开放心态和耐心</text>
+    </g>
+  </g>
+  
+  <!-- 适应效果评估 -->
+  <g transform="translate(650, 200)">
+    <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">适应效果：</text>
+    
+    <!-- 效果指示器 -->
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="15" height="80" rx="7" fill="#ecf0f1"/>
+      <rect x="0" y="12" width="15" height="68" rx="7" fill="#2ecc71"/>
+      <text x="25" y="50" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">85%</text>
+    </g>
+    
+    <!-- 评估说明 -->
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">困难：0-40%</text>
+    <text x="0" y="135" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">一般：41-70%</text>
+    <text x="0" y="150" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">良好：71-100%</text>
+  </g>
+  
+  <!-- 成功因素 -->
+  <g transform="translate(100, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">成功因素：</text>
+    
+    <g transform="translate(0, 25)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">开放心态：愿意接受新文化和观念</text>
+    </g>
+    
+    <g transform="translate(0, 45)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">学习意愿：持续学习和适应能力</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">社会支持：获得当地支持和帮助</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle r="5" fill="#9b59b6"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">文化认同：建立文化认同感</text>
+    </g>
+  </g>
+  
+  <!-- 挑战应对 -->
+  <g transform="translate(400, 450)">
+    <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">挑战应对：</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 认识文化冲击的必然性</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 建立心理弹性机制</text>
+    <text y="60" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• 寻求专业支持和指导</text>
+  </g>
+  
+  <!-- 适应循环动画 -->
+  <g transform="translate(400, 150)">
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#667eea" stroke-width="2" opacity="0.3">
+      <animate attributeName="r" values="100;120;100" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- 循环箭头 -->
+    <path d="M 100,0 A 100,100 0 1,1 -100,0" fill="none" stroke="#667eea" stroke-width="2" opacity="0.5">
+      <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- 交互提示 -->
+  <g data-interactive="true" data-tooltip="点击各策略查看详细说明">
+    <circle cx="750" cy="50" r="20" fill="#667eea" opacity="0.8" cursor="pointer"/>
+    <text x="750" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">?</text>
+  </g>
+</svg>

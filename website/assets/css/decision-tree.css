@@ -1,0 +1,791 @@
+/**
+ * 交互式决策树可视化样式
+ * Interactive Decision Tree Visualization Styles
+ */
+
+/* 决策树容器 */
+.tree-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.tree-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tree-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.tree-description {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* 决策树类型选择 */
+.tree-type-selector {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tree-type-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tree-type-button {
+    padding: 1rem 1.5rem;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    background: white;
+    color: #6c757d;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 160px;
+    justify-content: center;
+}
+
+.tree-type-button:hover {
+    border-color: #98d8c8;
+    color: #98d8c8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tree-type-button.active {
+    background: #98d8c8;
+    border-color: #98d8c8;
+    color: white;
+}
+
+.tree-type-button .material-symbols-outlined {
+    font-size: 20px;
+}
+
+/* 决策树控制面板 */
+.tree-controls {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e9ecef;
+}
+
+.view-controls {
+    margin-bottom: 1rem;
+}
+
+.view-button,
+.control-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #6c757d;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-button:hover,
+.control-button:hover {
+    background: #5a6268;
+    transform: translateY(-1px);
+}
+
+.view-button.active {
+    background: #98d8c8;
+}
+
+.view-button.active:hover {
+    background: #7fc7b8;
+}
+
+/* 决策树图表 */
+.decision-tree-chart {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* 决策树节点样式 */
+.tree-node {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tree-node circle {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    transition: all 0.3s ease;
+}
+
+.tree-node:hover circle {
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+    transform: scale(1.1);
+}
+
+.tree-node text {
+    pointer-events: none;
+    user-select: none;
+}
+
+/* 节点类型颜色 */
+.node-start {
+    fill: #98d8c8;
+}
+
+.node-process {
+    fill: #b8a9c9;
+}
+
+.node-decision {
+    fill: #ff9a8b;
+}
+
+.node-action {
+    fill: #f4a261;
+}
+
+.node-outcome {
+    fill: #4ecdc4;
+}
+
+.node-risk {
+    fill: #e76f51;
+}
+
+.node-emotion {
+    fill: #a8dadc;
+}
+
+.node-category {
+    fill: #457b9d;
+}
+
+.node-concern {
+    fill: #f1faee;
+}
+
+.node-treatment {
+    fill: #a8dadc;
+}
+
+.node-stage {
+    fill: #457b9d;
+}
+
+.node-source {
+    fill: #f1faee;
+}
+
+.node-factor {
+    fill: #e63946;
+}
+
+/* 连接线样式 */
+.tree-link,
+.radial-link {
+    fill: none;
+    stroke: #e9ecef;
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+.tree-link:hover,
+.radial-link:hover {
+    stroke: #98d8c8;
+    stroke-width: 3;
+}
+
+/* 决策树区域 */
+.tree-section {
+    display: none;
+}
+
+.tree-section.active {
+    display: block;
+}
+
+/* 决策结果展示 */
+.decision-results {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+}
+
+.decision-results h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.result-overview {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.result-overview h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.result-overview p {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.path-details {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.path-details h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.path-node {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: white;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid #98d8c8;
+}
+
+.node-step {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #98d8c8;
+    min-width: 80px;
+}
+
+.node-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #2c3e50;
+    flex: 1;
+}
+
+.node-type {
+    font-size: 0.75rem;
+    color: #6c757d;
+    padding: 0.25rem 0.5rem;
+    background: #e9ecef;
+    border-radius: 4px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.node-description {
+    font-size: 0.875rem;
+    color: #6c757d;
+    flex: 2;
+}
+
+/* 决策历史 */
+.decision-history {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+}
+
+.decision-history h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.history-timeline {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.history-item {
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid #98d8c8;
+}
+
+.history-time {
+    font-size: 0.75rem;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.history-action {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.history-result {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* 加载状态 */
+.tree-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #6c757d;
+}
+
+.tree-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #e9ecef;
+    border-top: 4px solid #98d8c8;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 工具提示 */
+.decision-tooltip {
+    position: absolute;
+    padding: 0.75rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    pointer-events: none;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    max-width: 250px;
+}
+
+.decision-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .tree-container {
+        padding: 1rem;
+    }
+    
+    .tree-title {
+        font-size: 1.5rem;
+    }
+    
+    .tree-type-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tree-type-button {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .decision-tree-chart {
+        height: 400px;
+    }
+    
+    .path-node {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .node-step {
+        min-width: auto;
+    }
+    
+    .history-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .decision-tooltip {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tree-container {
+        padding: 0.75rem;
+    }
+    
+    .tree-title {
+        font-size: 1.2rem;
+    }
+    
+    .tree-description {
+        font-size: 0.875rem;
+    }
+    
+    .tree-type-button {
+        font-size: 0.75rem;
+        padding: 0.75rem 1rem;
+    }
+    
+    .decision-tree-chart {
+        height: 300px;
+    }
+    
+    .tree-controls {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .view-controls,
+    .interaction-controls {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .tree-controls,
+    .tree-type-selector,
+    .decision-results,
+    .decision-history {
+        display: none;
+    }
+    
+    .tree-container,
+    .decision-tree-chart {
+        box-shadow: none;
+        border: 1px solid #e9ecef;
+    }
+    
+    .decision-tree-chart {
+        height: 500px;
+    }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.slide-in {
+    animation: slideIn 0.6s ease-out;
+}
+
+/* 可访问性增强 */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* 高对比度模式 */
+@media (prefers-contrast: high) {
+    .tree-type-button,
+    .tree-controls,
+    .tree-container,
+    .decision-tree-chart,
+    .decision-results,
+    .decision-history {
+        border: 2px solid #000;
+    }
+    
+    .tree-node circle {
+        stroke: #000;
+        stroke-width: 2;
+    }
+    
+    .tree-link,
+    .radial-link {
+        stroke: #000;
+        stroke-width: 2;
+    }
+}
+
+/* 减少动画模式 */
+@media (prefers-reduced-motion: reduce) {
+    .tree-type-button,
+    .view-button,
+    .control-button,
+    .tree-node,
+    .tree-node circle,
+    .tree-link,
+    .radial-link,
+    .tree-spinner {
+        transition: none;
+    }
+    
+    .tree-spinner {
+        animation: none;
+    }
+    
+    .fade-in,
+    .slide-in {
+        animation: none;
+    }
+}
+
+/* 暗色主题支持 */
+@media (prefers-color-scheme: dark) {
+    .tree-container,
+    .tree-controls,
+    .decision-tree-chart,
+    .decision-results,
+    .decision-history {
+        background: #2c3e50;
+        color: #ecf0f1;
+        border-color: #7f8c8d;
+    }
+    
+    .tree-type-selector,
+    .result-overview,
+    .path-details,
+    .history-timeline,
+    .path-node,
+    .history-item {
+        background: #34495e;
+        color: #ecf0f1;
+        border-color: #7f8c8d;
+    }
+    
+    .tree-title,
+    .tree-description,
+    .decision-results h3,
+    .decision-history h3,
+    .result-overview h4,
+    .path-details h4,
+    .node-label,
+    .history-action {
+        color: #ecf0f1;
+    }
+    
+    .tree-type-button,
+    .view-button,
+    .control-button {
+        background: #34495e;
+        color: #ecf0f1;
+        border-color: #7f8c8d;
+    }
+    
+    .tree-type-button:hover,
+    .view-button:hover,
+    .control-button:hover {
+        border-color: #98d8c8;
+        color: #98d8c8;
+    }
+    
+    .tree-type-button.active,
+    .view-button.active {
+        background: #98d8c8;
+        color: #2c3e50;
+        border-color: #98d8c8;
+    }
+    
+    .tree-description,
+    .node-type,
+    .node-description,
+    .history-time,
+    .history-result {
+        color: #bdc3c7;
+    }
+    
+    .tree-link,
+    .radial-link {
+        stroke: #7f8c8d;
+    }
+    
+    .decision-tree-chart {
+        background: #34495e;
+    }
+}
+
+/* 焦点样式 */
+.tree-node:focus,
+.tree-type-button:focus,
+.view-button:focus,
+.control-button:focus {
+    outline: 2px solid #98d8c8;
+    outline-offset: 2px;
+}
+
+/* 键盘导航 */
+.tree-node.keyboard-focus,
+.tree-type-button.keyboard-focus,
+.view-button.keyboard-focus,
+.control-button.keyboard-focus {
+    outline: 2px solid #98d8c8;
+    outline-offset: 2px;
+}
+
+/* 特殊效果 */
+.node-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* 交互反馈 */
+.tree-node.selected circle {
+    stroke: #ff6b6b;
+    stroke-width: 3;
+    filter: drop-shadow(0 0 8px rgba(255, 107, 107, 0.5));
+}
+
+.tree-node.highlighted circle {
+    stroke: #98d8c8;
+    stroke-width: 3;
+    filter: drop-shadow(0 0 8px rgba(152, 216, 200, 0.5));
+}
+
+/* 数据可视化增强 */
+.tree-stats {
+    display: flex;
+    justify-content: space-around;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #98d8c8;
+}
+
+/* 图例 */
+.tree-legend {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

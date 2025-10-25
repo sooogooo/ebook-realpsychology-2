@@ -1,0 +1,173 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#FAF7F0"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    定性研究方法在医美心理学中的应用
+  </text>
+  
+  <!-- 定性研究定义 -->
+  <rect x="50" y="80" width="700" height="60" fill="#FFCDD2" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    定性研究方法
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#C62828">
+    通过深入的描述和解释来理解现象的本质和意义，强调主观体验、情境理解和深度洞察
+  </text>
+  
+  <!-- 主要方法网格 -->
+  <!-- 深度访谈 -->
+  <rect x="50" y="160" width="200" height="120" fill="#FFEBEE" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="150" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    深度访谈
+  </text>
+  <text x="150" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 一对一深入对话
+  </text>
+  <text x="150" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 开放性问题设计
+  </text>
+  <text x="150" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 真实想法和感受
+  </text>
+  <text x="150" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 丰富第一手资料
+  </text>
+  <text x="150" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 深度关系建立
+  </text>
+  
+  <!-- 焦点小组 -->
+  <rect x="300" y="160" width="200" height="120" fill="#FFEBEE" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="400" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    焦点小组
+  </text>
+  <text x="400" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 群体互动讨论
+  </text>
+  <text x="400" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 观点碰撞激发
+  </text>
+  <text x="400" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 集体意识发现
+  </text>
+  <text x="400" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 共同经验探索
+  </text>
+  <text x="400" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 社会动态观察
+  </text>
+  
+  <!-- 案例分析 -->
+  <rect x="550" y="160" width="200" height="120" fill="#FFEBEE" stroke="#E57373" stroke-width="2" rx="10"/>
+  <text x="650" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C62828">
+    案例分析
+  </text>
+  <text x="650" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 典型个案深入研究
+  </text>
+  <text x="650" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 多角度信息收集
+  </text>
+  <text x="650" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 理论实践验证
+  </text>
+  <text x="650" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 详细过程记录
+  </text>
+  <text x="650" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C62828">
+    • 深度情境理解
+  </text>
+  
+  <!-- 数据分析流程 -->
+  <rect x="100" y="300" width="600" height="80" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="400" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    数据分析流程
+  </text>
+  <text x="400" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#E65100">
+    数据收集 → 转录整理 → 编码分类 → 主题识别 → 模式发现 → 理论构建 → 验证反思
+  </text>
+  <text x="400" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#E65100">
+    (强调研究者的解释能力和理论敏感性)
+  </text>
+  
+  <!-- 在医美心理学中的应用 -->
+  <rect x="50" y="400" width="700" height="100" fill="#F3E5F5" stroke="#CE93D8" stroke-width="2" rx="10"/>
+  <text x="400" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6A1B9A">
+    在医美心理学中的应用实例
+  </text>
+  
+  <!-- 应用实例 -->
+  <rect x="80" y="440" width="150" height="50" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="155" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    医生挑战访谈
+  </text>
+  <text x="155" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    30+医生深度访谈
+  </text>
+  <text x="155" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    伦理冲突探索
+  </text>
+  
+  <rect x="250" y="440" width="150" height="50" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="325" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    消费者体验研究
+  </text>
+  <text x="325" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    决策过程深度理解
+  </text>
+  <text x="325" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    情感动机挖掘
+  </text>
+  
+  <rect x="420" y="440" width="150" height="50" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="495" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    成功案例分析
+  </text>
+  <text x="495" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    典型成功模式
+  </text>
+  <text x="495" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    关键因素识别
+  </text>
+  
+  <rect x="590" y="440" width="150" height="50" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1" rx="5"/>
+  <text x="665" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6A1B9A">
+    文化差异探索
+  </text>
+  <text x="665" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    跨文化比较研究
+  </text>
+  <text x="665" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">
+    价值观差异分析
+  </text>
+  
+  <!-- 优势与局限 -->
+  <rect x="150" y="520" width="200" height="60" fill="#E8F5E8" stroke="#81C784" stroke-width="2" rx="10"/>
+  <text x="250" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">
+    优势
+  </text>
+  <text x="250" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    深度理解 • 情境丰富 • 灵活性强 • 发现新现象
+  </text>
+  <text x="250" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    适合复杂问题研究
+  </text>
+  
+  <rect x="450" y="520" width="200" height="60" fill="#FFF8E1" stroke="#FFB74D" stroke-width="2" rx="10"/>
+  <text x="550" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E65100">
+    局限
+  </text>
+  <text x="550" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E65100">
+    主观性强 • 推广性有限 • 时间成本高
+  </text>
+  <text x="550" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E65100">
+    研究者偏见影响
+  </text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    图2.8：定性研究方法的主要类型、流程及在医美心理学中的应用
+  </text>
+</svg>
