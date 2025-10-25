@@ -1,0 +1,154 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>Typography System Reference</title>
+  <desc>Typography standards for medical aesthetics consumer psychology book illustrations</desc>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="300" fill="#2D3748">
+    Typography System
+  </text>
+  <text x="400" y="65" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#4A5568">
+    Font Hierarchy and Usage Guidelines
+  </text>
+
+  <!-- Font Stack Section -->
+  <text x="50" y="110" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" fill="#2D3748">
+    Font Stack
+  </text>
+
+  <!-- Primary Fonts -->
+  <g transform="translate(50, 130)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">Primary (Chinese)</text>
+    <text x="0" y="20" font-family="Source Han Sans CN, PingFang SC, Microsoft YaHei, sans-serif" font-size="12" fill="#4A5568">
+      Source Han Sans CN, PingFang SC, Microsoft YaHei, sans-serif
+    </text>
+    <text x="0" y="40" font-family="Source Han Sans CN, PingFang SC, Microsoft YaHei, sans-serif" font-size="11" fill="#48BB78">
+      医美消费心理学研究方法
+    </text>
+  </g>
+
+  <!-- Secondary Fonts -->
+  <g transform="translate(50, 210)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">Secondary (English)</text>
+    <text x="0" y="20" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#4A5568">
+      Inter, Helvetica Neue, Arial, sans-serif
+    </text>
+    <text x="0" y="40" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#48BB78">
+      Medical Aesthetics Consumer Psychology
+    </text>
+  </g>
+
+  <!-- Monospace Fonts -->
+  <g transform="translate(50, 290)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">Monospace (Data)</text>
+    <text x="0" y="20" font-family="JetBrains Mono, SF Mono, monospace" font-size="12" fill="#4A5568">
+      JetBrains Mono, SF Mono, monospace
+    </text>
+    <text x="0" y="40" font-family="JetBrains Mono, SF Mono, monospace" font-size="11" fill="#48BB78">
+      p-value: 0.042, n = 1,247
+    </text>
+  </g>
+
+  <!-- Type Scale Section -->
+  <text x="450" y="110" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" fill="#2D3748">
+    Type Scale
+  </text>
+
+  <!-- Display Typography -->
+  <g transform="translate(450, 130)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">Display Typography</text>
+    <text x="0" y="25" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="300" fill="#2D3748">Display</text>
+    <text x="120" y="25" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">32px / 300</text>
+
+    <text x="0" y="55" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="400" fill="#2D3748">Heading 1</text>
+    <text x="120" y="55" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">24px / 400</text>
+
+    <text x="0" y="80" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="400" fill="#2D3748">Heading 2</text>
+    <text x="120" y="80" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">20px / 400</text>
+
+    <text x="0" y="100" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="500" fill="#2D3748">Heading 3</text>
+    <text x="120" y="100" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">16px / 500</text>
+  </g>
+
+  <!-- Body Typography -->
+  <g transform="translate(450, 270)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">Body Typography</text>
+
+    <text x="0" y="25" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#2D3748">Body Large</text>
+    <text x="120" y="25" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">14px / 400</text>
+
+    <text x="0" y="45" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#2D3748">Body Regular</text>
+    <text x="120" y="45" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">12px / 400</text>
+
+    <text x="0" y="65" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" fill="#2D3748">Body Small</text>
+    <text x="120" y="65" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">10px / 400</text>
+
+    <text x="0" y="85" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="400" fill="#2D3748">Caption</text>
+    <text x="120" y="85" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">8px / 400</text>
+  </g>
+
+  <!-- Typography Rules -->
+  <text x="50" y="380" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" fill="#2D3748">
+    Typography Rules
+  </text>
+
+  <g transform="translate(50, 400)">
+    <rect x="0" y="0" width="700" height="120" fill="#F7FAFC" stroke="#E2E8F0" stroke-width="1" rx="4"/>
+
+    <!-- Rules List -->
+    <text x="15" y="20" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">
+      Guidelines:
+    </text>
+
+    <text x="15" y="38" font-family="Inter, Arial, sans-serif" font-size="9" fill="#4A5568">
+      • Use lightweight fonts (300-400 weight) for elegant appearance
+    </text>
+    <text x="15" y="52" font-family="Inter, Arial, sans-serif" font-size="9" fill="#4A5568">
+      • Maintain clear hierarchy through size and weight variations
+    </text>
+    <text x="15" y="66" font-family="Inter, Arial, sans-serif" font-size="9" fill="#4A5568">
+      • Ensure minimum 12px for body text in print applications
+    </text>
+    <text x="15" y="80" font-family="Inter, Arial, sans-serif" font-size="9" fill="#4A5568">
+      • Use all caps sparingly for headings only
+    </text>
+    <text x="15" y="94" font-family="Inter, Arial, sans-serif" font-size="9" fill="#4A5568">
+      • Line height: 1.2-1.6 depending on text size
+    </text>
+    <text x="15" y="108" font-family="Inter, Arial, sans-serif" font-size="9" fill="#4A5568">
+      • Text alignment: Left for body, Center for headings, Right for data
+    </text>
+  </g>
+
+  <!-- Application Examples -->
+  <text x="50" y="540" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" fill="#2D3748">
+    Application Examples
+  </text>
+
+  <!-- Example 1: Chart Labels -->
+  <g transform="translate(50, 560)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">Chart Labels</text>
+    <text x="0" y="15" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">Consumer Decision</text>
+    <text x="0" y="28" font-family="JetBrains Mono, SF Mono, monospace" font-size="8" fill="#718096">n=2,847 (92.3%)</text>
+  </g>
+
+  <!-- Example 2: Hierarchy -->
+  <g transform="translate(200, 560)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">Information Hierarchy</text>
+    <text x="0" y="15" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#2D3748">Chapter 3: Motivation</text>
+    <text x="0" y="28" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">Psychological Needs Analysis</text>
+  </g>
+
+  <!-- Example 3: Multi-language -->
+  <g transform="translate(400, 560)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">Multi-language Support</text>
+    <text x="0" y="15" font-family="Inter, Arial, sans-serif" font-size="12" fill="#2D3748">消费心理学</text>
+    <text x="0" y="28" font-family="Source Han Sans CN, PingFang SC, Microsoft YaHei, sans-serif" font-size="10" fill="#4A5568">Consumer Psychology</text>
+  </g>
+
+  <!-- Example 4: Data -->
+  <g transform="translate(580, 560)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">Data Presentation</text>
+    <text x="0" y="15" font-family="JetBrains Mono, SF Mono, monospace" font-size="10" fill="#2D3748">p &lt; 0.001</text>
+    <text x="0" y="28" font-family="Inter, Arial, sans-serif" font-size="8" fill="#718096">Statistical Significance</text>
+  </g>
+</svg>

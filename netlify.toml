@@ -1,0 +1,149 @@
+[build]
+  # Build command for Netlify
+  command = "npm run build:production"
+  # Directory to deploy
+  publish = "dist"
+  # Build directory for functions
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
+  NODE_ENV = "production"
+
+# Production context
+[context.production]
+  # Production-specific environment variables
+  [context.production.environment]
+    NODE_ENV = "production"
+    ANALYTICS_ID = "your-analytics-id"
+
+# Deploy preview context
+[context.deploy-preview]
+  # Preview-specific environment variables
+  [context.deploy-preview.environment]
+    NODE_ENV = "development"
+
+# Branch deploy context
+[context.branch-deploy]
+  # Branch deploy-specific environment variables
+  [context.branch-deploy.environment]
+    NODE_ENV = "development"
+
+# Headers for performance and security
+[[headers]]
+  # Apply to all assets
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  # Apply to HTML files
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  # Apply to CSS and JS files
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  # Apply to SVG and image files
+  for = "/assets/*.{svg,png,jpg,jpeg,webp,avif}"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirects for SEO and user experience
+[[redirects]]
+  # Redirect to index.html for SPA-like behavior
+  from = "/*"
+  to = "/index.html"
+  status = 404
+  conditions = {Role = ["admin"]}
+
+[[redirects]]
+  # Remove .html extensions
+  from = "/:page.html"
+  to = "/:page"
+  status = 301
+
+[[redirects]]
+  # Remove trailing slashes
+  from = "/:page/"
+  to = "/:page"
+  status = 301
+
+[[redirects]]
+  # Force HTTPS
+  from = "http://medical-aesthetics-psychology.com/*"
+  to = "https://medical-aesthetics-psychology.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  # Force WWW
+  from = "https://medical-aesthetics-psychology.com/*"
+  to = "https://www.medical-aesthetics-psychology.com/:splat"
+  status = 301
+
+# Edge functions for dynamic content
+[[edge_functions]]
+  path = "/api/*"
+  function = "api"
+
+[[edge_functions]]
+  path = "/search"
+  function = "search"
+
+# Brotli compression
+[build.processing]
+  skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = true
+[build.processing.js]
+  bundle = true
+  minify = true
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  optimize = true
+
+# Plugin configurations
+[[plugins]]
+  # Image optimization
+  package = "@netlify/plugin-nextjs"
+
+[[plugins]]
+  # Lighthouse CI
+  package = "@netlify/plugin-lighthouse"
+  [plugins.inputs]
+    output_path = "lighthouse.html"
+
+# Form handling (if needed)
+[[forms]]
+  name = "contact"
+  fields = ["name", "email", "message"]
+
+# Environment-specific settings
+[dev]
+  # Local development settings
+  command = "npm run serve:development"
+  port = 8080
+  publish = "website"
+  autoLaunch = false

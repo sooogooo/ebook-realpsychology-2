@@ -1,0 +1,93 @@
+# GitHub Pages Jekyll Configuration
+# Even though this is a static site, we use minimal Jekyll for GitHub Pages deployment
+
+# Site settings
+title: "医美消费心理学 - Medical Aesthetics Consumer Psychology"
+description: "从科学角度解读医美消费心理的专业著作，涵盖消费者、医生、销售人员和投资者四大视角"
+url: "https://your-username.github.io"
+baseurl: "/medical-aesthetics-psychology"
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins: []
+
+# Exclude these files from processing
+exclude:
+  - package.json
+  - package-lock.json
+  - webpack.config.js
+  - postcss.config.js
+  - .babelrc.js
+  - node_modules/
+  - scripts/
+  - src/
+  - .git/
+  - .gitignore
+  - netlify.toml
+  - vercel.json
+  - .lighthouserc.js
+  - .env*
+
+# Include these files in the build
+include:
+  - _pages
+  - assets/
+
+# Sass settings
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Optimizations
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
+# Collections (for organizing content)
+collections:
+  chapters:
+    output: true
+    permalink: /:collection/:name/
+
+# Default settings for front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      author: "重庆联合丽格科技有限公司"
+  - scope:
+      path: ""
+      type: "chapters"
+    values:
+      layout: "chapter"
+      author: "重庆联合丽格科技有限公司"
+
+# SEO and social
+lang: zh-CN
+locale: zh_CN
+twitter:
+  username: medical_aesthetics
+  card: summary_large_image
+facebook:
+  app_id: ""
+  publisher: ""
+  admins: ""
+logo: "/assets/images/logo.png"
+google_site_verification: ""
+bing_site_verification: ""
+
+# Analytics (optional)
+google_analytics: ""
+
+# GitHub Pages specific
+safe: true
+incremental: false
+show_dir_listing: false

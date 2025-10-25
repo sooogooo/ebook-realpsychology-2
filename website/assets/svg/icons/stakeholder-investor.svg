@@ -1,0 +1,54 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <title>Investor Stakeholder Icon</title>
+  <desc>Icon representing investor/business perspective</desc>
+
+  <!-- Main person outline -->
+  <g stroke="#2D3748" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Head -->
+    <circle cx="12" cy="7" r="4"/>
+
+    <!-- Body with business attire -->
+    <path d="M 5 21 v -2 a 6 6 0 0 1 6 -6 h 2 a 6 6 0 0 1 6 6 v 2"/>
+    <path d="M 7 13 h 10 v 8 h -10 z" stroke-width="1"/>
+
+    <!-- Tie -->
+    <path d="M 12 13 l 0 3 l -1 2 l 2 -1 l 2 1 l -1 -2 z" stroke-width="1"/>
+
+    <!-- Financial indicators -->
+    <!-- Chart/graph -->
+    <rect x="16" y="14" width="4" height="3" stroke-width="1" rx="0.5"/>
+    <polyline points="17,17 17.5,15.5 18,16 18.5,15" stroke-width="0.75" fill="none"/>
+
+    <!-- Money/finance symbols -->
+    <circle cx="7" cy="14" r="1.5" stroke-width="1"/>
+    <text x="7" y="15" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="500" fill="#2D3748">$</text>
+
+    <!-- Growth arrow -->
+    <path d="M 19 12 l 2 -2 l 0 3" stroke-width="1" fill="#48BB78" stroke="#48BB78"/>
+    <line x1="19" y1="12" x2="21" y2="12" stroke-width="1"/>
+  </g>
+
+  <!-- Strategic thinking elements -->
+  <g stroke="#4A5568" stroke-width="1" fill="none">
+    <!-- Thought bubbles representing analysis -->
+    <circle cx="8" cy="4" r="1.5" stroke-width="0.75"/>
+    <circle cx="16" cy="4" r="1.5" stroke-width="0.75"/>
+    <circle cx="12" cy="2" r="1.5" stroke-width="0.75"/>
+
+    <!-- Connection lines -->
+    <line x1="9.5" y1="4" x2="10.5" y2="3" stroke-width="0.5"/>
+    <line x1="13.5" y1="3" x2="14.5" y2="4" stroke-width="0.5"/>
+  </g>
+
+  <!-- Risk/return indicators -->
+  <g stroke="#ED8936" stroke-width="1" fill="none">
+    <path d="M 17 16 q 1 -1, 2 0" stroke-width="0.75"/>
+    <circle cx="18" cy="16" r="0.5" fill="#ED8936" stroke="#ED8936"/>
+  </g>
+
+  <!-- Success indicators -->
+  <g stroke="#48BB78" stroke-width="1" fill="#48BB78">
+    <circle cx="6" cy="10" r="0.5"/>
+    <circle cx="18" cy="10" r="0.5"/>
+  </g>
+</svg>

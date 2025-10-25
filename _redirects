@@ -1,0 +1,19 @@
+# Cloudflare Pages Redirects File
+
+# Remove .html extensions
+/:page.html /:page 301
+
+# Remove trailing slashes
+/:page/ /:page 301
+
+# Handle missing pages gracefully
+/* /index.html 404
+
+# Force HTTPS (handled by Cloudflare automatically)
+# http://medical-aesthetics-psychology.com/* https://medical-aesthetics-psychology.com/:splat 301
+
+# Force WWW (optional)
+# https://medical-aesthetics-psychology.com/* https://www.medical-aesthetics-psychology.com/:splat 301
+
+# Legacy redirects (if you have any old URLs to redirect)
+# /old-page /new-page 301

@@ -1,0 +1,30 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <title>Consumer Stakeholder Icon</title>
+  <desc>Icon representing consumer perspective in medical aesthetics</desc>
+
+  <!-- Main person outline -->
+  <g stroke="#2D3748" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Head -->
+    <circle cx="12" cy="7" r="4"/>
+
+    <!-- Body -->
+    <path d="M 5 21 v -2 a 6 6 0 0 1 6 -6 h 2 a 6 6 0 0 1 6 6 v 2"/>
+
+    <!-- Consumer elements -->
+    <!-- Shopping bag indicator -->
+    <path d="M 17 10 h 3 v 5 h -3 z" stroke-width="1"/>
+    <path d="M 17 10 a 1.5 1.5 0 0 1 3 0"/>
+
+    <!-- Decision/thought process -->
+    <circle cx="8" cy="12" r="1" fill="#48BB78" stroke="#48BB78"/>
+    <circle cx="12" cy="10" r="1" fill="#ED8936" stroke="#ED8936"/>
+    <circle cx="8" cy="8" r="1" fill="#4A5568" stroke="#4A5568"/>
+  </g>
+
+  <!-- Emotion/confidence indicator -->
+  <g stroke="#48BB78" stroke-width="1" fill="none">
+    <path d="M 9 6 q 0 -1, 1 -1 h 4 q 1 0, 1 1"/>
+    <circle cx="10" cy="7" r="0.5" fill="#2D3748"/>
+    <circle cx="14" cy="7" r="0.5" fill="#2D3748"/>
+  </g>
+</svg>

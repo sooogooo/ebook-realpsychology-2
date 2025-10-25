@@ -1,0 +1,110 @@
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <title>Chapter Header Template</title>
+  <desc>Template for chapter header illustrations with minimalist design</desc>
+
+  <!-- Background structure -->
+  <rect width="800" height="200" fill="none"/>
+
+  <!-- Subtle geometric pattern -->
+  <g stroke="#E2E8F0" stroke-width="0.5" fill="none" opacity="0.5">
+    <!-- Background grid -->
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="100" y1="0" x2="100" y2="200"/>
+    <line x1="700" y1="0" x2="700" y2="200"/>
+  </g>
+
+  <!-- Main illustration area -->
+  <g id="main-illustration" transform="translate(400, 100)">
+    <!-- Abstract brain/network concept -->
+    <!-- Central circular element -->
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#2D3748" stroke-width="1"/>
+
+    <!-- Connecting network nodes -->
+    <g stroke="#4A5568" stroke-width="0.75" fill="none">
+      <!-- Top connections -->
+      <line x1="0" y1="-25" x2="0" y2="-50" stroke-dasharray="3,3"/>
+      <line x1="18" y1="-18" x2="35" y2="-35" stroke-dasharray="3,3"/>
+      <line x1="-18" y1="-18" x2="-35" y2="-35" stroke-dasharray="3,3"/>
+
+      <!-- Bottom connections -->
+      <line x1="0" y1="25" x2="0" y2="50" stroke-dasharray="3,3"/>
+      <line x1="18" y1="18" x2="35" y2="35" stroke-dasharray="3,3"/>
+      <line x1="-18" y1="18" x2="-35" y2="35" stroke-dasharray="3,3"/>
+
+      <!-- Side connections -->
+      <line x1="-25" y1="0" x2="-50" y2="0" stroke-dasharray="3,3"/>
+      <line x1="25" y1="0" x2="50" y2="0" stroke-dasharray="3,3"/>
+    </g>
+
+    <!-- Connection nodes -->
+    <g fill="#48BB78" stroke="#2D3748" stroke-width="0.5">
+      <circle cx="0" cy="-50" r="5"/>
+      <circle cx="35" cy="-35" r="4"/>
+      <circle cx="-35" cy="-35" r="4"/>
+      <circle cx="50" cy="0" r="5"/>
+      <circle cx="0" cy="50" r="5"/>
+      <circle cx="35" cy="35" r="4"/>
+      <circle cx="-35" cy="35" r="4"/>
+      <circle cx="-50" cy="0" r="5"/>
+    </g>
+
+    <!-- Center icon/element placeholder -->
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#ED8936" stroke-width="1.5"/>
+  </g>
+
+  <!-- Chapter information area -->
+  <g id="chapter-info" transform="translate(50, 170)">
+    <!-- Chapter number placeholder -->
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#ED8936">
+      CHAPTER 00
+    </text>
+
+    <!-- Chapter title placeholder -->
+    <text x="0" y="15" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#2D3748">
+      Chapter Title Here
+    </text>
+  </g>
+
+  <!-- Decorative elements -->
+  <g id="decorative" stroke="#2D3748" stroke-width="0.5" fill="none" opacity="0.3">
+    <!-- Top left corner -->
+    <polyline points="20,20 20,40 40,40"/>
+
+    <!-- Top right corner -->
+    <polyline points="780,20 780,40 760,40"/>
+
+    <!-- Bottom left corner -->
+    <polyline points="20,180 20,160 40,160"/>
+
+    <!-- Bottom right corner -->
+    <polyline points="780,180 780,160 760,160"/>
+  </g>
+
+  <!-- Page indicator -->
+  <g transform="translate(750, 170)">
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#4A5568" stroke-width="0.5"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">
+      i
+    </text>
+  </g>
+
+  <!-- Customization guide -->
+  <g id="customization-guide" opacity="0.1">
+    <rect x="50" y="30" width="200" height="40" fill="#F7FAFC" stroke="#E2E8F0" stroke-width="0.5" rx="2"/>
+    <text x="60" y="45" font-family="Inter, Arial, sans-serif" font-size="8" fill="#718096">
+      Customize: Modify main-illustration
+    </text>
+    <text x="60" y="55" font-family="Inter, Arial, sans-serif" font-size="8" fill="#718096">
+      area for each chapter theme
+    </text>
+
+    <rect x="550" y="30" width="200" height="40" fill="#F7FAFC" stroke="#E2E8F0" stroke-width="0.5" rx="2"/>
+    <text x="560" y="45" font-family="Inter, Arial, sans-serif" font-size="8" fill="#718096">
+      Update chapter-info section
+    </text>
+    <text x="560" y="55" font-family="Inter, Arial, sans-serif" font-size="8" fill="#718096">
+      with actual chapter data
+    </text>
+  </g>
+</svg>

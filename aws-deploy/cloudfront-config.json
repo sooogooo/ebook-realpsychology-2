@@ -1,0 +1,147 @@
+{
+  "DistributionConfig": {
+    "CallerReference": "medical-aesthetics-psychology-$(timestamp)",
+    "Origins": {
+      "Quantity": 1,
+      "Items": [
+        {
+          "Id": "S3-medical-aesthetics-psychology",
+          "DomainName": "medical-aesthetics-psychology-website.s3.amazonaws.com",
+          "S3OriginConfig": {
+            "OriginAccessIdentity": "origin-access-identity/cloudfront/E1234567890ABCDEF"
+          }
+        }
+      ]
+    },
+    "DefaultCacheBehavior": {
+      "TargetOriginId": "S3-medical-aesthetics-psychology",
+      "ViewerProtocolPolicy": "redirect-to-https",
+      "TrustedSigners": {
+        "Enabled": false,
+        "Quantity": 0
+      },
+      "ForwardedValues": {
+        "QueryString": false,
+        "Cookies": {
+          "Forward": "none"
+        },
+        "Headers": {
+          "Quantity": 0
+        }
+      },
+      "MinTTL": 0,
+      "DefaultTTL": 86400,
+      "MaxTTL": 31536000,
+      "Compress": true,
+      "LambdaFunctionAssociations": {
+        "Quantity": 0
+      },
+      "FunctionAssociations": {
+        "Quantity": 0
+      }
+    },
+    "CacheBehaviors": {
+      "Quantity": 4,
+      "Items": [
+        {
+          "PathPattern": "*.css",
+          "TargetOriginId": "S3-medical-aesthetics-psychology",
+          "ViewerProtocolPolicy": "https-only",
+          "MinTTL": 31536000,
+          "MaxTTL": 31536000,
+          "Compress": true,
+          "ForwardedValues": {
+            "QueryString": false,
+            "Cookies": {
+              "Forward": "none"
+            },
+            "Headers": {
+              "Quantity": 0
+            }
+          }
+        },
+        {
+          "PathPattern": "*.js",
+          "TargetOriginId": "S3-medical-aesthetics-psychology",
+          "ViewerProtocolPolicy": "https-only",
+          "MinTTL": 31536000,
+          "MaxTTL": 31536000,
+          "Compress": true,
+          "ForwardedValues": {
+            "QueryString": false,
+            "Cookies": {
+              "Forward": "none"
+            },
+            "Headers": {
+              "Quantity": 0
+            }
+          }
+        },
+        {
+          "PathPattern": "*.html",
+          "TargetOriginId": "S3-medical-aesthetics-psychology",
+          "ViewerProtocolPolicy": "https-only",
+          "MinTTL": 0,
+          "MaxTTL": 0,
+          "Compress": true,
+          "ForwardedValues": {
+            "QueryString": false,
+            "Cookies": {
+              "Forward": "none"
+            },
+            "Headers": {
+              "Quantity": 0
+            }
+          }
+        },
+        {
+          "PathPattern": "*.{svg,png,jpg,jpeg,webp,avif,gif}",
+          "TargetOriginId": "S3-medical-aesthetics-psychology",
+          "ViewerProtocolPolicy": "https-only",
+          "MinTTL": 31536000,
+          "MaxTTL": 31536000,
+          "Compress": true,
+          "ForwardedValues": {
+            "QueryString": false,
+            "Cookies": {
+              "Forward": "none"
+            },
+            "Headers": {
+              "Quantity": 0
+            }
+          }
+        }
+      ]
+    },
+    "Comment": "Medical Aesthetics Consumer Psychology Website Distribution",
+    "PriceClass": "PriceClass_100",
+    "Enabled": true,
+    "Aliases": {
+      "Quantity": 2,
+      "Items": [
+        "medical-aesthetics-psychology.com",
+        "www.medical-aesthetics-psychology.com"
+      ]
+    },
+    "ViewerCertificate": {
+      "CloudFrontDefaultCertificate": false,
+      "ACMCertificateArn": "arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012",
+      "SSLSupportMethod": "sni-only",
+      "MinimumProtocolVersion": "TLSv1.2_2021",
+      "Certificate": "arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
+    },
+    "Logging": {
+      "Enabled": true,
+      "IncludeCookies": false,
+      "Bucket": "medical-aesthetics-psychology-logs.s3.amazonaws.com",
+      "Prefix": "cloudfront-logs/"
+    },
+    "GeoRestriction": {
+      "RestrictionType": "none",
+      "Quantity": 0
+    },
+    "WebACLId": "",
+    "HttpVersion": "http2",
+    "IsIPV6Enabled": true
+  }
+}

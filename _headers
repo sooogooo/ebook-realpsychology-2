@@ -1,0 +1,39 @@
+# Cloudflare Pages Headers File
+# Applied to all requests
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# HTML files - no caching
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# CSS and JS files - long-term caching
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images and media files
+/assets/*.{svg,png,jpg,jpeg,webp,avif,gif}
+  Cache-Control: public, max-age=31536000, immutable
+
+# Font files
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Sitemap and robots
+/sitemap.xml
+/sitemap.xml.gz
+/robots.txt
+  Cache-Control: public, max-age=86400
+
+# API endpoints (if any)
+/api/*
+  Cache-Control: no-cache
+  X-Custom-Header: "API-Response"

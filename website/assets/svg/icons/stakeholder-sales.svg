@@ -1,0 +1,42 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <title>Sales Personnel Stakeholder Icon</title>
+  <desc>Icon representing sales/consultant perspective</desc>
+
+  <!-- Main person outline -->
+  <g stroke="#2D3748" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Head with professional appearance -->
+    <circle cx="12" cy="7" r="4"/>
+
+    <!-- Body with business attire -->
+    <path d="M 5 21 v -2 a 6 6 0 0 1 6 -6 h 2 a 6 6 0 0 1 6 6 v 2"/>
+    <path d="M 7 13 h 10 v 8 h -10 z" stroke-width="1"/>
+
+    <!-- Tie -->
+    <path d="M 12 13 l 0 3 l -1 2 l 2 -1 l 2 1 l -1 -2 z" stroke-width="1"/>
+
+    <!-- Communication elements -->
+    <!-- Speech bubbles -->
+    <circle cx="7" cy="5" r="2" stroke-width="1" fill="none"/>
+    <path d="M 6 6 l -1 1 l 1 0" stroke-width="1" fill="#4A5568"/>
+
+    <circle cx="17" cy="5" r="2" stroke-width="1" fill="none"/>
+    <path d="M 18 6 l 1 1 l -1 0" stroke-width="1" fill="#4A5568"/>
+
+    <!-- Product/service presentation -->
+    <rect x="16" y="14" width="4" height="3" stroke-width="1" rx="0.5"/>
+    <path d="M 16 14 q 2 -1, 4 0" stroke-width="1"/>
+  </g>
+
+  <!-- Trust/reliability indicators -->
+  <g stroke="#48BB78" stroke-width="1" fill="none">
+    <path d="M 9 10 q 0 -1, 1 -1 h 4 q 1 0, 1 1" stroke-width="0.75"/>
+    <circle cx="12" cy="10" r="0.5" fill="#48BB78" stroke="#48BB78"/>
+  </g>
+
+  <!-- Sales expertise symbols -->
+  <g stroke="#ED8936" stroke-width="1" fill="#ED8936">
+    <circle cx="8" cy="12" r="0.5"/>
+    <circle cx="16" cy="12" r="0.5"/>
+    <circle cx="12" cy="14" r="0.5"/>
+  </g>
+</svg>

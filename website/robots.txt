@@ -1,0 +1,93 @@
+# Medical Aesthetics Consumer Psychology Website - Robots.txt
+# Last updated: 2025-01-01
+
+User-agent: *
+Allow: /
+
+# Allow search engines to access important directories
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/svg/
+Allow: /assets/images/
+Allow: /assets/fonts/
+
+# Disallow access to temporary and system directories
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /logs/
+Disallow: /.well-known/
+Disallow: /_next/
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Allow social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Disallow aggressive crawlers
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemaps
+Sitemap: https://medical-aesthetics-psychology.com/sitemap.xml
+Sitemap: https://medical-aesthetics-psychology.com/sitemap.xml.gz
+
+# Special instructions for Chinese search engines
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: Sogou web spider
+Allow: /
+Crawl-delay: 2
+
+User-agent: 360Spider
+Allow: /
+Crawl-delay: 2
+
+# Mobile bot instructions
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Bingbot-Mobile
+Allow: /
+
+# Accessibility and assistive technologies
+User-agent: ScreenReaders
+Allow: /
+
+# Non-browser user agents
+User-agent: curl
+Disallow: /
+
+User-agent: wget
+Disallow: /

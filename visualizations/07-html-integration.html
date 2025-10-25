@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Aesthetics Consumer Psychology - Visualizations</title>
+
+    <!-- Mermaid.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            /* Primary Colors */
+            --primary-blue: #2E86AB;
+            --primary-blue-light: #E3F2FD;
+            --primary-blue-dark: #1565C0;
+
+            /* Secondary Colors */
+            --secondary-purple: #A23B72;
+            --secondary-purple-light: #F3E5F5;
+            --secondary-purple-dark: #6A1B9A;
+
+            /* Accent Colors */
+            --accent-green: #8FD14F;
+            --accent-green-light: #E8F5E8;
+            --accent-green-dark: #2E7D32;
+
+            --warning-orange: #F18F01;
+            --warning-orange-light: #FFF3E0;
+            --warning-orange-dark: #E65100;
+
+            /* Neutral Colors */
+            --neutral-gray: #4A4A4A;
+            --neutral-gray-light: #F5F5F5;
+            --neutral-gray-dark: #212121;
+
+            /* Typography */
+            --font-family: 'Segoe UI', 'Microsoft YaHei', Tahoma, Geneva, Verdana, sans-serif;
+            --font-size-base: 14px;
+            --font-size-large: 16px;
+            --font-size-small: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size-base);
+            line-height: 1.6;
+            color: var(--neutral-gray-dark);
+            background-color: var(--neutral-gray-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-purple));
+            color: white;
+            border-radius: 10px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .visualization-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .visualization-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .visualization-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .card-header {
+            background: var(--primary-blue-light);
+            padding: 20px;
+            border-bottom: 3px solid var(--primary-blue);
+        }
+
+        .card-header h2 {
+            color: var(--primary-blue-dark);
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .card-header p {
+            color: var(--primary-blue);
+            font-size: var(--font-size-small);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .mermaid {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 12px;
+        }
+
+        .controls {
+            background: var(--secondary-purple-light);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn {
+            background: var(--primary-blue);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: var(--font-size-small);
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--primary-blue-dark);
+        }
+
+        .btn-secondary {
+            background: var(--secondary-purple);
+        }
+
+        .btn-secondary:hover {
+            background: var(--secondary-purple-dark);
+        }
+
+        .download-options {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .info-panel {
+            background: var(--accent-green-light);
+            border-left: 4px solid var(--accent-green);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .info-panel h3 {
+            color: var(--accent-green-dark);
+            margin-bottom: 10px;
+        }
+
+        .info-panel ul {
+            margin-left: 20px;
+        }
+
+        .info-panel li {
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: var(--neutral-gray);
+            color: white;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .visualization-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .download-options {
+                justify-content: center;
+            }
+        }
+
+        /* Mermaid Custom Styles */
+        .node rect,
+        .node circle,
+        .node ellipse,
+        .node polygon {
+            stroke-width: 2px;
+        }
+
+        .edgePath .path {
+            stroke: var(--neutral-gray);
+            stroke-width: 1px;
+        }
+
+        .edgeLabel {
+            background-color: transparent;
+            font-size: 11px;
+        }
+
+        .label text,
+        .label {
+            font-family: var(--font-family);
+        }
+
+        /* Loading animation */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--primary-blue);
+        }
+
+        .spinner {
+            border: 3px solid var(--primary-blue-light);
+            border-top: 3px solid var(--primary-blue);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>《这才是医美消费心理学》</h1>
+            <p>Medical Aesthetics Consumer Psychology - 可视化图表库</p>
+        </header>
+
+        <div class="controls">
+            <div>
+                <button class="btn" onclick="exportAllDiagrams()">导出所有图表</button>
+                <button class="btn btn-secondary" onclick="resetView()">重置视图</button>
+            </div>
+            <div class="download-options">
+                <button class="btn" onclick="downloadSVG()">下载 SVG</button>
+                <button class="btn" onclick="downloadPNG()">下载 PNG</button>
+                <button class="btn" onclick="printDiagrams()">打印图表</button>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h3>📊 使用说明</h3>
+            <ul>
+                <li>点击图表卡片可查看放大版本</li>
+                <li>使用下载按钮可将图表保存为图片文件</li>
+                <li>所有图表均基于医美消费心理学研究数据制作</li>
+                <li>图表支持响应式设计，适配各种屏幕尺寸</li>
+            </ul>
+        </div>
+
+        <div class="visualization-grid">
+            <!-- Consumer Decision Journey -->
+            <div class="visualization-card">
+                <div class="card-header">
+                    <h2>消费者决策流程</h2>
+                    <p>Consumer Decision Journey - 完整的医美消费决策过程</p>
+                </div>
+                <div class="card-body">
+                    <div class="mermaid">
+                        flowchart TD
+                            A[需求识别] --> B[初步搜索]
+                            B --> C[深入评估]
+                            C --> D[决策确认]
+                            D --> E[术后适应]
+
+                            A --> A1[触发事件<br/>• 社交媒体<br/>• 朋友推荐<br/>• 年龄焦虑]
+                            B --> B1[信息渠道<br/>• 互联网<br/>• 专业咨询<br/>• 朋友建议]
+                            C --> C1[专业评估<br/>• 医生面诊<br/>• 风险评估<br/>• 期望管理]
+                            D --> D1[最终确认<br/>• 方案确定<br/>• 机构选择<br/>• 时间安排]
+                            E --> E1[满意度形成<br/>• 技术效果<br/>• 服务体验<br/>• 心理感受]
+
+                            classDef processStyle fill:#E3F2FD,stroke:#2196F3,color:#1565C0
+                            classDef stageStyle fill:#E8F5E8,stroke:#4CAF50,color:#2E7D32
+
+                            class A,B,C,D,E processStyle
+                            class A1,B1,C1,D1,E1 stageStyle
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholder Ecosystem -->
+            <div class="visualization-card">
+                <div class="card-header">
+                    <h2>利益相关者生态</h2>
+                    <p>Stakeholder Ecosystem - 多方协作的医美消费生态</p>
+                </div>
+                <div class="card-body">
+                    <div class="mermaid">
+                        graph TD
+                            Consumer[消费者<br/>Consumer] --> Doctor[医生<br/>Doctor]
+                            Consumer --> Sales[销售人员<br/>Sales]
+                            Consumer --> Investor[投资者<br/>Investor]
+
+                            Doctor -->|专业服务| Institution[医美机构]
+                            Sales -->|客户关系| Institution
+                            Investor -->|资金支持| Institution
+                            Institution -->|平台支持| Consumer
+
+                            subgraph "价值交换网络"
+                                Consumer -- "需求→支付" --> Institution
+                                Institution -- "服务→体验" --> Consumer
+                                Doctor -- "专业→信任" --> Consumer
+                                Sales -- "咨询→关系" --> Consumer
+                                Investor -- "战略→回报" --> Institution
+                            end
+
+                            classDef consumerStyle fill:#E3F2FD,stroke:#2196F3,color:#1565C0
+                            classDef professionalStyle fill:#F3E5F5,stroke:#9C27B0,color:#6A1B9A
+                            classDef businessStyle fill:#E8F5E8,stroke:#4CAF50,color:#2E7D32
+                            classDef institutionStyle fill:#FFF8E1,stroke:#FFC107,color:#F57C00
+
+                            class Consumer consumerStyle
+                            class Doctor,Sales professionalStyle
+                            class Investor businessStyle
+                            class Institution institutionStyle
+                    </div>
+                </div>
+            </div>
+
+            <!-- Motivation Framework -->
+            <div class="visualization-card">
+                <div class="card-header">
+                    <h2>动机分析框架</h2>
+                    <p>Motivation Framework - 医美消费的多维度动机分析</p>
+                </div>
+                <div class="card-body">
+                    <div class="mermaid">
+                        graph TB
+                            subgraph "动机类型"
+                                Internal[内在动机<br/>Intrinsic]
+                                External[外在动机<br/>Extrinsic]
+                            end
+
+                            subgraph "内在动机细分"
+                                SelfImprove[自我提升<br/>• 自信心<br/>• 理想形象]
+                                Health[健康考虑<br/>• 功能修复<br/>• 预防保健]
+                                Function[功能改善<br/>• 日常便利<br/>• 效率提升]
+                            end
+
+                            subgraph "外在动机细分"
+                                Social[社会压力<br/>• 家庭期望<br/>• 同行影响]
+                                Career[职业需求<br/>• 形象要求<br/>• 竞争力]
+                                Media[媒体影响<br/>• 社交媒体<br/>• 明星效应]
+                            end
+
+                            subgraph "动机特征"
+                                InternalFeatures[内在动机特征<br/>• 满意度更高<br/>• 决策更理性]
+                                ExternalFeatures[外在动机特征<br/>• 容易受影响<br/>• 期望值较高]
+                            end
+
+                            Internal --> SelfImprove
+                            Internal --> Health
+                            Internal --> Function
+                            External --> Social
+                            External --> Career
+                            External --> Media
+
+                            SelfImprove --> InternalFeatures
+                            Health --> InternalFeatures
+                            Function --> InternalFeatures
+                            Social --> ExternalFeatures
+                            Career --> ExternalFeatures
+                            Media --> ExternalFeatures
+
+                            classDef internalStyle fill:#E8F5E8,stroke:#4CAF50,color:#2E7D32
+                            classDef externalStyle fill:#E3F2FD,stroke:#2196F3,color:#1565C0
+                            classDef featureStyle fill:#F3E5F5,stroke:#9C27B0,color:#6A1B9A
+
+                            class Internal,SelfImprove,Health,Function internalStyle
+                            class External,Social,Career,Media externalStyle
+                            class InternalFeatures,ExternalFeatures featureStyle
+                    </div>
+                </div>
+            </div>
+
+            <!-- Risk Assessment -->
+            <div class="visualization-card">
+                <div class="card-header">
+                    <h2>风险评估流程</h2>
+                    <p>Risk Assessment Workflow - 系统化的风险识别与评估</p>
+                </div>
+                <div class="card-body">
+                    <div class="mermaid">
+                        flowchart TD
+                            Start[风险评估开始] --> Identify{风险识别}
+
+                            Identify --> Physical[生理风险<br/>• 手术并发症<br/>• 感染风险<br/>• 效果不佳]
+                            Identify --> Psychological[心理风险<br/>• 术后后悔<br/>• 焦虑抑郁<br/>• 期望落差]
+                            Identify --> Financial[财务风险<br/>• 超出预算<br/>• 后续费用<br/>• 机会成本]
+                            Identify --> Social[社会风险<br/>• 他人评价<br/>• 关系变化<br/>• 职业影响]
+
+                            Physical --> Matrix[综合风险矩阵]
+                            Psychological --> Matrix
+                            Financial --> Matrix
+                            Social --> Matrix
+
+                            Matrix --> Evaluate{风险承受能力}
+
+                            Evaluate --> Low[低承受能力<br/>• 保守策略<br/>• 延迟决策]
+                            Evaluate --> Medium[中等承受能力<br/>• 平衡策略<br/>• 应急预案]
+                            Evaluate --> High[高承受能力<br/>• 积极策略<br/>• 风险接受]
+
+                            classDef riskStyle fill:#FFF3E0,stroke:#FF9800,color:#E65100
+                            classDef assessStyle fill:#E3F2FD,stroke:#2196F3,color:#1565C0
+                            classDef strategyStyle fill:#E8F5E8,stroke:#4CAF50,color:#2E7D32
+
+                            class Start,Identify assessStyle
+                            class Physical,Psychological,Financial,Social riskStyle
+                            class Matrix,Evaluate assessStyle
+                            class Low,Medium,High strategyStyle
+                    </div>
+                </div>
+            </div>
+
+            <!-- Satisfaction Tracking -->
+            <div class="visualization-card">
+                <div class="card-header">
+                    <h2>满意度追踪时间线</h2>
+                    <p>Satisfaction Tracking Timeline - 术后满意度动态变化</p>
+                </div>
+                <div class="card-body">
+                    <div class="mermaid">
+                        gantt
+                            title 术后满意度追踪时间线
+                            dateFormat  YYYY-MM-DD
+                            axisFormat  %m月%d日
+
+                            section 技术效果满意度
+                            整体改善效果      :active, tech1, 2024-01-01, 180d
+                            期望匹配度        :active, tech2, 2024-01-01, 180d
+                            效果自然度        :active, tech3, 2024-01-15, 165d
+
+                            section 服务体验满意度
+                            医生专业水平      :crit, service1, 2024-01-01, 30d
+                            护理服务质量      :active, service2, 2024-01-01, 60d
+                            术后跟踪服务      :active, service3, 2024-01-01, 180d
+
+                            section 心理感受满意度
+                            自信心提升程度     :active, psych1, 2024-01-01, 180d
+                            焦虑减轻程度       :active, psych2, 2024-01-01, 90d
+                            自我认同改善       :active, psych3, 2024-01-15, 165d
+
+                            section 评估时间点
+                            术后即时评估      :milestone, m1, 2024-01-07, 0d
+                            术后短期评估      :milestone, m2, 2024-01-28, 0d
+                            术后中期评估      :milestone, m3, 2024-03-28, 0d
+                            术后长期评估      :milestone, m4, 2024-06-28, 0d
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assessment Tools -->
+            <div class="visualization-card">
+                <div class="card-header">
+                    <h2>评估工具集成</h2>
+                    <p>Assessment Tools Integration - 多维度评估工具体系</p>
+                </div>
+                <div class="card-body">
+                    <div class="mermaid">
+                        graph TB
+                            subgraph "评估阶段"
+                                PreDecision[术前评估<br/>• 动机分析<br/>• 机构评估]
+                                DecisionMaking[决策阶段<br/>• 信息质量<br/>• 偏差检查]
+                                PostOperation[术后追踪<br/>• 满意度<br/>• 效果评估]
+                            end
+
+                            subgraph "评估工具"
+                                Tool1[决策评估表<br/>• 综合评分<br/>• 风险预警]
+                                Tool2[机构评估表<br/>• 资质检查<br/>• 服务评价]
+                                Tool3[信息质量表<br/>• 来源评估<br/>• 内容验证]
+                                Tool4[满意度追踪<br/>• 多维评价<br/>• 动态监测]
+                            end
+
+                            subgraph "输出结果"
+                                PersonalReport[个人报告<br/>• 详细分析<br/>• 改进建议]
+                                Dashboard[监控仪表板<br/>• 实时追踪<br/>• 趋势分析]
+                            end
+
+                            PreDecision --> Tool1
+                            PreDecision --> Tool2
+                            DecisionMaking --> Tool3
+                            PostOperation --> Tool4
+
+                            Tool1 --> PersonalReport
+                            Tool2 --> PersonalReport
+                            Tool3 --> Dashboard
+                            Tool4 --> Dashboard
+
+                            classDef stageStyle fill:#E3F2FD,stroke:#2196F3,color:#1565C0
+                            classDef toolStyle fill:#E8F5E8,stroke:#4CAF50,color:#2E7D32
+                            classDef outputStyle fill:#FFF8E1,stroke:#FFC107,color:#F57C00
+
+                            class PreDecision,DecisionMaking,PostOperation stageStyle
+                            class Tool1,Tool2,Tool3,Tool4 toolStyle
+                            class PersonalReport,Dashboard outputStyle
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="info-panel">
+            <h3>📈 数据来源与说明</h3>
+            <ul>
+                <li><strong>研究基础</strong>: 基于1500+医美消费者的大规模调查研究</li>
+                <li><strong>数据周期</strong>: 2020-2024年追踪研究数据</li>
+                <li><strong>样本特征</strong>: 覆盖不同年龄、收入、地区的医美消费者</li>
+                <li><strong>研究方法</strong>: 定量与定性相结合的混合研究方法</li>
+                <li><strong>更新频率</strong>: 图表基于最新研究数据定期更新</li>
+            </ul>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 医美消费心理学研究项目 | Medical Aesthetics Consumer Psychology Research</p>
+            <p>本可视化系统基于《这才是医美消费心理学》一书的研究成果制作</p>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Mermaid
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            themeVariables: {
+                primaryColor: '#2E86AB',
+                primaryTextColor: '#1565C0',
+                primaryBorderColor: '#2E86AB',
+                lineColor: '#4A4A4A',
+                secondaryColor: '#F3E5F5',
+                tertiaryColor: '#E8F5E8',
+                background: '#F5F5F5',
+                mainBkg: '#E3F2FD',
+                secondBkg: '#F8F9FA',
+                tertiaryBkg: '#FFF3E0',
+                primaryBorderColor: '#2196F3',
+                secondaryBorderColor: '#9C27B0',
+                tertiaryBorderColor: '#4CAF50'
+            },
+            fontFamily: "'Segoe UI', 'Microsoft YaHei', Tahoma, Geneva, Verdana, sans-serif",
+            fontSize: 12,
+            flowchart: {
+                curve: 'basis',
+                padding: 20
+            },
+            gantt: {
+                titleTopMargin: 25,
+                barHeight: 20,
+                barGap: 4,
+                topPadding: 50,
+                leftPadding: 75,
+                gridLineStartPadding: 35,
+                fontSize: 11,
+                sectionFontSize: 11,
+                numberSectionStyles: 4
+            }
+        });
+
+        // Utility Functions
+        function exportAllDiagrams() {
+            console.log('Exporting all diagrams...');
+            // Implementation for batch export
+            alert('批量导出功能开发中...');
+        }
+
+        function resetView() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Reset any zoom or filters
+            console.log('View reset');
+        }
+
+        function downloadSVG() {
+            // Find all mermaid diagrams and export as SVG
+            const mermaidElements = document.querySelectorAll('.mermaid svg');
+            if (mermaidElements.length === 0) {
+                alert('未找到可导出的图表');
+                return;
+            }
+
+            mermaidElements.forEach((svg, index) => {
+                const svgData = new XMLSerializer().serializeToString(svg);
+                const blob = new Blob([svgData], { type: 'image/svg+xml' });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = `medical-aesthetics-diagram-${index + 1}.svg`;
+                link.click();
+                URL.revokeObjectURL(url);
+            });
+        }
+
+        function downloadPNG() {
+            alert('PNG导出功能需要额外的库支持，建议使用浏览器截图功能或导出SVG后转换');
+        }
+
+        function printDiagrams() {
+            window.print();
+        }
+
+        // Add click handlers to visualization cards
+        document.querySelectorAll('.visualization-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const title = this.querySelector('.card-header h2').textContent;
+                console.log(`Opening detailed view of: ${title}`);
+                // Could implement modal or full-screen view here
+            });
+        });
+
+        // Add keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey || e.metaKey) {
+                switch(e.key) {
+                    case 's':
+                        e.preventDefault();
+                        downloadSVG();
+                        break;
+                    case 'p':
+                        e.preventDefault();
+                        printDiagrams();
+                        break;
+                }
+            }
+        });
+
+        // Loading completion indicator
+        window.addEventListener('load', function() {
+            console.log('Medical Aesthetics Consumer Psychology Visualizations loaded successfully');
+        });
+    </script>
+</body>
+</html>

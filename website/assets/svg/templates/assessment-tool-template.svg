@@ -1,0 +1,168 @@
+<svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <title>Interactive Assessment Tool Template</title>
+  <desc>Template for professional assessment tool interfaces</desc>
+
+  <!-- Background -->
+  <rect width="600" height="500" fill="#F7FAFC"/>
+
+  <!-- Header area -->
+  <rect x="0" y="0" width="600" height="60" fill="#2D3748"/>
+  <text x="300" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="white">
+    医美消费心理评估工具
+  </text>
+  <text x="300" y="45" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#E2E8F0">
+    Medical Aesthetics Psychology Assessment
+  </text>
+
+  <!-- Progress indicator -->
+  <g transform="translate(50, 80)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">
+      Progress: Question 3 of 10
+    </text>
+    <rect x="0" y="8" width="500" height="8" fill="#E2E8F0" stroke="none" rx="4"/>
+    <rect x="0" y="8" width="150" height="8" fill="#48BB78" stroke="none" rx="4"/>
+    <circle cx="150" cy="12" r="6" fill="#48BB78" stroke="#2D3748" stroke-width="1"/>
+    <text x="250" y="35" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" fill="#4A5568">
+      30% Complete
+    </text>
+  </g>
+
+  <!-- Question area -->
+  <g transform="translate(50, 140)">
+    <rect x="0" y="0" width="500" height="80" fill="white" stroke="#E2E8F0" stroke-width="1" rx="6"/>
+    <text x="20" y="25" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#2D3748">
+      Question 3:
+    </text>
+    <text x="20" y="45" font-family="Inter, Arial, sans-serif" font-size="12" fill="#2D3748">
+      当考虑医美项目时，您最关注以下哪个方面？
+    </text>
+    <text x="20" y="62" font-family="Inter, Arial, sans-serif" font-size="9" font-style="italic" fill="#4A5568">
+      What factor do you consider most when choosing medical aesthetic procedures?
+    </text>
+  </g>
+
+  <!-- Answer options -->
+  <g id="answer-options" transform="translate(50, 240)">
+    <!-- Option A -->
+    <g data-interactive="true" data-option="A">
+      <rect x="0" y="0" width="500" height="40" fill="white" stroke="#E2E8F0" stroke-width="1" rx="4" cursor="pointer"/>
+      <circle cx="25" cy="20" r="8" fill="white" stroke="#4A5568" stroke-width="1"/>
+      <text x="40" y="15" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">
+        A. 安全性和专业性
+      </text>
+      <text x="40" y="27" font-family="Inter, Arial, sans-serif" font-size="8" fill="#4A5568">
+        Safety and professional expertise
+      </text>
+    </g>
+
+    <!-- Option B -->
+    <g transform="translate(0, 50)" data-interactive="true" data-option="B">
+      <rect x="0" y="0" width="500" height="40" fill="white" stroke="#E2E8F0" stroke-width="1" rx="4" cursor="pointer"/>
+      <circle cx="25" cy="20" r="8" fill="white" stroke="#4A5568" stroke-width="1"/>
+      <text x="40" y="15" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">
+        B. 效果和持久性
+      </text>
+      <text x="40" y="27" font-family="Inter, Arial, sans-serif" font-size="8" fill="#4A5568">
+        Effectiveness and durability
+      </text>
+    </g>
+
+    <!-- Option C -->
+    <g transform="translate(0, 100)" data-interactive="true" data-option="C">
+      <rect x="0" y="0" width="500" height="40" fill="white" stroke="#E2E8F0" stroke-width="1" rx="4" cursor="pointer"/>
+      <circle cx="25" cy="20" r="8" fill="white" stroke="#4A5568" stroke-width="1"/>
+      <text x="40" y="15" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">
+        C. 费用和性价比
+      </text>
+      <text x="40" y="27" font-family="Inter, Arial, sans-serif" font-size="8" fill="#4A5568">
+        Cost and value for money
+      </text>
+    </g>
+
+    <!-- Option D -->
+    <g transform="translate(0, 150)" data-interactive="true" data-option="D">
+      <rect x="0" y="0" width="500" height="40" fill="white" stroke="#E2E8F0" stroke-width="1" rx="4" cursor="pointer"/>
+      <circle cx="25" cy="20" r="8" fill="white" stroke="#4A5568" stroke-width="1"/>
+      <text x="40" y="15" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#2D3748">
+        D. 便利性和服务体验
+      </text>
+      <text x="40" y="27" font-family="Inter, Arial, sans-serif" font-size="8" fill="#4A5568">
+        Convenience and service experience
+      </text>
+    </g>
+  </g>
+
+  <!-- Navigation buttons -->
+  <g transform="translate(50, 440)">
+    <!-- Previous button -->
+    <g data-interactive="true" data-action="previous">
+      <rect x="0" y="0" width="100" height="35" fill="white" stroke="#4A5568" stroke-width="1" rx="4" cursor="pointer"/>
+      <text x="50" y="22" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">
+        上一题
+      </text>
+    </g>
+
+    <!-- Next button -->
+    <g transform="translate(400, 0)" data-interactive="true" data-action="next">
+      <rect x="0" y="0" width="100" height="35" fill="#48BB78" stroke="#48BB78" stroke-width="1" rx="4" cursor="pointer"/>
+      <text x="50" y="22" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="white">
+        下一题
+      </text>
+    </g>
+  </g>
+
+  <!-- Timer indicator -->
+  <g transform="translate(480, 85)">
+    <circle cx="0" cy="0" r="15" fill="white" stroke="#ED8936" stroke-width="1"/>
+    <text x="0" y="0" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="500" fill="#ED8936">
+      5:23
+    </text>
+    <text x="0" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="7" fill="#4A5568">
+      Time
+    </text>
+  </g>
+
+  <!-- Visual feedback for selected option (example for Option B) -->
+  <g id="selected-state" opacity="0.3">
+    <rect x="50" y="290" width="500" height="40" fill="#F0FFF4" stroke="#48BB78" stroke-width="2" rx="4"/>
+    <circle cx="75" cy="310" r="8" fill="#48BB78" stroke="#48BB78" stroke-width="1"/>
+    <circle cx="75" cy="310" r="3" fill="white"/>
+  </g>
+
+  <!-- Scale indicator (for Likert-type questions) -->
+  <g transform="translate(50, 240)" opacity="0.1">
+    <text x="0" y="-10" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" fill="#2D3748">
+      Alternative Scale Format:
+    </text>
+    <rect x="0" y="0" width="500" height="60" fill="white" stroke="#E2E8F0" stroke-width="1" rx="4"/>
+
+    <!-- Scale points -->
+    <g font-family="Inter, Arial, sans-serif" font-size="8" fill="#4A5568">
+      <circle cx="60" cy="30" r="4" fill="none" stroke="#4A5568" stroke-width="1"/>
+      <text x="60" y="50" text-anchor="middle">Strongly<br/>Disagree</text>
+
+      <circle cx="160" cy="30" r="4" fill="none" stroke="#4A5568" stroke-width="1"/>
+      <text x="160" y="50" text-anchor="middle">Disagree</text>
+
+      <circle cx="260" cy="30" r="4" fill="none" stroke="#4A5568" stroke-width="1"/>
+      <text x="260" y="50" text-anchor="middle">Neutral</text>
+
+      <circle cx="360" cy="30" r="4" fill="none" stroke="#4A5568" stroke-width="1"/>
+      <text x="360" y="50" text-anchor="middle">Agree</text>
+
+      <circle cx="460" cy="30" r="4" fill="none" stroke="#4A5568" stroke-width="1"/>
+      <text x="460" y="50" text-anchor="middle">Strongly<br/>Agree</text>
+
+      <!-- Connection line -->
+      <line x1="60" y1="30" x2="460" y2="30" stroke="#4A5568" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- Help/Info indicator -->
+  <g transform="translate(560, 100)" data-interactive="true" data-help="true">
+    <circle cx="0" cy="0" r="10" fill="#ED8936" fill-opacity="0.1" stroke="#ED8936" stroke-width="1" cursor="pointer"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#ED8936">
+      ?
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <title>Chapter 1 Header - Multidimensional Perspectives</title>
+  <desc>Chapter header for multidimensional perspectives content</desc>
+
+  <!-- Background structure -->
+  <rect width="800" height="200" fill="none"/>
+
+  <!-- Subtle geometric pattern -->
+  <g stroke="#E2E8F0" stroke-width="0.5" fill="none" opacity="0.5">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="100" y1="0" x2="100" y2="200"/>
+    <line x1="700" y1="0" x2="700" y2="200"/>
+  </g>
+
+  <!-- Four perspectives visualization -->
+  <g id="four-perspectives" transform="translate(400, 100)">
+    <!-- Central connection point -->
+    <circle cx="0" cy="0" r="8" fill="#2D3748"/>
+
+    <!-- Four perspective nodes -->
+    <!-- Consumer (top) -->
+    <g transform="translate(0, -40)">
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#48BB78" stroke-width="1"/>
+      <circle cx="0" cy="0" r="3" fill="#48BB78"/>
+      <line x1="0" y1="15" x2="0" y2="25" stroke="#4A5568" stroke-width="0.75"/>
+      <text x="0" y="-25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" fill="#2D3748">
+        Consumer
+      </text>
+    </g>
+
+    <!-- Doctor (right) -->
+    <g transform="translate(40, 0)">
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#ED8936" stroke-width="1"/>
+      <circle cx="0" cy="0" r="3" fill="#ED8936"/>
+      <line x1="-15" y1="0" x2="-25" y2="0" stroke="#4A5568" stroke-width="0.75"/>
+      <text x="25" y="4" text-anchor="start" font-family="Inter, Arial, sans-serif" font-size="9" fill="#2D3748">
+        Doctor
+      </text>
+    </g>
+
+    <!-- Sales (bottom) -->
+    <g transform="translate(0, 40)">
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#4A5568" stroke-width="1"/>
+      <circle cx="0" cy="0" r="3" fill="#4A5568"/>
+      <line x1="0" y1="-15" x2="0" y2="-25" stroke="#4A5568" stroke-width="0.75"/>
+      <text x="0" y="30" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" fill="#2D3748">
+        Sales
+      </text>
+    </g>
+
+    <!-- Investor (left) -->
+    <g transform="translate(-40, 0)">
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#2D3748" stroke-width="1"/>
+      <circle cx="0" cy="0" r="3" fill="#2D3748"/>
+      <line x1="15" y1="0" x2="25" y2="0" stroke="#4A5568" stroke-width="0.75"/>
+      <text x="-25" y="4" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="9" fill="#2D3748">
+        Investor
+      </text>
+    </g>
+
+    <!-- Connection lines forming square -->
+    <g stroke="#4A5568" stroke-width="0.5" fill="none" stroke-dasharray="2,2">
+      <line x1="0" y1="-25" x2="25" y2="0"/>
+      <line x1="25" y1="0" x2="0" y2="25"/>
+      <line x1="0" y1="25" x2="-25" y2="0"/>
+      <line x1="-25" y1="0" x2="0" y2="-25"/>
+    </g>
+  </g>
+
+  <!-- Chapter information -->
+  <g id="chapter-info" transform="translate(50, 170)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#ED8936">
+      CHAPTER 01
+    </text>
+    <text x="0" y="15" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#2D3748">
+      多维视角分析
+    </text>
+    <text x="0" y="28" font-family="Inter, Arial, sans-serif" font-size="10" font-style="italic" fill="#4A5568">
+      Multidimensional Perspectives
+    </text>
+  </g>
+
+  <!-- Decorative elements -->
+  <g stroke="#2D3748" stroke-width="0.5" fill="none" opacity="0.3">
+    <polyline points="20,20 20,40 40,40"/>
+    <polyline points="780,20 780,40 760,40"/>
+    <polyline points="20,180 20,160 40,160"/>
+    <polyline points="780,180 780,160 760,160"/>
+  </g>
+
+  <!-- Page indicator -->
+  <g transform="translate(750, 170)">
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#4A5568" stroke-width="0.5"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">
+      01
+    </text>
+  </g>
+</svg>

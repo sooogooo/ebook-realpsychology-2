@@ -1,0 +1,179 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <title>Motivation Theory Concept Diagram</title>
+  <desc>Conceptual diagram for motivation theory in medical aesthetics consumption</desc>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="#F7FAFC"/>
+
+  <!-- Title -->
+  <text x="300" y="35" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="400" fill="#2D3748">
+    消费动机理论框架
+  </text>
+  <text x="300" y="55" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">
+    Consumption Motivation Theory Framework
+  </text>
+
+  <!-- Main framework -->
+  <g id="motivation-framework" transform="translate(300, 200)">
+    <!-- Central core: Consumer Motivation -->
+    <g id="core-motivation">
+      <circle cx="0" cy="0" r="45" fill="none" stroke="#2D3748" stroke-width="1"/>
+      <text x="0" y="-5" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#2D3748">
+        消费动机
+      </text>
+      <text x="0" y="8" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" fill="#4A5568">
+        Consumer Motivation
+      </text>
+    </g>
+
+    <!-- Intrinsic Motivation (Top) -->
+    <g transform="translate(0, -110)">
+      <rect x="-55" y="-22" width="110" height="44" fill="none" stroke="#48BB78" stroke-width="1" rx="6"/>
+      <text x="0" y="-5" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#2D3748">
+        内在动机
+      </text>
+      <text x="0" y="8" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" fill="#4A5568">
+        Intrinsic Motivation
+      </text>
+      <!-- Sub-elements -->
+      <g transform="translate(-30, -35)" font-family="Inter, Arial, sans-serif" font-size="7" fill="#718096">
+        <text x="0" y="0">自我提升</text>
+        <text x="0" y="8">Self-improvement</text>
+      </g>
+      <g transform="translate(30, -35)" font-family="Inter, Arial, sans-serif" font-size="7" fill="#718096">
+        <text x="0" y="0">自信心</text>
+        <text x="0" y="8">Self-confidence</text>
+      </g>
+    </g>
+
+    <!-- Extrinsic Motivation (Right) -->
+    <g transform="translate(120, 0)">
+      <rect x="-55" y="-22" width="110" height="44" fill="none" stroke="#ED8936" stroke-width="1" rx="6"/>
+      <text x="0" y="-5" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#2D3748">
+        外在动机
+      </text>
+      <text x="0" y="8" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" fill="#4A5568">
+        Extrinsic Motivation
+      </text>
+      <!-- Sub-elements -->
+      <g transform="translate(35, -15)" font-family="Inter, Arial, sans-serif" font-size="7" fill="#718096">
+        <text x="0" y="0">社交认可</text>
+        <text x="0" y="8">Social approval</text>
+      </g>
+      <g transform="translate(35, 0)" font-family="Inter, Arial, sans-serif" font-size="7" fill="#718096">
+        <text x="0" y="0">职业需求</text>
+        <text x="0" y="8">Career needs</text>
+      </g>
+      <g transform="translate(35, 15)" font-family="Inter, Arial, sans-serif" font-size="7" fill="#718096">
+        <text x="0" y="0">年龄焦虑</text>
+        <text x="0" y="8">Age anxiety</text>
+      </g>
+    </g>
+
+    <!-- Social Influence (Bottom) -->
+    <g transform="translate(0, 110)">
+      <rect x="-55" y="-22" width="110" height="44" fill="none" stroke="#2D3748" stroke-width="1" rx="6"/>
+      <text x="0" y="-5" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#2D3748">
+        社会影响
+      </text>
+      <text x="0" y="8" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" fill="#4A5568">
+        Social Influence
+      </text>
+      <!-- Sub-elements -->
+      <g transform="translate(-30, 35)" font-family="Inter, Arial, sans-serif" font-size="7" fill="#718096">
+        <text x="0" y="0">媒体影响</text>
+        <text x="0" y="8">Media influence</text>
+      </g>
+      <g transform="translate(30, 35)" font-family="Inter, Arial, sans-serif" font-size="7" fill="#718096">
+        <text x="0" y="0">同辈压力</text>
+        <text x="0" y="8">Peer pressure</text>
+      </g>
+    </g>
+
+    <!-- Psychological Needs (Left) -->
+    <g transform="translate(-120, 0)">
+      <rect x="-55" y="-22" width="110" height="44" fill="none" stroke="#4A5568" stroke-width="1" rx="6"/>
+      <text x="0" y="-5" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#2D3748">
+        心理需求
+      </text>
+      <text x="0" y="8" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" fill="#4A5568">
+        Psychological Needs
+      </text>
+      <!-- Sub-elements -->
+      <g transform="translate(-35, -15)" font-family="Inter, Arial, sans-serif" font-size="7" fill="#718096">
+        <text x="0" y="0">安全需求</text>
+        <text x="0" y="8">Safety needs</text>
+      </g>
+      <g transform="translate(-35, 0)" font-family="Inter, Arial, sans-serif" font-size="7" fill="#718096">
+        <text x="0" y="0">归属感</text>
+        <text x="0" y="8">Belonging</text>
+      </g>
+      <g transform="translate(-35, 15)" font-family="Inter, Arial, sans-serif" font-size="7" fill="#718096">
+        <text x="0" y="0">尊重需求</text>
+        <text x="0" y="8">Respect needs</text>
+      </g>
+    </g>
+
+    <!-- Primary connections -->
+    <g stroke="#4A5568" stroke-width="0.75" fill="none">
+      <line x1="0" y1="-45" x2="0" y2="-88"/>
+      <line x1="45" y1="0" x2="65" y2="0"/>
+      <line x1="0" y1="45" x2="0" y2="88"/>
+      <line x1="-45" y1="0" x2="-65" y2="0"/>
+    </g>
+
+    <!-- Secondary connections -->
+    <g stroke="#E2E8F0" stroke-width="0.5" fill="none" stroke-dasharray="2,2">
+      <!-- Cross connections -->
+      <line x1="-55" y1="-88" x2="-65" y2="-22"/>
+      <line x1="55" y1="-88" x2="65" y2="-22"/>
+      <line x1="-55" y1="88" x2="-65" y2="22"/>
+      <line x1="55" y1="88" x2="65" y2="22"/>
+    </g>
+
+    <!-- Arrows showing motivation flow -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#4A5568" opacity="0.7"/>
+      </marker>
+    </defs>
+
+    <!-- Flow indicators -->
+    <g stroke="#4A5568" stroke-width="0.5" fill="none" marker-end="url(#arrowhead)" opacity="0.6">
+      <path d="M -90,-30 Q -60,-60 -30,-80" />
+      <path d="M 90,-30 Q 60,-60 30,-80" />
+      <path d="M -90,30 Q -60,60 -30,80" />
+      <path d="M 90,30 Q 60,60 30,80" />
+    </g>
+  </g>
+
+  <!-- Key insights area -->
+  <g transform="translate(50, 350)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" fill="#2D3748">
+      Key Insights:
+    </text>
+    <text x="0" y="12" font-family="Inter, Arial, sans-serif" font-size="7" fill="#4A5568">
+      • Intrinsic and extrinsic motivations interact dynamically
+    </text>
+    <text x="0" y="22" font-family="Inter, Arial, sans-serif" font-size="7" fill="#4A5568">
+      • Social influence mediates psychological needs and consumer behavior
+    </text>
+    <text x="0" y="32" font-family="Inter, Arial, sans-serif" font-size="7" fill="#4A5568">
+      • Individual differences shape motivation patterns
+    </text>
+  </g>
+
+  <!-- Application context -->
+  <g transform="translate(450, 350)">
+    <rect x="0" y="-15" width="120" height="40" fill="#F7FAFC" stroke="#E2E8F0" stroke-width="0.5" rx="3"/>
+    <text x="60" y="-5" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="500" fill="#2D3748">
+      Application Context
+    </text>
+    <text x="60" y="5" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="7" fill="#4A5568">
+      医美消费决策
+    </text>
+    <text x="60" y="15" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="7" fill="#4A5568">
+      Medical Aesthetics
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,148 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>Medical Aesthetics Color Palette Reference</title>
+  <desc>Professional color palette for medical aesthetics consumer psychology book illustrations</desc>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="300" fill="#2D3748">
+    Color Palette Reference
+  </text>
+  <text x="400" y="65" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#4A5568">
+    Medical Aesthetics Consumer Psychology
+  </text>
+
+  <!-- Primary Palette Section -->
+  <text x="50" y="110" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" fill="#2D3748">
+    Primary Palette (4 Colors Maximum)
+  </text>
+
+  <!-- Primary Academic -->
+  <rect x="50" y="130" width="80" height="80" fill="#2D3748" rx="4"/>
+  <text x="90" y="225" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">
+    Primary Academic
+  </text>
+  <text x="90" y="240" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" fill="#718096">
+    #2D3748
+  </text>
+  <text x="90" y="255" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" fill="#A0AEC0">
+    Main text, headings
+  </text>
+
+  <!-- Secondary Calm -->
+  <rect x="150" y="130" width="80" height="80" fill="#4A5568" rx="4"/>
+  <text x="190" y="225" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">
+    Secondary Calm
+  </text>
+  <text x="190" y="240" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" fill="#718096">
+    #4A5568
+  </text>
+  <text x="190" y="255" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" fill="#A0AEC0">
+    Secondary elements
+  </text>
+
+  <!-- Accent Emerald -->
+  <rect x="250" y="130" width="80" height="80" fill="#48BB78" rx="4"/>
+  <text x="290" y="225" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">
+    Accent Emerald
+  </text>
+  <text x="290" y="240" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" fill="#718096">
+    #48BB78
+  </text>
+  <text x="290" y="255" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" fill="#A0AEC0">
+    Highlights, positive
+  </text>
+
+  <!-- Accent Coral -->
+  <rect x="350" y="130" width="80" height="80" fill="#ED8936" rx="4"/>
+  <text x="390" y="225" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">
+    Accent Coral
+  </text>
+  <text x="390" y="240" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" fill="#718096">
+    #ED8936
+  </text>
+  <text x="390" y="255" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" fill="#A0AEC0">
+    Warning, attention
+  </text>
+
+  <!-- Extended Neutrals Section -->
+  <text x="50" y="300" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" fill="#2D3748">
+    Extended Neutrals
+  </text>
+
+  <!-- Neutral Light -->
+  <rect x="50" y="320" width="60" height="60" fill="#F7FAFC" stroke="#E2E8F0" stroke-width="1" rx="4"/>
+  <text x="80" y="395" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" fill="#4A5568">
+    Neutral Light
+  </text>
+  <text x="80" y="408" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" fill="#718096">
+    #F7FAFC
+  </text>
+
+  <!-- Neutral Medium -->
+  <rect x="130" y="320" width="60" height="60" fill="#E2E8F0" stroke="#CBD5E0" stroke-width="1" rx="4"/>
+  <text x="160" y="395" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" fill="#4A5568">
+    Neutral Medium
+  </text>
+  <text x="160" y="408" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" fill="#718096">
+    #E2E8F0
+  </text>
+
+  <!-- Neutral Dark -->
+  <rect x="210" y="320" width="60" height="60" fill="#1A202C" rx="4"/>
+  <text x="240" y="395" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" fill="#F7FAFC">
+    Neutral Dark
+  </text>
+  <text x="240" y="408" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8" fill="#E2E8F0">
+    #1A202C
+  </text>
+
+  <!-- Usage Examples -->
+  <text x="50" y="460" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" fill="#2D3748">
+    Usage Examples
+  </text>
+
+  <!-- Example 1: Four Stakeholders -->
+  <g transform="translate(50, 480)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">Four Stakeholders</text>
+    <circle cx="20" cy="20" r="8" fill="none" stroke="#2D3748" stroke-width="1"/>
+    <circle cx="40" cy="20" r="8" fill="none" stroke="#4A5568" stroke-width="1"/>
+    <circle cx="60" cy="20" r="8" fill="#48BB78"/>
+    <circle cx="80" cy="20" r="8" fill="#ED8936"/>
+  </g>
+
+  <!-- Example 2: Process Flow -->
+  <g transform="translate(250, 480)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">Process Flow</text>
+    <rect x="0" y="10" width="30" height="20" fill="none" stroke="#2D3748" stroke-width="1" rx="2"/>
+    <line x1="30" y1="20" x2="40" y2="20" stroke="#4A5568" stroke-width="1" marker-end="url(#arrow)"/>
+    <rect x="40" y="10" width="30" height="20" fill="#48BB78" fill-opacity="0.2" stroke="#48BB78" stroke-width="1" rx="2"/>
+  </g>
+
+  <!-- Example 3: Data Visualization -->
+  <g transform="translate(450, 480)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">Data Visualization</text>
+    <line x1="0" y1="25" x2="0" y2="10" stroke="#4A5568" stroke-width="1"/>
+    <line x1="0" y1="25" x2="80" y2="25" stroke="#4A5568" stroke-width="1"/>
+    <rect x="10" y="15" width="15" height="10" fill="#2D3748"/>
+    <rect x="30" y="12" width="15" height="13" fill="#4A5568"/>
+    <rect x="50" y="8" width="15" height="17" fill="#48BB78"/>
+    <rect x="70" y="18" width="15" height="7" fill="#ED8936"/>
+  </g>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4A5568"/>
+    </marker>
+  </defs>
+
+  <!-- Color Rules -->
+  <g transform="translate(50, 540)">
+    <rect x="0" y="0" width="700" height="40" fill="#F7FAFC" stroke="#E2E8F0" stroke-width="1" rx="4"/>
+    <text x="10" y="15" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" fill="#2D3748">
+      Color Rules:
+    </text>
+    <text x="10" y="28" font-family="Inter, Arial, sans-serif" font-size="8" fill="#4A5568">
+      • Maximum 4 colors per illustration • Neutrals for structure • Accent colors for key information only • Maintain WCAG AA contrast
+    </text>
+  </g>
+</svg>

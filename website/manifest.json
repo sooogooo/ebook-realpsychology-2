@@ -1,0 +1,145 @@
+{
+  "name": "医美消费心理学 - Medical Aesthetics Consumer Psychology",
+  "short_name": "医美心理学",
+  "description": "从科学角度解读医美消费心理的专业著作，涵盖消费者、医生、销售人员和投资者四大视角",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#98d8c8",
+  "background_color": "#f8f9fa",
+  "lang": "zh-CN",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/assets/images/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/images/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/images/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/images/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/images/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/images/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/images/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "桌面端浏览体验"
+    },
+    {
+      "src": "/assets/images/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "移动端浏览体验"
+    }
+  ],
+  "categories": [
+    "education",
+    "health",
+    "science",
+    "reference"
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "心理评估工具",
+      "short_name": "评估工具",
+      "description": "使用专业的心理学评估工具进行自我评估",
+      "url": "/psychological-assessment.html",
+      "icons": [
+        {
+          "src": "/assets/images/shortcut-assessment.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "技术发展时间线",
+      "short_name": "技术时间线",
+      "description": "了解医美技术的发展历程和未来趋势",
+      "url": "/technology-timeline.html",
+      "icons": [
+        {
+          "src": "/assets/images/shortcut-timeline.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "文化对比分析",
+      "short_name": "文化对比",
+      "description": "比较不同文化背景下的医美消费心理",
+      "url": "/cultural-comparison.html",
+      "icons": [
+        {
+          "src": "/assets/images/shortcut-cultural.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "protocol_handlers": [],
+  "file_handlers": [
+    {
+      "action": "/",
+      "accept": {
+        "text/html": [".html"]
+      }
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}

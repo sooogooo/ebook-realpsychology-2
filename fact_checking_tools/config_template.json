@@ -1,0 +1,114 @@
+{
+    "api_keys": {
+        "pubmed": "",
+        "crossref": "",
+        "google_scholar": "",
+        "psycinfo": "",
+        "clinical_trials": ""
+    },
+    "rate_limits": {
+        "pubmed": 3,
+        "crossref": 1,
+        "google_scholar": 1,
+        "psycinfo": 2,
+        "clinical_trials": 2
+    },
+    "timeout": 30,
+    "retry_attempts": 3,
+    "retry_delay": 1.0,
+    "quality_thresholds": {
+        "minimum_score": 70,
+        "excellent_score": 90,
+        "source_quality_weight": 0.25,
+        "methodology_weight": 0.25,
+        "evidence_hierarchy_weight": 0.20,
+        "citation_accuracy_weight": 0.15,
+        "interpretation_quality_weight": 0.15
+    },
+    "medical_validation": {
+        "default_jurisdiction": "FDA",
+        "strict_compliance": true,
+        "safety_level": "high",
+        "require_emergency_procedures": true,
+        "check_adverse_events": true
+    },
+    "processing": {
+        "parallel_processing": 3,
+        "api_rate_limit_delay": 1.0,
+        "max_file_size_mb": 50,
+        "supported_formats": [".md", ".txt", ".rtf"],
+        "encoding_priority": ["utf-8", "gbk", "latin-1"]
+    },
+    "reporting": {
+        "generate_individual_reports": true,
+        "generate_summary_report": true,
+        "generate_quality_dashboard": true,
+        "report_formats": ["json", "markdown"],
+        "archive_processed_files": true,
+        "include_recommendations": true
+    },
+    "academic_databases": {
+        "pubmed": {
+            "base_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+            "api_key_required": false,
+            "rate_limit_per_second": 3
+        },
+        "crossref": {
+            "base_url": "https://api.crossref.org/",
+            "api_key_required": false,
+            "rate_limit_per_second": 1
+        },
+        "google_scholar": {
+            "base_url": "https://scholar.google.com/",
+            "api_key_required": false,
+            "rate_limit_per_second": 1,
+            "note": "Requires custom scraping implementation"
+        }
+    },
+    "medical_terminology": {
+        "update_frequency_days": 30,
+        "include_brand_names": true,
+        "require_standard_terminology": true,
+        "multilingual_support": ["en", "zh", "es", "fr"]
+    },
+    "regulatory_compliance": {
+        "fda": {
+            "jurisdiction": "United States",
+            "advertising_restrictions": true,
+            "risk_disclosure_required": true,
+            "photo_disclosure_required": true
+        },
+        "nmpa": {
+            "jurisdiction": "China",
+            "advertising_restrictions": true,
+            "celebrity_endorsements_prohibited": true,
+            "clinical_data_required": true
+        },
+        "ce_marking": {
+            "jurisdiction": "European Union",
+            "vigilance_system_required": true,
+            "technical_documentation_required": true,
+            "post_market_obligations": true
+        }
+    },
+    "quality_scoring": {
+        "evidence_hierarchy": {
+            "systematic_review": 20,
+            "rct": 18,
+            "cohort_study": 15,
+            "case_control": 12,
+            "case_series": 8,
+            "expert_opinion": 5
+        },
+        "source_quality": {
+            "primary_research": 10,
+            "secondary_research": 7,
+            "tertiary_source": 4,
+            "impact_factor_high": 10,
+            "impact_factor_medium": 7,
+            "impact_factor_low": 4,
+            "recent_publication": 5,
+            "older_publication": 2
+        }
+    }
+}

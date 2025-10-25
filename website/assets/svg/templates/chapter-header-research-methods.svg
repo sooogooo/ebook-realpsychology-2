@@ -1,0 +1,106 @@
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <title>Chapter 2 Header - Research Methods</title>
+  <desc>Chapter header for research methods and critical thinking content</desc>
+
+  <!-- Background structure -->
+  <rect width="800" height="200" fill="none"/>
+
+  <!-- Subtle geometric pattern -->
+  <g stroke="#E2E8F0" stroke-width="0.5" fill="none" opacity="0.5">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="100" y1="0" x2="100" y2="200"/>
+    <line x1="700" y1="0" x2="700" y2="200"/>
+  </g>
+
+  <!-- Research methods visualization -->
+  <g id="research-methods" transform="translate(400, 100)">
+    <!-- Magnifying glass representing research -->
+    <g stroke="#2D3748" stroke-width="1" fill="none">
+      <circle cx="0" cy="0" r="20"/>
+      <line x1="14" y1="14" x2="30" y2="30" stroke-width="1.5"/>
+    </g>
+
+    <!-- Research data points inside magnifying glass -->
+    <g stroke="#48BB78" stroke-width="0.75" fill="#48BB78">
+      <circle cx="-5" cy="-5" r="2"/>
+      <circle cx="5" cy="-8" r="2"/>
+      <circle cx="8" cy="3" r="2"/>
+      <circle cx="-8" cy="6" r="2"/>
+      <circle cx="-2" cy="8" r="2"/>
+    </g>
+
+    <!-- Connecting lines between data points -->
+    <g stroke="#4A5568" stroke-width="0.5" fill="none">
+      <line x1="-5" y1="-5" x2="5" y2="-8"/>
+      <line x1="5" y1="-8" x2="8" y2="3"/>
+      <line x1="8" y1="3" x2="-8" y2="6"/>
+      <line x1="-8" y1="6" x2="-2" y2="8"/>
+      <line x1="-2" y1="8" x2="-5" y2="-5"/>
+    </g>
+
+    <!-- Method indicators around magnifying glass -->
+    <g font-family="Inter, Arial, sans-serif" font-size="8" fill="#4A5568">
+      <!-- Quantitative -->
+      <g transform="translate(-45, -45)">
+        <rect x="-15" y="-8" width="30" height="16" fill="none" stroke="#ED8936" stroke-width="0.5" rx="2"/>
+        <text x="0" y="3" text-anchor="middle" font-size="7">定量</text>
+      </g>
+
+      <!-- Qualitative -->
+      <g transform="translate(45, -45)">
+        <rect x="-15" y="-8" width="30" height="16" fill="none" stroke="#48BB78" stroke-width="0.5" rx="2"/>
+        <text x="0" y="3" text-anchor="middle" font-size="7">定性</text>
+      </g>
+
+      <!-- Mixed -->
+      <g transform="translate(-45, 45)">
+        <rect x="-15" y="-8" width="30" height="16" fill="none" stroke="#2D3748" stroke-width="0.5" rx="2"/>
+        <text x="0" y="3" text-anchor="middle" font-size="7">混合</text>
+      </g>
+
+      <!-- Critical -->
+      <g transform="translate(45, 45)">
+        <rect x="-15" y="-8" width="30" height="16" fill="none" stroke="#4A5568" stroke-width="0.5" rx="2"/>
+        <text x="0" y="3" text-anchor="middle" font-size="7">批判</text>
+      </g>
+    </g>
+
+    <!-- Connection lines from methods to center -->
+    <g stroke="#E2E8F0" stroke-width="0.5" fill="none" stroke-dasharray="1,2">
+      <line x1="-30" y1="-30" x2="-20" y2="-20"/>
+      <line x1="30" y1="-30" x2="20" y2="-20"/>
+      <line x1="-30" y1="30" x2="-20" y2="20"/>
+      <line x1="30" y1="30" x2="20" y2="20"/>
+    </g>
+  </g>
+
+  <!-- Chapter information -->
+  <g id="chapter-info" transform="translate(50, 170)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#ED8936">
+      CHAPTER 02
+    </text>
+    <text x="0" y="15" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#2D3748">
+      研究方法与批判性思维
+    </text>
+    <text x="0" y="28" font-family="Inter, Arial, sans-serif" font-size="10" font-style="italic" fill="#4A5568">
+      Research Methods and Critical Thinking
+    </text>
+  </g>
+
+  <!-- Decorative elements -->
+  <g stroke="#2D3748" stroke-width="0.5" fill="none" opacity="0.3">
+    <polyline points="20,20 20,40 40,40"/>
+    <polyline points="780,20 780,40 760,40"/>
+    <polyline points="20,180 20,160 40,160"/>
+    <polyline points="780,180 780,160 760,160"/>
+  </g>
+
+  <!-- Page indicator -->
+  <g transform="translate(750, 170)">
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#4A5568" stroke-width="0.5"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#4A5568">
+      02
+    </text>
+  </g>
+</svg>

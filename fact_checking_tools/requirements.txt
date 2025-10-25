@@ -1,0 +1,16 @@
+requests>=2.31.0
+asyncio>=3.4.3
+pathlib>=1.0.1
+logging>=0.4.9.6
+dataclasses>=0.8
+enum34>=1.1.10
+typing>=3.7.4
+json>=2.0.9
+re>=2.2.1
+math>=1.0
+threading>=1.0
+queue>=1.0
+time>=1.0
+hashlib>=20081119
+datetime>=4.3
+urllib.parse>=1.0
